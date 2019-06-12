@@ -1,13 +1,22 @@
 {
   "name": "ntno",
+  "author": "ntno",
   "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ntno/ntno.net.git"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
+    "pretest": "npm run lint",
+    "test": "npm run unit",
+    "posttest": "npm run e2e",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "unit": "ng test --watch=false",
+    "e2e": "ng e2e",
+    "postdeploy": "npm version minor"
   },
   "private": true,
   "dependencies": {
