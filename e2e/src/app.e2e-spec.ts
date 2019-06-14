@@ -13,6 +13,11 @@ describe('workspace-project App', () => {
     expect(page.getTitleText()).toEqual('Welcome to ntno!');
   });
 
+  it('should display the header', () =>{
+    page.navigateTo();
+    expect(page.getHeaderElement().getTagName()).toEqual('app-header');
+  });
+
   afterEach(async () => {
     // Assert that there are no errors emitted from the browser
     const logs = await browser.manage().logs().get(logging.Type.BROWSER);
