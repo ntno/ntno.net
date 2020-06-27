@@ -1,0 +1,22 @@
+{
+  "name": "ntno.net",
+  "version": "1.0.0",
+  "description": "a website, hopefully",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ntno/ntno.net.git"
+  },
+  "author": "ntno",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ntno/ntno.net/issues"
+  },
+  "homepage": "https://github.com/ntno/ntno.net#readme",
+  "dependencies": {
+    "ejs": "^3.1.3"
+  }
+}
