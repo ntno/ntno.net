@@ -17,7 +17,7 @@ app.get('/', function(req, res) {
     ];
     var tagline = "Any code of your own that you haven't looked at for six or more months might as well have been written by someone else.";
 
-    res.render('pages/index', {
+    res.render('pages/home', {
         drinks: drinks,
         tagline: tagline
     });
