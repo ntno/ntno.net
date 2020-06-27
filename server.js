@@ -3,6 +3,8 @@
 var express = require('express');
 var app = express();
 
+app.use('/public', express.static('public'));
+
 // set the view engine to ejs
 app.set('view engine', 'ejs');
 
@@ -17,7 +19,7 @@ app.get('/', function(req, res) {
     ];
     var tagline = "Any code of your own that you haven't looked at for six or more months might as well have been written by someone else.";
 
-    res.render('pages/index', {
+    res.render('pages/home', {
         drinks: drinks,
         tagline: tagline
     });
