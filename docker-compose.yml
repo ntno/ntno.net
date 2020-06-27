@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  build:
+    image: ntno/build-base:latest
+    volumes:
+      - ~/.aws/:/root/.aws:ro    #ro for read only
+      - $PWD:/usr/src
