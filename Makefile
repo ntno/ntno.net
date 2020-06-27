@@ -1,4 +1,2 @@
-serve:
-	mkdocs serve
-build:
-	mkdocs build
+docker:
+	docker-compose run build
