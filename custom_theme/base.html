@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {%- block site_meta %}
+    <meta charset="UTF-8">
+    {% if config.site_description %}<meta name="description" content="{{ config.site_description }}">{% endif %}
+    {% if config.site_author %}<meta name="author" content="{{ config.site_author }}">{% endif %}
+    {% if page.canonical_url %}<link rel="canonical" href="{{ page.canonical_url }}">{% endif %}
+    {% include "favicon.html" %}
+    {%- endblock %}
+
+    {%- block htmltitle %}
+    <title>{% if page and page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+    {%- endblock %}
+
+    {%- block styles %}
+    <link href="{{ 'css/terminal.css' | url }}" rel="stylesheet">
+    <link href="{{ 'css/normalize.css' | url }}" rel="stylesheet">
+    {%- for path in extra_css %}
+    <link href="{{ path | url }}" rel="stylesheet">
+    {%- endfor %}
+    {%- endblock %}
+
+    <style>
+        body    { padding-top:50px; }
+    </style>
+
+</head>
+
+<body>
+
+    {% include "nav.html" %}
+
+    <div class="container">
+        {%- block content %}
+        <div class="row">
+            <div class="col-md-3">{% include "toc.html" %}</div>
+            <div class="col-md-9" role="main">{% include "content.html" %}</div>
+        </div>
+        {%- endblock %}
+    </div>
+
+    <hr>
+    <footer class="container">
+        {%- block footer %}
+        {% if config.copyright %}
+        <p class="text-center text-muted">{{ config.copyright }}</p>
+        {% endif %}
+        Site built with <a href="http://www.mkdocs.org">MkDocs</a> and <a
+            href="https://github.com/Gioni06/terminal.css">terminal.css</a>.
+        {%- endblock %}
+    </footer>
+</body>
+
+</html>

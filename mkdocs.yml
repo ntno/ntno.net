@@ -9,12 +9,12 @@ nav:
     - Home: 'index.md'
     - Projects:
       - Textiles:
-        - 'Embroidery': 'textiles/embroidery.md'
-        - 'Pride': 'textiles/pride.md'
+        - 'Embroidery': './textiles/embroidery.md'
+        - 'Pride': './textiles/pride.md'
       - Wood:
-        - 'Cabinet': 'wood/cabinet.md'
-        - 'Chest': 'wood/chest.md'
-        - 'Cutting Boards': 'wood/cutting-boards.md'
+        - 'Cabinet': './wood/cabinet.md'
+        - 'Chest': './wood/chest.md'
+        - 'Cutting Boards': './wood/cutting-boards.md'
 markdown_extensions:
   - admonition
   - pymdownx.tabbed
@@ -22,9 +22,10 @@ markdown_extensions:
   - toc:
       permalink: true
       
-# theme:
-#   name: material
-#   favicon: img/favicon.ico
+theme:
+    name: null
+    custom_dir: 'custom_theme/'
+    favicon: img/favicon.ico
 #   features:
 #     - navigation.tabs
 #     - navigation.tabs.sticky
@@ -45,6 +46,6 @@ markdown_extensions:
   #     primary: grey
   #     accent: red
 
-extra_css:
-  - stylesheets/terminal.css
-  - stylesheets/normalize.css
+# extra_css:
+#   - stylesheets/terminal.css
+#   - stylesheets/normalize.css

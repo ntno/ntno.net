@@ -3,7 +3,6 @@ hide:
   - navigation
   - toc
 ---
-# ntno
 ### TODO
 
 - resume  
