@@ -8,9 +8,8 @@
             <ul vocab="https://schema.org/" typeof="BreadcrumbList">
                 {% for nav_item in nav %}
                 {% if not nav_item.is_section %}
-                <li property="itemListElement" typeof="ListItem"
-                    class="menu-item {% if nav_item.active%}active{% endif %}">
-                    <a href="{{ nav_item.url|url }}" property="item" typeof="WebPage">{{ nav_item.title }}</a>
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="{{ nav_item.url|url }}" class="menu-item {% if nav_item.active%}active{% endif %}" property="item" typeof="WebPage">{{ nav_item.title }}</a>
                     <meta property="position" content="{{ loop.index - 1}}">
                 </li>
                 {% endif %}
