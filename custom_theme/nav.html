@@ -11,9 +11,8 @@
                 <li property="itemListElement" typeof="ListItem"
                     class="menu-item {% if nav_item.active%}active{% endif %}">
                     <a href="{{ nav_item.url|url }}">{{ nav_item.title }}</a>
-                    <meta property="position" {% if loop.index !=1 %}content="{{loop.index}}" { endif %}>
+                    <meta property="position" content="{{ loop.index - 1}}">
                 </li>
-                {% endif %}
                 {% endif %}
                 {% endfor %}
             </ul>
