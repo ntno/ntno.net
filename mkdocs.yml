@@ -1,0 +1,42 @@
+site_name: ntno
+repo_url: https://github.com/ntno/ntno.net
+edit_uri: edit/main/docs/
+site_url: https://ntno.github.io/docs/
+copyright: © Natan Organick 2021, All rights reserved
+site_author: ntno
+
+nav:
+    - Introduction: 'index.md'
+  
+markdown_extensions:
+  - admonition
+  - pymdownx.tabbed
+  - meta
+  - toc:
+      permalink: true
+      
+theme:
+  name: material
+  favicon: img/favicon.ico
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - toc.integrate
+  palette:
+    - scheme: inferno
+      media: "(prefers-color-scheme: light)"
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      accent: red
+    - scheme: slate
+      media: "(prefers-color-scheme: dark)"
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: grey
+      accent: red
+
+extra_css:
+  - stylesheets/extra.css
