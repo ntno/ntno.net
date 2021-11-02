@@ -31,13 +31,21 @@
 </head>
 
 <body class="terminal">
+    {% if page and page.meta and page.meta.hide %}
+        {% set hide_toc = "true" if "toc" in page.meta.hide %}
+        {% set hide_nav = "true" if "navigation" in page.meta.hide %}
+    {% endif %}
 
-    {% include "nav.html" %}
-
+    {% if not hide_nav %}
+        {% include "nav.html" %}
+    {% endif %}
+    
     <div class="container">
         {%- block content %}
         <div class="components components-grid">
-            {% include "toc.html" %}
+            {% if not hide_toc %}
+                {% include "toc.html" %}
+            {% endif %}
             <main>{% include "content.html" %}</main>
         </div>
         {%- endblock %}
