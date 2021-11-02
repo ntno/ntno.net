@@ -7,21 +7,21 @@ site_author: ntno
 
 nav:
     - Home: 'index.md'
-    - Projects:
-      - Textiles:
-        - 'Embroidery': './textiles/embroidery.md'
-        - 'Pride': './textiles/pride.md'
-      - Wood:
-        - 'Cabinet': './wood/cabinet.md'
-        - 'Chest': './wood/chest.md'
-        - 'Cutting Boards': './wood/cutting-boards.md'
+    - Projects: 'projects.md'
+    - Textiles:
+      - 'Embroidery': './textiles/embroidery.md'
+      - 'Pride': './textiles/pride.md'
+    - Wood:
+      - 'Cabinet': './wood/cabinet.md'
+      - 'Chest': './wood/chest.md'
+      - 'Cutting Boards': './wood/cutting-boards.md'
 markdown_extensions:
   - admonition
   - pymdownx.tabbed
   - meta
   - toc:
-      permalink: true
-      
+      permalink: "#"
+
 theme:
     name: null
     custom_dir: 'custom_theme/'
@@ -31,21 +31,3 @@ theme:
 #     - navigation.tabs.sticky
 #     - navigation.sections
 #     - toc.integrate
-  # palette:
-  #   - scheme: inferno
-  #     media: "(prefers-color-scheme: light)"
-  #     toggle:
-  #       icon: material/toggle-switch-off-outline
-  #       name: Switch to dark mode
-  #     accent: red
-  #   - scheme: slate
-  #     media: "(prefers-color-scheme: dark)"
-  #     toggle:
-  #       icon: material/toggle-switch
-  #       name: Switch to light mode
-  #     primary: grey
-  #     accent: red
-
-# extra_css:
-#   - stylesheets/terminal.css
-#   - stylesheets/normalize.css

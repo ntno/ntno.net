@@ -5,22 +5,15 @@
         </header>
         <nav class="terminal-menu">
             {% if nav|length>1 %}
-            <ul>
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
                 {% for nav_item in nav %}
-                {% if nav_item.children %}
-                <li>{{ nav_item.title }}
-                    <ul>
-                        {% for nav_item in nav_item.children %}
-                        <li class="menu-item {% if nav_item.active%}active{% endif %}">
-                            <a href="{{ nav_item.url|url }}">{{ nav_item.title }}</a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </li>
-                {% else %}
-                <li class="menu-item {% if nav_item.active%}active{% endif %}">
+                {% if not nav_item.is_section %}
+                <li property="itemListElement" typeof="ListItem"
+                    class="menu-item {% if nav_item.active%}active{% endif %}">
                     <a href="{{ nav_item.url|url }}">{{ nav_item.title }}</a>
+                    <meta property="position" {% if loop.index !=1 %}content="{{loop.index}}" { endif %}>
                 </li>
+                {% endif %}
                 {% endif %}
                 {% endfor %}
             </ul>
