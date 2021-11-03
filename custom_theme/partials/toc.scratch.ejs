@@ -30,3 +30,45 @@
         <li><a href="#DocTypography">Typography</a></li>
       </ul>
     </nav> -->
+
+    <div class="image-grid">
+      <% for( var i=0; i < details['pics'].length; i++) { %>
+          <img src="<%= details['pics'][i].imgsrc %>"
+                  alt="<%= details['pics'][i].imgalt %>"
+                  title="<%= details['pics'][i].imgtitle %>"
+                  width="<%= details['width'] %>"
+                  height="<%= details['height'] %>" >
+      <% } %>
+      <% for( var i=0; i < details['vids'].length; i++) { %>
+          <video 
+              width="<%= details['width'] %>"
+              height="<%= details['height'] %>"
+              controls muted>
+              <source src="<%= details['vids'][i].vidsrc %>" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+      <% } %>
+  </div>
+
+
+
+<div class="image-grid">
+
+  <figure>
+    <img
+      src="https://picsum.photos/1000/600?random&imageWithCaption"
+      alt="Image with caption"
+      title="Image with caption"
+    />
+    <figcaption>Image with caption</figcaption>
+  </figure>
+    <figure>
+    <img
+      src="https://picsum.photos/1000/500?random&imageWithCaption"
+      alt="another Image with caption"
+      title="another Image with caption"
+    />
+    <figcaption>another Image with caption</figcaption>
+  </figure>
+
+</div>

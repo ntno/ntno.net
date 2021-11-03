@@ -1,3 +1,10 @@
 <section>
     {% if page and page.content %}{{ page.content }}{% endif %}
+    {% if page and page.meta %}
+        {% set show_index_cards = "true" if page.meta.index_cards %}
+        {% set show_img_cards = "true" if page.meta.img_cards %}
+    {% endif %}
+
+    {% if show_index_cards %}{% include "index-cards.html" %}{% endif %}
+    {% if show_img_cards %}{% include "img-cards.html" %}{% endif %}
 </section>
