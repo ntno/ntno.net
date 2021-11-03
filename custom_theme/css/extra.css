@@ -1,8 +1,8 @@
-.terminal-prompt-no-cursor {
+.side-panel-highlight {
     position: relative;
     white-space: nowrap;
   }
   
-.terminal-prompt-no-cursor::before {
-content: "> ";
+.side-panel-highlight::after {
+content: "";
 }

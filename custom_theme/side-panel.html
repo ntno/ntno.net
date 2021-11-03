@@ -19,7 +19,7 @@
                                 <ul>
                                     {{ nav_macros.level_two_section_link_or_span(second_level)}}
                                         {% for third_level in second_level.children %}
-                                            {{ nav_macros.li_link_or_span(third_level, false) }}
+                                            {{ nav_macros.li_link_or_span(third_level, true) }}
                                         {% endfor %}
                                 </ul> 
                             {% else %}
