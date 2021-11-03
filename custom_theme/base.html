@@ -25,9 +25,30 @@
     {%- endblock %}
 
     <style>
-        body    { padding-top:50px; }
+        body    { padding-top:50px; padding-bottom:50px; }
+        .components-grid {
+        display: grid;
+        grid-column-gap: 1.4em;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        }
+        .image-grid {
+        display: grid;
+        grid-template-rows: auto;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(
+            auto-fit,
+            minmax(calc(var(--page-width) / 12), 1fr)
+        );
+        }
+        @media only screen and (min-width: 70em) {
+        .components-grid {
+            grid-template-columns: 3fr 9fr;
+        }
+        }
     </style>
-
 </head>
 
 <body class="terminal">
@@ -41,31 +62,21 @@
             {% include "dynamic-nav.html" %}
         {% endif %}
     {%- endblock %}
-
+  
     <div class="container">
-       
+        <hr />
         <div class="components components-grid">
-            {% if not hide_toc %}
-                {% include "nav-side.html" %}
-            {% endif %}
-
-            {%- block content %}
-            <main>{% include "content.html" %}</main>
-            {%- endblock %}
+            {% include "side-nav.html" %}
+            <main>
+                {%- block content %}
+                {% include "content.html" %}
+                {%- endblock %}
+            </main>
         </div>
-        
-    </div>
-
-    <hr>
-    <footer class="container">
+        <hr>
         {%- block footer %}
-        {% if config.copyright %}
-        <p class="text-center text-muted">{{ config.copyright }}</p>
-        {% endif %}
-        Site built with <a target="_blank" href="http://www.mkdocs.org">MkDocs</a> and <a target="_blank" 
-            href="https://github.com/Gioni06/terminal.css">terminal.css</a>.
+        {% include "footer.html" %}
         {%- endblock %}
-    </footer>
+    </div>
 </body>
-
 </html>
