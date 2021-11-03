@@ -1,4 +1,6 @@
+
 <aside id="menu">
+    {% if not hide_side_nav %}
     <nav>
         {% if nav|length>1 %}
         <ul>
@@ -7,14 +9,14 @@
                     {# HOME / ABOUT / RESUME / PROJECTS #}
                     {% if not nav_item.is_section %}
                     <li><a href="{{ nav_item.url|url }}">{{ nav_item.title}}</a></li>
-                    {# SECOND LEVEL (PROJECTS BY MEDIA) #}
+                    {# SECOND LEVEL #}
                     {% else %}
                     <li>
                         <ul>
                         {% for second_level in nav_item.children %}
                             {# OPEN SOURCE #}
                             {% if not second_level.is_section %}
-                            <li><a href="{{ second_level.url|url }}">{{ second_level.title}}</a></li>
+                            <ul><a href="{{ second_level.url|url }}">{{ second_level.title}}</a></ul>
                             {# ELECTRONICS / WOOD / ETC #}
                             {% else %}
                             <ul><a href="{{ second_level.title.lower() |url }}">{{ second_level.title}}</a>
@@ -32,4 +34,9 @@
         </ul>
         {% endif %}
     </nav>
+    {% endif %}
+    {% if not hide_toc %}
+        {% include "side-toc.html" %}
+    {% endif %}
 </aside>
+
