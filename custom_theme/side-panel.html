@@ -1,4 +1,6 @@
 
+{% import 'nav-macro.html' as nav_macros with context%}
+
 <aside id="menu">
     {% if not hide_side_nav %}
     <nav>
@@ -8,7 +10,7 @@
                 {% for nav_item in nav %}
                     {# HOME / ABOUT / RESUME / PROJECTS #}
                     {% if not nav_item.is_section %}
-                    <li><a href="{{ nav_item.url|url }}">{{ nav_item.title}}</a></li>
+                        {{ nav_macros.link_or_span(nav_item.title, nav_item.url, nav_item.active, "li") }}
                     {# SECOND LEVEL #}
                     {% else %}
                     <li>
@@ -16,12 +18,12 @@
                         {% for second_level in nav_item.children %}
                             {# OPEN SOURCE #}
                             {% if not second_level.is_section %}
-                            <ul><a href="{{ second_level.url|url }}">{{ second_level.title}}</a></ul>
+                                {{ nav_macros.link_or_span(second_level.title, second_level.url, second_level.active, "ul") }}
                             {# ELECTRONICS / WOOD / ETC #}
                             {% else %}
-                            <ul><a href="{{ second_level.title.lower() |url }}">{{ second_level.title}}</a>
+                                {{ nav_macros.link_or_span(second_level.title, second_level.title.lower(), second_level.active, "ul") }}
                                 {% for third_level in second_level.children %}
-                                <li><a href="{{ third_level.url|url }}">{{ third_level.title}}</a></li>
+                                    {{ nav_macros.link_or_span(third_level.title, third_level.url, third_level.active, "li") }}
                                 {% endfor %}
                             </ul>
                             {% endif %}

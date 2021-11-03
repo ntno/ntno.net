@@ -1,0 +1,15 @@
+{% macro link_or_span(title, link_url, is_active, list_tag) -%}
+    {% if is_active %}
+        {% if list_tag == "li" %}
+            <li><span><i>{{ title }}</i></span></li>
+        {% else %}
+            <ul><span><i>{{ title }}</i></span></ul>
+        {% endif %}
+    {% else %}
+        {% if list_tag == "li" %}
+            <li><a href="{{ link_url|url }}">{{ title }}</a></li>
+        {% else %}
+            <ul><a href="{{ link_url|url }}">{{ title }}</a>
+        {% endif %}
+    {% endif %}
+{%- endmacro %}
