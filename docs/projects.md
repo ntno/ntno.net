@@ -24,10 +24,3 @@ index_cards:
     img_alt: todo
     index_url: ./software
 ---
-
-# [Textiles](./textiles/index.md)  
-beep boop
-
-
-# [Wood](./wood/index.md)  
-slsjlsj

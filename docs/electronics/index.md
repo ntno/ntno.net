@@ -1,6 +1,4 @@
 ---
-hide:
-  - toc
 ---
     - gifcam
     - led backpack
