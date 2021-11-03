@@ -4,22 +4,11 @@ hide:
 ---
 ### TODO
 
+- about  
 - resume  
-- project sections  
+- projects  
   - textiles
-    - embroidery
-    - bum bags
-    - umbrella skirt
-  - paper
-    - book binding
-  - wood
-    - laundry cabinet
-    - chest
-    - cutting boards
-  - metal
-    - curtain hook
   - electronics
-    - gifcam
-    - led backpack
-    - led vest
+  - paper (?)
+  - metal (?)
 

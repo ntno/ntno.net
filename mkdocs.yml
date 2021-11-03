@@ -7,7 +7,9 @@ site_author: ntno
 
 nav:
     - Home: 'index.md'
+    - About: 'about.md'
     - Projects: 'projects.md'
+    - Resume: 'resume.md'
     - Textiles:
       - 'Embroidery': './textiles/embroidery.md'
       - 'Pride': './textiles/pride.md'
