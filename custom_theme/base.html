@@ -22,8 +22,6 @@
     {%- for path in extra_css %}
     <link href="{{ path | url }}" rel="stylesheet">
     {%- endfor %}
-    {%- endblock %}
-
     <style>
         body    { padding-top:50px; padding-bottom:50px; }
         .main-grid {
@@ -49,12 +47,15 @@
         }
         }
     </style>
+    {%- endblock %}
+
 </head>
 
 <body class="terminal">
     {% if page and page.meta and page.meta.hide %}
         {% set hide_toc = "true" if "toc" in page.meta.hide %}
         {% set hide_nav = "true" if "navigation" in page.meta.hide %}
+        {% set hide_side_nav = "true" if "side-navigation" in page.meta.hide %}
     {% endif %}
 
     {%- block site_nav %}
@@ -64,9 +65,11 @@
     {%- endblock %}
   
     <div class="container">
-        <hr />
         <div class="main-grid">
-            {% include "side-nav.html" %}
+            {% if not hide_side_nav %}
+                {% include "side-nav.html" %}
+            {% endif %}
+
             <main>
                 {%- block content %}
                 {% include "content.html" %}
