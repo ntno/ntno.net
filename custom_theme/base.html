@@ -66,10 +66,7 @@
   
     <div class="container">
         <div class="main-grid">
-            {% if not hide_side_nav %}
-                {% include "side-nav.html" %}
-            {% endif %}
-
+            {% include "side-panel.html" %}
             <main>
                 {%- block content %}
                 {% include "content.html" %}

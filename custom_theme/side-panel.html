@@ -1,4 +1,6 @@
+
 <aside id="menu">
+    {% if not hide_side_nav %}
     <nav>
         {% if nav|length>1 %}
         <ul>
@@ -32,4 +34,9 @@
         </ul>
         {% endif %}
     </nav>
+    {% endif %}
+    {% if not hide_toc %}
+        {% include "side-toc.html" %}
+    {% endif %}
 </aside>
+
