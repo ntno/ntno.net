@@ -8,15 +8,20 @@ site_author: ntno
 nav:
     - Home: 'index.md'
     - About: 'about.md'
-    - Projects: 'projects.md'
     - Resume: 'resume.md'
-    - Textiles:
-      - 'Embroidery': './textiles/embroidery.md'
-      - 'Pride': './textiles/pride.md'
-    - Wood:
-      - 'Cabinet': './wood/cabinet.md'
-      - 'Chest': './wood/chest.md'
-      - 'Cutting Boards': './wood/cutting-boards.md'
+    - Projects: 'projects.md'
+    - 'Projects by Media':
+      - Electronics:
+        - 'HopperBot': 'electronics/hopper-bot.md'
+        - 'LED Backpack': 'electronics/led-backpack.md'
+      - 'Open Source': 'software.md'
+      - Textiles:
+        - 'Embroidery': 'textiles/embroidery.md'
+        - 'Pride': 'textiles/pride.md'
+      - Wood:
+        - 'Cabinet': 'wood/cabinet.md'
+        - 'Chest': 'wood/chest.md'
+        - 'Cutting Boards': 'wood/cutting-boards.md'
 
 markdown_extensions:
   - admonition

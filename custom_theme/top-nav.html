@@ -12,7 +12,7 @@
                     <a href="{{ nav_item.url|url }}" class="menu-item {% if nav_item.active%}active{% endif %}" property="item" typeof="WebPage">
                         <span property="name">{{ nav_item.title }}</span>
                     </a>
-                    <meta property="position" content="{{ loop.index - 1}}">
+                    <meta property="position" content="{{ loop.index0 }}">
                 </li>
                 {% endif %}
                 {% endfor %}
