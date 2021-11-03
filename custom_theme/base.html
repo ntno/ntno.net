@@ -36,19 +36,24 @@
         {% set hide_nav = "true" if "navigation" in page.meta.hide %}
     {% endif %}
 
-    {% if not hide_nav %}
-        {% include "nav.html" %}
-    {% endif %}
-    
+    {%- block site_nav %}
+        {% if not hide_nav %}
+            {% include "nav.html" %}
+        {% endif %}
+    {%- endblock %}
+
     <div class="container">
-        {%- block content %}
+       
         <div class="components components-grid">
             {% if not hide_toc %}
                 {% include "toc.html" %}
             {% endif %}
+
+            {%- block content %}
             <main>{% include "content.html" %}</main>
+            {%- endblock %}
         </div>
-        {%- endblock %}
+        
     </div>
 
     <hr>
