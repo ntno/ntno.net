@@ -38,7 +38,7 @@
 
     {%- block site_nav %}
         {% if not hide_nav %}
-            {% include "nav.html" %}
+            {% include "dynamic-nav.html" %}
         {% endif %}
     {%- endblock %}
 
@@ -46,7 +46,7 @@
        
         <div class="components components-grid">
             {% if not hide_toc %}
-                {% include "toc.html" %}
+                {% include "nav-side.html" %}
             {% endif %}
 
             {%- block content %}

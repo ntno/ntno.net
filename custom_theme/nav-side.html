@@ -1,0 +1,35 @@
+<aside id="menu">
+    <nav>
+        {% if nav|length>1 %}
+        <ul>
+            {% if page %}
+                {% for nav_item in nav %}
+                    {# HOME / ABOUT / RESUME / PROJECTS #}
+                    {% if not nav_item.is_section %}
+                    <li><a href="{{ nav_item.url|url }}">{{ nav_item.title}}</a></li>
+                    {# MEDIA #}
+                    {% else %}
+                    <li>{{ nav_item.title}}
+                        <ul>
+                        {% for media_category in nav_item.children %}
+                            {# OPEN SOURCE #}
+                            {% if not media_category.is_section %}
+                            <li><a href="{{ media_category.url|url }}">{{ media_category.title}}</a></li>
+                            {# ELECTRONICS / WOOD / ETC #}
+                            {% else %}
+                            <ul><a href="{{ media_category.title.lower() |url }}">{{ media_category.title}}</a>
+                                {% for third_level in media_category.children %}
+                                <li><a href="{{ third_level.url|url }}">{{ third_level.title}}</a></li>
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
+                        {% endfor %}
+                        </ul>
+                    </li>
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+        </ul>
+        {% endif %}
+    </nav>
+</aside>
