@@ -10,25 +10,24 @@
                 {% for nav_item in nav %}
                     {# HOME / ABOUT / RESUME / PROJECTS #}
                     {% if not nav_item.is_section %}
-                        {{ nav_macros.link_or_span(nav_item.title, nav_item.url, nav_item.active, "li") }}
+                        {{ nav_macros.li_link_or_span(nav_item, true) }}
                     {# SECOND LEVEL #}
                     {% else %}
                     <li>
-                        <ul>
                         {% for second_level in nav_item.children %}
-                            {# OPEN SOURCE #}
-                            {% if not second_level.is_section %}
-                                {{ nav_macros.link_or_span(second_level.title, second_level.url, second_level.active, "ul") }}
-                            {# ELECTRONICS / WOOD / ETC #}
+                            {% if second_level.is_section %}
+                                <ul>
+                                    {{ nav_macros.level_two_section_link_or_span(second_level)}}
+                                        {% for third_level in second_level.children %}
+                                            {{ nav_macros.li_link_or_span(third_level, false) }}
+                                        {% endfor %}
+                                </ul> 
                             {% else %}
-                                {{ nav_macros.link_or_span(second_level.title, second_level.title.lower(), second_level.active, "ul") }}
-                                {% for third_level in second_level.children %}
-                                    {{ nav_macros.link_or_span(third_level.title, third_level.url, third_level.active, "li") }}
-                                {% endfor %}
-                            </ul>
+                                <ul>
+                                    {{ nav_macros.level_two_link_or_span(second_level) }}
+                                </ul>
                             {% endif %}
                         {% endfor %}
-                        </ul>
                     </li>
                     {% endif %}
                 {% endfor %}

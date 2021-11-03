@@ -1,0 +1,8 @@
+.terminal-prompt-no-cursor {
+    position: relative;
+    white-space: nowrap;
+  }
+  
+.terminal-prompt-no-cursor::before {
+content: "> ";
+}
