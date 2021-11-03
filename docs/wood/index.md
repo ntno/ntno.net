@@ -1,0 +1,3 @@
+    - laundry cabinet
+    - chest
+    - cutting boards

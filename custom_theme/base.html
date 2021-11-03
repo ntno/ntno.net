@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {%- block site_meta %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% if config.site_description %}<meta name="description" content="{{ config.site_description }}">{% endif %}
+    {% if config.site_author %}<meta name="author" content="{{ config.site_author }}">{% endif %}
+    {% if page.canonical_url %}<link rel="canonical" href="{{ page.canonical_url }}">{% endif %}
+    {% include "favicon.html" %}
+    {%- endblock %}
+
+    {%- block htmltitle %}
+    <title>{% if page and page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+    {%- endblock %}
+
+    {%- block styles %}
+    <link href="{{ 'css/terminal.css' | url }}" rel="stylesheet">
+    <link href="{{ 'css/normalize.css' | url }}" rel="stylesheet">
+    {%- for path in extra_css %}
+    <link href="{{ path | url }}" rel="stylesheet">
+    {%- endfor %}
+    {%- endblock %}
+
+    <style>
+        body    { padding-top:50px; }
+    </style>
+
+</head>
+
+<body class="terminal">
+    {% if page and page.meta and page.meta.hide %}
+        {% set hide_toc = "true" if "toc" in page.meta.hide %}
+        {% set hide_nav = "true" if "navigation" in page.meta.hide %}
+    {% endif %}
+
+    {%- block site_nav %}
+        {% if not hide_nav %}
+            {% include "nav.html" %}
+        {% endif %}
+    {%- endblock %}
+
+    <div class="container">
+       
+        <div class="components components-grid">
+            {% if not hide_toc %}
+                {% include "toc.html" %}
+            {% endif %}
+
+            {%- block content %}
+            <main>{% include "content.html" %}</main>
+            {%- endblock %}
+        </div>
+        
+    </div>
+
+    <hr>
+    <footer class="container">
+        {%- block footer %}
+        {% if config.copyright %}
+        <p class="text-center text-muted">{{ config.copyright }}</p>
+        {% endif %}
+        Site built with <a target="_blank" href="http://www.mkdocs.org">MkDocs</a> and <a target="_blank" 
+            href="https://github.com/Gioni06/terminal.css">terminal.css</a>.
+        {%- endblock %}
+    </footer>
+</body>
+
+</html>
