@@ -24,6 +24,10 @@ body    { padding-top:50px; padding-bottom:50px; }
     }
 }
 
+/* .side-panel-section-lowlight {
+    font-weight: bold;
+} */
+
 .side-panel-highlight {
     position: relative;
     white-space: nowrap;
