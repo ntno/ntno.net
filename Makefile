@@ -5,17 +5,11 @@ app-name=ntno.net
 
 
 ##########################################################################################
-stop: check-app-name
-	docker-compose down --remove-orphans
-
-build: check-app-name
-	docker build -f ./Dockerfile . -t $(app-name):latest
-
 docker:
 	docker-compose run --rm unix 
 
-serve: build
-	docker-compose up --remove-orphans $(app-name)
+serve:
+	mkdocs serve -v -a 0.0.0.0:8080
 
 deploy:
 	@pip3 install -r requirements.txt && \
