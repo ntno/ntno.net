@@ -8,10 +8,8 @@
         <ul>
             {% if page %}
                 {% for nav_item in nav %}
-                    {# HOME / ABOUT / RESUME / PROJECTS #}
                     {% if not nav_item.is_section %}
                         {{ nav_macros.li_link_or_span(nav_item, true) }}
-                    {# SECOND LEVEL #}
                     {% else %}
                     <li>
                         {% for second_level in nav_item.children %}
