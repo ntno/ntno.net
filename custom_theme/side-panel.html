@@ -1,4 +1,6 @@
 
+{% import 'nav-macro.html' as nav_macros with context%}
+
 <aside id="menu">
     {% if not hide_side_nav %}
     <nav>
@@ -6,27 +8,24 @@
         <ul>
             {% if page %}
                 {% for nav_item in nav %}
-                    {# HOME / ABOUT / RESUME / PROJECTS #}
                     {% if not nav_item.is_section %}
-                    <li><a href="{{ nav_item.url|url }}">{{ nav_item.title}}</a></li>
-                    {# SECOND LEVEL #}
+                        {{ nav_macros.li_link_or_span(nav_item, true) }}
                     {% else %}
                     <li>
-                        <ul>
                         {% for second_level in nav_item.children %}
-                            {# OPEN SOURCE #}
-                            {% if not second_level.is_section %}
-                            <ul><a href="{{ second_level.url|url }}">{{ second_level.title}}</a></ul>
-                            {# ELECTRONICS / WOOD / ETC #}
+                            {% if second_level.is_section %}
+                                <ul>
+                                    {{ nav_macros.level_two_section_link_or_span(second_level)}}
+                                        {% for third_level in second_level.children %}
+                                            {{ nav_macros.li_link_or_span(third_level, true) }}
+                                        {% endfor %}
+                                </ul> 
                             {% else %}
-                            <ul><a href="{{ second_level.title.lower() |url }}">{{ second_level.title}}</a>
-                                {% for third_level in second_level.children %}
-                                <li><a href="{{ third_level.url|url }}">{{ third_level.title}}</a></li>
-                                {% endfor %}
-                            </ul>
+                                <ul>
+                                    {{ nav_macros.level_two_link_or_span(second_level) }}
+                                </ul>
                             {% endif %}
                         {% endfor %}
-                        </ul>
                     </li>
                     {% endif %}
                 {% endfor %}
