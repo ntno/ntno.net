@@ -27,3 +27,9 @@ body    { padding-top:50px; padding-bottom:50px; }
 .side-panel-highlight::after {
 content: "";
 }
+
+code::after,
+code::before {
+  content: "" !important;
+  display: inline;
+}
