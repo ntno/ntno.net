@@ -14,16 +14,20 @@ serve:
 stop: 
 	docker-compose down --remove-orphans
 
-deploy-gh:
+deploy-gh: update-robots
 	@pip3 install -r requirements.txt && \
 	mkdocs build && \
 	mkdocs gh-deploy -v
 
-deploy-s3:	
+deploy-s3: update-robots
 	@pip3 install -r requirements.txt && \
 	mkdocs build && \
 	cd site && \
 	aws s3 sync --size-only --sse AES256 . $(s3-url)
+
+update-robots: check-app-name
+	rm -f ./docs/robots.txt
+	curl https://raw.githubusercontent.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker/master/robots.txt/robots.txt --output ./docs/robots.txt
 
 check-app-name:
 ifndef app-name
