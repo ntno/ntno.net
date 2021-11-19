@@ -18,19 +18,19 @@ The procedure is as follows:
 
 
 
-In order to share the knowledge I have compiled during my research I have created a comprehensive tutorial on creating such an application, which can be found here: [https://bitbucket.org/norganick/clare-boothe-luce-research/wiki/Home](https://bitbucket.org/norganick/clare-boothe-luce-research/wiki/Home)  
+In order to share the knowledge I have compiled during my research I have created a comprehensive tutorial on creating such an application, which can be found here: <a target="_blank" href="https://bitbucket.org/norganick/clare-boothe-luce-research/wiki/Home">https://bitbucket.org/norganick/clare-boothe-luce-research/wiki/Home</a>
 
 
 ### NextBlueBus App
 
-<a href="https://www.brynmawr.edu/transportation"><img src="https://www.brynmawr.edu/sites/default/files/styles/carousel_double_wide/public/field/slide-image/bus.jpg" title="Bryn Mawr College Blue Bus" alt="a person in an orange dress boarding the Bryn Mawr College Blue Bus"></a>
+<a target="_blank" href="https://www.brynmawr.edu/transportation"><img src="https://www.brynmawr.edu/sites/default/files/styles/carousel_double_wide/public/field/slide-image/bus.jpg" title="Bryn Mawr College Blue Bus" alt="a person in an orange dress boarding the Bryn Mawr College Blue Bus"></a>
 
 
 In addition to the tutorial, I created the NextBlueBus app.  This application provides users a quick and easy way to determine the next few times the [Blue Bus](https://www.brynmawr.edu/transportation/blue-bus-bi-co) will run from Bryn Mawr College to Haverford College or vice versa.  
 
 
 To use:
-Text your current location followed by your destination to 1 (906) 398-2877 or 190NextBus7.  
+Text your current location followed by your destination to `1 (906) 398-2877` or `190NextBus7`.  
 
 Examples:
 
@@ -52,9 +52,9 @@ This research project was inspired by work done during the 2014 Tri-Co Hackathon
 - Yijun Zhou		BMC '15  
 - Natan Organick	BMC '15  
 
-The NextBlueBus app created as part of this research project is not directly connected to Angie Chen's (BMC '16) Android application, which you can find [here](https://play.google.com/store/apps/details?id=com.aychen0110.bluebus).
+The NextBlueBus app created as part of this research project is not directly connected to Angie Chen's (BMC '16) Android application, which you can find <a target="_blank" href="https://play.google.com/store/apps/details?id=com.aychen0110.bluebus">here</a>.
 
 
 ### Acknowledgements
-Thanks to Professor Doug Blank and Professor Deepak Kumar of Bryn Mawr College for their guidance on this research project.  Thanks to Tim Doug for his [previous work](https://github.com/timdoug/nextbluebus) on Bi-Co bus schedule parsing.  
+Thanks to Professor Doug Blank and Professor Deepak Kumar of Bryn Mawr College for their guidance on this research project.  Thanks to Tim Doug for his <a target="_blank" href="https://github.com/timdoug/nextbluebus">previous work</a> on Bi-Co bus schedule parsing.  
 
