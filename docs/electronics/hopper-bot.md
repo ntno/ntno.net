@@ -1,7 +1,6 @@
 # HopperBot
-## a 
 
-Intro
+
 The programming language Logo was created in 1967 by Daniel G. Bobrow, Wally Feurzeig, Seymour
 Papert, and Cynthia Solomon at Bolt, Beranek and Newman (BBN) a research firm in Cambridge, MA. By the 1980s, several dialects of Logo had been created, among them Apple Logo, Krell Logo, TRS-80 Color Logo, Terrapin Logo, TI Logo, and others. Now UCBLogo is considered the most standard dialect. After its initial creation, Seymour Papert used Logo and Turtle Graphics as a means to explore his own ideas about Computer Science education, but the language of Logo itself does not require Turtle Graphics, it is its own language.
 Turtle Graphics

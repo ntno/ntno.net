@@ -16,7 +16,7 @@ nav:
         - '2015 SMS & Web-based Apps': 'research/2015-sms-and-web-based-apps.md'
       - Electronics:
         - 'HopperBot': 'electronics/hopper-bot.md'
-        - 'LED Backpack': 'electronics/led-backpack.md'
+        - 'Brake Light Backpack': 'electronics/led-backpack.md'
       - 'Open Source': 'software.md'
       - Textiles:
         - 'Embroidery': 'textiles/embroidery.md'
