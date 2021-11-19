@@ -15,3 +15,5 @@ I expect that this project will work to satisfy many of the goals of the Calico 
 
 ### 
 Computer Science Education through Games and Animations Poster
+
+http://science.slc.edu/~jmarshall/papers/sigcse2012.pdf
