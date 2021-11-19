@@ -40,10 +40,9 @@ Examples:
 
 - Text `all` to receive the next 5 times for buses going in either direction.
 
-
-### NextBlueBus Status
-The NextBlueBus app is down as of September 10, 2014 due to lack of funding. Funds are required to pay for the text messages themselves and for hosting the web application.
-
+<div class="terminal-alert">
+NOTE: The NextBlueBus app was retired September 10, 2014.  The above instructions are included for archival purposes.
+</div>
 
 ### Project History
 This research project was inspired by work done during the 2014 Tri-Co Hackathon by the NextNextBlueBus team:  
