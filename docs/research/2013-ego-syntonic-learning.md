@@ -10,15 +10,13 @@ This summer I will incorporate Sprites into the Institute for Personal Robots in
 
 I expect that this project will work to satisfy many of the goals of the Calico project by creating a low floor to introductory programming (the first level of the Sprites module will allow for students to quickly get started in creating exciting projects), while keeping the ceiling high, meaning that students will not be constrained by the simpler introductory framework. Instead, they will be able to utilize the second and third levels of the Sprites module as they move from a visual programming language like Jigsaw to Python and Scheme where they will be able to create more advanced projects. Finally, the Sprites module may be used in a wide variety of contexts in conjunction with any of the other Calico modules, and this should allow each student to learn Computer Science within the context that most interests her and to connect with programming on a more personal level.
 
+# Poster
+
+<a target="_blank" href="/img/hopperbot/SpritesForEgoSyntonicLearning_Natan.pdf"><img src="/img/hopperbot/SpritesForEgoSyntonicLearning_Natan.jpg" title="Computer Science Education through Games and Animations Poster PDF" alt="preview of Computer Science Education through Games and Animations Poster"></a>
+
 # References
 
 [1] Douglas Blank, Jennifer S. Kay, James B. Marshall, Keith O'Hara, and Mark Russo. Calico: A Multi-Programming-Language, Multi-Context Framework Designed for Computer Science Education. (2012). SIGCSE 2012 (Raleigh, NC). <a target="_blank" href="http://science.slc.edu/~jmarshall/papers/sigcse2012.pdf">PDF</a>
 
 [2] Papert, Seymour. "Turtle Geometry: A Mathematics Made for Learning." Mindstorms: Children, Computers, and Powerful Ideas. 2nd ed. New York: Basic, 1993. 63-64. Print
 
-
-
-### 
-
-
-<a target="_blank" href="./img/hopperbot/SpritesForEgoSyntonicLearning_Natan.pdf"><img src="./img/hopperbot/SpritesForEgoSyntonicLearning_Natan.jpg" title="Computer Science Education through Games and Animations Poster PDF" alt="preview of Computer Science Education through Games and Animations Poster"></a>
