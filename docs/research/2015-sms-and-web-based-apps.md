@@ -23,8 +23,19 @@ In order to share the knowledge I have compiled during my research I have create
 
 ### NextBlueBus App
 
-<a target="_blank" href="https://www.brynmawr.edu/transportation"><img src="https://www.brynmawr.edu/sites/default/files/styles/carousel_double_wide/public/field/slide-image/bus.jpg" title="Bryn Mawr College Blue Bus" alt="a person in an orange dress boarding the Bryn Mawr College Blue Bus"></a>
-
+<section>
+  <figure>
+    <a target="_blank" href="https://www.brynmawr.edu/transportation">
+    <img
+      src="https://www.brynmawr.edu/sites/default/files/styles/carousel_double_wide/public/field/slide-image/bus.jpg"
+      alt="a person in an orange dress boarding the Bryn Mawr College Blue Bus"
+      title="Bryn Mawr College Blue Bus"
+    />
+    </a>
+    <figcaption>The 'BlueBus' is a shuttle service which links the Tri-College Community of Bryn Mawr, Haverford and Swarthmore Colleges</figcaption>
+  </figure>
+</section>
+<br>
 
 In addition to the tutorial, I created the NextBlueBus app.  This application provides users a quick and easy way to determine the next few times the [Blue Bus](https://www.brynmawr.edu/transportation/blue-bus-bi-co) will run from Bryn Mawr College to Haverford College or vice versa.  
 

@@ -22,13 +22,13 @@ I expect that this project will work to satisfy many of the goals of the Calico 
     <img
       src="/img/hopperbot/SpritesForEgoSyntonicLearning_Natan.jpg"
       alt="Computer Science Education through Games and Animations Poster PDF"
-      title="Image with caption"
+      title="Computer Science Education through Games and Animations Poster"
     />
     </a>
     <figcaption>Bryn Mawr College 2013 Summer Science Research Poster</figcaption>
   </figure>
 </section>
-
+<br>
 
 
 # References
