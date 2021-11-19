@@ -19,5 +19,6 @@ I expect that this project will work to satisfy many of the goals of the Calico 
 
 
 ### 
-Computer Science Education through Games and Animations Poster
 
+
+<a target="_blank" href="./img/hopperbot/SpritesForEgoSyntonicLearning_Natan.pdf"><img src="./img/hopperbot/SpritesForEgoSyntonicLearning_Natan.jpg" title="Computer Science Education through Games and Animations Poster PDF" alt="preview of Computer Science Education through Games and Animations Poster"></a>
