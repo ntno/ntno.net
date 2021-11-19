@@ -23,7 +23,7 @@ deploy-s3:
 	@pip3 install -r requirements.txt && \
 	mkdocs build && \
 	cd site && \
-	aws s3 sync --sse AES256 . $(s3-url)
+	aws s3 sync --size-only --sse AES256 . $(s3-url)
 
 check-app-name:
 ifndef app-name
