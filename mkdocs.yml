@@ -33,6 +33,7 @@ markdown_extensions:
   - meta
   - toc:
       permalink: "#"
+  - attr_list
 
 theme:
     name: null

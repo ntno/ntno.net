@@ -37,7 +37,7 @@ In order to share the knowledge I have compiled during my research I have create
 </section>
 <br>
 
-In addition to the tutorial, I created the NextBlueBus app.  This application provides users a quick and easy way to determine the next few times the [Blue Bus](https://www.brynmawr.edu/transportation/blue-bus-bi-co) will run from Bryn Mawr College to Haverford College or vice versa.  
+In addition to the tutorial, I created the NextBlueBus app.  This application provides users a quick and easy way to determine the next few times the [Blue Bus](https://www.brynmawr.edu/transportation/blue-bus-bi-co){target=_blank} will run from Bryn Mawr College to Haverford College or vice versa.  
 
 
 To use:
@@ -54,6 +54,7 @@ Examples:
 <div class="terminal-alert">
 NOTE: The NextBlueBus app was retired September 10, 2014.  The above instructions are included for archival purposes.
 </div>
+<br>
 
 ### Project History
 This research project was inspired by work done during the 2014 Tri-Co Hackathon by the NextNextBlueBus team:  
@@ -62,9 +63,8 @@ This research project was inspired by work done during the 2014 Tri-Co Hackathon
 - Yijun Zhou		BMC '15  
 - Natan Organick	BMC '15  
 
-The NextBlueBus app created as part of this research project is not directly connected to Angie Chen's (BMC '16) Android application, which you can find <a target="_blank" href="https://play.google.com/store/apps/details?id=com.aychen0110.bluebus">here</a>.
+The NextBlueBus app created as part of this research project is not directly connected to Angie Chen's (BMC '16) Android application, which you can find [here](https://play.google.com/store/apps/details?id=com.aychen0110){target=_blank}.
 
 
 ### Acknowledgements
-Thanks to Professor Doug Blank and Professor Deepak Kumar of Bryn Mawr College for their guidance on this research project.  Thanks to Tim Doug for his <a target="_blank" href="https://github.com/timdoug/nextbluebus">previous work</a> on Bi-Co bus schedule parsing.  
-
+Thanks to Professor Doug Blank and Professor Deepak Kumar of Bryn Mawr College for their guidance on this research project.  Thanks to Tim Doug for his [previous work](https://github.com/timdoug/nextbluebus){target=_blank} on Bi-Co bus schedule parsing.  

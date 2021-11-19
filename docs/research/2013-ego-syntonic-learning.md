@@ -12,9 +12,6 @@ I expect that this project will work to satisfy many of the goals of the Calico 
 
 # Poster
 
-<!-- <img src= title="" alt="preview of Computer Science Education through Games and Animations Poster"></a> -->
-
-
 
 <section>
   <figure>
