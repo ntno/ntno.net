@@ -1,4 +1,4 @@
-# Investigation into Integrated SMS and Web Based Apps
+# Investigation into Integrated SMS and Web-based Apps
 ## Research Project funded by the Clare Boothe Luce Foundation
 
 Natan Organick, Bryn Mawr College 2015
