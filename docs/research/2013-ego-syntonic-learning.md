@@ -1,7 +1,7 @@
-# Sprites for Ego Syntonic Learning in Computer Science Education
-### Mentor: Professor Doug Blank
-### Student Researcher: Natan Organick
+**Sprites for Ego Syntonic Learning in Computer Science Education**  
+Research Project funded in part by the National Science Foundation (NSF) and by the Bryn Mawr College Summer Undergraduate Research Program  
 
+# Abstract
 June 10, 2013
 
 For Computer Science education to be successful, it must step away from the dissociative learning styles that have been used in traditional STEM education and instead work to make learning extremely personal and relevant to each student. Seymour Papert accomplished this with his work with the “Turtle” robot by intimately relating the Turtle’s movements to children’s own sense of physical self while they programmed it to draw geometric shapes. This process helped students to gain a deeper understanding of both geometry and programming. However, instead of further exploring this body syntonic learning style, I am interested in investigating ego syntonic learning, or, utilizing agents that are “coherent with children’s sense of themselves as people with intentions, goals, desires, likes, and dislikes.”<sup>[2](./#references)</sup> MIT’s Scratch project has had much success in this by creating agents called “Sprites” which may be manipulated by the programmer to move, speak, and interact with other Sprites in order to create digital drawings, animated stories, and video games. Programming with these Sprites engages the student while teaching them to use logical control structures and the beginnings of object oriented design.  
@@ -32,5 +32,8 @@ I expect that this project will work to satisfy many of the goals of the Calico 
 
 [1] Douglas Blank, Jennifer S. Kay, James B. Marshall, Keith O'Hara, and Mark Russo. Calico: A Multi-Programming-Language, Multi-Context Framework Designed for Computer Science Education. (2012). SIGCSE 2012 (Raleigh, NC). <a target="_blank" href="http://science.slc.edu/~jmarshall/papers/sigcse2012.pdf">PDF</a>
 
-[2] Papert, Seymour. "Turtle Geometry: A Mathematics Made for Learning." Mindstorms: Children, Computers, and Powerful Ideas. 2nd ed. New York: Basic, 1993. 63-64. Print
+[2] Papert, Seymour. "Turtle Geometry: A Mathematics Made for Learning." *Mindstorms: Children, Computers, and Powerful Ideas*. 2nd ed. New York: Basic, 1993. 63-64. Print
+<br>
 
+# Acknowledgements 
+Thanks to Professor Doug Blank of Bryn Mawr College for his guidance on this research project.  This research was supported in part by the National Science Foundation (NSF) and by the Bryn Mawr College Summer Undergraduate Research Program.
