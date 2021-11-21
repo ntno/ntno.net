@@ -3,6 +3,7 @@ TODO -
 1) discuss that this was for a undergraduate summer research program in 2013
 2) had to be applied for
 3) did research, added to application, created poster
+<br>  
 
 # Project Proposal
 
@@ -10,7 +11,8 @@ For Computer Science education to be successful, it must step away from the diss
 
 This summer I will incorporate Sprites into the Institute for Personal Robots in Education’s Calico project<sup>[2](./#references)</sup>, a multi-language and multi-context Integrated Development Environment. I will write a Sprites module in C# which will be available for use in all of Calico’s first class languages (including Jigsaw, Python, and Scheme). This Sprites module will give students the ability to create and use their own Sprites, and will be aimed at three different skill levels. The first level will be the most straightforward and will contain few, if any, object oriented programming elements. At this level, students will be able to immediately jump into the process of manipulating pre-made Sprites without having to use them as one would an object instance. At the second and third levels, students will be able to use the Sprites according to object oriented program design and they will be able to manually extend this class to create more complex and customizable Sprites. In addition, the Sprite module will include data structures for managing collections of Sprites which may be used from level two onwards.  
 
-I expect that this project will work to satisfy many of the goals of the Calico project by creating a low floor to introductory programming (the first level of the Sprites module will allow for students to quickly get started in creating exciting projects), while keeping the ceiling high, meaning that students will not be constrained by the simpler introductory framework. Instead, they will be able to utilize the second and third levels of the Sprites module as they move from a visual programming language like Jigsaw to Python and Scheme where they will be able to create more advanced projects. Finally, the Sprites module may be used in a wide variety of contexts in conjunction with any of the other Calico modules, and this should allow each student to learn Computer Science within the context that most interests her and to connect with programming on a more personal level.
+I expect that this project will work to satisfy many of the goals of the Calico project by creating a low floor to introductory programming (the first level of the Sprites module will allow for students to quickly get started in creating exciting projects), while keeping the ceiling high, meaning that students will not be constrained by the simpler introductory framework. Instead, they will be able to utilize the second and third levels of the Sprites module as they move from a visual programming language like Jigsaw to Python and Scheme where they will be able to create more advanced projects. Finally, the Sprites module may be used in a wide variety of contexts in conjunction with any of the other Calico modules, and this should allow each student to learn Computer Science within the context that most interests her and to connect with programming on a more personal level.  
+<br>
 
 # Project Poster
 
@@ -33,8 +35,9 @@ I expect that this project will work to satisfy many of the goals of the Calico 
 
 [1] Papert, Seymour. "Turtle Geometry: A Mathematics Made for Learning." *Mindstorms: Children, Computers, and Powerful Ideas*. 2nd ed. New York: Basic, 1993. 63-64. Print  
 
-[2] Douglas Blank, Jennifer S. Kay, James B. Marshall, Keith O'Hara, and Mark Russo. Calico: A Multi-Programming-Language, Multi-Context Framework Designed for Computer Science Education. (2012). SIGCSE 2012 (Raleigh, NC). [PDF](http://science.slc.edu/~jmarshall/papers/sigcse2012.pdf)
+[2] Douglas Blank, Jennifer S. Kay, James B. Marshall, Keith O'Hara, and Mark Russo. Calico: A Multi-Programming-Language, Multi-Context Framework Designed for Computer Science Education. (2012). SIGCSE 2012 (Raleigh, NC). [PDF](http://science.slc.edu/~jmarshall/papers/sigcse2012.pdf){target=_blank}  
 <br>
 
 # Acknowledgements 
-Thanks to Professor Doug Blank of Bryn Mawr College for his guidance on this research project.  This research was supported in part by the National Science Foundation (NSF) and by the Bryn Mawr College Summer Undergraduate Research Program.
+Thanks to Professor Doug Blank of Bryn Mawr College for his guidance on this research project.  This research was supported in part by the National Science Foundation (NSF) and by the Bryn Mawr College Summer Undergraduate Research Program.  
+<br>
