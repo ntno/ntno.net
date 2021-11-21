@@ -11,9 +11,12 @@ nav:
     - Resume: 'resume.md'
     - Projects: 'projects.md'
     - 'Projects by Media':
+      - Research:
+        - '2013 Ego Syntonic Learning': 'research/2013-ego-syntonic-learning.md'
+        - '2015 SMS & Web-based Apps': 'research/2015-sms-and-web-based-apps.md'
       - Electronics:
         - 'HopperBot': 'electronics/hopper-bot.md'
-        - 'LED Backpack': 'electronics/led-backpack.md'
+        - 'Brake Light Backpack': 'electronics/led-backpack.md'
       - 'Open Source': 'software.md'
       - Textiles:
         - 'Embroidery': 'textiles/embroidery.md'
@@ -23,11 +26,14 @@ nav:
         - 'Chest': 'wood/chest.md'
         - 'Cutting Boards': 'wood/cutting-boards.md'
 
+
+
 markdown_extensions:
   - admonition
   - meta
   - toc:
       permalink: "#"
+  - attr_list
 
 theme:
     name: null
