@@ -26,6 +26,17 @@ img_cards:
     img_alt: 'detail of PowerBoost with annotations indicating which wires connect to the power switch, Pi Zero, and battery'
 ---
 
+<section>
+  <figure>
+    <img
+      src="/img/gifcam/philly-07.gif"
+      alt="animated gif of view through car window as car crosses street.  rain drops partially obscure view.  pedestrians cross the street in rain gear."
+      title="capture from gifcam"
+    />
+    <figcaption>Natan Organick, <i>untitled</i>, capture from gifcam, 2019.</figcaption>
+  </figure>
+</section>
+
 
 
 # Project Goals  
@@ -40,6 +51,19 @@ img_cards:
 - Amazon S3 secured by pre-signed links
 - Images converted to GIF in Lambda
 - Images posted to Twitter
+
+<br>
+<section>
+  <figure>
+    <img style="border: 1px solid #888888;"
+      src="/img/gifcam/tweet.gif"
+      alt="screencapture of tweet.  tweet contains animated gif of spinning ceiling fan.  tweet author is ntno-dev"
+      title="gif screencapture of tweet with gifcam capture attached"
+    />
+    <figcaption>successful tweet from gifcam (July 1, 2019)</figcaption>
+  </figure>
+</section>
+<br>
 
 # Materials  
 
