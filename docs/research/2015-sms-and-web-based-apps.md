@@ -1,7 +1,7 @@
 **Investigation into Integrated SMS and Web-based Apps**  
-TODO - 
-1) discuss that this was for CBL
-2) did research that would give back in some way (tutorial)
+TODO -  
+1) discuss that this was for CBL  
+2) did research that would give back in some way (tutorial)  
 <br>  
 
 # Project Goals
