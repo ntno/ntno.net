@@ -55,10 +55,9 @@ index_cards:
         </li><br>
       <ul>
   - card_title: Textiles
-    img_src: /img/embroidery/justice.jpeg
-    #TODO - update caption and image
-    img_caption: "'Tzedek, Tzedek'"
-    img_title: "'Tzedek, Tzedek'"
+    img_src: /img/embroidery/justice_from_below.jpeg
+    img_caption: "<i>Tzedek, Tzedek</i> (detail)"
+    img_title: "<i>Tzedek, Tzedek</i> (detail)"
     img_alt: an embroidered patch of a sword and banner containing text in Hebrew
     index_url: ./textiles/
     card_content: |
