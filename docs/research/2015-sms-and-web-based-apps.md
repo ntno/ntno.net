@@ -1,5 +1,8 @@
 **Investigation into Integrated SMS and Web-based Apps**  
-
+TODO - 
+1) discuss that this was for CBL
+2) did research that would give back in some way (tutorial)
+<br>  
 
 # Project Goals
 The goal of this research project was to find a way to create web based applications which use text messaging to interact with clients.  With a text messaging based system, the application does not have to conform to any particular mobile operating system, clients do not have to download a mobile app, and they are able to use the app without a smartphone or a data plan.  
