@@ -4,4 +4,4 @@
 ```make serve```
 
 ## deployment
-```make deploy```
+```make deploy-s3```
