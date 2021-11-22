@@ -17,14 +17,14 @@ nav:
       - Electronics:
         - 'HopperBot': 'electronics/hopper-bot.md'
         - 'Brake Light Backpack': 'electronics/led-backpack.md'
-      - 'Open Source': 'software.md'
+      - 'Software': 'software.md'
+      - Wood:
+        - 'Laundry Cabinet': 'wood/cabinet.md'
+        - 'Storage Chest': 'wood/chest.md'
+        - 'Cutting Boards': 'wood/cutting-boards.md'
       - Textiles:
         - 'Embroidery': 'textiles/embroidery.md'
-        - 'Pride': 'textiles/pride.md'
-      - Wood:
-        - 'Cabinet': 'wood/cabinet.md'
-        - 'Chest': 'wood/chest.md'
-        - 'Cutting Boards': 'wood/cutting-boards.md'
+        - 'Upcycled Pride': 'textiles/pride.md'
 
 
 
