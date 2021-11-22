@@ -5,10 +5,13 @@
     .index_card_content_panel {
         grid-area: main;
     }
+    .index_card_buffer_panel {
+        grid-area: buffer;
+    }
     .index_card_container {
         display: grid;
         grid-template-areas:
-            'photo photo main main main';
+            'photo photo main main main buffer';
         grid-gap: 10px;
         grid-column-gap: 30px;
         padding: 0px;
@@ -30,6 +33,7 @@
         <div class="index_card_content_panel">
             <p>{{ card.card_content }}</p>
         </div>
+        <div class="index_card_buffer_panel"></div>
     </div>
 </div>
 <br>
