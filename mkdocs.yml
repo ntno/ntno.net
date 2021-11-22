@@ -27,8 +27,7 @@ nav:
       - Textiles:
         - '2020 Covid-19 Masks': 'textiles/masks.md'
         - '2020 Upcycled Umbrella': 'textiles/pride.md'
-        - '2020 Tzedek Tzedek': 'textiles/justice.md'
-        - '2021 Lady Liberty': 'textiles/liberty.md'
+        - '2020 Embroidered Works': 'textiles/embroidered-works.md'
 
 markdown_extensions:
   - admonition
