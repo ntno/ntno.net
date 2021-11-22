@@ -21,7 +21,7 @@ img_cards:
   <figure>
     <img
       src="/img/embroidery/lady_liberty.jpeg"
-      alt="a circular embroidered patch "
+      alt="a circular embroidered patch.  'KEEP ABORTION SAFE AND LEGAL' is stitched in a white outline in front of a silhouette of the Statue of Liberty.  the background is a circular gradient from yellow to green centered on the statue's torch"
       title=""
     />
     <figcaption>Natan Organick, <i>Lady Liberty</i>, 2020.</figcaption>
