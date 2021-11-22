@@ -61,8 +61,8 @@ index_cards:
     index_url: ./textiles/
     card_content: |
       <ul>
-        <li><i>Summer On Fire</i>: Embroidered </li>
-        <li>MkDocs Terminal Theme</li>
-        <li>p5.js Seed</li>
+        <li><i>Summer of Fire</i>: Embroidered Art for 2020</li>
+        <li>Covid-19 Masks</li>
+        <li>Upcycled Fashion</li>
       <ul>
 ---
