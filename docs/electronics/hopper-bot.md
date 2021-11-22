@@ -9,13 +9,10 @@
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/PyvTeeromyU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-# 2017 Interface  
+# Interface Comparison
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/q_sTnm1BBU8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
-
-# 2018 Interface  
-
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lWwFTDho-3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
   
