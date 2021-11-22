@@ -1,6 +1,7 @@
 ---
 hide:
   - toc
+  - git_revision_date
 index_cards:
   - card_title: Electronics
     img_src: https://s3.us-east-2.amazonaws.com/ntno.net/images/biking-backpack/lights_installed_v2.jpeg
