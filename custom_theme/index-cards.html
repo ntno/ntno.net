@@ -5,35 +5,35 @@
     .index_card_content_panel {
         grid-area: main;
     }
+    .index_card_buffer_panel {
+        grid-area: buffer;
+    }
     .index_card_container {
         display: grid;
         grid-template-areas:
-            'photo photo main main main';
+            'photo photo main main main buffer';
         grid-gap: 10px;
         grid-column-gap: 30px;
         padding: 0px;
     }
-</style> 
+</style>
 {%- for card in page.meta.index_cards %}
 <div class="terminal-card">
-        <a class="btn btn-default btn-block" title="{{  card.card_title }}" href="{{ card.index_url | url}}"><span>{{ card.card_title }}</span></a>
+    <a class="btn btn-default btn-block" title="{{  card.card_title }}" href="{{ card.index_url | url}}"><span>{{
+            card.card_title }}</span></a>
     <div class="index_card_container">
         <div class="index_card_img_panel">
-            <figure >
+            <figure>
                 <a title="{{  card.card_title }}" href="{{ card.index_url | url}}">
-                <img src="{{ card.img_src }}" 
-                    alt="{{ card.img_alt }}" 
-                    title="{{ card.img_title }}" 
-                 >
+                    <img src="{{ card.img_src }}" alt="{{ card.img_alt }}" title="{{ card.img_title }}">
                 </a>
                 <figcaption>{{ card.img_caption }}</figcaption>
             </figure>
         </div>
-            <div class="index_card_content_panel">
-                <p>{{ card.card_content }}</p>
-            </div>
-       
-      
+        <div class="index_card_content_panel">
+            <p>{{ card.card_content }}</p>
+        </div>
+        <div class="index_card_buffer_panel"></div>
     </div>
 </div>
 <br>

@@ -15,18 +15,19 @@ nav:
         - '2013 Ego Syntonic Learning': 'research/2013-ego-syntonic-learning.md'
         - '2015 SMS Integrated Apps': 'research/2015-sms-and-web-based-apps.md'
       - Electronics:
-        - 'HopperBot': 'electronics/hopper-bot.md'
-        - 'Brake Light Backpack': 'electronics/led-backpack.md'
+        - '2017-2019 HopperBot': 'electronics/hopper-bot.md'
+        - '2018 Brake Light Backpack': 'electronics/led-backpack.md'
+        - '2019 Gifcam': 'electronics/gifcam.md'
+        - '2020 Skating Vest': 'electronics/led-vest.md'
       - 'Software': 'software.md'
       - Wood:
-        - 'Laundry Cabinet': 'wood/cabinet.md'
-        - 'Storage Chest': 'wood/chest.md'
-        - 'Cutting Boards': 'wood/cutting-boards.md'
+        - '2018 Storage Chest': 'wood/chest.md'
+        - '2019 Cutting Boards': 'wood/cutting-boards.md'
+        - '2020 Laundry Cabinet': 'wood/cabinet.md'
       - Textiles:
-        - 'Embroidery': 'textiles/embroidery.md'
-        - 'Upcycled Pride': 'textiles/pride.md'
-
-
+        - '2020 Covid-19 Masks': 'textiles/masks.md'
+        - '2020 Upcycled Umbrella': 'textiles/pride.md'
+        - '2020 Embroidered Works': 'textiles/embroidered-works.md'
 
 markdown_extensions:
   - admonition

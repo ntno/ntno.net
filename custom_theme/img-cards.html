@@ -1,42 +1,33 @@
 <style>
-    .item1 {
+    .img_card_img_panel {
         grid-area: photo;
     }
-    .item2 {
+    .img_card_content_panel {
         grid-area: main;
     }
-    .project-grid-container {
+    .img_card_container {
         display: grid;
         grid-template-areas:
-            'photo main main main main';
+            'photo';
         grid-gap: 10px;
         grid-column-gap: 30px;
         padding: 0px;
     }
 </style> 
 
-<span>img_cards exists!</span>
 {%- for card in page.meta.img_cards %}
-<div class="terminal-card">
-    <header>{{  card.card_title }}</header>
-    <div>
-        <div class="project-grid-container">
-            <div class="item1">
-                <figure>
-                    <img src="{{ card.img_src }}" 
-                            alt="{{ card.img_alt }}" 
-                            title="{{  card.img_title }}" 
-                            width="auto"
-                            height="auto" >
-                    <figcaption>{{  card.img_caption }}</figcaption>
-                </figure>
-            </div>
-            <div class="item2">
-                <h3><{{  card.title }}</h3>
-                <p>{{ card.content }}</p>
-            </div>
-        </div>    
+<div class="img_card_container">
+    <div class="img_card_img_panel">
+        <figure>
+            <img src="{{ card.img_src }}" 
+                    alt="{{ card.img_alt }}" 
+                    title="{{  card.img_title }}" 
+                    width="auto"
+                    height="auto" >
+            <figcaption>{{  card.img_caption }}</figcaption>
+        </figure>
     </div>
-</div>
+</div>  
+<br>
 <br>
 {%- endfor %}

@@ -56,14 +56,15 @@ index_cards:
       <ul>
   - card_title: Textiles
     img_src: /img/embroidery/justice.jpeg
+    #TODO - update caption and image
     img_caption: "'Tzedek, Tzedek'"
     img_title: "'Tzedek, Tzedek'"
     img_alt: an embroidered patch of a sword and banner containing text in Hebrew
     index_url: ./textiles/
     card_content: |
       <ul>
-        <li><i>Summer of Fire</i>: Embroidered Art for 2020</li>
         <li>Covid-19 Masks</li>
-        <li>Upcycled Fashion</li>
+        <li>Upcycled Umbrella Skirt</li>
+        <li>Embroidered Works</li>
       <ul>
 ---
