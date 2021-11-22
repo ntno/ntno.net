@@ -1,6 +1,7 @@
 ---
 hide:
   - toc
+  - git_revision_date
 index_cards:
   - card_title: Undergraduate Research, Bryn Mawr College
     img_src: /img/hopperbot/SpritesForEgoSyntonicLearning_Natan.jpg

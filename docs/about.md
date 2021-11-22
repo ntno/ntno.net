@@ -1,3 +1,7 @@
+---
+hide:
+  - git_revision_date
+---
 # hello world
 
 CS 110 (2012)
