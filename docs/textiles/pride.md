@@ -25,11 +25,11 @@ img_cards:
     img_title: ''
     img_alt: ''
   - img_src: /img/umbrella/attach_structure_to_larger_waistband.jpeg
-    img_caption: 'pin interface substitute to waistband edge'
+    img_caption: 'pin interface substitute to waistband edge, wrong sides together'
     img_title: ''
     img_alt: ''
   - img_src: /img/umbrella/sandwich_skirt_interface_waistband.jpeg
-    img_caption: 'sandwich right side of skirt, interface substitute, and waistband, then sew together'
+    img_caption: 'sandwich right side of skirt, waistband, and interface substitute, then sew together'
     img_title: ''
     img_alt: ''
   - img_src: /img/umbrella/fold_up_waistband_and_topstitch.jpeg
@@ -37,7 +37,7 @@ img_cards:
     img_title: ''
     img_alt: ''
   - img_src: /img/umbrella/waistband_topstitched.jpeg
-    img_caption: 'topstitch waistband'
+    img_caption: 'topstitch waistband.  remove basting stitches'
     img_title: ''
     img_alt: ''
 
