@@ -1,7 +1,54 @@
+---
+# img_cards: 
+#   - img_src: ''
+#     img_caption: ''
+#     img_title: ''
+#     img_alt: ''
+---
+
 # HopperBot  
   intro
 
-# 2017 Hackathon
+# Project History
+
+<section>
+  <figure>
+    <img
+      src="/img/hopperbot/2017/2017_bot.png"
+      alt="two wheeled robot with breadboard, Raspberry Pi, and assorted wires on top"
+      title=""
+    />
+    <figcaption>proof of concept robot built during two-day hackathon at Vanguard</figcaption>
+  </figure>
+</section>
+<br>
+
+
+<section>
+  <figure>
+    <img
+      src="/img/hopperbot/2018/2018_bot.png"
+      alt="four wheeled robot with breadboard, Raspberry Pi in enclosure, and orderly wires on top"
+      title=""
+    />
+    <figcaption>robot improved prior to 2018 and 2019 GETT activities</figcaption>
+  </figure>
+</section>
+<br>
+
+
+<section>
+  <figure>
+    <img
+      src="/img/hopperbot/gett/2019_bot_at_gett.jpeg"
+      alt="robot on wood floor in between pool noodle barriers"
+      title=""
+    />
+    <figcaption>robot in maze at 2019 GETT activity</figcaption>
+  </figure>
+</section>
+<br>
+
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/eSlY1OUxymU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
