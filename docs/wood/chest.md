@@ -24,5 +24,11 @@ img_cards:
 
 # Storage Chest
 
-TODO
-
+- bandsaw  
+- handplane*  
+- mitersaw*  
+- router  
+- sander  
+- tablesaw  
+- wood finishing*  
+- drill and nail gun*  

@@ -63,4 +63,14 @@ Solo build at [NextFab](https://nextfab.com/location/south-philadelphia/) using 
   </figure>
 </section>
 
+- bandsaw  
+- jointer  
+- mitersaw  
+- planer  
+- tablesaw  
+- paint gun*  
+- Kreg Pocket Hole Jig*
+- Kreg Concealed Hinge Jig*
+- plate jointer (biscuit)*
+
 # Progress Photos
