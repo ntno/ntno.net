@@ -26,15 +26,10 @@ hide:
         <strong>Solo Project: </strong><a href="/wood/cabinet">Laundry Cabinet</a>
         <span>
           <ul>
-            <li>bandsaw</li>
-            <li>jointer</li>
-            <li>mitersaw</li>
-            <li>planer</li>
-            <li>tablesaw</li>
-            <li>paint gun*</li>
-            <li>Kreg Pocket Hole Jig*</li>
-            <li>Kreg Concealed Hinge Jig*</li>
-            <li>plate jointer (biscuit)*</li>
+            <li>pocket hole joinery  </li>
+            <li>biscuit joinery  </li>
+            <li>plate jointer  </li>
+            <li>concealed hinge installation  </li>
           </ul>
         </div>
       </div>
@@ -45,14 +40,10 @@ hide:
         <strong>Class Project: </strong><a href="/wood/chest">Storage Chest</a>
         <span>
           <ul>
-            <li>bandsaw  </li>
-            <li>handplane*  </li>
-            <li>mitersaw*  </li>
-            <li>router  </li>
-            <li>sander  </li>
-            <li>tablesaw  </li>
-            <li>wood finishing*  </li>
-            <li>drill and nail gun*  </li>
+            <li>handplane  </li>
+            <li>mitersaw  </li>
+            <li>wood finishing  </li>
+            <li>drill and nail gun  </li>
           </ul>
         </div>
       </div>
@@ -68,8 +59,6 @@ hide:
             <li>router  </li>
             <li>sander  </li>
             <li>tablesaw  </li>
-            <li>lathe (wine stopper project, not pictured)</li>
-            <li>bandsaw (wine holder project, not pictured)</li>
           </ul>
         </div>
       </div>
