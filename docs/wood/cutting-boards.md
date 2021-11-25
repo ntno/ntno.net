@@ -1,6 +1,9 @@
 ---
 ---
 
+
+June 1, 2018
+
 Woodshop Introduction at [Philadelphia Woodworks](http://www.philadelphiawoodworks.com/){target=_blank}. 
 
 - jointer  

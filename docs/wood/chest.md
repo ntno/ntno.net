@@ -21,6 +21,7 @@ img_cards:
     img_alt: wood chest and lid.  wood color is a richer orange color than in previous photos due to additional polyurethane coat. 
 
 ---
+Sunday August 19th, 2018
 
 # Storage Chest
 
