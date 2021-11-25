@@ -10,15 +10,15 @@ img_cards:
   #   img_title: ''
   #   img_alt: a plywood box and stacks of long, thin wood pieces
 
-  - img_src: /img/chest/corner_detail.jpeg
-    img_caption: 'siding attached to plywood and distressed. first coat of polyurethane applied'
-    img_title: ''
-    img_alt: close up of siding.  wood has been scored to create a weathered effect.
+  # - img_src: /img/chest/corner_detail.jpeg
+  #   img_caption: 'siding attached to plywood and distressed. first coat of polyurethane applied'
+  #   img_title: ''
+  #   img_alt: close up of siding.  wood has been scored to create a weathered effect.
 
-  - img_src: /img/chest/chest_and_lid.jpeg
-    img_caption: 'siding sealed with polyurethane.  second coat applied'
-    img_title: ''
-    img_alt: wood chest and lid.  wood color is a richer orange color than in previous photos due to additional polyurethane coat. 
+  # - img_src: /img/chest/chest_and_lid.jpeg
+  #   img_caption: 'siding sealed with polyurethane.  second coat applied'
+  #   img_title: ''
+  #   img_alt: wood chest and lid.  wood color is a richer orange color than in previous photos. 
 
   - img_src: /img/chest/pilot_tips_detail_9_13_18.jpeg
     img_caption: 'class notes on how to drill a pilot hole to particular depth'
@@ -47,3 +47,28 @@ August 2018 - October 2018
 - drill and nail gun
 
 # Progress Photos
+
+<section>
+  <figure>
+    <img
+      src="/img/chest/corner_detail.jpeg"
+      alt="close up of siding.  wood has been scored to create a weathered effect."
+      title=""
+    />
+    <figcaption>siding attached to plywood and distressed. first coat of polyurethane applied</figcaption>
+  </figure>
+</section>
+<br>
+<section>
+  <figure>
+    <img
+      src="/img/chest/chest_and_lid.jpeg"
+      alt="wood chest and lid.  wood color is a richer orange color than in previous photos."
+      title=""
+    />
+    <figcaption>siding sealed with polyurethane.  second coat applied</figcaption>
+  </figure>
+</section>
+<br>
+
+# Selected Class Notes
