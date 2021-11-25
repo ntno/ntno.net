@@ -40,17 +40,21 @@ img_cards:
     img_title: ''
     img_alt: close-up of glossy tabletop with plastic sheeting in background
 
+  - img_src: /img/cabinet/laundry.jpeg
+    img_caption: 'hooks installed on inner frame and on inside face of drawer to keep laundry bag upright'
+    img_title: ''
+    img_alt: laundry bag inside tilt-out drawer.  the laundry bag has fabric handles which are hooked to the underside of the tabletop and to the inside face of the drawer.
+
   - img_src: /img/cabinet/cabinet_painted.jpeg
     img_caption: 'completed cabinet'
     img_title: ''
     img_alt: three-drawer cabinet painted white with glossy wood handles and tabletop
 
-
 ---
 
 # Laundry Cabinet
 
-Solo build at [NextFab](https://nextfab.com/location/south-philadelphia/) using [plans by Shara](https://www.woodshopdiaries.com/diy-tilt-out-laundry-hamper/){target=_blank}.  Plans modified to allow for third tilt out cabinet.  
+Solo build at [NextFab](https://nextfab.com/location/south-philadelphia/){target=_blank} using plans by Shara<sup>[1](./#references)</sup>.  Plans modified to allow for center tilt out drawer.  
 
 <section>
   <figure>
@@ -59,20 +63,14 @@ Solo build at [NextFab](https://nextfab.com/location/south-philadelphia/) using 
       alt="cabinet painted white with 3 doors.  tabletop and handles remain unpainted. "
       title=""
     />
-    <figcaption>Tilt-Out Laundry Cabinet</figcaption>
+    <figcaption>tilt-out laundry cabinet</figcaption>
   </figure>
 </section>
+<br>
 
+# References
 
+[1] Shara.  "DIY Tilt Out Laundry Hamper Cabinet."  *www.woodshopdiaries.com*, 20 May 2019, [https://www.woodshopdiaries.com/diy-tilt-out-laundry-hamper/](https://www.woodshopdiaries.com/diy-tilt-out-laundry-hamper/){target=_blank}.
 
-- bandsaw  
-- jointer  
-- mitersaw  
-- planer  
-- tablesaw  
-- paint gun*  
-- Kreg Pocket Hole Jig*
-- Kreg Concealed Hinge Jig*
-- plate jointer (biscuit)*
 
 # Progress Photos
