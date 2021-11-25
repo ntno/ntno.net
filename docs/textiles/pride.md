@@ -52,8 +52,10 @@ umbrella skirt
 
 # References
 
-- [zipper tutorial](https://www.youtube.com/watch?v=M8sU3i1omJI&ab_channel=Savi%27sFashionStudio){target=_blank} by Savi  
-- [waistband tutorial](https://www.youtube.com/watch?v=Oe9ks9u4e8U&ab_channel=ProfessorPincushion){target=_blank} by Professor Pincushion  
+[1] Professor Pincushion.  "How To Sew A Classic Waistband."  *YouTube*, 10 Apr. 2012, [https://youtu.be/Oe9ks9u4e8U](https://youtu.be/Oe9ks9u4e8U){target=_blank}.  
+
+[2] Savi's Fashion Studio.  "Class 14 - How to attach zipper to a dress without a seam / Easy, neat and professional finish."  *YouTube*, 27 Sep. 2015, [https://youtu.be/M8sU3i1omJI](https://youtu.be/M8sU3i1omJI){target=_blank}.  
+
 
 
 # Progress Photos

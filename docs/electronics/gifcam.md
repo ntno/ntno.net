@@ -76,7 +76,12 @@ img_cards:
 
 # Acknowledgements
 
-Camera case and circuitry design based on Nick Brewer's [PIX-E Gif Camera](https://hackaday.io/project/16358-pix-e-gif-camera){target=_blank}.  Many thanks to Nick for his excellent build guide.
+Camera case and circuitry design based on Nick Brewer's PIX-E Gif Camera<sup>[1](./#references)</sup>.  Many thanks to Nick for his excellent build guide.
+
+# References
+
+[1] Brewer, Nick.  "PIX-E Gif Camera."  *hackaday.io*, 14 Oct. 2016, [https://hackaday.io/project/16358-pix-e-gif-camera](https://hackaday.io/project/16358-pix-e-gif-camera){target=_blank}.
+
 
 # Progress Photos  
 
