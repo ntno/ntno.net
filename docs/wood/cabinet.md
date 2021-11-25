@@ -46,7 +46,7 @@ img_cards:
     img_alt: laundry bag inside tilt-out drawer.  the laundry bag has fabric handles which are hooked to the underside of the tabletop and to the inside face of the drawer.
 
   - img_src: /img/cabinet/cabinet_painted.jpeg
-    img_caption: 'completed cabinet'
+    img_caption: 'completed tilt-out laundry cabinet'
     img_title: ''
     img_alt: three-drawer cabinet painted white with glossy wood handles and tabletop
 
@@ -60,10 +60,10 @@ Solo build at [NextFab](https://nextfab.com/location/south-philadelphia/){target
   <figure>
     <img
       src="/img/cabinet/cabinet_painted.jpeg"
-      alt="cabinet painted white with 3 doors.  tabletop and handles remain unpainted. "
+      alt="three-drawer cabinet painted white with glossy wood handles and tabletop"
       title=""
     />
-    <figcaption>tilt-out laundry cabinet</figcaption>
+    <figcaption>completed tilt-out laundry cabinet</figcaption>
   </figure>
 </section>
 
