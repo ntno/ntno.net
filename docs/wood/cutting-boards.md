@@ -37,5 +37,4 @@ Woodshop Introduction at [Philadelphia Woodworks](http://www.philadelphiawoodwor
   </figure>
 </section>
 
-
-# Selected Project Notes
+# Selected Class Notes
