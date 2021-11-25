@@ -35,17 +35,6 @@ img_cards:
 August 2018 - October 2018  
   
 *Rustic Storage Trunk* class build at [Philadelphia Woodworks](http://www.philadelphiawoodworks.com/){target=_blank}.  
-  
-# Applied Skills
-
-- bandsaw  
-- handplane  
-- mitersaw  
-- router  
-- sander  
-- tablesaw  
-- wood finishing  
-- drill and nail gun
 
 # Progress Photos
 

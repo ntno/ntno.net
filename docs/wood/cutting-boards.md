@@ -10,14 +10,6 @@ img_cards:
 June 2018 - July 2018  
   
 *Woodshop Introduction* class build at [Philadelphia Woodworks](http://www.philadelphiawoodworks.com/){target=_blank}.  
-  
-# Applied Skills
-
-- jointer  
-- planer  
-- router  
-- sander  
-- tablesaw  
 
 # Project Photo
 
