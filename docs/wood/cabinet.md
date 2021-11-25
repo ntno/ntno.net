@@ -11,7 +11,7 @@ img_cards:
     img_alt: wooden frame with 3 open sections
 
   - img_src: /img/cabinet/roomba_base.jpeg
-    img_caption: 'feet sized to allow space for Roomba charging dock'
+    img_caption: 'feet raised to allow space for Roomba charging dock'
     img_title: ''
     img_alt: side view of cabinet base which rests several inches off floor
 
@@ -26,7 +26,7 @@ img_cards:
     img_alt: three L-shaped drawers primed a bright white with cabinet frame in the background
 
   - img_src: /img/cabinet/paint_frame.jpeg
-    img_caption: 'wooden spacer blocks added to base to keep drawers perpendicular'
+    img_caption: 'wooden spacer blocks added to base to keep drawers flush with frame'
     img_title: ''
     img_alt: top-down view of wooden blocks inside frame, attached to the bottom panel.  the blocks have screws sticking out of the top.
 
