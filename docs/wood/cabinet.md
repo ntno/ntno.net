@@ -54,7 +54,7 @@ img_cards:
 
 # Laundry Cabinet
 
-Solo build at [NextFab](https://nextfab.com/location/south-philadelphia/){target=_blank} using plans by Shara<sup>[1](./#references)</sup>.  Plans modified to allow for center tilt out drawer.  
+Solo build at [NextFab](https://nextfab.com/location/south-philadelphia/){target=_blank} using plans by Shara<sup>[1](./#references)</sup>.  Plans modified to allow for center tilt-out drawer.  
 
 <section>
   <figure>
