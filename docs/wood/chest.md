@@ -31,10 +31,11 @@ img_cards:
     img_alt: detail of notebook illustration of paintbrush pulling sealant from the edge to the center of a piece of wood.  this motion is marked with an X.
 
 ---
-# Storage Chest
-
-August 2018 - October 2018
-
+**Storage Chest**  
+August 2018 - October 2018  
+  
+*Rustic Storage Trunk* class build at [Philadelphia Woodworks](http://www.philadelphiawoodworks.com/){target=_blank}.  
+  
 # Applied Skills
 
 - bandsaw  

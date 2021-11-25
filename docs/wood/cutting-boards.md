@@ -6,16 +6,11 @@ img_cards:
     img_alt: pages from notebook with illustrations on wood distortions and wood grain 
 ---
 
-# Cutting Boards
-June 2018 - July 2018
-
-
-In June of 2018 I took my first dive into woodworking by attending an introductory class 
-
-June 1, 2018
-
-Woodshop Introduction at [Philadelphia Woodworks](http://www.philadelphiawoodworks.com/){target=_blank}. 
-
+**Cutting Boards**  
+June 2018 - July 2018  
+  
+*Woodshop Introduction* class build at [Philadelphia Woodworks](http://www.philadelphiawoodworks.com/){target=_blank}.  
+  
 # Applied Skills
 
 - jointer  
