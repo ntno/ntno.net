@@ -66,7 +66,6 @@ Solo build at [NextFab](https://nextfab.com/location/south-philadelphia/){target
     <figcaption>tilt-out laundry cabinet</figcaption>
   </figure>
 </section>
-<br>
 
 # References
 
