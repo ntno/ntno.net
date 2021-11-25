@@ -28,18 +28,18 @@ index_cards:
       <ul>
   - card_title: Woodworking
     img_src: /img/cabinet/cabinet_painted.jpeg
-    img_caption: 'Tilt-Out Laundry Cabinet'
+    img_caption: 'Tilt-out Laundry Cabinet'
     img_title: laundry cabinet with tilt-out drawers
     img_alt: laundry cabinet with tilt-out drawers
     index_url: ./wood/
     card_content: |
       <ul>
         <li><strong>Solo Project</strong>
-          <ul>- Tilt-Out Laundry Cabinet</ul>
+          <ul>- Tilt-out Laundry Cabinet</ul>
         </li><br>
         <li><strong>Class Projects</strong>
-          <ul>- Storage Chest</ul>
           <ul>- Cutting Boards</ul>
+          <ul>- Storage Chest</ul>
         </li><br>
       <ul>
   - card_title: Textiles
