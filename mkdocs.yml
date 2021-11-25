@@ -19,7 +19,6 @@ nav:
         - '2018 Brake Light Backpack': 'electronics/led-backpack.md'
         - '2019 Gifcam': 'electronics/gifcam.md'
         - '2019 Skating Vest': 'electronics/led-vest.md'
-      - 'Software': 'software.md'
       - Wood:
         - '2018 Cutting Boards': 'wood/cutting-boards.md'
         - '2018 Storage Chest': 'wood/chest.md'
@@ -28,6 +27,7 @@ nav:
         - '2020 Covid-19 Masks': 'textiles/masks.md'
         - '2020 Upcycled Umbrella': 'textiles/pride.md'
         - '2020 Embroidered Works': 'textiles/embroidered-works.md'
+      - 'Software': 'software.md'
 
 markdown_extensions:
   - admonition

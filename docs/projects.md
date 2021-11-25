@@ -26,18 +26,6 @@ index_cards:
         <li>Wearables for Night Visibility</li><br>
         <li><i>gifcam</i>: a Cloud Enabled, Pi-Powered Camera</li><br>
       <ul>
-  - card_title: Open Source Software
-    img_src: /img/software/vertical_script_puzzle.gif
-    img_caption: 'Constructed Script Puzzle Detail'
-    img_title: constructed fantasy script puzzle
-    img_alt: animated GIF of tiles moving around on a screen.  the tiles are covered in a constructed fantasy script.
-    index_url: ./software
-    card_content: |
-      <ul>
-        <li>Docker Containers</li>
-        <li>MkDocs Terminal Theme</li>
-        <li>p5.js Seed</li>
-      <ul>
   - card_title: Woodworking
     img_src: /img/cabinet/cabinet_painted.jpeg
     img_caption: 'Tilt-Out Laundry Cabinet'
@@ -65,5 +53,17 @@ index_cards:
         <li>Covid-19 Masks</li>
         <li>Upcycled Umbrella Skirt</li>
         <li>Embroidered Works</li>
+      <ul>
+  - card_title: Open Source Software
+    img_src: /img/software/vertical_script_puzzle.gif
+    img_caption: 'Constructed Script Puzzle Detail'
+    img_title: constructed fantasy script puzzle
+    img_alt: animated GIF of tiles moving around on a screen.  the tiles are covered in a constructed fantasy script.
+    index_url: ./software
+    card_content: |
+      <ul>
+        <li>Docker Containers</li>
+        <li>MkDocs Terminal Theme</li>
+        <li>p5.js Seed</li>
       <ul>
 ---
