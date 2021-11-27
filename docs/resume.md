@@ -3,7 +3,7 @@
   
 [View Full Resume](/img/Natan_Organick_01_2021.pdf){target=_blank}
 
-**DevOps Architect, Inferno Mfg. Corp**  
+**DevOps Architect, Inferno Mfg. Corp.**  
 May 2021 - Present  
 Shreveport, LA (remote)  
 
