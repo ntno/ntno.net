@@ -26,3 +26,7 @@ Malvern, PA
 **B.A., Computer Science, Bryn Mawr College**  
 August 2011 - May 2015  
 Bryn Mawr, PA  
+
+**Teaching Assistant, Bryn Mawr College**  
+Fall 2012 - 2014  
+Bryn Mawr, PA  
