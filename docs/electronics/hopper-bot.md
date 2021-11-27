@@ -1,9 +1,4 @@
 ---
-# img_cards: 
-#   - img_src: ''
-#     img_caption: ''
-#     img_title: ''
-#     img_alt: ''
 ---
 
 # HopperBot  
@@ -27,7 +22,7 @@
 <section>
   <figure>
     <img
-      src="/img/hopperbot/2018/2018_bot.png"
+      src="/img/hopperbot/2018/2018_bot.jpeg"
       alt="four wheeled robot with breadboard, Raspberry Pi in enclosure, and orderly wires on top"
       title=""
     />
