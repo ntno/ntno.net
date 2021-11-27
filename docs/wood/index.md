@@ -7,7 +7,7 @@ In 2016 I read two books that sparked a lot of excitement in me for small scale 
 
 I was drawn to the futuristic and fantastical nature of the designs in *Nanotecture* (a solar powered, ambulatory, six-legged house<sup>[3](./#references)</sup> comes to mind) and the accessability of the traditional wood construction methods described in *Microshelters*.  
 
-The idea of building spaces of my own stuck with me.  I figured the first step to building anything at a human scale was to learn my way around a woodshop, so I sought out woodworking lessons at Philadelphia Woodworks in 2018.  Since then I have continued to grow my skills while working on solo projects as a member at NextFab, a maker space.
+The idea of building spaces of my own stuck with me.  I figured the first step to building anything at a human scale was to learn my way around a woodshop, so I sought out woodworking lessons at Philadelphia Woodworks in 2018.  Since then I have continued to grow my skills while working on solo projects as a member at NextFab, a maker space also in Philadelphia.
 
 # Skill Progression
 
