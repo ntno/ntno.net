@@ -8,6 +8,8 @@ hide:
 - ai packaging
 - ai devops (sagemaker)
 - devops @ comcast ---> docker containers
+- gifcam software
+- hopperbot software
 
 docker-containers  
 publish terminal theme?  
