@@ -25,6 +25,6 @@ Malvern, PA
 August 2015 - May 2017  
 Malvern, PA  
 
-**B.A., Computer Science, Bryn Mawr College**
+**B.A., Computer Science, Bryn Mawr College**  
 August 2011 - May 2015  
-Bryn Mawr, PA
+Bryn Mawr, PA  
