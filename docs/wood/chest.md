@@ -35,6 +35,29 @@ img_cards:
 August 2018 - October 2018  
   
 *Rustic Storage Trunk* class build at [Philadelphia Woodworks](http://www.philadelphiawoodworks.com/){target=_blank}.  
+<section>
+  <figure>
+    <img
+      src="/img/chest/complete_open.jpeg"
+      alt="wooden chest containing a colorful blanket.  a metal chain attaches the lid to the box so that the lid does not fall open all the way."
+      title=""
+    />
+    <figcaption>completed storage chest - plywood interior</figcaption>
+  </figure>
+</section>
+<br>
+<section>
+  <figure>
+    <img
+      src="/img/chest/complete.jpeg"
+      alt="wooden chest viewed at an angle.  black closure attaches lid to box.  black handle attached at side."
+      title=""
+    />
+    <figcaption>completed storage chest - Douglas Fir siding</figcaption>
+  </figure>
+</section>
+<br>
+
 
 # Progress Photos
 

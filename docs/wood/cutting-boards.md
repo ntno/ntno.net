@@ -10,9 +10,6 @@ img_cards:
 June 2018 - July 2018  
   
 *Woodshop Introduction* class build at [Philadelphia Woodworks](http://www.philadelphiawoodworks.com/){target=_blank}.  
-
-# Project Photo
-
 <section>
   <figure>
     <img
@@ -20,7 +17,7 @@ June 2018 - July 2018
       alt="two wooden cutting boards standing upright in wooden block"
       title=""
     />
-    <figcaption></figcaption>
+    <figcaption>completed cutting boards with stand</figcaption>
   </figure>
 </section>
 
