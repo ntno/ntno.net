@@ -3,12 +3,14 @@ hide:
   - git_revision_date
 ---
 
+In 2016 I read two books that sparked a lot of excitement in me for small scale shelters.  Both *Nanotecture*<sup>[2](./#references)</sup> and *Microshelters*<sup>[1](./#references)</sup> are surveys of small structures created by various architects, designers, and artists.  Some of the included works are meant to function as full-time living spaces, while others are more sculptural.  
 
+I was drawn to the futuristic and fantastical nature of the designs in *Nanotecture* (a solar powered, ambulatory, six-legged house<sup>[3](./#references)</sup> comes to mind) and the accessability of the traditional wood construction methods described in *Microshelters*.  
+
+
+# Skill Progression
 
 <section>
-  <header>
-    <h2 id="Timeline">Skill Progression</h2>
-  </header>
   <div class="terminal-timeline">
     <div class="terminal-card">
       <header>September 2020</header>
@@ -66,7 +68,13 @@ hide:
     <br />
 </section>
 
+# References
 
+[1] Diedricksen, Derek. *Microshelters: 59 Creative Cabins, Tiny Houses, Tree Houses, and Other Small Structures*. Storey Publishing, 2015. Print.
+
+[2] Roke, Rebecca. *Nanotecture: Tiny Built Things*. London, England: Phaidon Press, 2016. Print.
+
+[3] Sørvin, Ion, et al.  "WALKING HOUSE."  *n55.dk*, 28 Oct. 2008, [http://www.n55.dk/MANUALS/WALKINGHOUSE/walkinghouse.html](http://www.n55.dk/MANUALS/WALKINGHOUSE/walkinghouse.html){target=_blank}.
 
 
 
