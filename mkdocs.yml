@@ -13,7 +13,7 @@ nav:
     - 'Projects by Media':
       - Research:
         - '2013 Ego Syntonic Learning': 'research/2013-ego-syntonic-learning.md'
-        - '2014 SMS Integrated Apps': 'research/2015-sms-and-web-based-apps.md'
+        - '2014 SMS Integrated Apps': 'research/2014-sms-and-web-based-apps.md'
       - Electronics:
         - '2017-2019 HopperBot': 'electronics/hopper-bot.md'
         - '2018 Brake Light Backpack': 'electronics/led-backpack.md'
