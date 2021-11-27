@@ -1,6 +1,4 @@
 ---
-hide:
-  - git_revision_date
 ---
   
 [View Full Resume](/img/Natan_Organick_01_2021.pdf){target=_blank}
