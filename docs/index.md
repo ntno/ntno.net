@@ -10,12 +10,23 @@ Our first assignment was to create a representational work using all of Processi
 
 I had so much fun working on this assignment.  I remember spending hours and hours on it and completely losing track of time.  That being said, when our professor informed us in the next lecture that there was such a thing as 'variables' and 'functions,' I was so shocked.  "How could you not have told us this before?  I could have saved so much time if I knew about variables!  I could have made a stamp function to draw out another chair!" I thought.  These thoughts were quickly replaced by "What else is out there?  What else can I make?" and I've been figuring those out ever since.
 
-Recently I dug up the sketch on [openprocessing](https://openprocessing.org/){target=_blank} and ported it to [p5.js](https://editor.p5js.org/ntno/sketches/3iI1Sa6Wr){target=_blank, title="bedroom_in_arles source code in p5.js editor"}.  Seeing it always cheers me up and I hope it brings you some cheer as well. 
+Recently I dug up the sketch on [openprocessing](https://openprocessing.org/){target=_blank} and ported it to [p5.js](https://p5js.org/){target=_blank}.  Seeing it always cheers me up and I hope it brings you some cheer as well. 
 <br>
 
 
 ## Bedroom in Arles  
 January 2012  
 
-
-<iframe width="605" height="548" src="https://preview.p5js.org/ntno/embed/3iI1Sa6Wr"></iframe>
+<section>
+  <figure>
+    <a target="_blank" href="https://editor.p5js.org/ntno/sketches/3iI1Sa6Wr" title="Bedroom in Arles source code in p5.js editor">
+    <img style="border: 1px solid #888888;"
+      src="/img/bedroom_in_arles.png"
+      alt="a digital reproduction of 'The Bedroom' by Vincent van Gogh"
+      title=""
+    />
+    </a>
+    <figcaption>Natan Organick, <i>Bedroom in Arles</i>, 2012.</figcaption>
+  </figure>
+</section>
+<br>
