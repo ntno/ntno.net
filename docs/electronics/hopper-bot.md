@@ -1,10 +1,53 @@
 ---
 ---
 
-# HopperBot  
-  intro
+**HopperBot**  
+2017 - 2019  
+
+While working at Vanguard as a software engineer I had the opportunity to participate in several internal hackathons.  One of these hackathons grew into a long running project which I continued volunteering on until I moved jobs in 2019.    
+
+For the third of Vanguard's internal hackathons, my team decided to create an interactive coding activity for Vanguard to host at an upcoming outreach event.  The annual event, [Girls Exploring Tommorrow's Technology](https://gettpa.org/){target=_blank}, regularly brings several hundred middle-school aged girls from around the region to meet women in STEM careers and to participate in hands-on activities. 
+
+Our hackathon team The goals of the activity were to:  
+- give the students a chance to create their own LED circuits on breadboards  
+- allow the students to program a robot without previous coding experience  
+- engage the students in "Turtle-Talk", have them design an algorithm to navigate through a maze, then use a drag-and-drop IDE to implement the algorithm in a drag-and-drop coding language.    
+
+
+
+
+
+<section>
+  <figure>
+    <img
+      src="/img/hopperbot/gett/2019_bot_at_gett.jpeg"
+      alt="robot on wood floor in between pool noodle barriers"
+      title=""
+    />
+    <figcaption>HopperBot at 2019 GETT conference</figcaption>
+  </figure>
+</section>
+<br>
+
+
 
 # Project History
+
+## 2017
+<section>
+  <figure>
+    <a target="_blank" href="/img/hopperbot/2017/architecture.jpeg">
+    <img
+      src="/img/hopperbot/2017/architecture.jpeg"
+      alt="illustration demonstrating how client javascript application and robot control application connect via Ngrok"
+      title="view diagram in new tab"
+    />
+    </a>
+    <figcaption>c Architecture</figcaption>
+  </figure>
+</section>
+<br>
+[ngrok](https://ngrok.com/product){target=_blank}
 
 <section>
   <figure>
@@ -18,7 +61,47 @@
 </section>
 <br>
 
+**July 28, 2017**  
 
+<section>
+  <figure>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/eSlY1OUxymU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <figcaption>2017 Hackathon Prototype</figcaption>
+  </figure>
+</section>
+<br>
+<section>
+  <figure>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/PyvTeeromyU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <figcaption>2017 Hackathon Participant Interaction</figcaption>
+  </figure>
+</section>
+<br>
+<br>
+<section>
+  <figure>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/q_sTnm1BBU8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <figcaption>2017 Hackathon Drag-And-Drop Interface</figcaption>
+  </figure>
+</section>
+<br>
+
+
+## 2018  
+
+<section>
+  <figure>
+    <a target="_blank" href="/img/hopperbot/2018/architecture.jpeg">
+    <img
+      src="/img/hopperbot/2018/architecture.jpeg"
+      alt="illustration demonstrating how client blockly application and robot control application connect via pubnub"
+      title="view diagram in new tab"
+    />
+    </a>
+    <figcaption>2018 - 2019 GETT Activity Architecture</figcaption>
+  </figure>
+</section>
+<br>
 <section>
   <figure>
     <img
@@ -31,37 +114,17 @@
 </section>
 <br>
 
+asldjfalsdj
 
-<section>
-  <figure>
-    <img
-      src="/img/hopperbot/gett/2019_bot_at_gett.jpeg"
-      alt="robot on wood floor in between pool noodle barriers"
-      title=""
-    />
-    <figcaption>robot in maze at 2019 GETT activity</figcaption>
-  </figure>
-</section>
-<br>
-
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/eSlY1OUxymU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br>
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/PyvTeeromyU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-# Interface Comparison
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/q_sTnm1BBU8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lWwFTDho-3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
   
-# 2019 GETT Activity 
+# 2019  
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/yPX6cYOBSdk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
+
+# Background
 
 The programming language Logo was created in 1967 by Daniel G. Bobrow, Wally Feurzeig, Seymour
 Papert, and Cynthia Solomon at Bolt, Beranek and Newman (BBN) a research firm in Cambridge, MA. By the 1980s, several dialects of Logo had been created, among them Apple Logo, Krell Logo, TRS-80 Color Logo, Terrapin Logo, TI Logo, and others. Now UCBLogo is considered the most standard dialect. After its initial creation, Seymour Papert used Logo and Turtle Graphics as a means to explore his own ideas about Computer Science education, but the language of Logo itself does not require Turtle Graphics, it is its own language.
