@@ -16,7 +16,7 @@ index_cards:
       <ul>
   - card_title: Electronics & Software
     img_src: /img/led-biking-backpack/lights.jpeg
-    img_caption: 'LED Brake Light Backpack Detail'
+    img_caption: 'LED Brake Light Backpack'
     img_title: detail of LED brake light backpack project
     img_alt: a black backpack with the lining stripped out to reveal rainbow LEDs sewn in
     index_url: ./electronics/
