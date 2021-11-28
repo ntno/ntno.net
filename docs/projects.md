@@ -14,7 +14,7 @@ index_cards:
         <li>Sprites for Ego Syntonic Learning</li><br>
         <li>SMS Integrated Web Apps</li><br>
       <ul>
-  - card_title: Electronics
+  - card_title: Electronics & Software
     img_src: /img/led-biking-backpack/lights.jpeg
     img_caption: 'LED Brake Light Backpack Detail'
     img_title: detail of LED brake light backpack project
@@ -25,6 +25,7 @@ index_cards:
         <li>HopperBot for Body Syntonic Learning</li><br>
         <li>Wearables for Night Visibility</li><br>
         <li><i>gifcam</i>: a Cloud Enabled, Pi-Powered Camera</li><br>
+        <li>misc. open source software</li><br>
       <ul>
   - card_title: Woodworking
     img_src: /img/cabinet/cabinet_painted.jpeg
@@ -54,16 +55,16 @@ index_cards:
         <li>Upcycled Umbrella Skirt</li>
         <li>Embroidered Works</li>
       <ul>
-  - card_title: Open Source Software
-    img_src: /img/software/vertical_script_puzzle.gif
-    img_caption: 'Constructed Script Puzzle Detail'
-    img_title: constructed fantasy script puzzle
-    img_alt: animated GIF of tiles moving around on a screen.  the tiles are covered in a constructed fantasy script.
-    index_url: ./software
-    card_content: |
-      <ul>
-        <li>Docker Containers</li>
-        <li>MkDocs Terminal Theme</li>
-        <li>p5.js Seed</li>
-      <ul>
+  # - card_title: Open Source Software
+  #   img_src: /img/software/vertical_script_puzzle.gif
+  #   img_caption: 'Constructed Script Puzzle Detail'
+  #   img_title: constructed fantasy script puzzle
+  #   img_alt: animated GIF of tiles moving around on a screen.  the tiles are covered in a constructed fantasy script.
+  #   index_url: ./electronics/software
+  #   card_content: |
+  #     <ul>
+  #       <li>Docker Containers</li>
+  #       <li>MkDocs Terminal Theme</li>
+  #       <li>p5.js Seed</li>
+  #     <ul>
 ---
