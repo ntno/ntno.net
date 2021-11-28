@@ -2,7 +2,7 @@
 hide:
   - git_revision_date
 ---
-# hello world
 
-CS 110 (2012)
-<iframe width="605" height="548" src="https://preview.p5js.org/ntno/embed/3iI1Sa6Wr"></iframe>
+Natan Organick is a maker and computer scientist living in Philadelphia, PA.  They spend their free time tinkering, skating, and keeping sane in quarantine by running and playing an inordinate amount of DnD.  
+
+<!-- Druids are the best class, ask me why. -->
