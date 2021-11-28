@@ -6,7 +6,7 @@
 
 While working at Vanguard as a software engineer I had the opportunity to participate in several internal hackathons.  One of these hackathons grew into a long running project which I continued volunteering on until I moved jobs in 2019.    
 
-For the third of Vanguard's internal hackathons, my team decided to create an interactive coding activity for Vanguard to host at an upcoming outreach event.  The annual event, [Girls Exploring Tommorrow's Technology](https://gettpa.org/){target=_blank}, regularly brings several hundred middle-school aged girls from around the region to meet women in STEM careers and to participate in hands-on activities. 
+For the third of Vanguard's internal hackathons, my team decided to create an interactive coding activity for Vanguard to host at an upcoming outreach event.  The annual event, [Girls Exploring Tommorrow's Technology](https://gettpa.org/){target=_blank}, regularly brings several hundred middle-school aged girls from Southeastern Pennsylvania to meet women in STEM careers and to participate in hands-on activities. 
 
 Our hackathon team The goals of the activity were to:  
 - give the students a chance to create their own LED circuits on breadboards  
