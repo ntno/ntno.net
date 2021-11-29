@@ -1,6 +1,7 @@
 **Sprites for Ego Syntonic Learning in Computer Science Education**  
-Summer 2013
-
+Summer 2013  
+  
+  
 TODO -  
 1) discuss that this was for a undergraduate summer research program in 2013  
 2) had to be applied for  
