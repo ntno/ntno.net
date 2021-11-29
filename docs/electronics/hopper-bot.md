@@ -31,10 +31,7 @@ Our hackathon team The goals of the activity were to:
 </section>
 <br>
 
-
-
 # Project History
-
 ## 2017
 
 During the hackathon we split up the big tasks among our four-person team in order to work as efficiently as possible with our limited time.  Two members designed and built the robot, a third created a webpage with a drag-and-drop interface to simulate our eventual coding environment, and I worked on the robot controller and connecting the various components.  
@@ -44,7 +41,7 @@ During the hackathon we split up the big tasks among our four-person team in ord
     <a target="_blank" href="/img/hopperbot/2017/architecture.jpeg">
     <img
       src="/img/hopperbot/2017/architecture.jpeg"
-      alt="illustration demonstrating how client javascript application and robot control application connect via Ngrok"
+      alt="illustration demonstrating how client javascript application and robot controller connect via ngrok"
       title="view diagram in new tab"
     />
     </a>
@@ -64,12 +61,12 @@ I came up with the following solution which is illustrated in Figure 4:
 
 
 User flow:  
-When a user requests the drag-and-drop webpage at **NGROK-ABC** from their mobile device, ngrok passes the request to the Python HTTP server via its tunnel process.  The javascript and html is returned to the user's web browser and rendered.  The user can then move action blocks into and out of the sandbox area (see Figure 5).  Once a user releases an action block inside the sandbox area, the page makes an ajax request to the associated route at **NGROK-XYZ**.  The REST request is relayed via ngrok to the flask application running on the RaspberryPi and the robot executes the requested action.
+When a user requests the drag-and-drop webpage at **NGROK-ABC** from their mobile device, ngrok passes the request to the Python HTTP server via its tunnel process.  The javascript and html is returned to the user's web browser and rendered.  The user can then move action blocks into and out of the sandbox area (see Figure 5).  Once a user releases an action block inside the sandbox area, the page makes an AJAX request to the associated route at **NGROK-XYZ**.  The request is relayed via ngrok to the flask application running on the RaspberryPi and the robot executes the requested action.
 
 
-**Note:**
-This design worked 
-- once the tunnel is running and the flask application's public address has been generated, the drag-and-drop webpage can be updated so that when an action block is dropped, the javascript makes a GET request to the action route at 
+### 2017 Reflection
+
+It was really excting to be able to complete the hackathon with a working prototype.  We achieved our goal of being able to have activity particpants interact with the robot using their personal devices.  We did not get to 
 
 
 
@@ -85,7 +82,7 @@ This design worked
 </section>
 <br>
 
-**July 28, 2017**  
+### July 28, 2017
 
 <section>
   <figure>
@@ -133,19 +130,29 @@ This design worked
       alt="four wheeled robot with breadboard, Raspberry Pi in enclosure, and orderly wires on top"
       title=""
     />
-    <figcaption>robot improved prior to 2018 and 2019 GETT activities</figcaption>
+    <figcaption>HopperBot - Improved Hardware (case, onboard power supply, 4 wheels for increased stability and programming options)</figcaption>
   </figure>
 </section>
 <br>
 
 asldjfalsdj
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lWwFTDho-3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<section>
+  <figure>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lWwFTDho-3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <figcaption>Figure 6, 2018 Blockly Interface</figcaption>
+  </figure>
+</section>
 <br>
-  
+
 # 2019  
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/yPX6cYOBSdk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<section>
+  <figure>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/yPX6cYOBSdk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <figcaption>2019 HopperBot GETT Activity</figcaption>
+  </figure>
+</section>
 <br>
 
 # Background
