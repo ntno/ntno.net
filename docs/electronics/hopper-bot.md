@@ -8,16 +8,22 @@ While working at Vanguard as a software engineer I had the opportunity to partic
 
 For the third of Vanguard's internal hackathons, my team decided to create an interactive coding activity for Vanguard to host at an upcoming outreach event.  The annual event, [Girls Exploring Tommorrow's Technology](https://gettpa.org/){target=_blank}, regularly brings several hundred middle-school aged girls from Southeastern Pennsylvania to meet women in STEM careers and to participate in hands-on activities.  
 
+# Project Goals  
 
+We aimed to create a programming activity which:
 
-Our hackathon team The goals of the activity were to:  
-    - give the students a chance to create their own LED circuits on breadboards  
-    - allow the students to program a robot without previous coding experience  
-    - engage the students in "Turtle-Talk", have them design an algorithm to navigate through a maze, then use a drag-and-drop IDE to implement the algorithm in a drag-and-drop coding language.    
-    - wireless communication with the robot
+- would be accessible to middle-school aged students  
+- would be accessible to students who did not have prior coding experience  
+- would engage the students in "Turtle-Talk"["Turtle-Talk"](#turtle-talk)
+- could be used via web browser without any additional set up
 
+# Turtle Talk  
 
+Papert used Turtle Graphics and Logo to teach programming and geometry. Instead of telling students how to do something, he encouraged them to engage in something called “Turtle-Talk” or to “Play-Turtle.” This was a method of thinking through the problem and creating a solution in a mechanical or algorithmic manner. The learner was asked to place themselves in the position of the turtle, and then to move about the space as they would like the turtle to move. As they did so, they would narrate what they were doing and then be able to translate this process into an algorithm.  
 
+For example, if a student wanted to the turtle to draw a circle, they might start by walking forward a bit, turning right a bit, walking forward some more, then turning, etc. They might then come to the conclusion that they would need to repeat this a number of times before the turtle came back to where it originally started.  
+
+Teaching students a mechanical-thinking style helps them to program and to recognize the difference between algorithmic and non-algorithmic approaches, and the learner is able to apply this method to other situations as needed. In addition, the use of Turtles and Playing-Turtle allows the learner to use their own sense and knowledge about their own body and to relate to the process of programming on a more personal level. This style of learning uses body syntonic reasoning (contrast to [ego syntonic reasoning](/research/2013-ego-syntonic-learning)).  
 
 <section>
   <figure>
@@ -173,9 +179,8 @@ Turtle Graphics
 Turtle Graphics could be thought of as a drawing library for Logo that allows for a particular learning paradigm which will be discussed later. Using Turtle Graphic commands, a robot (or a Turtle represented on a virtual canvas) can be moved around a plane. This turtle has a location, orientation, and other properties about its drawing pen which it drags around as it moves. These properties include line width, color, and whether the pen is is up off of the plane or drawing down on the plane/canvas.
 Seymour Papert
 Papert, a mathematician and computer scientist researcher and professor at MIT, was a strong proponent of the constructionist education style. In this style, learning is discovery based, and students are meant to explore and build on their own knowledge from knowledge they have gained previously. In 1980, he published the book Mindstorms: Children, Computers, and Powerful Ideas in which he describes his own views on computer science pedagogy and the use of Turtle Graphics with the computer language Logo.
-Turtle Talk Papert used Turtle Graphics and Logo to teach programming and geometry. Instead of telling students how to do something, he encouraged them to engage in something called “Turtle-Talk” or to
-16
-“Play-Turtle.” This was a method of thinking through the problem and creating a solution in a mechanical or algorithmic manner. The learner was asked to place themselves in the position of the turtle, and then to move about the space as they would like the turtle to move. As they did so, they would narrate what they were doing and then be able to translate this process into an algorithm.
+Turtle Talk 
+Papert used Turtle Graphics and Logo to teach programming and geometry. Instead of telling students how to do something, he encouraged them to engage in something called “Turtle-Talk” or to “Play-Turtle.” This was a method of thinking through the problem and creating a solution in a mechanical or algorithmic manner. The learner was asked to place themselves in the position of the turtle, and then to move about the space as they would like the turtle to move. As they did so, they would narrate what they were doing and then be able to translate this process into an algorithm.
 For example, if a student wanted to the turtle to draw a circle, they might start by walking forward a bit, turning right a bit, walking forward some more, then turning, etc. They might then come to the conclusion that they would need to repeat this a number of times before the turtle came back to where it originally started.
 Teaching students a mechanical-thinking style helps them to program and to recognize the difference between algorithmic and non-algorithmic approaches, and the learner is able to apply this method to other situations as needed. In addition, the use of Turtles and Playing-Turtle allows the learner to use their own sense and knowledge about their own body and to relate to the process of programming on a more personal level. This style of learning uses body syntonic reasoning. From Mindstorms pg 27-28 “Even the simplest Turtle work can open new opportunities for sharpening one’s thinking about thinking: Programming the Turtle starts by making one reflect on how one does one-self what one would like the Turtle to do. Thus teaching the Turtle to act or to ‘think’ can lead one to reflect on one’s own actions and thinking.” For Papert, thinking about how we think is just as important as the thinking itself.
 From Mindstorms pg 113 “People are capable of learning like rats in mazes. But the process is slow and primitive. We can learn more, and more quickly, by taking conscious control of the learning process, articulating and analyzing our behavior.”
