@@ -1,6 +1,9 @@
 
 # LED Skating Vest
-October 2019 - November 2019
+October 2019 - November 2019 (on hiatus)
+
+A continuation of my [previous](/electronics/led-backpack) nighttime visibility project.
+
 
 # LED Animations
 
