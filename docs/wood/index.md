@@ -1,6 +1,22 @@
 ---
 hide:
   - git_revision_date
+# tile_cards:
+#   - card_title: Cabinet
+#     img_src: /img/cabinet/cabinet_painted.jpeg
+#     index_url: ./wood/cabinet
+#     img_title: ''
+#     img_alt: ''
+#   - card_title: Chest
+#     img_src: /img/chest/complete.jpeg
+#     index_url: ./wood/chest
+#     img_title: ''
+#     img_alt: ''
+#   - card_title: Cutting Boards
+#     img_src: /img/cutting-boards/cutting_boards.jpeg
+#     index_url: ./wood/cutting-boards
+#     img_title: ''
+#     img_alt: ''
 ---
 
 In 2016 I read two books that sparked a lot of excitement in me for small scale shelters.  Both *Nanotecture*<sup>[2](./#references)</sup> and *Microshelters*<sup>[1](./#references)</sup> are surveys of small structures created by various architects, designers, and artists.  Some of the included works are meant to function as full-time living spaces, while others are more sculptural.  
@@ -76,7 +92,5 @@ The idea of building spaces of my own stuck with me.  I figured the first step t
 [2] Roke, Rebecca. *Nanotecture: Tiny Built Things*. London, England: Phaidon Press, 2016. Print.
 
 [3] Sørvin, Ion, et al.  "WALKING HOUSE."  *n55.dk*, 28 Oct. 2008, [http://www.n55.dk/MANUALS/WALKINGHOUSE/walkinghouse.html](http://www.n55.dk/MANUALS/WALKINGHOUSE/walkinghouse.html){target=_blank}.
-
-
 
 

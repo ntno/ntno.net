@@ -3,6 +3,7 @@
     {% if page and page.meta %}
         {% set show_index_cards = "true" if page.meta.index_cards %}
         {% set show_img_cards = "true" if page.meta.img_cards %}
+        {% set show_tile_cards = "true" if page.meta.tile_cards %}
         {% if page.meta.hide %}
             {% set hide_git_revision_date = "true" if "git_revision_date" in page.meta.hide %}
         {% endif %}
@@ -10,6 +11,7 @@
 
     {% if show_index_cards %}{% include "index-cards.html" %}{% endif %}
     {% if show_img_cards %}{% include "img-cards.html" %}{% endif %}
+    {% if show_tile_cards %}{% include "linked-tiles.html" %}{% endif %}
 
     {% if not hide_git_revision_date %}
     {% include "revision.html" %}
