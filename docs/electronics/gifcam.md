@@ -25,6 +25,8 @@ img_cards:
     img_title: ''
     img_alt: 'detail of PowerBoost with annotations indicating which wires connect to the power switch, Pi Zero, and battery'
 ---
+# gifcam
+Summer 2019
 
 <section>
   <figure>
@@ -46,6 +48,8 @@ img_cards:
 - experiment with Amazon's IOT services
 
 # Custom Software  
+
+source code available on github: [ntno/gifcam](https://github.com/ntno/gifcam){target=_blank}
 
 - MQTT 
 - Amazon S3 secured by pre-signed links

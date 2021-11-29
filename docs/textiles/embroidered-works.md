@@ -16,6 +16,7 @@ img_cards:
 ---
 
 ## lady liberty
+November 2020
 
 <section>
   <figure>
@@ -33,6 +34,7 @@ img_cards:
 <br>
 
 ## tzedek tzedek
+June 2020
 
 <section>
   <figure>

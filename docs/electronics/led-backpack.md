@@ -1,16 +1,58 @@
-##
-##
+---
+img_cards: 
+  - img_src: /img/led-biking-backpack/led-layout-brainstorm.png
+    img_caption: 'Figure 8, <i>Misc. Project Notes</i>, pages 82, 83.'
+    img_title: ''
+    img_alt: ''
+  - img_src: /img/led-biking-backpack/led-layout.png
+    img_caption: 'final NeoPixel layout (detail)'
+    img_title: ''
+    img_alt: ''
+  - img_src: /img/led-biking-backpack/switch_flora_power.jpg
+    img_caption: 'weather-proof enclosure for FLORA and power.  power switch and data lines exit the enclosure through hole drilled in side'
+    img_title: ''
+    img_alt: ''
+  - img_src: /img/led-biking-backpack/rf_module.jpg
+    img_caption: 'RF receiver module for swapping LED animations via clicker'
+    img_title: ''
+    img_alt: ''
+  - img_src: /img/led-biking-backpack/lights.jpeg
+    img_caption: 'NeoPixels installed in backpack lining (see Figure 10 for details)'
+    img_title: ''
+    img_alt: ''
 
-# Version 1
+---
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/MGH-tQvNgmE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+# LED Brake Light Biking Backpack
+May 2018 - October 2018
 
-# Reflection on Version 1 
+My goals for this project were to create a backpack with installed LEDs for nighttime visibility and dayttime aesthetics.  The intention was to pre-program the individually addressable LEDs with various traffic signal animations (left turn, right turn, brake, etc.).  These animations could then be triggered via radio controller or accelerometer.  
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/x3G2lGEFHbc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Unfortunately, the NeoPixel installation proved to be extremely unstable (see [Construction Challenges](#construction-challenges)).  The data and power connections between NeoPixels quickly deteriorated after a few weeks of using the backpack for everyday storage.  
 
-### Transcript
-*Note: Filler words removed removed for clarity*
+I decided to retire this project early and revisit my visibility and aesthetic objectives in a [Skating Vest](/electronics/led-vest) in 2019.
+
+
+<section>
+  <figure>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/MGH-tQvNgmE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <figcaption>Figure 9, Completed Backpack</figcaption>
+  </figure>
+</section>
+<br>
+
+# Construction Challenges 
+
+<section>
+  <figure>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/x3G2lGEFHbc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <figcaption>Figure 10, Project Reflection</figcaption>
+  </figure>
+</section>
+<br>
+
+**Transcript**  
+*Note: Filler words removed removed for clarity*  
 
 `[00:05]` Hi everyone, this is Natan and I have an update on the backpack project. So what I have done is I took out all of the components and I'm just trying to figure out exactly what is the problem here. 
 
@@ -33,3 +75,13 @@
 `[03:27]` So you can see that these are 3-dimensional little knobs. So you have to sew them so that they're being pulled against the face of the backpack, otherwise they will just fall in and they won't stick out any more.  They'll fall into the bag and you won't be able to see them. 
 
 `[03:49]` So that's the update.  Really fun project.  Gonna keep going.  I just might not install the lights directly into the back next time. Maybe on the outside, something that you clip on.  So thanks for watching. Have a good one, guys!  Bye.
+
+# Acknowledgements
+
+Project inspired by Becky Stern's Brake Light Backpack<sup>[1](./#references)</sup>.  Many thanks to Becky for her excellent build guide.
+
+# References
+
+[1] Becky Stern.  "Flora Brake Light Backpack"  *learn.adafruit.com*, 13 Feb. 2013, [https://learn.adafruit.com/flora-brakelight-backpack](https://learn.adafruit.com/flora-brakelight-backpack){target=_blank}.
+
+# Process Photos
