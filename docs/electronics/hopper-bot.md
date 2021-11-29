@@ -136,7 +136,7 @@ The second major change was to update the CSS-based drag-and-drop web page to in
 
 We hosted the new client application on [Heroku](https://www.heroku.com/nodejs){target=_blank} which improved uptime and further decoupled the client application from the robot.  
 
-In addition to helping implement the new Blockly code blocks, my Vanguard colleagues [Rebecca T.](https://www.linkedin.com/in/rebecca-thayil/){target=_blank, title="Rebecca's linkedin, full name omitted in webpage text by request"} and [Terry T.](https://www.linkedin.com/in/terry-m-tan/){target=_blank, title="Terry's linkedin"} upgraded the robot's circuitry to allow for an additional set of wheels which improved stability and enabled additional programming options.  They also created a build guide for students to follow in case they were interested in making their own robot.  
+In addition to helping implement the new Blockly code blocks, my Vanguard colleagues [Rebecca T.](https://www.linkedin.com/in/rebecca-thayil/){target=_blank, title="Rebecca's linkedin, full name omitted in webpage text by request"} and [Terry Tan](https://www.linkedin.com/in/terry-m-tan/){target=_blank, title="Terry's linkedin"} upgraded the robot's circuitry to allow for an additional set of wheels which improved stability and enabled additional programming options.  They also created a build guide for students to follow in case they were interested in making their own robot.  
 
 We brought the updated HopperBot and web app to GETT in 2018 and 2019.  The activity was well received and Rebecca and Terry went on to present this work in a lightning talk at the 2019 Grace Hopper Celebration.  
 
