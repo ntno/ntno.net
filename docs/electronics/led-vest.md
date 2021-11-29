@@ -4,6 +4,8 @@ October 2019 - November 2019
 
 # LED Animations
 
+source code available on github: [ntno/pixel-vest](https://github.com/ntno/pixel-vest){target=_blank}
+
 <section>
   <figure>
     <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/g_fjUOFRiiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -23,14 +25,14 @@ October 2019 - November 2019
 
 <section>
   <figure>
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gwL1hakC6KE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    <figcaption>metal prong snaps soldered to back of FLORA, metal socket snaps sewn to vest (not pictured)</figcaption>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gwL1hakC6KE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    <figcaption>metal prong snaps soldered to back of Circuit Playground Express board, metal socket snaps sewn to vest (not pictured)</figcaption>
   </figure>
 </section>
 <br>
 <section>
   <figure>
     <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/98F9__2k-9Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <figcaption>LED power, ground, and data lines connect to FLORA via conductive thread.  thread is attached to metal socket snaps on vest</figcaption>
+    <figcaption>LED power, ground, and data lines connect to Circuit Playground Express board via conductive thread.  thread is attached to metal socket snaps on vest</figcaption>
   </figure>
 </section>
 <br>
