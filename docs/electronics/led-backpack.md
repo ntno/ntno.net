@@ -1,5 +1,5 @@
-##
-##
+# LED Brake Light Backpack
+May 2018 - October 2018
 
 # Version 1
 
@@ -8,6 +8,7 @@
 # Reflection on Version 1 
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/x3G2lGEFHbc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
 
 ### Transcript
 *Note: Filler words removed removed for clarity*
@@ -33,3 +34,8 @@
 `[03:27]` So you can see that these are 3-dimensional little knobs. So you have to sew them so that they're being pulled against the face of the backpack, otherwise they will just fall in and they won't stick out any more.  They'll fall into the bag and you won't be able to see them. 
 
 `[03:49]` So that's the update.  Really fun project.  Gonna keep going.  I just might not install the lights directly into the back next time. Maybe on the outside, something that you clip on.  So thanks for watching. Have a good one, guys!  Bye.
+
+
+# References
+
+[1] Becky Stern.  "Flora Brake Light Backpack"  *learn.adafruit.com*, 13 Feb. 2013, [https://learn.adafruit.com/flora-brakelight-backpack](https://learn.adafruit.com/flora-brakelight-backpack){target=_blank}.
