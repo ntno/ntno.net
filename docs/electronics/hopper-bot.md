@@ -130,7 +130,8 @@ It was really excting to be able to complete the hackathon with a working protot
       alt="four wheeled robot with breadboard, Raspberry Pi in enclosure, and orderly wires on top"
       title=""
     />
-    <figcaption>HopperBot - Improved Hardware (case, onboard power supply, 4 wheels for increased stability and programming options)</figcaption>
+    <figcaption>2018 HopperBot with Improved Hardware (case, onboard power supply, 4 wheels for increased stability and versatility)</figcaption>
+    <!-- also googly eyes which are very important -->
   </figure>
 </section>
 <br>
