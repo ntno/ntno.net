@@ -17,11 +17,19 @@ img_cards:
     img_title: ''
     img_alt: ''
   - img_src: /img/umbrella/zipper_pannel_test_fit.jpeg
-    img_caption: 'cut rectangle of similar colored umbrella to reinforce zipper<sup>1</sup>'
+    img_caption: 'cut rectangle of similar colored umbrella to reinforce zipper<sup><a href="#references">1</a></sup>'
+    img_title: ''
+    img_alt: ''
+  - img_src: /img/umbrella/zipper_interior_closeup.jpeg
+    img_caption: 'installed zipper (interior)'
+    img_title: ''
+    img_alt: ''
+  - img_src: /img/umbrella/zipper_closeup.jpeg
+    img_caption: 'installed zipper.  originally intended as an invisible closure but had to be expanded for better fit.'
     img_title: ''
     img_alt: ''
   - img_src: /img/umbrella/interface_substitute.jpeg
-    img_caption: 'create a wide strip to use as waistband (color to match final band).  create a long, thick band of scrap umbrella to give the waistband structure<sup>2</sup> (any color).'
+    img_caption: 'create a wide strip to use as waistband (color to match final band).  create a long, thick band of scrap umbrella to give the waistband structure<sup><a href="#references">2</a></sup> (any color).'
     img_title: ''
     img_alt: ''
   - img_src: /img/umbrella/attach_structure_to_larger_waistband.jpeg
@@ -40,6 +48,10 @@ img_cards:
     img_caption: 'topstitch waistband.  remove basting stitches'
     img_title: ''
     img_alt: ''
+  - img_src: /img/umbrella/waistband_detail.jpeg
+    img_caption: 'fold waistband over interface substitute and topstitch again'
+    img_title: ''
+    img_alt: ''
 
 
 ---
@@ -47,8 +59,28 @@ img_cards:
 
 # pride 2020 
 
-umbrella skirt
-
+<section>
+  <figure>
+    <img
+      src="/img/umbrella/front.jpeg"
+      alt="multi-paneled skirt from umbrella canopy"
+      title=""
+    />
+    <figcaption>2020 pride celebration skirt, upcycled from umbrella canopy</figcaption>
+  </figure>
+</section>
+<br>
+<br>
+<section>
+  <figure>
+    <img
+      src="/img/umbrella/back.jpeg"
+      alt="multi-paneled skirt from umbrella canopy"
+      title=""
+    />
+    <figcaption>2020 pride skirt (reverse)</figcaption>
+  </figure>
+</section>
 
 # References
 
@@ -58,6 +90,6 @@ umbrella skirt
 
 
 
-# Progress Photos
+# Process Photos
 
 
