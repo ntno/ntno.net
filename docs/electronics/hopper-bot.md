@@ -4,15 +4,17 @@
 **HopperBot**  
 2017 - 2019  
 
-While working at Vanguard as a software engineer I had the opportunity to participate in several internal hackathons.  One of these hackathons grew into a long running project which I continued volunteering on until I moved jobs in 2019.    
+While working at Vanguard as a software engineer I had the opportunity to participate in several internal hackathons.  One of these hackathons grew into a long running project which I continued volunteering on until I moved jobs in 2019.  
 
-For the third of Vanguard's internal hackathons, my team decided to create an interactive coding activity for Vanguard to host at an upcoming outreach event.  The annual event, [Girls Exploring Tommorrow's Technology](https://gettpa.org/){target=_blank}, regularly brings several hundred middle-school aged girls from Southeastern Pennsylvania to meet women in STEM careers and to participate in hands-on activities. 
+For the third of Vanguard's internal hackathons, my team decided to create an interactive coding activity for Vanguard to host at an upcoming outreach event.  The annual event, [Girls Exploring Tommorrow's Technology](https://gettpa.org/){target=_blank}, regularly brings several hundred middle-school aged girls from Southeastern Pennsylvania to meet women in STEM careers and to participate in hands-on activities.  
+
+
 
 Our hackathon team The goals of the activity were to:  
 - give the students a chance to create their own LED circuits on breadboards  
 - allow the students to program a robot without previous coding experience  
 - engage the students in "Turtle-Talk", have them design an algorithm to navigate through a maze, then use a drag-and-drop IDE to implement the algorithm in a drag-and-drop coding language.    
-
+- wireless communication with the robot
 
 
 
@@ -34,6 +36,9 @@ Our hackathon team The goals of the activity were to:
 # Project History
 
 ## 2017
+
+During the hackathon we split up the big tasks among our four-person team in order to work as efficiently as possible with our limited time.  Two members designed and built the robot, a third created a webpage with a drag-and-drop interface to simulate our eventual coding environment, and I worked on the robot controller and connecting the various components.  
+
 <section>
   <figure>
     <a target="_blank" href="/img/hopperbot/2017/architecture.jpeg">
@@ -43,11 +48,30 @@ Our hackathon team The goals of the activity were to:
       title="view diagram in new tab"
     />
     </a>
-    <figcaption>c Architecture</figcaption>
+    <figcaption>Figure 4, 2017 Hackathon Architecture</figcaption>
   </figure>
 </section>
 <br>
-[ngrok](https://ngrok.com/product){target=_blank}
+
+I came up with the following solution which is illustrated in Figure 4:
+
+- a [flask application](https://flask.palletsprojects.com/en/2.0.x/){target=_blank, title="flask is a Python webapp framework"} runs on the RaspberryPi at `localhost:5000` 
+    * the app has API routes for each of the robot's pre-defined actions (`/forward`, `/reverse`, etc.)
+    * when a request is made to a route, the app turns on or off the appropriate GPIO pins
+- a [ngrok](https://ngrok.com/product){target=_blank, title="ngrok is tool used to expose a locally running server to the public internet"} tunnel process makes the flask application publically available at a random address (represented by **NGROK-XYZ** in Figure 4)
+- the drag-and-drop web application is served on the RaspberryPi at `localhost:8000` using Python's simple HTTP server module
+- a second ngrok tunnel process makes the client web application publically available at another random address (ex: **NGROK-ABC**)
+
+
+User flow:  
+When a user requests the drag-and-drop webpage at **NGROK-ABC** from their mobile device, ngrok passes the request to the Python HTTP server via its tunnel process.  The javascript and html is returned to the user's web browser and rendered.  The user can then move action blocks into and out of the sandbox area (see Figure 5).  Once a user releases an action block inside the sandbox area, the page makes an ajax request to the associated route at **NGROK-XYZ**.  The REST request is relayed via ngrok to the flask application running on the RaspberryPi and the robot executes the requested action.
+
+
+**Note:**
+This design worked 
+- once the tunnel is running and the flask application's public address has been generated, the drag-and-drop webpage can be updated so that when an action block is dropped, the javascript makes a GET request to the action route at 
+
+
 
 <section>
   <figure>
@@ -56,7 +80,7 @@ Our hackathon team The goals of the activity were to:
       alt="two wheeled robot with breadboard, Raspberry Pi, and assorted wires on top"
       title=""
     />
-    <figcaption>proof of concept robot built during two-day hackathon at Vanguard</figcaption>
+    <figcaption>2017 Hackathon Robot (Hopper Senior)</figcaption>
   </figure>
 </section>
 <br>
@@ -81,7 +105,7 @@ Our hackathon team The goals of the activity were to:
 <section>
   <figure>
     <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/q_sTnm1BBU8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <figcaption>2017 Hackathon Drag-And-Drop Interface</figcaption>
+    <figcaption>Figure 5, 2017 Hackathon Drag-And-Drop Interface</figcaption>
   </figure>
 </section>
 <br>
