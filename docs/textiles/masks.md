@@ -36,12 +36,7 @@ img_cards:
     img_alt: close up of completed masks
 ---
 
-# Covid-19 Masks
-
+# Covid-19 Masks  
 April 2020
 
-
-
-
-
-# Progress Photos
+# Process Photos

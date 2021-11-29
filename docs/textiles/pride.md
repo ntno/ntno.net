@@ -57,7 +57,8 @@ img_cards:
 ---
 
 
-# pride 2020 
+# pride celebration skirt
+May 2020  
 
 <section>
   <figure>
