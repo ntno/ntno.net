@@ -30,7 +30,7 @@ My goals for this project were to create a backpack with installed LEDs for nigh
 
 Unfortunately, the NeoPixel installation proved to be extremely unstable (see [Construction Challenges](#construction-challenges)).  The data and power connections between NeoPixels quickly deteriorated after a few weeks of using the backpack for everyday storage.  
 
-I decided to retire this project early and revisit visibility and aesthetic objectives in a [Skating Vest](/electronics/led-vest) in 2019.
+I decided to retire this project early and revisit my visibility and aesthetic objectives in a [Skating Vest](/electronics/led-vest) in 2019.
 
 
 <section>
