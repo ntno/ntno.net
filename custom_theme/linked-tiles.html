@@ -10,11 +10,24 @@
         minmax(calc(var(--page-width) / 6), 1fr)
       );
     }
+    .image-container {
+        height: 200px;
+        position: relative;
+        border: none !important;
+    }
+
+    .vertical-center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
 </style>
 <div class="image-grid">
     {%- for card in page.meta.tile_cards %}
-    <div class="terminal-card" style="border: none !important;">
-        <figure>
+    <div class="terminal-card image-container">
+        <figure class="vertical-center">
             <a href="{{ card.index_url | url}}">
                 <img src="{{ card.img_src }}" 
                     alt="{{ card.img_alt }}" 
