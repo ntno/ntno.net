@@ -1,16 +1,26 @@
 # LED Brake Light Backpack
 May 2018 - October 2018
 
-# Version 1
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/MGH-tQvNgmE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-# Reflection on Version 1 
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/x3G2lGEFHbc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<section>
+  <figure>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/MGH-tQvNgmE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <figcaption>Completed Backpack</figcaption>
+  </figure>
+</section>
 <br>
 
-### Transcript
+# 2019 Reflection 
+
+<section>
+  <figure>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/x3G2lGEFHbc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <figcaption>Discussion on Construction Challenges</figcaption>
+  </figure>
+</section>
+<br>
+
+#### Transcript
 *Note: Filler words removed removed for clarity*
 
 `[00:05]` Hi everyone, this is Natan and I have an update on the backpack project. So what I have done is I took out all of the components and I'm just trying to figure out exactly what is the problem here. 

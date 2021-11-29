@@ -49,6 +49,8 @@ Summer 2019
 
 # Custom Software  
 
+source code available on github: [ntno/gifcam](https://github.com/ntno/gifcam){target=_blank}
+
 - MQTT 
 - Amazon S3 secured by pre-signed links
 - Images converted to GIF in Lambda
