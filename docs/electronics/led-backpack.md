@@ -1,3 +1,28 @@
+---
+img_cards: 
+  - img_src: /img/led-biking-backpack/led-layout-brainstorm.png
+    img_caption: 'Figure 8, <i>Misc. Project Notes</i>, pages 82, 83.'
+    img_title: ''
+    img_alt: ''
+  - img_src: /img/led-biking-backpack/led-layout.png
+    img_caption: 'NeoPixel layout (detail)'
+    img_title: ''
+    img_alt: ''
+  - img_src: /img/led-biking-backpack/switch_flora_power.jpg
+    img_caption: 'weather-proof enclosure for FLORA and power.  power switch and data lines exit through hole drilled in side'
+    img_title: ''
+    img_alt: ''
+  - img_src: /img/led-biking-backpack/rf_module.jpg
+    img_caption: 'RF receiver module for swapping LED animations via clicker'
+    img_title: ''
+    img_alt: ''
+  - img_src: /img/led-biking-backpack/lights.jpeg
+    img_caption: 'NeoPixel lights installed in backpack lining (see Figure 9 for details)'
+    img_title: ''
+    img_alt: ''
+
+---
+
 # LED Brake Light Backpack
 May 2018 - October 2018
 
@@ -15,7 +40,7 @@ May 2018 - October 2018
 <section>
   <figure>
     <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/x3G2lGEFHbc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <figcaption>Discussion on Construction Challenges</figcaption>
+    <figcaption>Figure 9, Discussion on Construction Challenges</figcaption>
   </figure>
 </section>
 <br>
@@ -45,7 +70,12 @@ May 2018 - October 2018
 
 `[03:49]` So that's the update.  Really fun project.  Gonna keep going.  I just might not install the lights directly into the back next time. Maybe on the outside, something that you clip on.  So thanks for watching. Have a good one, guys!  Bye.
 
+# Acknowledgements
+
+Project inspired by Becky Stern's Brake Light Backpack<sup>[1](./#references)</sup>.  Many thanks to Becky for her excellent build guide.
 
 # References
 
 [1] Becky Stern.  "Flora Brake Light Backpack"  *learn.adafruit.com*, 13 Feb. 2013, [https://learn.adafruit.com/flora-brakelight-backpack](https://learn.adafruit.com/flora-brakelight-backpack){target=_blank}.
+
+# Process Photos
