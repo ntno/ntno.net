@@ -11,10 +11,10 @@ For the third of Vanguard's internal hackathons, my team decided to create an in
 
 
 Our hackathon team The goals of the activity were to:  
-- give the students a chance to create their own LED circuits on breadboards  
-- allow the students to program a robot without previous coding experience  
-- engage the students in "Turtle-Talk", have them design an algorithm to navigate through a maze, then use a drag-and-drop IDE to implement the algorithm in a drag-and-drop coding language.    
-- wireless communication with the robot
+    - give the students a chance to create their own LED circuits on breadboards  
+    - allow the students to program a robot without previous coding experience  
+    - engage the students in "Turtle-Talk", have them design an algorithm to navigate through a maze, then use a drag-and-drop IDE to implement the algorithm in a drag-and-drop coding language.    
+    - wireless communication with the robot
 
 
 
@@ -110,6 +110,8 @@ In order create an activity where students could think through creating an algor
 
 ## 2018  
 
+In 2018 I made several major updates to the design (see Figure 6).  The first was to decouple the robot controller from the client web app.  Instead of having the client web app make requests directly to the robot controller (via ngrok tunnel), I updated both components to communicate via a publish-subscribe model, using the cloud service [pubnub](https://www.pubnub.com/developers/){target=_blank, title="pubnub provides tools for real-time messaging"}.  The robot controller subscribed to a private "commands" channel which the client web app published to on submit.  Whenever the robot controller received a message on this channel, it extracted the included Python program, wrote the program to the file system, and executed the program.  
+
 <section>
   <figure>
     <a target="_blank" href="/img/hopperbot/2018/architecture.jpeg">
@@ -119,16 +121,26 @@ In order create an activity where students could think through creating an algor
       title="view diagram in new tab"
     />
     </a>
-    <figcaption>2018 - 2019 GETT Activity Architecture</figcaption>
+    <figcaption>Figure 6, 2018 - 2019 GETT Activity Architecture</figcaption>
   </figure>
 </section>
+<br>
+The second major change was to update the CSS-based drag-and-drop web page to instead use Google's [Blockly](https://developers.google.com/blockly/guides/overview){target=_blank, title="Blockly is a library that adds a visual code editor to web and mobile apps"} visual coding library.  Blockly allowed us to define code blocks for the HopperBot context at multiple abstraction levels (full robot control, individual motor control, GPIO pin control).  It also allowed us to easily create a user friendly programming environment.  Users could pick code blocks from folders on the left, drag them into the workspace at the center, and see the equivalent Python code at the right (see Figure 7).
 <br>
 <section>
   <figure>
     <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lWwFTDho-3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <figcaption>Figure 6, 2018 Blockly Interface</figcaption>
+    <figcaption>Figure 7, 2018 Blockly Interface</figcaption>
   </figure>
 </section>
+<br>
+
+We hosted the new client application on [Heroku](https://www.heroku.com/nodejs){target=_blank} which improved uptime and further decoupled the client application from the robot.  
+
+In addition to helping implement the new Blockly code blocks, my Vanguard colleagues [Rebecca T.](https://www.linkedin.com/in/rebecca-thayil/){target=_blank, title="Rebecca's linkedin, full name omitted in webpage text by request"} and [Terry T.](https://www.linkedin.com/in/terry-m-tan/){target=_blank, title="Terry's linkedin"} upgraded the robot's circuitry to allow for an additional set of wheels which improved stability and enabled additional programming options.  They also created a build guide for students to follow in case they were interested in making their own robot.  
+
+We brought the updated HopperBot and web app to GETT in 2018 and 2019.  The activity was well received and Rebecca and Terry went on to present this work in a lightning talk at the 2019 Grace Hopper Celebration.  
+
 <br>
 <section>
   <figure>
