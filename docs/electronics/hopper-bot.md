@@ -66,9 +66,9 @@ When a user requests the drag-and-drop webpage at **NGROK-ABC** from their mobil
 
 ### 2017 Reflection
 
-It was really excting to be able to complete the hackathon with a working prototype.  We achieved our goal of being able to have activity particpants interact with the robot using their personal devices.  We did not get to 
+It was really excting to be able to complete the hackathon with a working prototype.  We created a RaspberryPi controlled robot, and we achieved our goal of having particpants control the robot using their own personal devices.  
 
-
+In order create an activity where students could think through creating an algorithm and then express that algorithm as code, we needed a more sophisticated web application.  I continued this work in [2018](#2018) with the help of Google's [Blockly](https://developers.google.com/blockly/guides/overview){target=_blank, title="Blockly is a library that adds a visual code editor to web and mobile apps"} library.
 
 <section>
   <figure>
@@ -125,6 +125,13 @@ It was really excting to be able to complete the hackathon with a working protot
 <br>
 <section>
   <figure>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lWwFTDho-3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <figcaption>Figure 6, 2018 Blockly Interface</figcaption>
+  </figure>
+</section>
+<br>
+<section>
+  <figure>
     <img
       src="/img/hopperbot/2018/2018_bot.jpeg"
       alt="four wheeled robot with breadboard, Raspberry Pi in enclosure, and orderly wires on top"
@@ -132,16 +139,6 @@ It was really excting to be able to complete the hackathon with a working protot
     />
     <figcaption>2018 HopperBot with Improved Hardware (case, onboard power supply, 4 wheels for increased stability and versatility)</figcaption>
     <!-- also googly eyes which are very important -->
-  </figure>
-</section>
-<br>
-
-asldjfalsdj
-
-<section>
-  <figure>
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lWwFTDho-3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <figcaption>Figure 6, 2018 Blockly Interface</figcaption>
   </figure>
 </section>
 <br>
