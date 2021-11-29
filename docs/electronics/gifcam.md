@@ -25,6 +25,8 @@ img_cards:
     img_title: ''
     img_alt: 'detail of PowerBoost with annotations indicating which wires connect to the power switch, Pi Zero, and battery'
 ---
+# gifcam
+Summer 2019
 
 <section>
   <figure>

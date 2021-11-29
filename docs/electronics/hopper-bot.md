@@ -1,7 +1,7 @@
 ---
 ---
 
-**HopperBot**  
+# HopperBot   
 2017 - 2019  
 
 While working at Vanguard as a software engineer I had the opportunity to participate in several internal hackathons.  One of these hackathons grew into a long running project which I continued volunteering on until I moved jobs in 2019.  
