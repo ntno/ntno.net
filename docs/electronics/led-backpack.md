@@ -5,11 +5,11 @@ img_cards:
     img_title: ''
     img_alt: ''
   - img_src: /img/led-biking-backpack/led-layout.png
-    img_caption: 'NeoPixel layout (detail)'
+    img_caption: 'final NeoPixel layout (detail)'
     img_title: ''
     img_alt: ''
   - img_src: /img/led-biking-backpack/switch_flora_power.jpg
-    img_caption: 'weather-proof enclosure for FLORA and power.  power switch and data lines exit through hole drilled in side'
+    img_caption: 'weather-proof enclosure for FLORA and power.  power switch and data lines exit the enclosure through hole drilled in side'
     img_title: ''
     img_alt: ''
   - img_src: /img/led-biking-backpack/rf_module.jpg
@@ -17,36 +17,42 @@ img_cards:
     img_title: ''
     img_alt: ''
   - img_src: /img/led-biking-backpack/lights.jpeg
-    img_caption: 'NeoPixel lights installed in backpack lining (see Figure 9 for details)'
+    img_caption: 'NeoPixels installed in backpack lining (see Figure 10 for details)'
     img_title: ''
     img_alt: ''
 
 ---
 
-# LED Brake Light Backpack
+# LED Brake Light Biking Backpack
 May 2018 - October 2018
+
+My goals for this project were to create a backpack with installed LEDs for nighttime visibility and dayttime aesthetics.  The intention was to pre-program the individually addressable LEDs with various traffic signal animations (left turn, right turn, brake, etc.).  These animations could then be triggered via radio controller or accelerometer.  
+
+Unfortunately, the NeoPixel installation proved to be extremely unstable (see [Construction Challenges](#construction-challenges)).  The data and power connections between NeoPixels quickly deteriorated after a few weeks of using the backpack for everyday storage.  
+
+I decided to retire this project early and revisit visibility and aesthetic objectives in a [Skating Vest](/electronics/led-vest) in 2019.
 
 
 <section>
   <figure>
     <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/MGH-tQvNgmE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <figcaption>Completed Backpack</figcaption>
+    <figcaption>Figure 9, Completed Backpack</figcaption>
   </figure>
 </section>
 <br>
 
-# 2019 Reflection 
+# Construction Challenges 
 
 <section>
   <figure>
     <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/x3G2lGEFHbc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <figcaption>Figure 9, Discussion on Construction Challenges</figcaption>
+    <figcaption>Figure 10, Project Reflection</figcaption>
   </figure>
 </section>
 <br>
 
-#### Transcript
-*Note: Filler words removed removed for clarity*
+**Transcript**  
+*Note: Filler words removed removed for clarity*  
 
 `[00:05]` Hi everyone, this is Natan and I have an update on the backpack project. So what I have done is I took out all of the components and I'm just trying to figure out exactly what is the problem here. 
 
