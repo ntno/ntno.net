@@ -15,7 +15,10 @@ please see [project page](/electronics/gifcam) for details
 
 **docker containers** - [ntno/docker-containers](https://github.com/ntno/docker-containers){target=_blank}  
 
-Docker containers 
+[Docker containers](https://docs.docker.com/get-started/overview/){target=_blank} can be used to predefine a project's development environment, including all required developer tools.  With a properly defined container and a standardized Makefile, setting up a work environment becomes incredibly simple.  
+
+The above repository includes a few use case specific containers.  It also provides an example of how to verify that a container is defined correctly using the [goss](https://github.com/aelsabbahy/goss){target=_blank} testing framework.  
+
 
 <hr>
 
