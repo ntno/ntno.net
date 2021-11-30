@@ -6,18 +6,15 @@ hide:
 
 # open source projects
 
-**gifcam**  
-github repo: [ntno/gifcam](https://github.com/ntno/gifcam){target=_blank}  
-project page: [gifcam](/electronics/gifcam)  
+**gifcam** - [ntno/gifcam](https://github.com/ntno/gifcam){target=_blank}  
+please see [project page](/electronics/gifcam) for details  
 
-**docker containers**  
-github repo: [ntno/docker-containers](https://github.com/ntno/docker-containers)  {target=_blank}  
+**docker containers** - [ntno/docker-containers](https://github.com/ntno/docker-containers){target=_blank}  
 
-**mkdocs `terminal.css` theme**  
-github source: [ntno/ntno.net/custom_theme](https://github.com/ntno/ntno.net/tree/main/custom_theme){target=_blank, title="separate packaging to be made available shortly"}  
+**mkdocs `terminal.css` theme** - [ntno/ntno.net/custom_theme](https://github.com/ntno/ntno.net/tree/main/custom_theme){target=_blank, title="separate packaging to be made available shortly"}  
 
-**DnD cryptography puzzle**  
-github source: [ntno/vertical-script-puzzle](https://github.com/ntno/vertical-script-puzzle){target=_blank}  
+**DnD cryptography puzzle** - [ntno/vertical-script-puzzle](https://github.com/ntno/vertical-script-puzzle){target=_blank}  
+
 
 <!-- # closed source
 
