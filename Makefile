@@ -18,10 +18,13 @@ build:
 	@pip3 install -r requirements.txt && \
 	mkdocs build
 
+add-s3-404-page:
+	cp site/error/index.html site/error.html
+
 deploy-gh: update-robots build
 	mkdocs gh-deploy -v
 
-deploy-s3: update-robots build
+deploy-s3: update-robots build add-s3-404-page
 	cd site && \
 	aws s3 sync --size-only --sse AES256 . $(s3-url)
 
