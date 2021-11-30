@@ -45,27 +45,7 @@ Summer 2019
 
 - wireless camera to capture GIFs without the distraction of smart phone
 - automatic publishing from camera (no deliberation on photo, more like a Polaroid in that all images are 'printed')
-- experiment with Amazon's IOT services
-
-# Custom Software  
-
-source code available on github: [ntno/gifcam](https://github.com/ntno/gifcam){target=_blank}
-
-- gifcam connects to AWS IOT with approved private key
-- gifcam subscribes to the `presigned-url` AWS IOT topic
-- gifcam captures frames via picamera module
-- gifcam publishes request to the `request-url` AWS IOT topic over MQTT protocol
-- new `request-url` message triggers `generate-s3-url` Lambda 
-- `generate-s3-url` Lambda authorizes POST and DELETE to requested S3 object location
-- `generate-s3-url` Lambda publishes the pre-signed S3 URLs to the `presigned-url` AWS IOT topic
-- gifcam executes upload callback and posts frames to pre-signed URL over HTTPS
-- gifcam creates a DELETE marker to indicate that all frames have been uploaded
-- new DELETE marker in S3 bucket triggers `create-gif` Lambda
-- `create-gif` Lambda downloads frames from S3 and creates a GIF file using the GraphicsMagick library (requires custom Lambda layer)
-- `create-gif` Lambda uploads the GIF to S3
-- new `.gif` file in S3 bucket triggers `tweet-gifs` Lambda
-- `tweet-gifs` Lambda downloads the gif from S3 and publishes to Twitter 
-
+- experiment with Amazon's IoT services
 
 <br>
 <section>
@@ -80,7 +60,46 @@ source code available on github: [ntno/gifcam](https://github.com/ntno/gifcam){t
 </section>
 <br>
 
-# Materials  
+# Custom Software  
+
+source code available on github: [ntno/gifcam](https://github.com/ntno/gifcam){target=_blank}
+
+# Architecture
+
+<section>
+  <figure>
+    <a target="_blank" href="/img/gifcam/architecture.jpeg">
+    <img
+      src="/img/gifcam/architecture.jpeg"
+      alt="illustration demonstrating how gifcam creates and publishes gifs"
+      title="view diagram in new tab"
+    />
+    </a>
+    <figcaption>Figure 11, Gifcam Architecture
+      </ol>
+    </figcaption>
+  </figure>
+</section>
+<br>
+
+**Figure 11 Annotations**
+
+1. gifcam connects to AWS IoT with approved private key
+- gifcam subscribes to the `presigned-url` AWS IoT topic
+- gifcam captures frames via picamera module
+- gifcam publishes request to the `request-url` AWS IoT topic over MQTT protocol
+- new `request-url` message triggers `generate-s3-url` Lambda 
+- `generate-s3-url` Lambda authorizes POST and DELETE to requested S3 object location
+- `generate-s3-url` Lambda publishes the pre-signed S3 URLs to the `presigned-url` AWS IoT topic
+- gifcam executes upload callback and posts frames to pre-signed URL over HTTPS
+- gifcam creates a DELETE marker to indicate that all frames have been uploaded
+- new DELETE marker in S3 bucket triggers `create-gif` Lambda
+- `create-gif` Lambda downloads frames from S3
+- `create-gif` Lambda creates GIF file using the GraphicsMagick library (requires custom Lambda layer) and uploads to S3
+- new `.gif` file in S3 bucket triggers `tweet-gif` Lambda
+- `tweet-gif` Lambda downloads the gif from S3 and publishes to Twitter 
+
+# Hardware  
 
 - Raspberry Pi Zero W
 - Raspberry Pi Camera Module
