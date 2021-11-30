@@ -26,8 +26,3 @@ Docker containers
 <hr>
 
 **DnD cryptography puzzle** - [ntno/vertical-script-puzzle](https://github.com/ntno/vertical-script-puzzle){target=_blank}  
-
-
-<!-- # closed source
-
-please see project descriptions in latest [resume](/resume) -->
