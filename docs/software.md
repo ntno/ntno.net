@@ -1,6 +1,7 @@
 ---
 hide:
   - git_revision_date
+  - toc
 ---
 
 # open source projects
