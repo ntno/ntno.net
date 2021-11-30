@@ -1,9 +1,9 @@
 ---
 ---
   
-[View Full Resume](/img/Natan_Organick_01_2021.pdf){target=_blank}
+[View Full Resume](/img/Natan_Organick_03_2021.pdf){target=_blank}
 
-**DevOps Architect, Inferno Mfg. Corp.**  
+**DevOps Lead, Inferno Mfg. Corp.**  
 May 2021 - Present  
 Shreveport, LA (remote)  
 
@@ -28,5 +28,5 @@ August 2011 - May 2015
 Bryn Mawr, PA  
 
 **Teaching Assistant, Bryn Mawr College**  
-Fall 2012 - 2014  
+2012 - 2013  
 Bryn Mawr, PA  

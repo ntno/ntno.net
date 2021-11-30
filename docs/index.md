@@ -19,7 +19,7 @@ January 2012
     <img style="border: 1px solid #888888;"
       src="/img/bedroom_in_arles.png"
       alt="a digital reproduction of 'The Bedroom' by Vincent van Gogh"
-      title=""
+      title="Bedroom in Arles source code in p5.js editor"
     />
     </a>
     <figcaption>Natan Organick, <i>Bedroom in Arles</i>, 2012.</figcaption>

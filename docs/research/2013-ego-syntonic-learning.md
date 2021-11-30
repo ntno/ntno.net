@@ -1,12 +1,5 @@
 **Sprites for Ego Syntonic Learning in Computer Science Education**  
 Summer 2013  
-  
-  
-TODO -  
-1) discuss that this was for a undergraduate summer research program in 2013  
-2) had to be applied for  
-3) did research, added to application, created poster  
-<br>  
 
 # Project Proposal
 
@@ -21,7 +14,7 @@ I expect that this project will work to satisfy many of the goals of the Calico 
 
 <section>
   <figure>
-    <a target="_blank" href="/img/hopperbot/SpritesForEgoSyntonicLearning_Natan.pdf">
+    <a target="_blank" href="/img/hopperbot/SpritesForEgoSyntonicLearning_Natan.pdf" title="Computer Science Education through Games and Animations Poster">
     <img
       src="/img/hopperbot/SpritesForEgoSyntonicLearning_Natan.jpg"
       alt="Computer Science Education through Games and Animations Poster PDF"

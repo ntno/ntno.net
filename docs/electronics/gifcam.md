@@ -39,24 +39,22 @@ Summer 2019
   </figure>
 </section>
 
+# Project Goals
+
+- create a RaspberryPi camera that captures and publishes GIF animations to social media  
+- [improve on](#architecture-goals) Nick Brewer's existing gifcam software<sup>[2](./#references)</sup>  
+- explore AWS IoT service features  
 
 
-# Project Goals  
+<em>Note: hardware design by Nick Brewer<sup>[1](./#references)</sup></em>
 
-- wireless camera to capture GIFs without the distraction of smart phone
-- automatic publishing from camera (no deliberation on photo, more like a Polaroid in that all images are 'printed')
-- experiment with Amazon's IOT services
+# Architecture Goals
 
-# Custom Software  
+- verify IoT device connecting to cloud platform is authorized
+- do not store AWS access keys on the RaspberryPi 
+- do not store social media API keys on the RaspberryPi
+- speed up time between GIF captures by offloading GIF processing to cloud
 
-source code available on github: [ntno/gifcam](https://github.com/ntno/gifcam){target=_blank}
-
-- MQTT 
-- Amazon S3 secured by pre-signed links
-- Images converted to GIF in Lambda
-- Images posted to Twitter
-
-<br>
 <section>
   <figure>
     <img style="border: 1px solid #888888;"
@@ -69,7 +67,44 @@ source code available on github: [ntno/gifcam](https://github.com/ntno/gifcam){t
 </section>
 <br>
 
-# Materials  
+# Architecture
+
+source code available on github: [ntno/gifcam](https://github.com/ntno/gifcam){target=_blank}
+
+<section>
+  <figure>
+    <a target="_blank" href="/img/gifcam/architecture.jpeg">
+    <img
+      src="/img/gifcam/architecture.jpeg"
+      alt="illustration demonstrating how gifcam creates and publishes gifs"
+      title="view diagram in new tab"
+    />
+    </a>
+    <figcaption>Figure 11, Gifcam Architecture
+      </ol>
+    </figcaption>
+  </figure>
+</section>
+<br>
+
+**Figure 11 Annotations**
+
+1. gifcam connects to AWS IoT with approved private key
+- gifcam subscribes to the `presigned-url` AWS IoT topic
+- gifcam captures frames via picamera module
+- gifcam publishes request to the `request-url` AWS IoT topic over MQTT protocol
+- new `request-url` message triggers `generate-s3-url` Lambda 
+- `generate-s3-url` Lambda authorizes POST and DELETE to requested S3 object location
+- `generate-s3-url` Lambda publishes the pre-signed S3 URLs to the `presigned-url` AWS IoT topic
+- gifcam executes upload callback and posts frames to pre-signed URL over HTTPS
+- gifcam creates a DELETE marker to indicate that all frames have been uploaded
+- new DELETE marker in S3 bucket triggers `create-gif` Lambda
+- `create-gif` Lambda downloads frames from S3
+- `create-gif` Lambda creates GIF file using the GraphicsMagick library (requires custom Lambda layer) and uploads to S3
+- new `.gif` file in S3 bucket triggers `tweet-gif` Lambda
+- `tweet-gif` Lambda downloads the gif from S3 and publishes to Twitter 
+
+# Hardware  
 
 - Raspberry Pi Zero W
 - Raspberry Pi Camera Module
@@ -86,6 +121,7 @@ Camera case and circuitry design based on Nick Brewer's PIX-E Gif Camera<sup>[1]
 
 [1] Brewer, Nick.  "PIX-E Gif Camera."  *hackaday.io*, 14 Oct. 2016, [https://hackaday.io/project/16358-pix-e-gif-camera](https://hackaday.io/project/16358-pix-e-gif-camera){target=_blank}.
 
+[2] Brewer, Nick.  "nickbrewer/gifcam."  *github.com*, 20 Apr. 2017, [https://github.com/nickbrewer/gifcam](https://github.com/nickbrewer/gifcam){target=_blank}.
 
 # Progress Photos  
 
