@@ -40,13 +40,6 @@ Summer 2019
 </section>
 
 
-# Project Goals
-
-- verify the correct IoT device is connecting to cloud platform (AWS in this case)
-- do not store AWS access keys on the RaspberryPi 
-- do not store social media API keys on the RaspberryPi
-- speed up time between GIF captures by offloading GIF processing to cloud
-
 <br>
 <section>
   <figure>
@@ -60,11 +53,17 @@ Summer 2019
 </section>
 <br>
 
-# Custom Software  
 
-source code available on github: [ntno/gifcam](https://github.com/ntno/gifcam){target=_blank}
+# Architecture Goals
+
+- verify IoT device connecting to cloud platform is permitted
+- do not store AWS access keys on the RaspberryPi 
+- do not store social media API keys on the RaspberryPi
+- speed up time between GIF captures by offloading GIF processing to cloud
 
 # Architecture
+
+source code available on github: [ntno/gifcam](https://github.com/ntno/gifcam){target=_blank}
 
 <section>
   <figure>
