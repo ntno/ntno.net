@@ -13,7 +13,7 @@ project page: [gifcam](/electronics/gifcam)
 **docker containers**  
 github repo: [ntno/docker-containers](https://github.com/ntno/docker-containers)  {target=_blank}  
 
-**mkdocs `terminalcss` theme**  
+**mkdocs `terminal.css` theme**  
 github source: [ntno/ntno.net/custom_theme](https://github.com/ntno/ntno.net/tree/main/custom_theme){target=_blank, title="separate packaging to be made available shortly"}  
 
 **DnD cryptography puzzle**  
