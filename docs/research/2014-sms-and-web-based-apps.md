@@ -1,10 +1,7 @@
 **Investigation into Integrated SMS and Web-based Apps**  
 Spring 2014
 
-TODO -  
-1) discuss that this was for CBL  
-2) did research that would give back in some way (tutorial)  
-<br>  
+I was awarded a Clare Boothe Luce Undergraduate Scholarship for my junior and senior years at Bryn Mawr College.  As part of this scholarship, I was asked to conduct independent research and share my findings with my peers in the Computer Science department.  
 
 # Project Goals
 The goal of this research project was to find a way to create web based applications which use text messaging to interact with clients.  With a text messaging based system, the application does not have to conform to any particular mobile operating system, clients do not have to download a mobile app, and they are able to use the app without a smartphone or a data plan.  
@@ -17,8 +14,6 @@ The procedure is as follows:
 2. Twilio makes an HTTP POST request to the Django powered web application  
 3. Web application generates a response message based on the contents of the client's text message (found inside the POST request)  
 4. Web application replies to client via the Twilio virtual phone number  
-
-
 
 In order to share the knowledge I have compiled during my research I have created a comprehensive tutorial on creating such an application, which can be found here: [https://bitbucket.org/norganick/clare-boothe-luce-research/wiki/Home](https://bitbucket.org/norganick/clare-boothe-luce-research/wiki/Home){target=_blank}  
 <br>  
