@@ -51,10 +51,21 @@ Summer 2019
 
 source code available on github: [ntno/gifcam](https://github.com/ntno/gifcam){target=_blank}
 
-- MQTT 
-- Amazon S3 secured by pre-signed links
-- Images converted to GIF in Lambda
-- Images posted to Twitter
+- gifcam connects to AWS IOT with approved private key
+- gifcam subscribes to the `presigned-url` AWS IOT topic
+- gifcam captures frames via picamera module
+- gifcam publishes request to the `request-url` AWS IOT topic over MQTT protocol
+- new `request-url` message triggers `generate-s3-url` Lambda 
+- `generate-s3-url` Lambda authorizes POST and DELETE to requested S3 object location
+- `generate-s3-url` Lambda publishes the pre-signed S3 URLs to the `presigned-url` AWS IOT topic
+- gifcam executes upload callback and posts frames to pre-signed URL over HTTPS
+- gifcam creates a DELETE marker to indicate that all frames have been uploaded
+- new DELETE marker in S3 bucket triggers `create-gif` Lambda
+- `create-gif` Lambda downloads frames from S3 and creates a GIF file using the GraphicsMagick library (requires custom Lambda layer)
+- `create-gif` Lambda uploads the GIF to S3
+- new `.gif` file in S3 bucket triggers `tweet-gifs` Lambda
+- `tweet-gifs` Lambda downloads the gif from S3 and publishes to Twitter 
+
 
 <br>
 <section>
