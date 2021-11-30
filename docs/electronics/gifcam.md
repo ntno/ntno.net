@@ -39,8 +39,22 @@ Summer 2019
   </figure>
 </section>
 
+# Project Goals
 
-<br>
+- create a RaspberryPi camera that captures and publishes GIF animations to social media  
+- [improve on](#architecture-goals) Nick Brewer's existing gifcam software<sup>[2](./#references)</sup>  
+- explore AWS IoT service features  
+
+
+<em>Note: hardware design by Nick Brewer<sup>[1](./#references)</sup></em>
+
+# Architecture Goals
+
+- verify IoT device connecting to cloud platform is authorized
+- do not store AWS access keys on the RaspberryPi 
+- do not store social media API keys on the RaspberryPi
+- speed up time between GIF captures by offloading GIF processing to cloud
+
 <section>
   <figure>
     <img style="border: 1px solid #888888;"
@@ -52,14 +66,6 @@ Summer 2019
   </figure>
 </section>
 <br>
-
-
-# Architecture Goals
-
-- verify IoT device connecting to cloud platform is permitted
-- do not store AWS access keys on the RaspberryPi 
-- do not store social media API keys on the RaspberryPi
-- speed up time between GIF captures by offloading GIF processing to cloud
 
 # Architecture
 
@@ -115,6 +121,7 @@ Camera case and circuitry design based on Nick Brewer's PIX-E Gif Camera<sup>[1]
 
 [1] Brewer, Nick.  "PIX-E Gif Camera."  *hackaday.io*, 14 Oct. 2016, [https://hackaday.io/project/16358-pix-e-gif-camera](https://hackaday.io/project/16358-pix-e-gif-camera){target=_blank}.
 
+[2] Brewer, Nick.  "nickbrewer/gifcam."  *github.com*, 20 Apr. 2017, [https://github.com/nickbrewer/gifcam](https://github.com/nickbrewer/gifcam){target=_blank}.
 
 # Progress Photos  
 
