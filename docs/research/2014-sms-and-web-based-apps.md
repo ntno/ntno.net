@@ -56,9 +56,9 @@ NOTE: The NextBlueBus app was retired September 10, 2014.  The above instruction
 ### Project History
 This research project was inspired by work done during the 2014 Tri-Co Hackathon by the NextNextBlueBus team:  
 
-- Rachel Li  		BMC '14  
-- Yijun Zhou		BMC '15  
-- Natan Organick	BMC '15  
+- Rachel Li, BMC '14  
+- Yijun Zhou, BMC '15  
+- Natan Organick, BMC '15  
 
 The NextBlueBus app created as part of this research project is not directly connected to Angie Chen's (BMC '16) Android application, which you can find [here](https://play.google.com/store/apps/details?id=com.aychen0110){target=_blank}.  
 <br>  
