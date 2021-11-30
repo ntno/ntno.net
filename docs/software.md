@@ -3,7 +3,7 @@ hide:
   - git_revision_date
 ---
 
-# open source
+# open source projects
 
 **gifcam**  
 github repo: [ntno/gifcam](https://github.com/ntno/gifcam){target=_blank}  
