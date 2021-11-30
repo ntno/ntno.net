@@ -40,12 +40,12 @@ Summer 2019
 </section>
 
 
+# Project Goals
 
-# Project Goals  
-
-- wireless camera to capture GIFs without the distraction of smart phone
-- automatic publishing from camera (no deliberation on photo, more like a Polaroid in that all images are 'printed')
-- experiment with Amazon's IoT services
+- verify the correct IoT device is connecting to cloud platform (AWS in this case)
+- do not store AWS access keys on the RaspberryPi 
+- do not store social media API keys on the RaspberryPi
+- speed up time between GIF captures by offloading GIF processing to cloud
 
 <br>
 <section>
