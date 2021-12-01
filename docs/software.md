@@ -29,7 +29,7 @@ The above repository includes a few use case specific containers.  It also provi
 
 I created 'vertical-script' as a fun way to encode secret messages.  It is a constructed script for English and is written top-down, with letters within words connected by a vertical line.  
 
-I used this script to encode fictional correspondance between the antagonists in DnD 5th edition's starter adventure.  The messages can be fully decoded by comparing common symbol features and English's letter frequency (see Figure 12).  
+I used this script to encode fictional correspondence between the antagonists in DnD 5th edition's starter adventure.  The messages can be fully decoded by comparing common symbol features and English's letter frequency (see Figure 12).  
   
 <section>
   <figure>

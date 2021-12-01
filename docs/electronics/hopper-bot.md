@@ -54,9 +54,9 @@ I came up with the following solution which is illustrated in Figure 4:
 - a [flask application](https://flask.palletsprojects.com/en/2.0.x/){target=_blank, title="flask is a Python webapp framework"} runs on the RaspberryPi at `localhost:5000` 
     * the app has API routes for each of the robot's pre-defined actions (`/forward`, `/reverse`, etc.)
     * when a request is made to a route, the app turns on or off the appropriate GPIO pins
-- a [ngrok](https://ngrok.com/product){target=_blank, title="ngrok is tool used to expose a locally running server to the public internet"} tunnel process makes the flask application publically available at a random address (represented by **NGROK-XYZ** in Figure 4)
+- a [ngrok](https://ngrok.com/product){target=_blank, title="ngrok is tool used to expose a locally running server to the public internet"} tunnel process makes the flask application publicly available at a random address (represented by **NGROK-XYZ** in Figure 4)
 - the drag-and-drop web application is served on the RaspberryPi at `localhost:8000` using Python's simple HTTP server module
-- a second ngrok tunnel process makes the client web application publically available at another random address (ex: **NGROK-ABC**)
+- a second ngrok tunnel process makes the client web application publicly available at another random address (ex: **NGROK-ABC**)
 
 
 User flow:  
@@ -65,7 +65,7 @@ When a user requests the drag-and-drop webpage at **NGROK-ABC** from their mobil
 
 ### 2017 Reflection
 
-It was really excting to be able to complete the hackathon with a working prototype.  We created a RaspberryPi controlled robot, and we achieved our goal of having particpants control the robot using their own personal devices.  
+It was really exciting to be able to complete the hackathon with a working prototype.  We created a RaspberryPi controlled robot, and we achieved our goal of having participants control the robot using their own personal devices.  
 
 In order create an activity where students could think through creating an algorithm and then express that algorithm as code, we needed a more sophisticated web application.  I continued this work in [2018](#2018) with the help of Google's [Blockly](https://developers.google.com/blockly/guides/overview){target=_blank, title="Blockly is a library that adds a visual code editor to web and mobile apps"} library.
 

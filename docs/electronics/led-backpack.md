@@ -26,7 +26,7 @@ img_cards:
 # LED Brake Light Biking Backpack
 May 2018 - October 2018
 
-My goals for this project were to create a backpack with installed LEDs for nighttime visibility and dayttime aesthetics.  The intention was to pre-program the individually addressable LEDs with various traffic signal animations (left turn, right turn, brake, etc.).  These animations could then be triggered via radio controller or accelerometer.  
+My goals for this project were to create a backpack with installed LEDs for nighttime visibility and daytime aesthetics.  The intention was to pre-program the individually addressable LEDs with various traffic signal animations (left turn, right turn, brake, etc.).  These animations could then be triggered via radio controller or accelerometer.  
 
 Unfortunately, the NeoPixel installation proved to be extremely unstable (see [Construction Challenges](#construction-challenges)).  The data and power connections between NeoPixels quickly deteriorated after a few weeks of using the backpack for everyday storage.  
 
