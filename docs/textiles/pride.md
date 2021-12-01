@@ -16,7 +16,7 @@ img_cards:
     img_caption: 'hold panels in place with basting stitch'
     img_title: ''
     img_alt: ''
-  - img_src: /img/umbrella/zipper_pannel_test_fit.jpeg
+  - img_src: /img/umbrella/zipper_panel_test_fit.jpeg
     img_caption: 'cut rectangle of similar colored umbrella to reinforce zipper<sup><a href="#references">1</a></sup>'
     img_title: ''
     img_alt: ''

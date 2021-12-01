@@ -59,8 +59,8 @@ The idea of building spaces of my own stuck with me.  I figured the first step t
         <strong>Class Project: </strong><a href="/wood/chest">Storage Chest</a>
         <span>
           <ul>
-            <li>handplane  </li>
-            <li>mitersaw  </li>
+            <li>hand plane  </li>
+            <li>miter saw  </li>
             <li>wood finishing  </li>
             <li>drill and nail gun  </li>
           </ul>
@@ -77,7 +77,7 @@ The idea of building spaces of my own stuck with me.  I figured the first step t
             <li>planer  </li>
             <li>router  </li>
             <li>sander  </li>
-            <li>tablesaw  </li>
+            <li>table saw  </li>
           </ul>
         </div>
       </div>
