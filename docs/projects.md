@@ -54,6 +54,7 @@ index_cards:
         <li>Covid-19 Masks</li>
         <li>Upcycled Umbrella Skirt</li>
         <li>Embroidered Works</li>
+        <li>Selected Knits</li>
       <ul>
   # - card_title: Open Source Software
   #   img_src: /img/software/vertical_script_puzzle.gif

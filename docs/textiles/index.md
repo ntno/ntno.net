@@ -18,6 +18,11 @@ tile_cards:
     img_title: ''
     img_alt: ''
     index_url: ./textiles/masks
+  - card_title: Selected Knits
+    img_src: /img/knitting/extermiknit_detail_2010_2011.jpeg
+    img_title: ''
+    img_alt: ''
+    index_url: ./textiles/knits
 ---
 
 # Projects
