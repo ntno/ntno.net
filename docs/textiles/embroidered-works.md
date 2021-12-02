@@ -12,7 +12,6 @@ img_cards:
     img_caption: 'Natan Organick, <i>Tzedek, Tzedek</i> (detail), 2020.'
     img_title: ''
     img_alt: 'detail of embroidered work "Tzedek, Tzedek"'
-
 ---
 
 ## lady liberty
