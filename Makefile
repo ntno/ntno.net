@@ -5,34 +5,52 @@ app-name=ntno.net
 s3-url=s3://ntno.net
 
 ##########################################################################################
-docker:
-	docker-compose run --rm unix 
-
-serve:
-	mkdocs serve -v -a 0.0.0.0:8080
+# run docker/serve/stop commands from local machine
+##########################################################################################
+docker: 
+	docker-compose -f unix.yml run --rm unix
 
 stop: 
 	docker-compose down --remove-orphans
+
+serve:
+	docker-compose run --service-ports local_development_server
+
+open-local:
+	open http://0.0.0.0:7000/
+
+
+##########################################################################################
+# run build/deploy commands from docker container
+##########################################################################################
+# docker:
+# 	docker-compose run --rm unix 
+
+# serve:
+# 	mkdocs serve -v -a 0.0.0.0:8080
+
+# stop: 
+# 	docker-compose down --remove-orphans
 
 build:
 	@pip3 install -r requirements.txt && \
 	mkdocs build
 
-add-s3-404-page:
-	cp site/error/index.html site/error.html
+# add-s3-404-page:
+# 	cp site/error/index.html site/error.html
 
-deploy-gh: update-robots build
-	mkdocs gh-deploy -v
+# deploy-gh: update-robots build
+# 	mkdocs gh-deploy -v
 
 deploy-s3: update-robots build add-s3-404-page
 	cd site && \
 	aws s3 sync --size-only --sse AES256 . $(s3-url)
 
-update-robots: check-app-name
-	rm -f ./docs/robots.txt
-	curl https://raw.githubusercontent.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker/master/robots.txt/robots.txt --output ./docs/robots.txt
+# update-robots: check-app-name
+# 	rm -f ./docs/robots.txt
+# 	curl https://raw.githubusercontent.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker/master/robots.txt/robots.txt --output ./docs/robots.txt
 
-check-app-name:
-ifndef app-name
-	$(error app-name is not defined)
-endif
+# check-app-name:
+# ifndef app-name
+# 	$(error app-name is not defined)
+# endif
