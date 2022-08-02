@@ -1,8 +1,8 @@
 site_name: ntno
 repo_url: https://github.com/ntno/ntno.net
 edit_uri: edit/main/docs/
-site_url: https://ntno.github.io/ntno.net/
-copyright: © Natan Organick 2021, All rights reserved
+site_url: http://ntno.net/
+copyright: © Natan Organick 2022, All rights reserved
 site_author: ntno
 
 nav:
