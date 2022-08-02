@@ -4,7 +4,7 @@
 [View Full Resume](/img/Natan_Organick_03_2021.pdf){target=_blank}
 
 **DevOps Lead, Inferno Mfg. Corp.**  
-May 2021 - Present  
+May 2021 - May 2022  
 Shreveport, LA (remote)  
 
 **DevOps Engineer, Comcast**  
