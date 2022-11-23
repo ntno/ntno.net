@@ -8,6 +8,6 @@ source ./scripts/build.sh $1 $2
 
 ## deploy
 eval "$(buildenv -e $1 -d $2)" && \
-aws s3 sync --size-only --sse AES256 --acl public-read ./site/ "s3://$TF_VAR_domain_name"
+aws s3 sync --size-only --sse AES256 --acl public-read ./site/ "s3://$DOMAIN_NAME"
 
 make invalidate-distribution env=$1 region=$2

@@ -1,41 +1,39 @@
 SHELL:=/bin/bash
-env=dev
-region=us-east-1
-app-name=ntno.net
-s3-url=s3://ntno.net
+env=prod
+region=us-east-2
 
 ##########################################################################################
-# run docker/serve/stop commands from local machine
+# run docker/serve/build/deploy/stop commands from local machine
 ##########################################################################################
 docker: 
 	docker-compose run --rm ubuntu
 
 stop: 
-	docker-compose down --remove-orphans
+	docker compose down --remove-orphans
 
-serve:
-	docker-compose run --service-ports local_development_server
+serve: check-env check-region
+	docker compose run --entrypoint "/bin/bash" --service-ports local_development_server -c "source ./scripts/serve.sh $(env) $(region)"
+
+build: check-env check-region
+	docker compose run --entrypoint "/bin/bash" ubuntu -c "source ./scripts/build.sh $(env) $(region)"
+
+deploy: check-env check-region
+	docker compose run --entrypoint "/bin/bash" ubuntu -c "source ./scripts/deploy.sh $(env) $(region)"
 
 open-local:
 	open http://0.0.0.0:7000/
 
 open:
 	open https://ntno.net
-
+	
 ##########################################################################################
-# run build/deploy commands from docker container
-##########################################################################################
-build:
-	@pip3 install -r requirements.txt && \
-	mkdocs build
 
-add-s3-404-page:
-	cp site/error/index.html site/error.html
+check-env:
+ifndef env
+	$(error env is not defined)
+endif
 
-deploy-s3: update-robots build add-s3-404-page
-	cd site && \
-	aws s3 sync --size-only --sse AES256 . $(s3-url)
-
-update-robots:
-	rm -f ./docs/robots.txt
-	curl https://raw.githubusercontent.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker/master/robots.txt/robots.txt --output ./docs/robots.txt
+check-region:
+ifndef region
+	$(error region is not defined)
+endif

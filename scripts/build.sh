@@ -12,4 +12,4 @@ rm -f ./docs/robots.txt
 curl https://raw.githubusercontent.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker/master/robots.txt/robots.txt --output ./docs/robots.txt
 eval "$(buildenv -e $1 -d $2)" && \
 mkdocs build
-cp site/error/index.html site/404.html
+cp site/error/index.html site/error.html
