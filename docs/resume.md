@@ -1,7 +1,11 @@
 ---
 ---
   
-[View Full Resume](/img/Natan_Organick_03_2021.pdf){target=_blank}
+[View Full Resume](/img/Natan_Organick_November_2022.pdf){target=_blank}
+
+**DevOps Lead, Friends of Children in Africa 501(c)3**  
+September 2022 - November 2022  
+Philadelphia, PA  
 
 **DevOps Lead, Inferno Mfg. Corp.**  
 May 2021 - May 2022  

@@ -109,18 +109,18 @@ pattern by [Eva Martinsson](https://www.ravelry.com/patterns/library/entrelac-sh
 <hr>
 
 # dagger, dagger, dagger
-2020  
+2019  
 pattern by [Grace Rose](https://www.ravelry.com/patterns/library/robin-hood-bandana-cowl){target=_blank}  
 
 <section>
   <figure>
     <img
-      src="/img/knitting/dagger_dagger_dagger_2020.jpeg"
+      src="/img/knitting/dagger_dagger_dagger_2019.jpeg"
       alt=""
       title=""
       style="border: 1px solid #888888;"
     />
-    <figcaption>Natan Organick, <i>dagger, dagger, dagger</i>, 2020.</figcaption>
+    <figcaption>Natan Organick, <i>dagger, dagger, dagger</i>, 2019.</figcaption>
   </figure>
 </section>
 <br>
