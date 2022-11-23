@@ -25,7 +25,17 @@ open-local:
 
 open:
 	open https://ntno.net
-	
+
+##########################################################################################
+# run from inside docker container 
+##########################################################################################
+invalidate-distribution: check-env check-region
+	eval "$$(buildenv -e $(env) -d $(region))" && \
+	export CLOUDFRONT_DISTRIBUTION_ID=`aws ssm get-parameters --name "$$CLOUDFRONT_DISTRIBUTION_ID_SSM_PATH" | jq -r .Parameters[0].Value` && \
+	aws cloudfront create-invalidation \
+    --distribution-id "$$CLOUDFRONT_DISTRIBUTION_ID" \
+    --paths "/*" 
+
 ##########################################################################################
 
 check-env:
