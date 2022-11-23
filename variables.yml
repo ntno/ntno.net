@@ -7,3 +7,4 @@ environments:
           AWS_REGION: "us-east-2"
           TF_VAR_region: "us-east-2"
           CLOUDFRONT_DISTRIBUTION_ID_SSM_PATH: "/cloudfront/ntno.net/id"
+          DOMAIN_NAME: "ntno.net"
