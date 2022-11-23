@@ -8,7 +8,7 @@ s3-url=s3://ntno.net
 # run docker/serve/stop commands from local machine
 ##########################################################################################
 docker: 
-	docker-compose -f unix.yml run --rm unix
+	docker-compose run --rm ubuntu
 
 stop: 
 	docker-compose down --remove-orphans
@@ -20,7 +20,7 @@ open-local:
 	open http://0.0.0.0:7000/
 
 open:
-	open http://ntno.net
+	open https://ntno.net
 
 ##########################################################################################
 # run build/deploy commands from docker container
