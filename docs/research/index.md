@@ -9,7 +9,7 @@ tile_cards:
     img_title: ''
     img_alt: ''
   - card_title: SMS and Web Based Apps
-    img_src: https://www.brynmawr.edu/sites/default/files/styles/carousel_double_wide/public/field/slide-image/bus.jpg
+    img_src: /img/software/bluebus.jpg
     index_url: ./research/2014-sms-and-web-based-apps
     img_title: ''
     img_alt: ''
