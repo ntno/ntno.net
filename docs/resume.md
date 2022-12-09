@@ -1,7 +1,7 @@
 ---
 ---
   
-[View Full Resume](/img/Natan_Organick_November_2022_0.pdf){target=_blank}
+[View Full Resume](/img/Natan_Organick_December_2022_0.pdf){target=_blank}
 
 **Senior DevOps Engineer, Friends of Children in Africa 501(c)3**  
 September 2022 - November 2022  
