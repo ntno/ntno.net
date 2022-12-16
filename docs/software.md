@@ -4,13 +4,13 @@ hide:
   - toc
 ---
 
-**open source projects**
+**Open Source Projects**
 
 <hr>
 
-**gifcam** - [ntno/gifcam](https://github.com/ntno/gifcam){target=_blank}  
+**setup-buildenv** - [ntno/setup-buildenv](https://github.com/ntno/setup-buildenv){target=_blank}  
 
-please see [project page](/electronics/gifcam) for details  
+[GitHub Community Action](https://github.com/marketplace/actions/setup-buildenv){target=_blank} to install Comcast's [buildenv tool](https://github.com/Comcast/Buildenv-Tool){target=_blank} on GitHub's hosted runners.  Tested on all GitHub hosted runner platforms.
 <hr>
 
 **docker containers** - [ntno/docker-containers](https://github.com/ntno/docker-containers){target=_blank}  
@@ -22,7 +22,7 @@ The above repository includes a few use case specific containers.  It also provi
 
 **mkdocs `terminal.css` theme** - [ntno/ntno.net/custom_theme](https://github.com/ntno/ntno.net/tree/main/custom_theme){target=_blank, title="separate packaging to be made available shortly"}  
 
-[mkdocs](https://www.mkdocs.org/){target=_blank} is a framework for creating documentation websites from markdown files.  Custom themes can be applied to give sites a unique style.  I created the theme for this portfolio site using [terminal.css](https://github.com/Gioni06/terminal.css){target=_blank}.  It will be published as downloadable theme shortly.  See [squidfunk's material theme](https://squidfunk.github.io/mkdocs-material/getting-started/){target=_blank, title="view example site"} for theme comparison.
+[mkdocs](https://www.mkdocs.org/){target=_blank} is a framework for creating documentation websites from markdown files.  Custom themes can be applied to give sites a unique style.  I created the theme for this portfolio site using [terminal.css](https://github.com/Gioni06/terminal.css){target=_blank}.  See [squidfunk's material theme](https://squidfunk.github.io/mkdocs-material/getting-started/){target=_blank, title="view example site"} for theme comparison.
 <hr>
 
 **DnD cryptography puzzle** - [ntno/vertical-script-puzzle](https://github.com/ntno/vertical-script-puzzle){target=_blank}  
@@ -58,3 +58,8 @@ The above repository contains a `p5.js` sketch which loads the 'vertical-script'
     <figcaption>sorting word tiles by common feature in p5.js sketch</figcaption>
   </figure>
 </section>
+<hr>
+
+**gifcam** - [ntno/gifcam](https://github.com/ntno/gifcam){target=_blank}  
+
+please see [project page](/electronics/gifcam) for details  
