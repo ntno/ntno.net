@@ -36,6 +36,14 @@ invalidate-distribution: check-env check-region
     --distribution-id "$$CLOUDFRONT_DISTRIBUTION_ID" \
     --paths "/*" 
 
+bundle: check-input-path check-output-path check-manifest-path
+	tar \
+		--dereference --hard-dereference \
+		--directory $(input-path) \
+		-cvf $(output-path) \
+		--exclude=.git \
+		--exclude=.github \
+		. > $(manifest-path)
 ##########################################################################################
 
 check-env:
@@ -46,4 +54,19 @@ endif
 check-region:
 ifndef region
 	$(error region is not defined)
+endif
+
+check-input-path:
+ifndef input-path
+	$(error input-path is not defined)
+endif
+
+check-output-path:
+ifndef output-path
+	$(error output-path is not defined)
+endif
+
+check-manifest-path:
+ifndef manifest-path
+	$(error manifest-path is not defined)
 endif

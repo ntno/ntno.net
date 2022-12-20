@@ -1,4 +1,5 @@
 node_modules/*
 site/*
 docs/img/*
-
+img-bundle.tar
+img-bundle.txt
