@@ -29,19 +29,4 @@ jobs:
         run: |
           make bundle input-path="./site" version="${{ github.sha }}"
           make upload-docs-artifact input-path="./${{ github.sha }}.tar" version="${{ github.sha }}"
-        
-      # - name: Archive artifact
-      #   shell: sh
-      #   env:
-      #     INPUT_PATH: ./site
-      #   run: |
-      #     chmod -c -R +rX "$INPUT_PATH" | while read line; do
-      #       echo "::warning title=Invalid file permissions automatically fixed::$line"
-      #     done
-      #     tar \
-      #       --dereference --hard-dereference \
-      #       --directory "$INPUT_PATH" \
-      #       -cvf "$RUNNER_TEMP/artifact.tar" \
-      #       --exclude=.git \
-      #       --exclude=.github \
-      #       .
+          make upload-docs-artifact input-path="./${{ github.sha }}-manifest.txt" version="${{ github.sha }}"
