@@ -54,6 +54,15 @@ upload-image-artifact: check-version check-input-path
 download-image-artifact-bundle: check-version check-output-path
 	aws s3 cp "$(artifact-bucket)$(image-artifact-prefix)$(version)/$(version).tar" $(output-path)
 
+get-image-bundle: check-download-path 
+	eval "$$(buildenv -e $(env) -d $(region))" && \
+	$(MAKE) download-image-artifact-bundle version="$$IMAGE_BUNDLE_VERSION" output-path=$(download-path) && \
+	tar \
+		--directory "./docs/img/"
+		-xf "$(download-path)/$$IMAGE_BUNDLE_VERSION.tar"
+
+upload-docs-artifact: check-version check-input-path
+	aws s3 cp --sse AES256 $(input-path) "$(artifact-bucket)$(docs-artifact-prefix)$(version)/"
 
 ##########################################################################################
 
@@ -77,9 +86,9 @@ ifndef output-path
 	$(error output-path is not defined)
 endif
 
-check-manifest-path:
-ifndef manifest-path
-	$(error manifest-path is not defined)
+check-download-path:
+ifndef download-path
+	$(error download-path is not defined)
 endif
 
 check-version:

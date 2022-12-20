@@ -13,27 +13,35 @@ jobs:
         uses: ntno/setup-buildenv@v1
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-2
+      - name: Download Image Bundle
+        run: |
+          make get-image-bundle output-path="$RUNNER_TEMP/img-artifact.tar"
       - name: Build Site
         run: |
-          source ./scripts/build.sh dev us-east-1
-      - name: Archive artifact
-        shell: sh
-        env:
-          INPUT_PATH: ./site
+          source ./scripts/build.sh prod us-east-2
+      - name: Archive Site
         run: |
-          chmod -c -R +rX "$INPUT_PATH" | while read line; do
-            echo "::warning title=Invalid file permissions automatically fixed::$line"
-          done
-          tar \
-            --dereference --hard-dereference \
-            --directory "$INPUT_PATH" \
-            -cvf "$RUNNER_TEMP/artifact.tar" \
-            --exclude=.git \
-            --exclude=.github \
-            .
-      - name: Upload artifact
-        uses: actions/upload-artifact@main
-        with:
-          name: test-artifact
-          path: ${{ runner.temp }}/artifact.tar
-          retention-days: ${{ inputs.retention-days }}
+          make bundle input-path="./site" version="${{ github.sha }}"
+          make upload-docs-artifact input-path="./${{ github.sha }}.tar" version="${{ github.sha }}"
+        
+      # - name: Archive artifact
+      #   shell: sh
+      #   env:
+      #     INPUT_PATH: ./site
+      #   run: |
+      #     chmod -c -R +rX "$INPUT_PATH" | while read line; do
+      #       echo "::warning title=Invalid file permissions automatically fixed::$line"
+      #     done
+      #     tar \
+      #       --dereference --hard-dereference \
+      #       --directory "$INPUT_PATH" \
+      #       -cvf "$RUNNER_TEMP/artifact.tar" \
+      #       --exclude=.git \
+      #       --exclude=.github \
+      #       .
