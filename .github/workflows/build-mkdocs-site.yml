@@ -1,0 +1,39 @@
+# Simple workflow for building mkdocs site 
+name: Build MkDocs Site
+
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Buildenv
+        uses: ntno/setup-buildenv@v1
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Build Site
+        run: |
+          source ./scripts/build.sh dev us-east-1
+      - name: Archive artifact
+        shell: sh
+        env:
+          INPUT_PATH: ./site
+        run: |
+          chmod -c -R +rX "$INPUT_PATH" | while read line; do
+            echo "::warning title=Invalid file permissions automatically fixed::$line"
+          done
+          tar \
+            --dereference --hard-dereference \
+            --directory "$INPUT_PATH" \
+            -cvf "$RUNNER_TEMP/artifact.tar" \
+            --exclude=.git \
+            --exclude=.github \
+            .
+      - name: Upload artifact
+        uses: actions/upload-artifact@main
+        with:
+          name: test-artifact
+          path: ${{ runner.temp }}/artifact.tar
+          retention-days: ${{ inputs.retention-days }}
