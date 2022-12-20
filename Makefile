@@ -1,6 +1,9 @@
 SHELL:=/bin/bash
 env=prod
 region=us-east-2
+artifact-bucket="s3://artifacts.ntno.net"
+image-artifact-prefix="/img-bundle/"
+docs-artifact-prefix="/docs-bundle/"
 
 ##########################################################################################
 # run docker/serve/build/deploy/stop commands from local machine
@@ -36,14 +39,22 @@ invalidate-distribution: check-env check-region
     --distribution-id "$$CLOUDFRONT_DISTRIBUTION_ID" \
     --paths "/*" 
 
-bundle: check-input-path check-output-path check-manifest-path
+bundle: check-input-path check-version
 	tar \
 		--dereference --hard-dereference \
 		--directory $(input-path) \
-		-cvf $(output-path) \
+		-cvf $(version).tar \
 		--exclude=.git \
 		--exclude=.github \
-		. > $(manifest-path)
+		. > $(version)-manifest.txt
+
+upload-image-artifact: check-version check-input-path
+	aws s3 cp --sse AES256 $(input-path) "$(artifact-bucket)$(image-artifact-prefix)$(version)/"
+
+download-image-artifact-bundle: check-version check-output-path
+	aws s3 cp "$(artifact-bucket)$(image-artifact-prefix)$(version)/$(version).tar" $(output-path)
+
+
 ##########################################################################################
 
 check-env:
@@ -69,4 +80,9 @@ endif
 check-manifest-path:
 ifndef manifest-path
 	$(error manifest-path is not defined)
+endif
+
+check-version:
+ifndef version
+	$(error version is not defined)
 endif

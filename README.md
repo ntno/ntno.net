@@ -11,5 +11,11 @@
 
 ## create bundle
 ```
-make bundle input-path="./docs/img" output-path="./img-bundle.tar" manifest-path="./img-bundle.txt"
+make bundle input-path="./docs/img" version="0.0.0"
+```
+
+## upload bundle
+```
+make upload-image-artifact input-path="./0.0.0.tar" version="0.0.0"
+make upload-image-artifact input-path="./0.0.0-manifest.txt" version="0.0.0"  
 ```
