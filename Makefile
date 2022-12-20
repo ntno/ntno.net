@@ -56,7 +56,7 @@ download-image-artifact-bundle: check-version check-output-path
 
 get-image-bundle: check-download-path 
 	eval "$$(buildenv -e $(env) -d $(region))" && \
-	$(MAKE) download-image-artifact-bundle version="$$IMAGE_BUNDLE_VERSION" output-path=$(downloadx-path) && \
+	$(MAKE) download-image-artifact-bundle version="$$IMAGE_BUNDLE_VERSION" output-path=$(download-path) && \
 	tar \
 		--directory "./docs/img/" \
 		-xf "$(download-path)/$$IMAGE_BUNDLE_VERSION.tar"
