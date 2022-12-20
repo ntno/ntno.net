@@ -21,7 +21,7 @@ jobs:
           aws-region: us-east-2
       - name: Download Image Bundle
         run: |
-          make get-image-bundle output-path="$RUNNER_TEMP/img-artifact.tar"
+          make get-image-bundle download-path="$RUNNER_TEMP/img-artifact.tar"
       - name: Build Site
         run: |
           source ./scripts/build.sh prod us-east-2
