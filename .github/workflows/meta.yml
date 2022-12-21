@@ -35,6 +35,7 @@ jobs:
     outputs:
       artifact-name: ${{ steps.stash-event-payload.outputs.artifact-name }}
       event-name: ${{ steps.set-event-name.outputs.event-name }}
+      event-action-name: $${{ steps.set-event-action-name.outputs.event-action-name }}
       build-tag: ${{ steps.set-build-tag.outputs.build-tag }}
       revision-sha: ${{ steps.set-revision-sha.outputs.revision-sha }}
     steps:
@@ -49,6 +50,11 @@ jobs:
       - name: set-event-name
         id: set-event-name
         run: echo "event-name=${{ github.event_name }}" >> $GITHUB_OUTPUT
+      - name: set-event-action-name
+        id: set-event-action-name
+        run: |
+          echo "event-action-name=" >> $GITHUB_OUTPUT
+          cat ${{ github.event_path }} | jq .action >> $GITHUB_OUTPUT
       - name: set-build-tag
         id: set-build-tag
         run: echo "build-tag=${{ fromJSON(steps.meta.outputs.json).labels['org.opencontainers.image.version'] }}" >> $GITHUB_OUTPUT
