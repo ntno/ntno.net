@@ -1,9 +1,7 @@
 # Sets Metadata for workflow(s)
 name: Metadata
 
-on: [push]
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+on: [push, workflow_dispatch]
 
 jobs:
   set-metadata:
