@@ -14,6 +14,8 @@ jobs:
       build-sha: ${{ steps.inspect-build-sha.outputs.build-sha }}
     steps:
       - run: echo "The triggering workflow passed - ${{ github.event.workflow_run.id }}"
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: Download Triggering Workflow Artifacts
         env:
           GH_TOKEN: ${{ github.token }}
