@@ -33,6 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     # Map the job outputs to step outputs
     outputs:
+      artifact-name: ${{ steps.stash-event-payload.outputs.artifact-name }}
       event-name: ${{ steps.set-event-name.outputs.event-name }}
       build-tag: ${{ steps.set-build-tag.outputs.build-tag }}
       revision-sha: ${{ steps.set-revision-sha.outputs.revision-sha }}
@@ -58,10 +59,11 @@ jobs:
         id: stash-event-payload
         run: |
           mkdir -p ./details
-          cat ${{ github.event_path }} > ./details/payload.json
+          cat ${{ github.event_path }} > ./details/event-payload.json
+          echo "artifact-name=details/event-payload.json" >> $GITHUB_OUTPUT
       - uses: actions/upload-artifact@v3
         with:
-          name: payload.json
+          name: event-payload.json
           path: ./details/
 
   # job1:
