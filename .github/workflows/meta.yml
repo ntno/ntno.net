@@ -53,8 +53,7 @@ jobs:
       - name: set-event-action-name
         id: set-event-action-name
         run: |
-          echo "event-action-name=" >> $GITHUB_OUTPUT
-          cat ${{ github.event_path }} | jq .action >> $GITHUB_OUTPUT
+          echo "event-action-name=$(cat ${{ github.event_path }} | jq .action)" >> $GITHUB_OUTPUT
       - name: set-build-tag
         id: set-build-tag
         run: echo "build-tag=${{ fromJSON(steps.meta.outputs.json).labels['org.opencontainers.image.version'] }}" >> $GITHUB_OUTPUT
