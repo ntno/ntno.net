@@ -51,9 +51,14 @@ jobs:
         run: echo "build-tag=${{ fromJSON(steps.meta.outputs.json).labels['org.opencontainers.image.version'] }}" >> $GITHUB_OUTPUT
       - id: set-revision-sha
         run: echo "revision-sha=${{ fromJSON(steps.meta.outputs.json).labels['org.opencontainers.image.revision'] }}" >> $GITHUB_OUTPUT
-      - name: inspect event path
-        run: cat ${{ github.event_path }}
-
+      - id: stash-event-payload
+        run: |
+          mkdir -p ./details
+          cat ${{ github.event_path }} > ./details/payload.json
+      - uses: actions/upload-artifact@v3
+        with:
+          name: payload.json
+          path: ./details/
 
   # job1:
   #     runs-on: ubuntu-latest
