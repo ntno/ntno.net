@@ -1,0 +1,14 @@
+name: Close Pull Request
+
+# only trigger on pull request closed/merged events
+on:
+  pull_request:
+    types: [ closed, merged ]
+
+jobs:
+  destroy-pr-environment:
+    runs-on: ubuntu-latest
+    uses: ./.github/workflows/meta.yml 
+    secrets: inherit
+    - run: |
+        echo shutting down environment for PR #${{ github.event.number }}

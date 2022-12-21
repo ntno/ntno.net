@@ -1,11 +1,10 @@
 # Simple workflow for deploying a mkdocs site from archive
-name: Deploy MkDocs Site
+name: Deploy
 
 on:
   workflow_run:
-    workflows: [Build MkDocs Site]
+    workflows: [Build]
     types: [completed]
-    branches: [main]
 jobs:
   pre-deploy:
     runs-on: ubuntu-latest
