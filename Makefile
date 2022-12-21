@@ -53,8 +53,8 @@ bundle: check-input-directory check-output-directory check-bundle-filename check
 upload-docs-artifact: check-version check-file
 	aws s3 cp --no-progress --sse AES256 $(file) $(docs-artifact-prefix)$(version)/
 
-download-docs-artifact: check-version check-filename check-output-path
-	aws s3 cp --no-progress $(docs-artifact-prefix)$(version)/$(filename) $(output-path)
+download-docs-artifact: check-version check-file check-output-path
+	aws s3 cp --no-progress $(docs-artifact-prefix)$(version)/$(file) $(output-path)
 
 put-image-bundle: check-version
 	$(MAKE) bundle input-directory="./docs/img" output-directory="./" version=$(version) bundle-filename="$(version).tar" manifest-filename="$(version)-manifest.txt" && \
