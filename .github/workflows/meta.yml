@@ -11,7 +11,7 @@ jobs:
         uses: docker/metadata-action@v4
         id: meta
         with:
-          images: ""
+          images: {{ github.repository }}
           tags: |
             type=ref,event=pr
             type=ref,event=branch
