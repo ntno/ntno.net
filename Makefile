@@ -113,3 +113,8 @@ check-file:
 ifndef file
 	$(error file is not defined)
 endif
+
+check-output-path:
+ifndef output-path
+	$(error output-path is not defined)
+endif
