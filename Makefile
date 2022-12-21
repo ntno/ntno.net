@@ -51,19 +51,19 @@ bundle: check-input-directory check-output-directory check-bundle-filename check
 		. > $(output-directory)$(manifest-filename)
 
 upload-docs-artifact: check-version check-file
-	aws s3 cp --sse AES256 $(file) $(docs-artifact-prefix)$(version)/
+	aws s3 cp --no-progress --sse AES256 $(file) $(docs-artifact-prefix)$(version)/
 
 download-docs-artifact: check-version check-filename check-output-path
-	aws s3 cp $(docs-artifact-prefix)$(version)/$(filename) $(output-path)
+	aws s3 cp --no-progress $(docs-artifact-prefix)$(version)/$(filename) $(output-path)
 
 put-image-bundle: check-version
 	$(MAKE) bundle input-directory="./docs/img" output-directory="./" version=$(version) bundle-filename="$(version).tar" manifest-filename="$(version)-manifest.txt" && \
-	aws s3 cp --sse AES256 $(version).tar $(image-artifact-prefix)$(version)/ && \
-	aws s3 cp --sse AES256 $(version)-manifest.txt $(image-artifact-prefix)$(version)/
+	aws s3 cp --no-progress --sse AES256 $(version).tar $(image-artifact-prefix)$(version)/ && \
+	aws s3 cp --no-progress --sse AES256 $(version)-manifest.txt $(image-artifact-prefix)$(version)/
 
 get-image-bundle: check-env check-region check-download-directory 
 	eval "$$(buildenv -e $(env) -d $(region))" && \
-	aws s3 cp $(image-artifact-prefix)$$IMAGE_BUNDLE_VERSION/$$IMAGE_BUNDLE_VERSION.tar $(download-directory) && \
+	aws s3 cp --no-progress $(image-artifact-prefix)$$IMAGE_BUNDLE_VERSION/$$IMAGE_BUNDLE_VERSION.tar $(download-directory) && \
 	tar \
 		--directory "./docs/img/" \
 		-xf $(download-directory)$$IMAGE_BUNDLE_VERSION.tar && \
