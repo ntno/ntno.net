@@ -13,8 +13,10 @@ jobs:
     outputs:
       build-sha: ${{ steps.inspect-build-sha.outputs.build-sha }}
     steps:
-      - run: echo "The triggering workflow passed"
+      - run: echo "The triggering workflow passed - ${{ github.event.workflow_run.id }}"
       - name: Download Triggering Workflow Artifacts
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: gh run download ${{ github.event.workflow_run.id }} -D artifacts
       - name: Display structure of downloaded files
         run: ls -R
