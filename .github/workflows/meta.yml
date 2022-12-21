@@ -61,6 +61,7 @@ jobs:
           mkdir -p ./details
           cat ${{ github.event_path }} > ./details/event-payload.json
           echo "artifact-name=details/event-payload.json" >> $GITHUB_OUTPUT
+          cat ${{ github.event_path }}
       - uses: actions/upload-artifact@v3
         with:
           name: event-payload.json
