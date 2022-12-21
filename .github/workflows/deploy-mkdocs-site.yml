@@ -23,8 +23,6 @@ jobs:
       - name: Display structure of downloaded files
         run: ls -R
         working-directory: artifacts
-      - name: Unzip artifact
-        run: unzip artifacts/github_sha_from_build.zip
       - name: Inspect artifact
         id: inspect-build-sha
         run: |
