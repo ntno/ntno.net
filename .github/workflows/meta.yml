@@ -6,7 +6,7 @@ on:
   pull_request:
     types: [opened, reopened, closed]
   workflow_dispatch:
-
+  workflow_call:
 jobs:
   set-metadata:
     runs-on: ubuntu-latest
@@ -15,10 +15,8 @@ jobs:
         uses: docker/metadata-action@v4
         id: meta
         with:
-          images: "{{ github.repository }}"
+          images: ntno/ntno.net
           tags: |
-            type=ref,event=pr
-            type=ref,event=branch
             type=ref,event=pr
             type=sha
       - name: Inspect Metadata
