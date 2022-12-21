@@ -40,8 +40,6 @@ invalidate-distribution: check-env check-region
     --paths "/*" 
 
 bundle: check-input-directory check-output-directory check-bundle-filename check-manifest-filename
-	rm -f $(output-directory)$(bundle-filename) && \
-	rm -f $(output-directory)$(manifest-filename) && \
 	tar \
 		--dereference --hard-dereference \
 		--directory $(input-directory) \
