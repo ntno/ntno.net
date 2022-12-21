@@ -5,7 +5,7 @@ on:
   workflow_run:
     workflows: [Build MkDocs Site]
     types: [completed]
-
+    branches: [main]
 jobs:
   pre-deploy:
     runs-on: ubuntu-latest
@@ -14,10 +14,8 @@ jobs:
       build-sha: ${{ steps.inspect-build-sha.outputs.build-sha }}
     steps:
       - run: echo "The triggering workflow passed"
-      - name: Download Artifacts
-        uses: actions/download-artifact@v3
-        with:
-          path: artifacts
+      - name: Download Triggering Workflow Artifacts
+        run: gh run download ${{ github.event.workflow_run.id }} -D artifacts
       - name: Display structure of downloaded files
         run: ls -R
         working-directory: artifacts
