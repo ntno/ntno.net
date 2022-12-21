@@ -21,8 +21,8 @@ jobs:
             type=sha
       - name: Inspect Metadata
         run: |
-          echo "GITHUB_EVENT={{ github.event }}"
-          echo "GITHUB_EVENT_NAME={{ github.event_name }}"
+          echo "GITHUB_EVENT=${{ github.event }}"
+          echo GITHUB_EVENT_NAME=${{ github.event_name }}
           echo BUILDTIME=${{ fromJSON(steps.meta.outputs.json).labels['org.opencontainers.image.created'] }}
           echo VERSION=${{ fromJSON(steps.meta.outputs.json).labels['org.opencontainers.image.version'] }}
           echo REVISION=${{ fromJSON(steps.meta.outputs.json).labels['org.opencontainers.image.revision'] }}
