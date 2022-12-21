@@ -11,7 +11,12 @@ jobs:
         uses: docker/metadata-action@v4
         id: meta
         with:
-          images: ntno/ntno.net
+          images: ""
+          tags: |
+            type=ref,event=pr
+            type=ref,event=branch
+            type=ref,event=pr
+            type=sha
       - name: Inspect Metadata
         run: |
           echo BUILDTIME=${{ fromJSON(steps.meta.outputs.json).labels['org.opencontainers.image.created'] }}
