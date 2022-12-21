@@ -1,9 +1,9 @@
 SHELL:=/bin/bash
 env=prod
 region=us-east-2
-artifact-bucket="s3://artifacts.ntno.net"
-image-artifact-prefix="/img-bundle/"
-docs-artifact-prefix="/docs-bundle/"
+artifact-bucket=s3://artifacts.ntno.net
+image-artifact-prefix=$(artifact-bucket)/img-bundle/
+docs-artifact-prefix=$(artifact-bucket)/docs-bundle/
 
 ##########################################################################################
 # run docker/serve/build/deploy/stop commands from local machine
@@ -39,30 +39,35 @@ invalidate-distribution: check-env check-region
     --distribution-id "$$CLOUDFRONT_DISTRIBUTION_ID" \
     --paths "/*" 
 
-bundle: check-input-path check-version
+bundle: check-input-directory check-output-directory check-bundle-filename check-manifest-filename
+	rm -f $(output-directory)$(bundle-filename) && \
+	rm -f $(output-directory)$(manifest-filename) && \
 	tar \
 		--dereference --hard-dereference \
-		--directory $(input-path) \
-		-cvf $(version).tar \
+		--directory $(input-directory) \
+		-cvf $(output-directory)$(bundle-filename) \
 		--exclude=.git \
 		--exclude=.github \
-		. > $(version)-manifest.txt
+		. > $(output-directory)$(manifest-filename)
 
-upload-image-artifact: check-version check-input-path
-	aws s3 cp --sse AES256 $(input-path) "$(artifact-bucket)$(image-artifact-prefix)$(version)/"
+upload-docs-artifact: check-version check-file
+	aws s3 cp --sse AES256 $(file) $(docs-artifact-prefix)$(version)/
 
-download-image-artifact-bundle: check-version check-output-path
-	aws s3 cp "$(artifact-bucket)$(image-artifact-prefix)$(version)/$(version).tar" $(output-path)
+download-docs-artifact: check-version check-filename check-output-path
+	aws s3 cp $(docs-artifact-prefix)$(version)/$(filename) $(output-path)
 
-get-image-bundle: check-download-directory 
+put-image-bundle: check-version
+	$(MAKE) bundle input-directory="./docs/img" output-directory="./" version=$(version) bundle-filename="$(version).tar" manifest-filename="$(version)-manifest.txt" && \
+	aws s3 cp --sse AES256 $(version).tar $(image-artifact-prefix)$(version)/ && \
+	aws s3 cp --sse AES256 $(version)-manifest.txt $(image-artifact-prefix)$(version)/
+
+get-image-bundle: check-env check-region check-download-directory 
 	eval "$$(buildenv -e $(env) -d $(region))" && \
-	$(MAKE) download-image-artifact-bundle version="$$IMAGE_BUNDLE_VERSION" output-path=$(download-directory) && \
+	aws s3 cp $(image-artifact-prefix)$$IMAGE_BUNDLE_VERSION/$$IMAGE_BUNDLE_VERSION.tar $(download-directory) && \
 	tar \
 		--directory "./docs/img/" \
-		-xf "$(download-directory)$$IMAGE_BUNDLE_VERSION.tar"
-
-upload-docs-artifact: check-version check-input-path
-	aws s3 cp --sse AES256 $(input-path) "$(artifact-bucket)$(docs-artifact-prefix)$(version)/"
+		-xf $(download-directory)$$IMAGE_BUNDLE_VERSION.tar && \
+	rm -f $(download-directory)$$IMAGE_BUNDLE_VERSION.tar
 
 ##########################################################################################
 
@@ -76,14 +81,14 @@ ifndef region
 	$(error region is not defined)
 endif
 
-check-input-path:
-ifndef input-path
-	$(error input-path is not defined)
+check-input-directory:
+ifndef input-directory
+	$(error input-directory is not defined)
 endif
 
-check-output-path:
-ifndef output-path
-	$(error output-path is not defined)
+check-output-directory:
+ifndef output-directory
+	$(error output-directory is not defined)
 endif
 
 check-download-directory:
@@ -94,4 +99,19 @@ endif
 check-version:
 ifndef version
 	$(error version is not defined)
+endif
+
+check-bundle-filename:
+ifndef bundle-filename
+	$(error bundle-filename is not defined)
+endif
+
+check-manifest-filename:
+ifndef manifest-filename
+	$(error manifest-filename is not defined)
+endif
+
+check-file:
+ifndef file
+	$(error file is not defined)
 endif

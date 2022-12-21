@@ -3,19 +3,27 @@
 ## local development
 ```make serve```
 
+### download images for local development
+```
+make get-image-bundle download-directory="."
+```
+
 ## deployment
 ```make deploy```
 
+## image update
+1. add/update image
+2. test locally
+```
+make serve
+```
+3. create image release
+```
+make docker
+make put-image-bundle version="X.X.X"
+```
+4. update `IMAGE_BUNDLE_VERSION` in variables.yml
+
+
 ## notes
 ```aws s3 sync --dryrun --sse AES256 --exclude '*.mov' --exclude '*.MOV' s3://ntno.net/img/ docs/img/```
-
-## create bundle
-```
-make bundle input-path="./docs/img" version="0.0.0"
-```
-
-## upload bundle
-```
-make upload-image-artifact input-path="./0.0.0.tar" version="0.0.0"
-make upload-image-artifact input-path="./0.0.0-manifest.txt" version="0.0.0"  
-```
