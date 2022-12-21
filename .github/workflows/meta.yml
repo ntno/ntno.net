@@ -1,7 +1,11 @@
 # Sets Metadata for workflow(s)
 name: Metadata
 
-on: [push, pull_request, workflow_dispatch]
+on: 
+  push:
+  pull_request:
+    types: [opened, reopened, closed]
+  workflow_dispatch:
 
 jobs:
   set-metadata:
