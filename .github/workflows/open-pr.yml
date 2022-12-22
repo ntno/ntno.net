@@ -1,0 +1,19 @@
+name: Open Pull Request
+
+# only trigger on pull request open or reopen events
+on:
+  pull_request:
+    types: [ opened, reopened ]
+
+jobs:
+  call-metadata-workflow:
+    uses: ./.github/workflows/meta.yml 
+    secrets: inherit
+  create-pr-environment:
+    needs: [call-metadata-workflow]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create PR Environment
+        run: |
+          echo creating new environment for PR #${{ github.event.number }}
+      
