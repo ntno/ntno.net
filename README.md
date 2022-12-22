@@ -27,3 +27,6 @@ make put-image-bundle version="X.X.X"
 
 ## notes
 ```aws s3 sync --dryrun --sse AES256 --exclude '*.mov' --exclude '*.MOV' s3://ntno.net/img/ docs/img/```
+
+## references
+- https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions  

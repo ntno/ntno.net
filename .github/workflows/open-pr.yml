@@ -25,7 +25,7 @@ jobs:
         working-directory: ./scripts
         run: |
           echo "creating new environment for PR #${{ github.event.number }}"
-          export TEMP_BUCKET_NAME="ntno.net-${{ needs.call-metadata-workflow.outputs.build-tag }}"
+          export TEMP_BUCKET_NAME="${{ secrets.CI_USER }}-${{ needs.call-metadata-workflow.outputs.build-tag }}"
           aws cloudformation create-stack \
                     --template-body file://s3-website.yml \
                     --stack-name ${TEMP_BUCKET_NAME}  \
