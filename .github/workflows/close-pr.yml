@@ -16,4 +16,6 @@ jobs:
       - name: Destroy PR Environment
         run: |
           echo "shutting down environment for PR #${{ github.event.number }}"
-      
+          export TEMP_STACK_NAME="ntno-net-ci-${{ needs.call-metadata-workflow.outputs.build-tag }}"
+          aws delete-stack cloudformation delete-stack \
+              --stack-name ${TEMP_STACK_NAME}
