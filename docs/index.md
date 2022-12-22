@@ -17,7 +17,7 @@ January 2012
   <figure>
     <a target="_blank" href="https://editor.p5js.org/ntno/sketches/3iI1Sa6Wr" title="Bedroom in Arles source code in p5.js editor">
     <img style="border: 1px solid #888888;"
-      src="/img/bedroom_in_arles.png"
+      src="/img/home/bedroom_in_arles.png"
       alt="a digital reproduction of 'The Bedroom' by Vincent van Gogh"
       title="Bedroom in Arles source code in p5.js editor"
     />

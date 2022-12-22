@@ -9,7 +9,7 @@ Natan Organick is a maker and computer scientist living in Philadelphia, PA.  Th
 <section>
   <figure>
     <img
-      src="/img/author.jpeg"
+      src="/img/about/author.jpeg"
       alt="green haired person in green plaid with mirrored aviator sunglasses"
       title="Rocky Mountain National Park"
       style="border: 1px solid #888888;"
