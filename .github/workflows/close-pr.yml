@@ -6,9 +6,13 @@ on:
     types: [ closed, merged ]
 
 jobs:
-  destroy-pr-environment:
-    runs-on: ubuntu-latest
+  set-metadata:
     uses: ./.github/workflows/meta.yml 
     secrets: inherit
-    - run: |
-        echo shutting down environment for PR #${{ github.event.number }}
+  destroy-pr-environment:
+    needs: [set-metadata]
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo shutting down environment for PR #${{ github.event.number }}
+      
