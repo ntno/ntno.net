@@ -34,11 +34,10 @@ jobs:
                     --parameters  ParameterKey=BucketName,ParameterValue=${TEMP_BUCKET_NAME} \
                     --on-failure DO_NOTHING \
                     --capabilities CAPABILITY_NAMED_IAM
-
-          export TEMP_WEBSITE_URL="$(aws cloudformation describe-stacks --stack-name $TEMP_STACK_NAME --query "Stacks[0].Outputs[0].OutputValue" --output text)"
-          echo "{temp-website-url}={$TEMP_WEBSITE_URL}" >> $GITHUB_OUTPUT
       - name: Comment on PR with Environment URL
         env:
             GH_TOKEN: ${{ github.token }}
         run: |
-          gh pr comment ${{ github.event.number }} --body "please review changes at ${{ steps.create-pr-env.outputs.temp-website-url }}" 
+          export TEMP_STACK_NAME="ntno-net-ci-${{ needs.call-metadata-workflow.outputs.build-tag }}"
+          export TEMP_WEBSITE_URL="$(aws cloudformation describe-stacks --stack-name $TEMP_STACK_NAME --query "Stacks[0].Outputs[0].OutputValue" --output text)"
+          gh pr comment ${{ github.event.number }} --body "please review changes at $TEMP_WEBSITE_URL" 
