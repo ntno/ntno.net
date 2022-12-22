@@ -52,14 +52,6 @@ jobs:
       - name: set-revision-sha
         id: set-revision-sha
         run: echo "revision-sha=${{ github.sha }}" >> $GITHUB_OUTPUT
-      - name: set-build-tag
-        id: set-build-tag 
-        run: |
-          git init
-          echo "build-tag=$( git rev-parse --short ${{ github.sha }} )" >> $GITHUB_OUTPUT
-      - name: inspect-event-payload
-        id: inspect-event-payload
-        run: cat ${{ github.event_path }}
       - name: stash-event-payload
         id: stash-event-payload
         run: |
@@ -70,3 +62,18 @@ jobs:
         with:
           name: event-payload.json
           path: ./details/
+      - name: set-build-tag
+        id: set-build-tag 
+        run: |
+          git init
+          echo "build-tag=$( git rev-parse --short ${{ github.sha }} )" >> $GITHUB_OUTPUT
+      - name: inspect-outputs
+        id: inspect-outputs
+        run: |
+          echo "event-name: ${{ steps.set-event-name.outputs.event-name }}"
+          echo "pr-number:  ${{ steps.set-pr-number.outputs.pr-number }}"
+          echo "pr-env: ${{ steps.set-pr-number.outputs.pr-env }}"
+          echo "revision-sha: ${{ steps.set-revision-sha.outputs.revision-sha }}"
+          echo "build-tag: ${{ steps.set-build-tag.outputs.build-tag }}"
+          echo "artifact-name: ${{ steps.stash-event-payload.outputs.artifact-name }}"
+          cat ${{ github.event_path }}
