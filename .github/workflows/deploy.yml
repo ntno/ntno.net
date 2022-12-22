@@ -36,18 +36,21 @@ jobs:
           make download-docs-artifact version="${BUILD_TAG}" file="docs-site.tar" output-path="."
       - name: Deploy Archived Site 
         run: |
-          export BUILD_TAG="${{ needs.call-metadata-workflow.outputs.build-tag }}"
           mkdir -p site
           tar \
             --directory "./site/" \
             -xf ./docs-site.tar 
+          
           ls -ltra ./site
-          aws s3 ls s3://artifacts.ntno.net/docs-bundle/${BUILD_TAG}
-          # aws s3 sync --dryrun --size-only --sse AES256 --acl public-read ./site/ 
+
+          export TEMP_BUCKET_NAME="ntno-net-ci-${{ needs.call-metadata-workflow.outputs.build-tag }}"
+          aws s3 sync --dryrun --size-only --sse AES256 --acl public-read ./site/ s3://${TEMP_BUCKET_NAME}/
   on-build-failure:
     runs-on: ubuntu-latest
     if: ${{ github.event.workflow_run.conclusion == 'failure' }}
     steps:
-      - run: echo "The triggering workflow failed"
+      - run: |
+          echo "The Build workflow failed - ${{ github.event.workflow_run.id }}"
+          echo "Skipping Deploy jobs"
 
 
