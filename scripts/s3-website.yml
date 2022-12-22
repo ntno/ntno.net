@@ -46,7 +46,7 @@ Resources:
             Principal: '*'
             Action: 's3:PutObject'
             Resource: 
-              - !Sub 'arn:aws:s3:::${PicamBucketName}/*'
+              - !Sub 'arn:aws:s3:::${BucketName}/*'
             Condition:
               'Null':
                 's3:x-amz-server-side-encryption': True
