@@ -21,8 +21,8 @@ jobs:
           aws-region: us-east-2
       - name: Destroy PR Environment
         run: |
-          export TEMP_STACK_NAME="ntno-net-ci-${{ needs.call-metadata-workflow.outputs.build-tag }}"
-          export TEMP_BUCKET_NAME="$TEMP_STACK_NAME"
+          export TEMP_STACK_NAME="${{ needs.call-metadata-workflow.outputs.pr-env }}"
+          export TEMP_BUCKET_NAME="${{ needs.call-metadata-workflow.outputs.pr-env }}"
           
           echo "shutting down environment for PR #${{ github.event.number }}"
           
