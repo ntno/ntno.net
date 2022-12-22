@@ -44,7 +44,7 @@ jobs:
           
           ls -ltra ./site
 
-          export TEMP_BUCKET_NAME="ntno-net-ci-${{ needs.call-metadata-workflow.outputs.build-tag }}"
+          export TEMP_BUCKET_NAME="${{ needs.call-metadata-workflow.outputs.pr-env }}"
           aws s3 sync --dryrun --size-only --sse AES256 --acl public-read ./site/ s3://${TEMP_BUCKET_NAME}/
   on-build-failure:
     runs-on: ubuntu-latest
