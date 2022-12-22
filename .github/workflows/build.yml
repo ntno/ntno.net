@@ -3,7 +3,7 @@ name: Build
 
 on:
   pull_request:
-    types: [ edited ]
+    types: [ synchronize ]
   workflow_dispatch:
   
 jobs:
