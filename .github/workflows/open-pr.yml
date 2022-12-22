@@ -10,7 +10,7 @@ jobs:
     uses: ./.github/workflows/meta.yml 
     secrets: inherit
   create-pr-environment:
-    needs: [set-metadata]
+    needs: [call-metadata-workflow]
     runs-on: ubuntu-latest
     steps:
       - name: Create PR Environment

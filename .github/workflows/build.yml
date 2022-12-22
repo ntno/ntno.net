@@ -2,14 +2,20 @@
 name: Build
 
 on:
-  workflow_run:
-    workflows: [Metadata]
-    types: [completed]
+  push:
+  workflow_dispatch:
 
 jobs:
+  call-metadata-workflow:
+    uses: ./.github/workflows/meta.yml 
+    secrets: inherit
   build:
+    needs: [call-metadata-workflow]
     runs-on: ubuntu-latest
     steps:
+      - name: Check Metadata
+        run: |
+          echo "${{ needs.call-metadata-workflow.outputs.build-tag }} "
       - name: Install Buildenv
         uses: ntno/setup-buildenv@v1
       - name: Checkout
