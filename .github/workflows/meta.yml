@@ -6,52 +6,65 @@ on:
   workflow_call:
     # Map the workflow outputs to job outputs
     outputs:
-      artifact-name:
-        description: "name of artifact containing the full event payload as JSON"
-        value: ${{ jobs.set-metadata.outputs.artifact-name }}
       event-name:
         description: "name of triggering event"
         value: ${{ jobs.set-metadata.outputs.event-name }}
-      build-tag:
-        description: "build tag (either pr-# or sha-###)"
-        value: ${{ jobs.set-metadata.outputs.build-tag }}
+      pr-number:
+        description: "pr number or null if not a pull_request"
+        value: ${{ jobs.set-metadata.outputs.pr-number }}
+      pr-env:
+        description: "pr environment name or null if not a pull_request"
+        value: ${{ jobs.set-metadata.outputs.pr-env }}
       revision-sha:
         description: "full sha"
         value: ${{ jobs.set-metadata.outputs.revision-sha }}
+      build-tag:
+        description: "build tag (sha-###)"
+        value: ${{ jobs.set-metadata.outputs.build-tag }}      
+      artifact-name:
+        description: "name of artifact containing the full event payload as JSON"
+        value: ${{ jobs.set-metadata.outputs.artifact-name }}
 jobs:
   set-metadata:
     runs-on: ubuntu-latest
     # Map the job outputs to step outputs
     outputs:
-      artifact-name: ${{ steps.stash-event-payload.outputs.artifact-name }}
       event-name: ${{ steps.set-event-name.outputs.event-name }}
-      build-tag: ${{ steps.set-build-tag.outputs.build-tag }}
+      pr-number:  ${{ steps.set-pr-number.outputs.pr-number }}
+      pr-env: ${{ steps.set-pr-number.outputs.pr-env }}
       revision-sha: ${{ steps.set-revision-sha.outputs.revision-sha }}
+      build-tag: ${{ steps.set-build-tag.outputs.build-tag }}
+      artifact-name: ${{ steps.stash-event-payload.outputs.artifact-name }}
     steps:
-      - name: Generate Metadata
-        uses: docker/metadata-action@v4
-        id: meta
-        with:
-          images: ntno/ntno.net
-          tags: |
-            type=ref,event=pr
-            type=sha
       - name: set-event-name
         id: set-event-name
         run: echo "event-name=${{ github.event_name }}" >> $GITHUB_OUTPUT
-      - name: set-build-tag
-        id: set-build-tag
-        run: echo "build-tag=${{ fromJSON(steps.meta.outputs.json).labels['org.opencontainers.image.version'] }}" >> $GITHUB_OUTPUT
+      - name: set-pr-number
+        id: set-pr-number
+        github.event_name != 'pull_request'
+        run: |
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+              echo "pr-number={{ github.event['number'] }}" >> $GITHUB_OUTPUT
+              echo "pr-env=ntno-net-ci-pr-{{ github.event['number'] }}">> $GITHUB_OUTPUT
+          else
+              echo "pr-number=null" >> $GITHUB_OUTPUT
+              echo "pr-env=null" >> $GITHUB_OUTPUT
+          fi
       - name: set-revision-sha
         id: set-revision-sha
-        run: echo "revision-sha=${{ fromJSON(steps.meta.outputs.json).labels['org.opencontainers.image.revision'] }}" >> $GITHUB_OUTPUT
+        run: echo "revision-sha=${{ github.sha }}" >> $GITHUB_OUTPUT
+      - name: set-build-tag
+        id: set-build-tag 
+        run: echo "build-tag=$( git rev-parse --short ${{ github.sha }} )" >> $GITHUB_OUTPUT
+      - name: inspect-event-payload
+        id: inspect-event-payload
+        run: cat ${{ github.event_path }}
       - name: stash-event-payload
         id: stash-event-payload
         run: |
           mkdir -p ./details
           cat ${{ github.event_path }} > ./details/event-payload.json
           echo "artifact-name=details/event-payload.json" >> $GITHUB_OUTPUT
-          cat ${{ github.event_path }}
       - uses: actions/upload-artifact@v3
         with:
           name: event-payload.json
