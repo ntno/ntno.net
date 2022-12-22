@@ -22,6 +22,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.CI_AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-2
       - name: Create PR Environment
+        id: create-pr-env
         working-directory: ./scripts
         run: |
           echo "creating new environment for PR #${{ github.event.number }}"
@@ -30,4 +31,14 @@ jobs:
           aws cloudformation create-stack \
                     --template-body file://s3-website.yml \
                     --stack-name ${TEMP_BUCKET_NAME}  \
-                    --parameters  ParameterKey=BucketName,ParameterValue=${TEMP_BUCKET_NAME} 
+                    --parameters  ParameterKey=BucketName,ParameterValue=${TEMP_BUCKET_NAME} \
+                    --on-failure DO_NOTHING \
+                    --capabilities CAPABILITY_NAMED_IAM
+
+          export TEMP_WEBSITE_URL="$(aws cloudformation describe-stacks --stack-name $TEMP_STACK_NAME --query "Stacks[0].Outputs[0].OutputValue" --output text)"
+          echo "::set-output name=TEMP_WEBSITE_URL::$TEMP_WEBSITE_URL"
+      - name: Comment on PR with Environment URL
+        env:
+            GH_TOKEN: ${{ github.token }}
+          run: |
+            gh pr comment ${{ github.event.number }} --body "${{ steps.create-pr-env.outputs.temp-website-url }}" 
