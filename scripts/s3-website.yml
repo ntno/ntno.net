@@ -1,7 +1,7 @@
 AWSTemplateFormatVersion: 2010-09-09
 Description: Creates a S3 Bucket with website configuration
-BucketName:
-  Salt:
+Parameters:
+  BucketName:
     Type: String
     Description: bucket name
 Resources:
