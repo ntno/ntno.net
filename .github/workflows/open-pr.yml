@@ -39,7 +39,7 @@ jobs:
             GH_TOKEN: ${{ github.token }}
         run: |
           export TEMP_STACK_NAME="ntno-net-ci-${{ needs.call-metadata-workflow.outputs.build-tag }}"
-          export TEMP_WEBSITE_URL="$(aws cloudformation describe-stacks --stack-name $TEMP_STACK_NAME --query "Stacks[0].Outputs[0].OutputValue" --output text)"
+          export TEMP_WEBSITE_URL=$(aws cloudformation describe-stacks --stack-name ${TEMP_STACK_NAME} --query "Stacks[0].Outputs[0].OutputValue" --output text)
           echo "please review changes at ${TEMP_WEBSITE_URL}" > message.txt
           cat message.txt
           gh pr comment ${{ github.event.number }} --body-file message.txt
