@@ -54,7 +54,9 @@ jobs:
         run: echo "revision-sha=${{ github.sha }}" >> $GITHUB_OUTPUT
       - name: set-build-tag
         id: set-build-tag 
-        run: echo "build-tag=$( git rev-parse --short ${{ github.sha }} )" >> $GITHUB_OUTPUT
+        run: |
+          git init
+          echo "build-tag=$( git rev-parse --short ${{ github.sha }} )" >> $GITHUB_OUTPUT
       - name: inspect-event-payload
         id: inspect-event-payload
         run: cat ${{ github.event_path }}
