@@ -43,8 +43,9 @@ jobs:
         id: set-pr-number
         run: |
           if [[ "${{ github.event_name }}" == "pull_request" ]]; then
-              echo pr-number="{{ github.event['number'] }}" >> $GITHUB_OUTPUT
-              echo pr-env=ntno-net-ci-pr-"{{ github.event['number'] }}" >> $GITHUB_OUTPUT
+              export PR_NUMBER=$( cat ${{ github.event_path }} | jq .number -r )
+              echo pr-number=${PR_NUMBER} >> $GITHUB_OUTPUT
+              echo pr-env=ntno-net-ci-pr-${PR_NUMBER} >> $GITHUB_OUTPUT
           else
               echo "pr-number=null" >> $GITHUB_OUTPUT
               echo "pr-env=null" >> $GITHUB_OUTPUT
