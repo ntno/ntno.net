@@ -9,7 +9,7 @@ jobs:
   call-metadata-workflow:
     uses: ./.github/workflows/meta.yml 
     secrets: inherit
-  build:
+  build-pr:
     needs: [call-metadata-workflow]
     runs-on: ubuntu-latest
     steps:
@@ -41,7 +41,7 @@ jobs:
           make upload-docs-artifact file="./manifest.txt" version="${BUILD_TAG}"
   deploy:
     runs-on: ubuntu-latest
-    needs: [build]
+    needs: [call-metadata-workflow, build-pr]
     steps:
       - name: Install Buildenv
         uses: ntno/setup-buildenv@v1
