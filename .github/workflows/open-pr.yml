@@ -23,7 +23,7 @@ jobs:
           aws-region: us-east-2
       - name: Create PR Environment
         id: create-pr-env
-        working-directory: ./scripts
+        working-directory: ./scripts/pr-env
         run: |
           echo "creating new environment for PR #${{ github.event.number }}"
           export TEMP_STACK_NAME="ntno-net-ci-${{ needs.call-metadata-workflow.outputs.build-tag }}"
@@ -36,6 +36,7 @@ jobs:
                     --capabilities CAPABILITY_NAMED_IAM
           aws cloudformation wait stack-create-complete --stack-name ${TEMP_BUCKET_NAME} 
           aws s3 cp --sse AES256 --acl public-read index.html s3://${TEMP_BUCKET_NAME}/
+          aws s3 cp --sse AES256 --acl public-read error.html s3://${TEMP_BUCKET_NAME}/
       - name: Comment on PR with Environment URL
         env:
             GH_TOKEN: ${{ github.token }}
