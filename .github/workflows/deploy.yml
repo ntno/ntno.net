@@ -5,6 +5,7 @@ on:
   workflow_run:
     workflows: [Build]
     types: [completed]
+
 jobs:
   call-metadata-workflow:
     uses: ./.github/workflows/meta.yml 
