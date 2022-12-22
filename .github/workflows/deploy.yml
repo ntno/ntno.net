@@ -13,8 +13,6 @@ jobs:
     needs: [call-metadata-workflow]
     runs-on: ubuntu-latest
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
-    outputs:
-      build-sha: ${{ steps.inspect-build-sha.outputs.build-sha }}
     steps:
       - run: echo "The triggering workflow passed - ${{ github.event.workflow_run.id }}"
       - run: echo "Build tag ${{ needs.call-metadata-workflow.outputs.build-tag }}"
@@ -32,16 +30,19 @@ jobs:
           aws-access-key-id: ${{ secrets.CI_AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.CI_AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-2
-      - name: Download Site Manifest
+      - name: Download Archived Site
         run: |
           export BUILD_TAG="${{ needs.call-metadata-workflow.outputs.build-tag }}"
           make download-docs-artifact version="${BUILD_TAG}" file="docs-site.tar" output-path="."
+      - name: Deploy Archived Site 
+        run: |
+          export BUILD_TAG="${{ needs.call-metadata-workflow.outputs.build-tag }}"
           mkdir -p site
           tar \
             --directory "./site/" \
             -xf ./docs-site.tar 
           ls -ltra ./site
-          
+          aws s3 ls s3://artifacts.ntno.net/docs-bundle/${BUILD_TAG}
           # aws s3 sync --dryrun --size-only --sse AES256 --acl public-read ./site/ 
   on-build-failure:
     runs-on: ubuntu-latest
