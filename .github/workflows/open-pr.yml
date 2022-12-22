@@ -36,9 +36,9 @@ jobs:
                     --capabilities CAPABILITY_NAMED_IAM
 
           export TEMP_WEBSITE_URL="$(aws cloudformation describe-stacks --stack-name $TEMP_STACK_NAME --query "Stacks[0].Outputs[0].OutputValue" --output text)"
-          echo "::set-output name=TEMP_WEBSITE_URL::$TEMP_WEBSITE_URL"
+          echo "{temp-website-url}={$TEMP_WEBSITE_URL}" >> $GITHUB_OUTPUT
       - name: Comment on PR with Environment URL
         env:
             GH_TOKEN: ${{ github.token }}
         run: |
-          gh pr comment ${{ github.event.number }} --body "${{ steps.create-pr-env.outputs.temp-website-url }}" 
+          gh pr comment ${{ github.event.number }} --body "please review changes at ${{ steps.create-pr-env.outputs.temp-website-url }}" 
