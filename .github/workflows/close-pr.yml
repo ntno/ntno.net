@@ -17,4 +17,5 @@ jobs:
         run: |
           echo "shutting down environment for PR #${{ github.event.number }}"
           export TEMP_STACK_NAME="ntno-net-ci-${{ needs.call-metadata-workflow.outputs.build-tag }}"
-          aws cloudformation delete-stack --stack-name ${TEMP_STACK_NAME}
+          echo "deleting stack ${TEMP_STACK_NAME}"
+          aws cloudformation delete-stack --stack-name "${TEMP_STACK_NAME}"
