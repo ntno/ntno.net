@@ -13,9 +13,11 @@ Resources:
       WebsiteConfiguration:
         IndexDocument: index.html
         ErrorDocument: error.html
-      ServerSideEncryptionConfiguration:
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
           - ServerSideEncryptionByDefault:
               SSEAlgorithm: 'AES256'
+    DeletionPolicy: Delete
   BuckeReadPolicy:
     Type: AWS::S3::BucketPolicy
     Properties:
