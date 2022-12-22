@@ -35,7 +35,7 @@ jobs:
                     --on-failure DO_NOTHING \
                     --capabilities CAPABILITY_NAMED_IAM
           aws cloudformation wait stack-create-complete --stack-name ${TEMP_BUCKET_NAME} 
-          aws s3 cp index.html s3://${TEMP_BUCKET_NAME}/
+          aws s3 cp --sse AES256 --acl public-read index.html s3://${TEMP_BUCKET_NAME}/
       - name: Comment on PR with Environment URL
         env:
             GH_TOKEN: ${{ github.token }}
