@@ -34,6 +34,7 @@ jobs:
                     --parameters  ParameterKey=BucketName,ParameterValue=${TEMP_BUCKET_NAME} \
                     --on-failure DO_NOTHING \
                     --capabilities CAPABILITY_NAMED_IAM
+          aws cloudformation stack-create-complete --stack-name ${TEMP_BUCKET_NAME} 
           aws s3 cp index.html s3://${TEMP_BUCKET_NAME}/
       - name: Comment on PR with Environment URL
         env:
