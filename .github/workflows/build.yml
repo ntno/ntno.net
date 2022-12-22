@@ -13,9 +13,6 @@ jobs:
     needs: [call-metadata-workflow]
     runs-on: ubuntu-latest
     steps:
-      - name: Check Metadata
-        run: |
-          echo "${{ needs.call-metadata-workflow.outputs.build-tag }} "
       - name: Install Buildenv
         uses: ntno/setup-buildenv@v1
       - name: Checkout
@@ -38,16 +35,7 @@ jobs:
           source ./scripts/build.sh prod us-east-2
       - name: Archive Site
         run: |
+          export BUILD_TAG="${{ needs.call-metadata-workflow.outputs.build-tag }}"
           make bundle input-directory="./site" output-directory="./" bundle-filename="docs-site.tar" manifest-filename="manifest.txt"
-          make upload-docs-artifact file="./docs-site.tar" version="${{ github.sha }}"
-          make upload-docs-artifact file="./manifest.txt" version="${{ github.sha }}"
-      - name: Save GIT_SHA
-        env:
-          GIT_SHA: ${{ github.sha }}
-        run: |
-          mkdir -p ./github_sha
-          echo "build-sha=$GIT_SHA" > ./github_sha/github_sha_from_build
-      - uses: actions/upload-artifact@v3
-        with:
-          name: github_sha_from_build
-          path: ./github_sha/
+          make upload-docs-artifact file="./docs-site.tar" version="${BUILD_TAG}"
+          make upload-docs-artifact file="./manifest.txt" version="${BUILD_TAG}"
