@@ -5,28 +5,18 @@ on:
   workflow_run:
     workflows: [Build]
     types: [completed]
+
 jobs:
+  call-metadata-workflow:
+    uses: ./.github/workflows/meta.yml 
+    secrets: inherit
   pre-deploy:
+    needs: [call-metadata-workflow]
     runs-on: ubuntu-latest
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
-    outputs:
-      build-sha: ${{ steps.inspect-build-sha.outputs.build-sha }}
     steps:
       - run: echo "The triggering workflow passed - ${{ github.event.workflow_run.id }}"
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Download Triggering Workflow Artifacts
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: gh run download ${{ github.event.workflow_run.id }} -D artifacts
-      - name: Display structure of downloaded files
-        run: ls -ltrR
-        working-directory: artifacts
-      - name: Inspect artifact
-        id: inspect-build-sha
-        run: |
-          cat ./artifacts/github_sha_from_build/github_sha_from_build  >> $GITHUB_OUTPUT
-          echo $GITHUB_OUTPUT
+      - run: echo "Build tag ${{ needs.call-metadata-workflow.outputs.build-tag }}"
   deploy:
     runs-on: ubuntu-latest
     needs: [pre-deploy]
@@ -38,17 +28,30 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-access-key-id: ${{ secrets.CI_AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.CI_AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-2
-      - name: Download Site Manifest
+      - name: Download Archived Site
         run: |
-          make download-docs-artifact version="${{ needs.pre-deploy.outputs.build-sha }}" file="manifest.txt" output-path="."
-          cat ./manifest.txt
+          export BUILD_TAG="${{ needs.call-metadata-workflow.outputs.build-tag }}"
+          make download-docs-artifact version="${BUILD_TAG}" file="docs-site.tar" output-path="."
+      - name: Deploy Archived Site 
+        run: |
+          mkdir -p site
+          tar \
+            --directory "./site/" \
+            -xf ./docs-site.tar 
+          
+          ls -ltra ./site
+
+          export TEMP_BUCKET_NAME="ntno-net-ci-${{ needs.call-metadata-workflow.outputs.build-tag }}"
+          aws s3 sync --dryrun --size-only --sse AES256 --acl public-read ./site/ s3://${TEMP_BUCKET_NAME}/
   on-build-failure:
     runs-on: ubuntu-latest
     if: ${{ github.event.workflow_run.conclusion == 'failure' }}
     steps:
-      - run: echo "The triggering workflow failed"
+      - run: |
+          echo "The Build workflow failed - ${{ github.event.workflow_run.id }}"
+          echo "Skipping Deploy jobs"
 
 

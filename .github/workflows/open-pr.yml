@@ -13,7 +13,33 @@ jobs:
     needs: [call-metadata-workflow]
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.CI_AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.CI_AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-2
       - name: Create PR Environment
+        id: create-pr-env
+        working-directory: ./scripts/pr-env
         run: |
-          echo creating new environment for PR #${{ github.event.number }}
-      
+          echo "creating new environment for PR #${{ github.event.number }}"
+          export TEMP_STACK_NAME="ntno-net-ci-${{ needs.call-metadata-workflow.outputs.build-tag }}"
+          export TEMP_BUCKET_NAME="$TEMP_STACK_NAME"
+          aws cloudformation create-stack \
+                    --template-body file://s3-website.yml \
+                    --stack-name ${TEMP_BUCKET_NAME}  \
+                    --parameters  ParameterKey=BucketName,ParameterValue=${TEMP_BUCKET_NAME} \
+                    --on-failure DO_NOTHING \
+                    --capabilities CAPABILITY_NAMED_IAM
+          aws cloudformation wait stack-create-complete --stack-name ${TEMP_BUCKET_NAME} 
+          aws s3 cp --sse AES256 --acl public-read index.html s3://${TEMP_BUCKET_NAME}/
+          aws s3 cp --sse AES256 --acl public-read error.html s3://${TEMP_BUCKET_NAME}/
+      - name: Comment on PR with Environment URL
+        env:
+            GH_TOKEN: ${{ github.token }}
+        run: |
+          export TEMP_STACK_NAME="ntno-net-ci-${{ needs.call-metadata-workflow.outputs.build-tag }}"
+          gh pr comment ${{ github.event.number }} --body "please review changes at http://${TEMP_STACK_NAME}.s3-website.us-east-2.amazonaws.com"

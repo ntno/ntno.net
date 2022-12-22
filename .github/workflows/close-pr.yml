@@ -13,7 +13,21 @@ jobs:
     needs: [call-metadata-workflow]
     runs-on: ubuntu-latest
     steps:
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.CI_AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.CI_AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-2
       - name: Destroy PR Environment
         run: |
-          echo shutting down environment for PR #${{ github.event.number }}
-      
+          export TEMP_STACK_NAME="ntno-net-ci-${{ needs.call-metadata-workflow.outputs.build-tag }}"
+          export TEMP_BUCKET_NAME="$TEMP_STACK_NAME"
+          
+          echo "shutting down environment for PR #${{ github.event.number }}"
+          
+          echo "forcing non-empty bucket delete: s3://${TEMP_BUCKET_NAME}"
+          aws s3 rb "s3://${TEMP_BUCKET_NAME}" --force  
+
+          echo "deleting cloudformation stack: ${TEMP_STACK_NAME}"
+          aws cloudformation delete-stack --stack-name "${TEMP_STACK_NAME}"
