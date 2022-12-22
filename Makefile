@@ -56,8 +56,8 @@ download-docs-artifact: check-version check-file check-output-path
 
 put-image-bundle: check-version
 	$(MAKE) bundle input-directory="./docs/img" output-directory="./" version=$(version) bundle-filename="$(version).tar" manifest-filename="$(version)-manifest.txt" && \
-	aws s3 cp --no-progress --sse AES256 $(version).tar $(image-artifact-prefix)$(version)/ && \
-	aws s3 cp --no-progress --sse AES256 $(version)-manifest.txt $(image-artifact-prefix)$(version)/
+	aws s3 cp --sse AES256 $(version).tar $(image-artifact-prefix)$(version)/ && \
+	aws s3 cp --sse AES256 $(version)-manifest.txt $(image-artifact-prefix)$(version)/
 
 get-image-bundle: check-env check-region check-download-directory 
 	eval "$$(buildenv -e $(env) -d $(region))" && \
