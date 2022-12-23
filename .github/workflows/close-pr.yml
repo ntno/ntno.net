@@ -23,7 +23,7 @@ jobs:
       - name: Destroy PR Environment
         run: |
             export MESSAGE="${{ needs.call-metadata-workflow.outputs.pr-env }}"
-            echo "::notice title={Destroyed PR Environment}::{$MESSAGE}"
+            echo "::notice title=Destroyed PR Environment::environment name: $MESSAGE"
       #     export TEMP_STACK_NAME="${{ needs.call-metadata-workflow.outputs.pr-env }}"
       #     export TEMP_BUCKET_NAME="${{ needs.call-metadata-workflow.outputs.pr-env }}"
           

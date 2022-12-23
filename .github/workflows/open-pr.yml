@@ -46,5 +46,5 @@ jobs:
           export URL="http://${TEMP_BUCKET_NAME}.s3-website.us-east-2.amazonaws.com"
           export MESSAGE="please review changes at ${URL}"
           gh pr comment ${{ github.event.number }} --body "${MESSAGE}"
-          echo "::notice title={Created PR Environment}::{$URL}"
+          echo "::notice title=Created PR Environment::environment url: $URL"
 
