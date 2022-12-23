@@ -29,6 +29,17 @@ open-local:
 open:
 	open https://ntno.net
 
+build-mkdocs: check-env check-region
+	source ./scripts/build.sh $(env) $(region)
+
+archive-mkdocs: check-env check-region check-version
+	$(MAKE) bundle input-directory="./site" output-directory="./" bundle-filename="docs-site.tar" manifest-filename="manifest.txt"
+	$(MAKE) upload-docs-artifact file="./docs-site.tar"
+	$(MAKE) upload-docs-artifact file="./manifest.txt"
+
+download-mkdocs-assets: check-env check-region check-download-directory
+	$(MAKE) get-image-bundle
+
 ##########################################################################################
 # run from inside docker container 
 ##########################################################################################
@@ -118,3 +129,7 @@ check-output-path:
 ifndef output-path
 	$(error output-path is not defined)
 endif
+
+            # make bundle input-directory="./site" output-directory="./" bundle-filename="docs-site.tar" manifest-filename="manifest.txt"
+            # make upload-docs-artifact file="./docs-site.tar" version=${{ inputs.version }}
+            # make upload-docs-artifact file="./manifest.txt" version=${{ inputs.version }}
