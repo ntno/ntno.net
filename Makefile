@@ -133,3 +133,16 @@ endif
             # make bundle input-directory="./site" output-directory="./" bundle-filename="docs-site.tar" manifest-filename="manifest.txt"
             # make upload-docs-artifact file="./docs-site.tar" version=${{ inputs.version }}
             # make upload-docs-artifact file="./manifest.txt" version=${{ inputs.version }}
+	
+    #     run: |
+    #       export BUILD_TAG="${{ needs.call-metadata-workflow.outputs.build-tag }}"
+    #       make download-docs-artifact version="${BUILD_TAG}" file="docs-site.tar" output-path="."
+    #   - name: Deploy Archived Site 
+    #     run: |
+    #       mkdir -p site
+    #       tar \
+    #         --directory "./site/" \
+    #         -xf ./docs-site.tar 
+          
+    #       export TEMP_BUCKET_NAME="${{ needs.call-metadata-workflow.outputs.pr-env }}"
+    #       aws s3 sync --no-progress --sse AES256 --acl public-read ./site/ s3://${TEMP_BUCKET_NAME}/
