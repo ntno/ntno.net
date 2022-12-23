@@ -5,6 +5,15 @@ artifact-bucket=s3://artifacts.ntno.net
 image-artifact-prefix=$(artifact-bucket)/img-bundle/
 docs-artifact-prefix=$(artifact-bucket)/docs-bundle/
 
+ifeq ($(DRY_RUN),1)
+   DRY_RUN_FLAG = --dryrun
+endif
+
+ifeq ($(QUIET),1)
+   QUIET_FLAG = --quiet
+endif
+
+
 ##########################################################################################
 # run docker/serve/build/deploy/stop commands from local machine
 ##########################################################################################
@@ -48,7 +57,7 @@ get-mkdocs-archive:  check-env check-region check-version check-download-directo
 		-xf $(download-directory)docs-site.tar 
 
 deploy-mkdocs: check-env check-region check-bucket-name
-	aws s3 sync --no-progress --sse AES256 --acl public-read ./site/ s3://$(bucket-name)/
+	aws s3 sync $(DRY_RUN_FLAG) $(QUIET_FLAG) --no-progress --sse AES256 --acl public-read ./site/ s3://$(bucket-name)/
 
 ##########################################################################################
 # run from inside docker container 
@@ -70,19 +79,19 @@ bundle: check-input-directory check-output-directory check-bundle-filename check
 		. > $(output-directory)$(manifest-filename)
 
 upload-docs-artifact: check-version check-file
-	aws s3 cp --no-progress --sse AES256 $(file) $(docs-artifact-prefix)$(version)/
+	aws s3 cp $(DRY_RUN_FLAG) $(QUIET_FLAG) --no-progress --sse AES256 $(file) $(docs-artifact-prefix)$(version)/
 
 download-docs-artifact: check-version check-file check-output-path
-	aws s3 cp --no-progress $(docs-artifact-prefix)$(version)/$(file) $(output-path)
+	aws s3 cp $(DRY_RUN_FLAG) $(QUIET_FLAG) --no-progress $(docs-artifact-prefix)$(version)/$(file) $(output-path)
 
 put-image-bundle: check-version
 	$(MAKE) bundle input-directory="./docs/img" output-directory="./" version=$(version) bundle-filename="$(version).tar" manifest-filename="$(version)-manifest.txt" && \
-	aws s3 cp --sse AES256 $(version).tar $(image-artifact-prefix)$(version)/ && \
-	aws s3 cp --sse AES256 $(version)-manifest.txt $(image-artifact-prefix)$(version)/
+	aws s3 cp $(DRY_RUN_FLAG) $(QUIET_FLAG) --sse AES256 $(version).tar $(image-artifact-prefix)$(version)/ && \
+	aws s3 cp $(DRY_RUN_FLAG) $(QUIET_FLAG) --sse AES256 $(version)-manifest.txt $(image-artifact-prefix)$(version)/
 
 get-image-bundle: check-env check-region check-download-directory 
 	eval "$$(buildenv -e $(env) -d $(region))" && \
-	aws s3 cp --no-progress $(image-artifact-prefix)$$IMAGE_BUNDLE_VERSION/$$IMAGE_BUNDLE_VERSION.tar $(download-directory) && \
+	aws s3 cp $(DRY_RUN_FLAG) $(QUIET_FLAG) --no-progress $(image-artifact-prefix)$$IMAGE_BUNDLE_VERSION/$$IMAGE_BUNDLE_VERSION.tar $(download-directory) && \
 	tar \
 		--directory "./docs/img/" \
 		-xf $(download-directory)$$IMAGE_BUNDLE_VERSION.tar && \
