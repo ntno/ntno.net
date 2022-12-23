@@ -18,7 +18,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Build PR
-        uses: ntno/build-mkdocs-composite-action
+        uses: ntno/build-mkdocs-composite-action@main
         with:
           archive-enabled: true
           version: ${{ needs.call-metadata-workflow.outputs.build-tag }}
