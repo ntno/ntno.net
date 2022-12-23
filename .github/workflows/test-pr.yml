@@ -10,20 +10,20 @@ jobs:
   call-metadata-workflow:
     uses: ./.github/workflows/meta.yml 
     secrets: inherit 
-  call-build-workflow:
-    uses: ./.github/workflows/build.yml
-    with:
-      archive-enabled: true
-      version: ${{ needs.call-metadata-workflow.outputs.build-tag }}
-      env-name: prod
-      aws-region: us-east-2
-    secrets: 
-      aws-access-key-id: ${{ secrets.CI_AWS_ACCESS_KEY_ID }}
-      aws-secret-access-key: ${{ secrets.CI_AWS_SECRET_ACCESS_KEY }}
   build-pr:
-    needs: [call-metadata-workflow, call-build-workflow]
+    needs: [call-metadata-workflow]
     runs-on: ubuntu-latest
     steps: 
+      - name: Build PR
+        uses: ./.github/workflows/build.yml
+        with:
+          archive-enabled: true
+          version: ${{ needs.call-metadata-workflow.outputs.build-tag }}
+          env-name: prod
+          aws-region: us-east-2
+        secrets: 
+          aws-access-key-id: ${{ secrets.CI_AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.CI_AWS_SECRET_ACCESS_KEY }}
       - name: Report Result
         run: |
           echo "PR #${{ needs.call-metadata-workflow.outputs.pr-number }} built with version=${{ needs.call-metadata-workflow.outputs.build-tag }}"
