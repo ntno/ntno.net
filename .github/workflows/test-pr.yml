@@ -17,8 +17,10 @@ jobs:
     steps: 
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Install Buildenv
+        uses: ntno/setup-buildenv@v1        
       - name: Build PR
-        uses: ntno/build-mkdocs-composite-action@v1
+        uses: ntno/build-mkdocs-composite-action@remove-buildenv
         with:
           archive-enabled: true
           version: ${{ needs.call-metadata-workflow.outputs.build-tag }}
