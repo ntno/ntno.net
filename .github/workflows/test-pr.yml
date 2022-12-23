@@ -17,8 +17,10 @@ jobs:
     steps: 
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          ref: pr-workflow
       - name: Build PR
-        uses: ./.github/build/action.yml@pr-workflow
+        uses: ./.github/build/action.yml
         with:
           archive-enabled: true
           version: ${{ needs.call-metadata-workflow.outputs.build-tag }}
