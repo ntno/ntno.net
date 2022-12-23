@@ -20,7 +20,7 @@ jobs:
       - name: Install Buildenv
         uses: ntno/setup-buildenv@v1        
       - name: Build Release
-        uses: ntno/build-mkdocs-composite-action@v2
+        uses: ntno/build-mkdocs-composite-action@add-make-vars
         with:
           archive-enabled: false
           version: ${{ needs.call-metadata-workflow.outputs.build-tag }}
@@ -43,7 +43,7 @@ jobs:
         uses: ntno/setup-buildenv@v1   
       - name: Deploy Release
         id: deploy-mkdocs
-        uses: ntno/deploy-mkdocs-composite-action@v1
+        uses: ntno/deploy-mkdocs-composite-action@add-dry-run-option
         with:         
           version: ${{ needs.call-metadata-workflow.outputs.build-tag }}
           env-name: prod
