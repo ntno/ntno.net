@@ -10,50 +10,50 @@ jobs:
   call-metadata-workflow:
     uses: ./.github/workflows/meta.yml 
     secrets: inherit 
-  build-release:
-    needs: [call-metadata-workflow]
-    runs-on: ubuntu-latest
-    environment: prod
-    steps: 
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Install Buildenv
-        uses: ntno/setup-buildenv@v1        
-      - name: Build Release
-        uses: ntno/build-mkdocs-composite-action@add-make-vars
-        with:
-          archive-enabled: false
-          version: ${{ needs.call-metadata-workflow.outputs.build-tag }}
-          env-name: prod
-          aws-region: us-east-2
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      - name: Report Result
-        run: |
-          export MESSAGE="Release #TODO built with version=${{ needs.call-metadata-workflow.outputs.build-tag }}"
-          echo "::notice title=Release Built::$MESSAGE"
-  deploy-release:
-    needs: [call-metadata-workflow, build-release]
-    runs-on: ubuntu-latest
-    environment: prod
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Install Buildenv
-        uses: ntno/setup-buildenv@v1   
-      - name: Deploy Release
-        id: deploy-mkdocs
-        uses: ntno/deploy-mkdocs-composite-action@add-dry-run-option
-        with:         
-          version: ${{ needs.call-metadata-workflow.outputs.build-tag }}
-          env-name: prod
-          s3-bucket: ntno.net
-          aws-region: us-east-2
-          make-vars-for-deploy-target: "DRY_RUN=1"
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      - name: Report Result
-        run: |
-          export MESSAGE="Release #TODO deployed to  http://ntno.net.s3-website.us-east-2.amazonaws.com with version=${{ needs.call-metadata-workflow.outputs.build-tag }}"        
-          echo "::notice title=Release Deployed::$MESSAGE"
+  # build-release:
+  #   needs: [call-metadata-workflow]
+  #   runs-on: ubuntu-latest
+  #   environment: prod
+  #   steps: 
+  #     - name: Checkout
+  #       uses: actions/checkout@v3
+  #     - name: Install Buildenv
+  #       uses: ntno/setup-buildenv@v1        
+  #     - name: Build Release
+  #       uses: ntno/build-mkdocs-composite-action@add-make-vars
+  #       with:
+  #         archive-enabled: false
+  #         version: ${{ needs.call-metadata-workflow.outputs.build-tag }}
+  #         env-name: prod
+  #         aws-region: us-east-2
+  #         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  #         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  #     - name: Report Result
+  #       run: |
+  #         export MESSAGE="Release #TODO built with version=${{ needs.call-metadata-workflow.outputs.build-tag }}"
+  #         echo "::notice title=Release Built::$MESSAGE"
+  # deploy-release:
+  #   needs: [call-metadata-workflow, build-release]
+  #   runs-on: ubuntu-latest
+  #   environment: prod
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v3
+  #     - name: Install Buildenv
+  #       uses: ntno/setup-buildenv@v1   
+  #     - name: Deploy Release
+  #       id: deploy-mkdocs
+  #       uses: ntno/deploy-mkdocs-composite-action@add-dry-run-option
+  #       with:         
+  #         version: ${{ needs.call-metadata-workflow.outputs.build-tag }}
+  #         env-name: prod
+  #         s3-bucket: ntno.net
+  #         aws-region: us-east-2
+  #         make-vars-for-deploy-target: "DRY_RUN=1"
+  #         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  #         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  #     - name: Report Result
+  #       run: |
+  #         export MESSAGE="Release #TODO deployed to  http://ntno.net.s3-website.us-east-2.amazonaws.com with version=${{ needs.call-metadata-workflow.outputs.build-tag }}"        
+  #         echo "::notice title=Release Deployed::$MESSAGE"
       
