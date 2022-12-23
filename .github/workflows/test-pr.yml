@@ -24,7 +24,7 @@ jobs:
     needs: [call-metadata-workflow, call-build-workflow]
     runs-on: ubuntu-latest
     steps: 
-      - name: report
+      - name: Report Result
         run: |
           echo "PR #${{ needs.call-metadata-workflow.outputs.pr-number }} built with version=${{ needs.call-metadata-workflow.outputs.build-tag }}"
   deploy-pr:
