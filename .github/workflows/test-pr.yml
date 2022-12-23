@@ -25,7 +25,7 @@ jobs:
           archive-enabled: true
           version: ${{ needs.call-metadata-workflow.outputs.build-tag }}
           env-name: prod
-          make-vars: "DRY_RUN=1 QUIET=1"
+          make-vars: "QUIET=1"
           aws-region: us-east-2
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
