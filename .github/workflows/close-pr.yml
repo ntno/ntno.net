@@ -20,8 +20,10 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-2
-      # - name: Destroy PR Environment
-      #   run: |
+      - name: Destroy PR Environment
+        run: |
+            export MESSAGE="${{ needs.call-metadata-workflow.outputs.pr-env }}"
+            echo "::notice title={Destroyed PR Environment}::{$MESSAGE}"
       #     export TEMP_STACK_NAME="${{ needs.call-metadata-workflow.outputs.pr-env }}"
       #     export TEMP_BUCKET_NAME="${{ needs.call-metadata-workflow.outputs.pr-env }}"
           
