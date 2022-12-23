@@ -45,6 +45,6 @@ jobs:
           export TEMP_BUCKET_NAME="${{ needs.call-metadata-workflow.outputs.pr-env }}"
           export URL="http://${TEMP_BUCKET_NAME}.s3-website.us-east-2.amazonaws.com"
           export MESSAGE="please review changes at ${URL}"
-          gh pr comment ${{ github.event.number }} --body ${MESSAGE}
+          gh pr comment ${{ github.event.number }} --body "${MESSAGE}"
           echo "::notice $URL"
 
