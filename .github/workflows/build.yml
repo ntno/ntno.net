@@ -43,12 +43,13 @@ jobs:
           aws-access-key-id: ${{ secrets.aws-access-key-id }}
           aws-secret-access-key: ${{ secrets.aws-secret-access-key }}
           aws-region: ${{ inputs.aws-region }} 
-      - uses: actions/setup-python@v4
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Restore Pip Cache
+        uses: actions/setup-python@v4
         with:
           python-version: '3.8'
           cache: 'pip' # caching pip dependencies
-      - name: Checkout
-        uses: actions/checkout@v3
       - name: Download Image Bundle
         run: |
           make get-image-bundle download-directory="$RUNNER_TEMP/"
