@@ -58,7 +58,7 @@ jobs:
           source ./scripts/build.sh ${{ inputs.env-name }} ${{ inputs.aws-region }}
       - name: Archive Site
         run: |
-          if [[ "${{ inputs.archive_enabled }}" == "true" ]]; then
+          if [[ "${{ inputs.archive-enabled }}" == "true" ]]; then
               echo "Archiving site..."
               make bundle input-directory="./site" output-directory="./" bundle-filename="docs-site.tar" manifest-filename="manifest.txt"
               make upload-docs-artifact file="./docs-site.tar" version=${{ inputs.version }}
