@@ -29,6 +29,27 @@ open-local:
 open:
 	open https://ntno.net
 
+setup-mkdocs: check-env check-region check-download-directory
+	$(MAKE) get-image-bundle
+
+build-mkdocs: check-env check-region
+	source ./scripts/build.sh $(env) $(region)
+
+archive-mkdocs: check-env check-region check-version
+	$(MAKE) bundle input-directory="./site" output-directory="./" bundle-filename="docs-site.tar" manifest-filename="manifest.txt"
+	$(MAKE) upload-docs-artifact file="./docs-site.tar"
+	$(MAKE) upload-docs-artifact file="./manifest.txt"
+
+get-mkdocs-archive:  check-env check-region check-version check-download-directory
+	mkdir -p site
+	$(MAKE) download-docs-artifact file="docs-site.tar" output-path=$(download-directory) && \
+	tar \
+		--directory "./site/" \
+		-xf $(download-directory)docs-site.tar 
+
+deploy-mkdocs: check-env check-region check-bucket-name
+	aws s3 sync --no-progress --sse AES256 --acl public-read ./site/ s3://$(bucket-name)/
+
 ##########################################################################################
 # run from inside docker container 
 ##########################################################################################
@@ -117,4 +138,9 @@ endif
 check-output-path:
 ifndef output-path
 	$(error output-path is not defined)
+endif
+
+check-bucket-name:
+ifndef bucket-name
+	$(error bucket-name is not defined)
 endif
