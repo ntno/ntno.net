@@ -42,7 +42,7 @@ jobs:
         uses: ntno/setup-buildenv@v1   
       - name: Deploy PR
         id: deploy-mkdocs
-        uses: ntno/deploy-mkdocs-composite-action@initial
+        uses: ntno/deploy-mkdocs-composite-action@v1
         with:         
           version: ${{ needs.call-metadata-workflow.outputs.build-tag }}
           env-name: prod
@@ -52,6 +52,6 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       - name: Report Result
         run: |
-          echo "PR #${{ needs.call-metadata-workflow.outputs.pr-number }} deployed to  http://${{ needs.call-metadata-workflow.outputs.pr-env }}.s3-website.{{ steps.deploy-mkdocs.inputs.aws-region }}.amazonaws.com with version=${{ needs.call-metadata-workflow.outputs.build-tag }}"        
+          echo "PR #${{ needs.call-metadata-workflow.outputs.pr-number }} deployed to  http://${{ needs.call-metadata-workflow.outputs.pr-env }}.s3-website.us-east-2.amazonaws.com with version=${{ needs.call-metadata-workflow.outputs.build-tag }}"        
       
       
