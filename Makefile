@@ -29,7 +29,7 @@ open-local:
 open:
 	open https://ntno.net
 
-build-mkdocs: check-env check-region
+setup-mkdocs: check-env check-region
 	source ./scripts/build.sh $(env) $(region)
 
 archive-mkdocs: check-env check-region check-version
