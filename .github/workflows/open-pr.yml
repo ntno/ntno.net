@@ -49,7 +49,3 @@ jobs:
           export MESSAGE="please review changes at ${URL}"
           gh pr comment ${{ github.event.number }} --body "${MESSAGE}"
           echo "::notice title=Created PR Environment::environment url: $URL"
-
-
-        # export TEMP_STACK_NAME="${{ needs.call-metadata-workflow.outputs.pr-env }}"
-        # export TEMP_BUCKET_NAME="${{ needs.call-metadata-workflow.outputs.pr-env }}"
