@@ -8,37 +8,21 @@ on:
 jobs:
   call-metadata-workflow:
     uses: ./.github/workflows/meta.yml 
-    secrets: inherit
+    secrets: inherit 
+  call-build-workflow:
+    uses: ./.github/workflows/build.yml
+    with:
+      archive-enabled: true
+      version: ${{ needs.call-metadata-workflow.outputs.build-tag }}
+      env-name: prod
+      aws-region: us-east-2
+    secrets: 
+      aws-access-key-id: ${{ secrets.CI_AWS_ACCESS_KEY_ID }}
+      aws-secret-access-key: ${{ secrets.CI_AWS_SECRET_ACCESS_KEY }}
   build-pr:
-    needs: [call-metadata-workflow]
+    needs: [call-metadata-workflow, call-build-workflow]
     runs-on: ubuntu-latest
-    steps:
-      - name: Install Buildenv
-        uses: ntno/setup-buildenv@v1
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          aws-access-key-id: ${{ secrets.CI_AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.CI_AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-2
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3.8'
-          cache: 'pip' # caching pip dependencies
-      - name: Download Image Bundle
-        run: |
-          make get-image-bundle download-directory="$RUNNER_TEMP/"
-      - name: Build Site
-        run: |
-          source ./scripts/build.sh prod us-east-2
-      - name: Archive Site
-        run: |
-          export BUILD_TAG="${{ needs.call-metadata-workflow.outputs.build-tag }}"
-          make bundle input-directory="./site" output-directory="./" bundle-filename="docs-site.tar" manifest-filename="manifest.txt"
-          make upload-docs-artifact file="./docs-site.tar" version="${BUILD_TAG}"
-          make upload-docs-artifact file="./manifest.txt" version="${BUILD_TAG}"
+    steps: []
   deploy-pr:
     runs-on: ubuntu-latest
     needs: [call-metadata-workflow, build-pr]
