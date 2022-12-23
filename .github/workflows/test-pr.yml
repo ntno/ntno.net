@@ -25,7 +25,7 @@ jobs:
           archive-enabled: true
           version: ${{ needs.call-metadata-workflow.outputs.build-tag }}
           env-name: prod
-          make-vars: "QUIET=1"
+          make-vars: "--no-print-directory QUIET=1"
           aws-region: us-east-2
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -49,7 +49,7 @@ jobs:
           version: ${{ needs.call-metadata-workflow.outputs.build-tag }}
           env-name: prod
           s3-bucket: ${{ needs.call-metadata-workflow.outputs.pr-env }}
-          make-vars: "DRY_RUN=1"
+          make-vars: "--no-print-directory QUIET=1"
           aws-region: us-east-2
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
