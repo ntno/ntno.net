@@ -13,16 +13,15 @@ jobs:
   build-pr:
     needs: [call-metadata-workflow]
     runs-on: ubuntu-latest
+    environment: ci
     steps: 
       - name: Build PR
         uses: ./.github/workflows/build.yml
-        environment: ci
         with:
           archive-enabled: true
           version: ${{ needs.call-metadata-workflow.outputs.build-tag }}
           env-name: prod
           aws-region: us-east-2
-        secrets: 
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       - name: Report Result
