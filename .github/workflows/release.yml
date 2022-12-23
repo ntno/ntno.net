@@ -1,19 +1,19 @@
-# Simple workflow for testing mkdocs site 
-name: Test Pull Request
+# Simple workflow for releasing mkdocs site 
+name: Release
 
 on:
   workflow_dispatch:
-  pull_request:
-    types: [ synchronize ]
+  # pull_request:
+  #   types: [ synchronize ]
   
 jobs:
   call-metadata-workflow:
     uses: ./.github/workflows/meta.yml 
     secrets: inherit 
-  build-pr:
+  build-release:
     needs: [call-metadata-workflow]
     runs-on: ubuntu-latest
-    environment: ci
+    environment: prod
     steps: 
       - name: Checkout
         uses: actions/checkout@v3
@@ -32,10 +32,10 @@ jobs:
         run: |
           export MESSAGE="PR #${{ needs.call-metadata-workflow.outputs.pr-number }} built with version=${{ needs.call-metadata-workflow.outputs.build-tag }}"
           echo "::notice title=PR Built::$MESSAGE"
-  deploy-pr:
-    needs: [call-metadata-workflow, build-pr]
+  deploy-release:
+    needs: [call-metadata-workflow, build-release]
     runs-on: ubuntu-latest
-    environment: ci
+    environment: prod
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -47,7 +47,7 @@ jobs:
         with:         
           version: ${{ needs.call-metadata-workflow.outputs.build-tag }}
           env-name: prod
-          s3-bucket: ${{ needs.call-metadata-workflow.outputs.pr-env }}
+          s3-bucket: ntno.net
           aws-region: us-east-2
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
