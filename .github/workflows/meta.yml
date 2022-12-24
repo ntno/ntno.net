@@ -15,6 +15,18 @@ on:
       pr-env:
         description: "pr environment name or null if not a pull_request"
         value: ${{ jobs.set-metadata.outputs.pr-env }}
+      release-name:
+        description: "release name or null if not a release"
+        value: ${{ jobs.set-metadata.outputs.release-name }}
+      release-id:
+        description: "release ID or null if not a release"
+        value: ${{ jobs.set-metadata.outputs.release-id }}        
+      release-is-prerelease:
+        description: "true if release is a prerelease, false if release is fully released, null if not a release"
+        value: ${{ jobs.set-metadata.outputs.release-is-prerelease }}
+      release-url:
+        description: "release URL or null if not a release"
+        value: ${{ jobs.set-metadata.outputs.release-url }}
       revision-sha:
         description: "full sha"
         value: ${{ jobs.set-metadata.outputs.revision-sha }}
@@ -32,6 +44,10 @@ jobs:
       event-name: ${{ steps.set-event-name.outputs.event-name }}
       pr-number:  ${{ steps.set-pr-number.outputs.pr-number }}
       pr-env: ${{ steps.set-pr-number.outputs.pr-env }}
+      release-name: ${{ steps.set-release.outputs.release-name }}
+      release-id: ${{ steps.set-release.outputs.release-id }}
+      release-is-prerelease: ${{ steps.set-release.outputs.release-is-prerelease }}
+      release-url: ${{ steps.set-release.outputs.release-url }}
       revision-sha: ${{ steps.set-revision-sha.outputs.revision-sha }}
       build-tag: ${{ steps.set-build-tag.outputs.build-tag }}
       artifact-name: ${{ steps.stash-event-payload.outputs.artifact-name }}
@@ -50,6 +66,24 @@ jobs:
               echo "pr-number=null" >> $GITHUB_OUTPUT
               echo "pr-env=null" >> $GITHUB_OUTPUT
           fi
+      - name: set-release
+        id: set-release
+        run: |
+          if [[ "${{ github.event_name }}" == "release" ]]; then
+              export RELEASE_NAME=$( cat ${{ github.event_path }} | jq .release.name -r )
+              export RELEASE_ID=$( cat ${{ github.event_path }} | jq .release.id -r )
+              export RELEASE_IS_PRERELEASE=$( cat ${{ github.event_path }} | jq .release.prerelease -r )
+              export RELEASE_URL=$( cat ${{ github.event_path }} | jq .release.html_url -r )
+              echo release-name=${RELEASE_NAME} >> $GITHUB_OUTPUT
+              echo release-id=${RELEASE_ID} >> $GITHUB_OUTPUT
+              echo release-is-prerelease=${RELEASE_IS_PRERELEASE} >> $GITHUB_OUTPUT
+              echo release-url=${RELEASE_URL} >> $GITHUB_OUTPUT
+          else
+              echo "release-name=null" >> $GITHUB_OUTPUT
+              echo "release-id=null" >> $GITHUB_OUTPUT
+              echo "release-is-prerelease=null" >> $GITHUB_OUTPUT
+              echo "release-url=null" >> $GITHUB_OUTPUT
+          fi          
       - name: set-revision-sha
         id: set-revision-sha
         run: echo "revision-sha=${{ github.sha }}" >> $GITHUB_OUTPUT
@@ -74,6 +108,10 @@ jobs:
           echo "event-name: ${{ steps.set-event-name.outputs.event-name }}"
           echo "pr-number:  ${{ steps.set-pr-number.outputs.pr-number }}"
           echo "pr-env: ${{ steps.set-pr-number.outputs.pr-env }}"
+          echo "release-name: ${{ steps.set-release.outputs.release-name }}"
+          echo "release-id: ${{ steps.set-release.outputs.release-id }}"
+          echo "release-is-prerelease: ${{ steps.set-release.outputs.release-is-prerelease }}"
+          echo "release-url: ${{ steps.set-release.outputs.release-url }}"
           echo "revision-sha: ${{ steps.set-revision-sha.outputs.revision-sha }}"
           echo "build-tag: ${{ steps.set-build-tag.outputs.build-tag }}"
           echo "artifact-name: ${{ steps.stash-event-payload.outputs.artifact-name }}"
