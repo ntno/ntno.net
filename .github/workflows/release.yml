@@ -4,7 +4,7 @@ name: Release
 on:
   workflow_dispatch:
   release:
-  
+    [ published ]
 jobs:
   call-metadata-workflow:
     uses: ./.github/workflows/meta.yml 
@@ -18,19 +18,10 @@ jobs:
         uses: actions/checkout@v3
       - name: Install Buildenv
         uses: ntno/setup-buildenv@v1     
-      - name: Set Env Vars
-        id: set-env-vars
-        run: |
-          if [[ "${{ needs.call-metadata-workflow.outputs.release-is-prerelease }}" == "true" ]]; then
-              echo "Release is marked as prerelease, skipping site archive upload..."
-              echo "archive-build=false" >> $GITHUB_ENV
-          else
-              echo "archive-build=true" >> $GITHUB_ENV
-          fi
       - name: Build Release
         uses: ntno/build-mkdocs-composite-action@add-make-vars
         with:
-          archive-enabled: ${{ env.archive-build }}
+          archive-enabled: true
           version: ${{ needs.call-metadata-workflow.outputs.release-name }}
           env-name: prod
           aws-region: us-east-2
