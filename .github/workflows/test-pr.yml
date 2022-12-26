@@ -53,8 +53,7 @@ jobs:
           env-name: prod
           s3-bucket: ${{ needs.call-metadata-workflow.outputs.pr-env }}
           aws-region: us-east-2
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          role-to-assume: ${{ secrets.ROLE_ARN }}
       - name: Report Result
         run: |
           export MESSAGE="PR #${{ needs.call-metadata-workflow.outputs.pr-number }} deployed to  http://${{ needs.call-metadata-workflow.outputs.pr-env }}.s3-website.us-east-2.amazonaws.com with version=${{ needs.call-metadata-workflow.outputs.build-tag }}"        
