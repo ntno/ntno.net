@@ -11,6 +11,15 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: report-repository-oidc-subject-claim
+        env:
+            GH_TOKEN: ${{ github.token }}
+        run: |
+          curl \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer ${{ env.GH_TOKEN }}"\
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            https://api.github.com/repos/${{ github.repository }}/actions/oidc/customization/sub
       - name: customize-oidc-claims
         env:
             GH_TOKEN: ${{ github.token }}
