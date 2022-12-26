@@ -1,7 +1,7 @@
 SHELL:=/bin/bash
 env=prod
 region=us-east-2
-artifact-bucket=s3://artifacts.ntno.net
+artifact-bucket=s3://ntno.net-artifacts
 image-artifact-prefix=$(artifact-bucket)/img-bundle/
 docs-artifact-prefix=$(artifact-bucket)/docs-bundle/
 
