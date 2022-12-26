@@ -12,7 +12,7 @@ jobs:
   build-release:
     needs: [call-metadata-workflow]
     runs-on: ubuntu-latest
-    environment: ci
+    environment: prod
     steps: 
       - name: Checkout
         uses: actions/checkout@v3
@@ -25,8 +25,7 @@ jobs:
           version: ${{ needs.call-metadata-workflow.outputs.release-name }}
           env-name: prod
           aws-region: us-east-2
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          role-to-assume: ${{ secrets.ROLE_ARN }}
       - name: Report Result
         run: |
           export MESSAGE="Release ${{ needs.call-metadata-workflow.outputs.release-name }} built with ${{ needs.call-metadata-workflow.outputs.build-tag }}"
@@ -58,8 +57,7 @@ jobs:
           s3-bucket: ntno.net
           aws-region: us-east-2
           make-vars-for-deploy-target: ${{ env.deploy-flags }}
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          role-to-assume: ${{ secrets.ROLE_ARN }}
       - name: Report Result
         run: |
           export MESSAGE="Release ${{ needs.call-metadata-workflow.outputs.release-name }} deployed to http://ntno.net.s3-website.us-east-2.amazonaws.com with ${{ needs.call-metadata-workflow.outputs.build-tag }}"        
