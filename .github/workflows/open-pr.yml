@@ -12,6 +12,9 @@ jobs:
   create-pr-environment:
     needs: [call-metadata-workflow]
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
     environment: ci
     steps:
       - name: Checkout
