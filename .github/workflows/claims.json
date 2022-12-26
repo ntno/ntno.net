@@ -1,0 +1,10 @@
+{
+    "include_claim_keys": [
+        "repo",
+        "context",
+        "workflow",
+        "job_workflow_ref",
+        "repository_visibility"
+    ],
+    "use_default": false
+}
