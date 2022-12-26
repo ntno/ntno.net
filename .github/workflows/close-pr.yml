@@ -5,6 +5,10 @@ on:
   pull_request:
     types: [ closed, merged ]
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   call-metadata-workflow:
     uses: ./.github/workflows/meta.yml 
@@ -12,9 +16,6 @@ jobs:
   destroy-pr-environment:
     needs: [call-metadata-workflow]
     runs-on: ubuntu-latest
-    permissions:
-      id-token: write
-      contents: write
     environment: ci
     steps:
       - name: Configure AWS credentials

@@ -6,6 +6,10 @@ on:
   pull_request:
     types: [ synchronize ]
   
+permissions:
+  id-token: write
+  contents: read
+  
 jobs:
   call-metadata-workflow:
     uses: ./.github/workflows/meta.yml 
@@ -13,9 +17,6 @@ jobs:
   build-pr:
     needs: [call-metadata-workflow]
     runs-on: ubuntu-latest
-    permissions:
-      id-token: write
-      contents: write
     environment: ci
     steps: 
       - name: Checkout
