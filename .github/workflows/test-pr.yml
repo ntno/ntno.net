@@ -13,6 +13,7 @@ jobs:
   build-pr:
     needs: [call-metadata-workflow]
     runs-on: ubuntu-latest
+    environment: ci
     steps: 
       - name: Checkout
         uses: actions/checkout@v3
@@ -25,7 +26,7 @@ jobs:
           version: ${{ needs.call-metadata-workflow.outputs.build-tag }}
           env-name: prod
           aws-region: us-east-2
-          role-to-assume: CI-ntno.net
+          role-to-assume: ${{ secrets.CI_ROLE_ARN }}
       - name: Report Result
         run: |
           export MESSAGE="PR #${{ needs.call-metadata-workflow.outputs.pr-number }} built with version=${{ needs.call-metadata-workflow.outputs.build-tag }}"

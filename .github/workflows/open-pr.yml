@@ -12,6 +12,7 @@ jobs:
   create-pr-environment:
     needs: [call-metadata-workflow]
     runs-on: ubuntu-latest
+    environment: ci
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -19,7 +20,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-region: us-east-2
-          role-to-assume: CI-ntno.net
+          role-to-assume: ${{ secrets.CI_ROLE_ARN }}
       - name: Set Env Vars
         id: set-env-vars
         run: |
