@@ -20,7 +20,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-region: us-east-2
-          role-to-assume: ${{ secrets.CI_ROLE_ARN }}
+          role-to-assume: ${{ secrets.ROLE_ARN }}
       - name: Set Env Vars
         id: set-env-vars
         run: |

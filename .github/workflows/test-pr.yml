@@ -26,7 +26,7 @@ jobs:
           version: ${{ needs.call-metadata-workflow.outputs.build-tag }}
           env-name: prod
           aws-region: us-east-2
-          role-to-assume: ${{ secrets.CI_ROLE_ARN }}
+          role-to-assume: ${{ secrets.ROLE_ARN }}
       - name: Report Result
         run: |
           export MESSAGE="PR #${{ needs.call-metadata-workflow.outputs.pr-number }} built with version=${{ needs.call-metadata-workflow.outputs.build-tag }}"
