@@ -66,6 +66,10 @@ jobs:
           role-to-assume: ${{ secrets.ROLE_ARN }}
       - name: Report Result
         run: |
-          export MESSAGE="Release ${{ needs.call-metadata-workflow.outputs.release-name }} deployed to http://ntno.net.s3-website.us-east-2.amazonaws.com with ${{ needs.call-metadata-workflow.outputs.build-tag }}"        
-          echo "::notice title=Release Deployed::$MESSAGE"
-      
+          if [[ "${{ needs.call-metadata-workflow.outputs.release-is-prerelease }}" == "true" ]]; then
+              export MESSAGE="Release ${{ needs.call-metadata-workflow.outputs.release-name }} is marked as prerelease, deployment skipped..."
+              echo "::notice title=Release Deploy Skipped::$MESSAGE"
+          else
+              export MESSAGE="Release ${{ needs.call-metadata-workflow.outputs.release-name }} deployed to http://ntno.net.s3-website.us-east-2.amazonaws.com with ${{ needs.call-metadata-workflow.outputs.build-tag }}"        
+              echo "::notice title=Release Deployed::$MESSAGE"
+          fi 
