@@ -1,4 +1,5 @@
 # Sets Custom OIDC Subject Claims for repository
+# see https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/about-security-hardening-with-openid-connect
 name: Set Custom OIDC Claims
 
 on: 
@@ -20,7 +21,7 @@ jobs:
             -H "Authorization: Bearer ${{ env.GH_TOKEN }}"\
             -H "X-GitHub-Api-Version: 2022-11-28" \
             https://api.github.com/repos/${{ github.repository }}/actions/oidc/customization/sub \
-            -d '{"use_default":false,"include_claim_keys":["repo","context", "ref", "ref_type", "environment"]}'
+            -d '{"use_default":false,"include_claim_keys":["repo","context", "environment"]}'
       - name: report-repository-oidc-subject-claim
         env:
             GH_TOKEN: ${{ github.token }}
