@@ -14,6 +14,8 @@ jobs:
   call-metadata-workflow:
     uses: ./.github/workflows/meta.yml 
     secrets: inherit
+    with:
+      pr-prefix: "ntno-net-ci-pr-"    
   destroy-pr-environment:
     needs: [call-metadata-workflow]
     runs-on: ubuntu-latest
