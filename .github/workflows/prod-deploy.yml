@@ -51,7 +51,7 @@ jobs:
           archive-enabled: true
           version: ${{ inputs.tag }}
           env-name: prod
-          aws-region: us-east-1
+          aws-region: us-east-2
           role-to-assume: ${{ secrets.ROLE_ARN }}
       - name: Report Result
         run: |
@@ -84,7 +84,7 @@ jobs:
           version: ${{ inputs.tag }}
           env-name: prod
           s3-bucket: ${{ env.deploy-target }}
-          aws-region: us-east-1
+          aws-region: us-east-2
           make-vars-for-deploy-target: ${{ env.deploy-flags }}
           role-to-assume: ${{ secrets.ROLE_ARN }}
       - name: Report Result
