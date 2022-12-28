@@ -33,6 +33,7 @@ jobs:
           version: ${{ needs.call-metadata-workflow.outputs.build-tag }}
           env-name: prod
           aws-region: us-east-2
+          make-vars: "QUIET=1"
           role-to-assume: ${{ secrets.ROLE_ARN }}
       - name: Report Result
         run: |
@@ -55,6 +56,7 @@ jobs:
           env-name: prod
           s3-bucket: ${{ needs.call-metadata-workflow.outputs.pr-env }}
           aws-region: us-east-2
+          make-vars: "QUIET=1"
           role-to-assume: ${{ secrets.ROLE_ARN }}
       - name: Report Result
         run: |
