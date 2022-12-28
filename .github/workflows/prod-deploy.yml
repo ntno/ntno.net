@@ -1,0 +1,98 @@
+# Simple workflow for deploying mkdocs site 
+name: Deploy MkDocs to Production Environment
+
+env: 
+  deploy-target: ntno.net
+  deployment-url: https://ntno.net
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Tag to deploy'
+        required: true
+        type: string
+      perform-deploy:
+        description: 'Enable deployment to ntno.net'
+        required: true
+        type: boolean
+
+# These permissions are needed to interact with GitHub's OIDC Token endpoint.
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  check-out-tag:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ inputs.tag }}
+  call-metadata-workflow:
+    needs: [check-out-tag]
+    uses: ./.github/workflows/meta.yml 
+    secrets: inherit 
+  build-mkdocs:
+    needs: [check-out-tag, call-metadata-workflow]
+    runs-on: ubuntu-latest
+    environment: gh-prod
+    steps: 
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ inputs.tag }}
+      - name: Install Buildenv
+        uses: ntno/setup-buildenv@v1     
+      - name: Build MkDocs
+        uses: ntno/build-mkdocs-composite-action@v3
+        with:
+          archive-enabled: true
+          version: ${{ inputs.tag }}
+          env-name: prod
+          aws-region: us-east-1
+          role-to-assume: ${{ secrets.ROLE_ARN }}
+      - name: Report Result
+        run: |
+          export MESSAGE="${{ inputs.tag }} built with ${{ needs.call-metadata-workflow.outputs.build-tag }}"
+          echo "::notice title=Built MkDocs::$MESSAGE"
+  deploy-mkdocs:
+    needs: [call-metadata-workflow, build-mkdocs]
+    runs-on: ubuntu-latest
+    environment: gh-prod
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ inputs.tag }}
+      - name: Install Buildenv
+        uses: ntno/setup-buildenv@v1
+      - name: Set Env Vars
+        id: set-env-vars
+        run: |
+          if [[ "${{ inputs.perform-deploy }}" == "false" ]]; then
+              echo "Deploy is disabled for current workflow run.  Setting dryrun flag..."
+              echo "deploy-flags=DRY_RUN=1" >> $GITHUB_ENV
+          else
+              echo "deploy-flags=DRY_RUN=0" >> $GITHUB_ENV
+          fi   
+      - name: Deploy MkDocs
+        id: deploy-mkdocs
+        uses: ntno/deploy-mkdocs-composite-action@v2
+        with:         
+          version: ${{ inputs.tag }}
+          env-name: prod
+          s3-bucket: ${{ env.deploy-target }}
+          aws-region: us-east-1
+          make-vars-for-deploy-target: ${{ env.deploy-flags }}
+          role-to-assume: ${{ secrets.ROLE_ARN }}
+      - name: Report Result
+        run: |
+          if [[ "${{ inputs.perform-deploy }}" == "false" ]]; then
+              export MESSAGE="Deploy is disabled for current workflow run, deployment skipped..."
+              echo "::notice title=Deployment Skipped::$MESSAGE"
+          else
+              export MESSAGE="${{ inputs.tag }} deployed to ${{ env.deployment-url }} with ${{ needs.call-metadata-workflow.outputs.build-tag }}"        
+              echo "::notice title=Deployment Complete::$MESSAGE"
+          fi 
