@@ -33,7 +33,7 @@ jobs:
           version: ${{ needs.call-metadata-workflow.outputs.release-name }}
           env-name: prod
           aws-region: us-east-2
-          make-vars: "QUIET=1"
+          make-vars: "--no-print-directory QUIET=1"
           role-to-assume: ${{ secrets.ROLE_ARN }}
       - name: Report Result
         run: |
@@ -65,7 +65,7 @@ jobs:
           env-name: prod
           s3-bucket: ntno.net
           aws-region: us-east-2
-          make-vars: "QUIET=1"
+          make-vars: "--no-print-directory QUIET=1"
           make-vars-for-deploy-target: ${{ env.deploy-flags }}
           role-to-assume: ${{ secrets.ROLE_ARN }}
       - name: Report Result
