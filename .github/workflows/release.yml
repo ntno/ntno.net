@@ -15,10 +15,12 @@ jobs:
   call-metadata-workflow:
     uses: ./.github/workflows/meta.yml 
     secrets: inherit 
+    with:
+      pr-prefix: "ntno-net-ci-pr-"     
   build-release:
     needs: [call-metadata-workflow]
     runs-on: ubuntu-latest
-    environment: ci
+    environment: gh-ci
     steps: 
       - name: Checkout
         uses: actions/checkout@v3
@@ -31,6 +33,7 @@ jobs:
           version: ${{ needs.call-metadata-workflow.outputs.release-name }}
           env-name: prod
           aws-region: us-east-2
+          make-vars: "--no-print-directory QUIET=1"
           role-to-assume: ${{ secrets.ROLE_ARN }}
       - name: Report Result
         run: |
@@ -39,7 +42,7 @@ jobs:
   deploy-release:
     needs: [call-metadata-workflow, build-release]
     runs-on: ubuntu-latest
-    environment: prod
+    environment: gh-prod
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -62,6 +65,7 @@ jobs:
           env-name: prod
           s3-bucket: ntno.net
           aws-region: us-east-2
+          make-vars: "--no-print-directory QUIET=1"
           make-vars-for-deploy-target: ${{ env.deploy-flags }}
           role-to-assume: ${{ secrets.ROLE_ARN }}
       - name: Report Result
