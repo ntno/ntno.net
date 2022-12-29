@@ -1,17 +1,32 @@
 # ntno.net
 
+## live environments
+### integration (gh-ci)
+temporary environments are created/destroyed with pull request open/close  
+
+url: posted to the pull request for review  
+status:   
+   [![Test Pull Request](https://github.com/ntno/ntno.net/actions/workflows/test-pr.yml/badge.svg)](https://github.com/ntno/ntno.net/actions/workflows/test-pr.yml)
+
+### production (gh-prod)
+url: [https://ntno.net](https://ntno.net)    
+status:  
+   [![Deploy MkDocs to Production Environment](https://github.com/ntno/ntno.net/actions/workflows/prod-deploy.yml/badge.svg)](https://github.com/ntno/ntno.net/actions/workflows/prod-deploy.yml)
+
+
 ## local development
-```make serve```
+
+```
+make serve
+```
 
 ### download images for local development
 ```
 make get-image-bundle download-directory="."
 ```
 
-## deployment
-```make deploy```
+### image update
 
-## image update
 1. add/update image
 2. test locally
 ```
@@ -24,25 +39,6 @@ make put-image-bundle version="X.X.X"
 ```
 4. update `IMAGE_BUNDLE_VERSION` in variables.yml
 
-
-## notes
-```aws s3 sync --dryrun --sse AES256 --exclude '*.mov' --exclude '*.MOV' s3://ntno.net/img/ docs/img/```
-```
-      - name: Checkout
-        uses: actions/checkout@v3export BUILD_TAG=""
-      - name: Download Triggering Workflow Artifacts
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: gh run download ${{ github.event.workflow_run.id }} -D artifacts
-      - name: Display structure of downloaded files
-        run: ls -ltrR
-        working-directory: artifacts
-      - name: Inspect artifact
-        id: inspect-build-sha
-        run: |
-          cat ./artifacts/github_sha_from_build/github_sha_from_build  >> $GITHUB_OUTPUT
-          echo $GITHUB_OUTPUT
-```
 
 ## references
 - https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions  
