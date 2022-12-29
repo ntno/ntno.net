@@ -43,3 +43,11 @@ make put-image-bundle version="X.X.X"
 ## references
 - https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions  
 - https://docs.github.com/en/actions/using-workflows/reusing-workflows
+
+
+## see also
+- [ntno/tf-module-static-site-cicd](https://github.com/ntno/tf-module-static-site-cicd)  
+
+- [ntno/build-mkdocs-composite-action](https://github.com/ntno/build-mkdocs-composite-action)  
+
+- [ntno/deploy-mkdocs-composite-action](https://github.com/ntno/deploy-mkdocs-composite-action)  
