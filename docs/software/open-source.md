@@ -36,4 +36,4 @@ The above repository includes a few use case specific containers.  It also provi
 
 **gifcam** - [ntno/gifcam](https://github.com/ntno/gifcam){target=_blank}  
 
-please see [project page](/electronics/gifcam) for details  
+please see [project page](/software/gifcam) for details  

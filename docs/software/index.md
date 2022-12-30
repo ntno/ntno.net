@@ -6,8 +6,13 @@ tile_cards:
   - card_title: Open Source
     img_src: /img/gifcam/tweet.gif
     index_url: ./software/open-source
-    img_title: 'screen capture of tweet published by cloud enabled gifcam'
+    img_title: 'screen capture of gifcam tweet'
     img_alt: 'screen capture of tweet.  tweet contains animated gif of spinning ceiling fan.  tweet author is ntno-dev'
+  - card_title: gifcam
+    img_src: /img/gifcam/philly-07.gif
+    index_url: ./software/gifcam
+    img_title: 'capture from gifcam'
+    img_alt: 'animated gif of view through car window as car crosses street.  rain drops partially obscure view.  pedestrians cross the street in rain gear.'    
   - card_title: DnD Cryptography Puzzle
     img_src: /img/software/vertical_script_puzzle.gif
     index_url: ./software/puzzle
