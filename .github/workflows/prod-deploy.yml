@@ -125,7 +125,6 @@ jobs:
               echo "::notice title=Cache Invalidate Skipped::$MESSAGE"
           else
               make --no-print-directory invalidate-distribution env=prod region=us-east-2
-              export MESSAGE="${{ env.deployment-url }} CloudFront cache invalidated"        
+              export MESSAGE="${{ env.deployment-url }} CloudFront cache invalidated"
               echo "::notice title=Cache Invalidate Complete::$MESSAGE"
-          fi 
-      
+          fi
