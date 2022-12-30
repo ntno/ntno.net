@@ -111,7 +111,7 @@ jobs:
           role-to-assume: ${{ secrets.ROLE_ARN }}
       - name: Report Deploy Result
         run: |
-          if [[ "${{ inputs.enable-dry-run }}" == "false" ]]; then
+          if [[ "${{ inputs.enable-dry-run }}" == "true" ]]; then
               export MESSAGE="Deploy is disabled for current workflow run, deployment skipped..."
               echo "::notice title=Deployment Skipped::$MESSAGE"
           else
@@ -120,7 +120,7 @@ jobs:
           fi 
       - name: Invalidate CloudFront Cache
         run: |
-          if [[ "${{ inputs.enable-dry-run }}" == "false" ]]; then
+          if [[ "${{ inputs.enable-dry-run }}" == "true" ]]; then
               export MESSAGE="Deploy is disabled for current workflow run, cache invalidate skipped..."
               echo "::notice title=Cache Invalidate Skipped::$MESSAGE"
           else
