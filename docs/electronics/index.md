@@ -3,11 +3,6 @@ hide:
   - git_revision_date
   - toc
 tile_cards:
-  - card_title: Open Source
-    img_src: /img/software/vertical_script_puzzle.gif
-    index_url: ./software
-    img_title: ''
-    img_alt: ''
   - card_title: gifcam
     img_src: /img/gifcam/tweet.gif
     index_url: ./electronics/gifcam
