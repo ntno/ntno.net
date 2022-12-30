@@ -3,6 +3,29 @@ hide:
   - toc
   - git_revision_date
 index_cards:
+  - card_title: Open Source Software
+    img_src: /img/gifcam/philly-07.gif
+    img_caption: 'capture from gifcam'
+    img_title: capture from gifcam
+    img_alt: animated gif of view through car window as car crosses street.  rain drops partially obscure view.  pedestrians cross the street in rain gear.
+    index_url: ./software
+    card_content: |
+      <ul>
+        <li>GitHub Community Actions</li><br>
+        <li>Docker Containers</li><br>
+        <li><i>gifcam</i>: a Cloud Enabled, Pi-Powered Camera</li><br>
+      <ul>
+  - card_title: Electronics
+    img_src: /img/led-biking-backpack/lights.jpeg
+    img_caption: 'LED Brake Light Backpack'
+    img_title: detail of LED brake light backpack project
+    img_alt: a black backpack with the lining stripped out to reveal rainbow LEDs sewn in
+    index_url: ./electronics/
+    card_content: |
+      <ul>
+        <li>HopperBot for Body Syntonic Learning</li><br>
+        <li>Wearables for Night Visibility</li><br>
+      <ul>
   - card_title: Undergraduate Research, Bryn Mawr College
     img_src: /img/hopperbot/SpritesForEgoSyntonicLearning_Natan.jpg
     img_caption: 'Sprites Research Poster'
@@ -13,20 +36,7 @@ index_cards:
       <ul>
         <li>Sprites for Ego Syntonic Learning</li><br>
         <li>SMS Integrated Web Apps</li><br>
-      <ul>
-  - card_title: Electronics & Software
-    img_src: /img/led-biking-backpack/lights.jpeg
-    img_caption: 'LED Brake Light Backpack'
-    img_title: detail of LED brake light backpack project
-    img_alt: a black backpack with the lining stripped out to reveal rainbow LEDs sewn in
-    index_url: ./electronics/
-    card_content: |
-      <ul>
-        <li>HopperBot for Body Syntonic Learning</li><br>
-        <li>Wearables for Night Visibility</li><br>
-        <li><i>gifcam</i>: a Cloud Enabled, Pi-Powered Camera</li><br>
-        <li>misc. open source software</li><br>
-      <ul>
+      <ul>      
   - card_title: Woodworking
     img_src: /img/cabinet/cabinet_painted.jpeg
     img_caption: 'Tilt-out Laundry Cabinet'
@@ -56,16 +66,9 @@ index_cards:
         <li>Embroidered Works</li>
         <li>Selected Knits</li>
       <ul>
-  # - card_title: Open Source Software
-  #   img_src: /img/software/vertical_script_puzzle.gif
-  #   img_caption: 'Constructed Script Puzzle Detail'
-  #   img_title: constructed fantasy script puzzle
-  #   img_alt: animated GIF of tiles moving around on a screen.  the tiles are covered in a constructed fantasy script.
-  #   index_url: ./electronics/software
-  #   card_content: |
-  #     <ul>
-  #       <li>Docker Containers</li>
-  #       <li>MkDocs Terminal Theme</li>
-  #       <li>p5.js Seed</li>
-  #     <ul>
 ---
+
+<!-- TODO - add to open source software
+<li>MkDocs Terminal Theme</li>
+<li>p5.js Seed</li>
+<li>MkDocs Demo</li> -->
