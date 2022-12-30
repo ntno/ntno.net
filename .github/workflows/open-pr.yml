@@ -39,11 +39,12 @@ jobs:
         working-directory: ./scripts/pr-env
         run: |
           echo "creating new environment for PR #${{ github.event.number }}"
+          aws s3api wait bucket-not-exists --bucket "${{ steps.set-vars.outputs.bucket-name }}"
           aws cloudformation create-stack \
                     --template-body file://s3-website.yml \
                     --stack-name "${{ steps.set-vars.outputs.stack-name }}"  \
                     --parameters  ParameterKey=BucketName,ParameterValue="${{ steps.set-vars.outputs.bucket-name }}" \
-                    --on-failure DO_NOTHING \
+                    --on-failure DELETE \
                     --capabilities CAPABILITY_NAMED_IAM
           aws cloudformation wait stack-create-complete --stack-name "${{ steps.set-vars.outputs.stack-name }}"
           aws s3 cp --sse AES256 --acl public-read index.html "s3://${{ steps.set-vars.outputs.bucket-name }}/"
