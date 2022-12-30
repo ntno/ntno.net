@@ -39,8 +39,8 @@ index_cards:
           <ul>- Tilt-out Laundry Cabinet</ul>
         </li><br>
         <li><strong>Class Projects</strong>
-          <ul>- Cutting Boards</ul>
           <ul>- Storage Chest</ul>
+          <ul>- Cutting Boards</ul>
         </li><br>
       <ul>
   - card_title: Textiles
@@ -51,9 +51,9 @@ index_cards:
     index_url: ./textiles/
     card_content: |
       <ul>
-        <li>Covid-19 Masks</li>
-        <li>Upcycled Umbrella Skirt</li>
         <li>Embroidered Works</li>
+        <li>Upcycled Umbrella Skirt</li>
+        <li>Covid-19 Masks</li>
         <li>Selected Knits</li>
       <ul>
   - card_title: Undergraduate Research, Bryn Mawr College
@@ -64,7 +64,7 @@ index_cards:
     index_url: ./research/
     card_content: |
       <ul>
-        <li>Sprites for Ego Syntonic Learning</li><br>
         <li>SMS Integrated Web Apps</li><br>
-      <ul>       
+        <li>Sprites for Ego Syntonic Learning</li><br>
+      <ul>
 ---
