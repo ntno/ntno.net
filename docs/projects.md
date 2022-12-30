@@ -3,7 +3,7 @@ hide:
   - toc
   - git_revision_date
 index_cards:
-  - card_title: Open Source Software
+  - card_title: Software
     img_src: /img/gifcam/philly-07.gif
     img_caption: 'capture from gifcam'
     img_title: capture from gifcam
@@ -11,8 +11,9 @@ index_cards:
     index_url: ./software
     card_content: |
       <ul>
-        <li>GitHub Community Actions</li><br>
-        <li>Docker Containers</li><br>
+        <li>Open Source Projects</li><br>
+        <li>MkDocs Terminal Theme</li><br>
+        <li>Cryptography Puzzle</li><br>
         <li><i>gifcam</i>: a Cloud Enabled, RaspberryPi-Powered Camera</li><br>
       <ul>
   - card_title: Electronics
@@ -67,8 +68,3 @@ index_cards:
         <li>Selected Knits</li>
       <ul>
 ---
-
-<!-- TODO - add to open source software
-<li>MkDocs Terminal Theme</li>
-<li>p5.js Seed</li>
-<li>MkDocs Demo</li> -->
