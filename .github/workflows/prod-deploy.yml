@@ -19,7 +19,7 @@ on:
         type: boolean
       enable-size-only-run:
         description: '--size-only sync to target'
-        default: false
+        default: true
         required: true
         type: boolean
       enable-quiet-run:
