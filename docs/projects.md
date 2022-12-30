@@ -13,7 +13,7 @@ index_cards:
       <ul>
         <li>GitHub Community Actions</li><br>
         <li>Docker Containers</li><br>
-        <li><i>gifcam</i>: a Cloud Enabled, Pi-Powered Camera</li><br>
+        <li><i>gifcam</i>: a Cloud Enabled, RaspberryPi-Powered Camera</li><br>
       <ul>
   - card_title: Electronics
     img_src: /img/led-biking-backpack/lights.jpeg

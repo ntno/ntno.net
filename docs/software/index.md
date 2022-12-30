@@ -16,7 +16,7 @@ tile_cards:
   - card_title: MkDocs Terminal Theme
     img_src: /img/software/terminal.css-demo-site.png
     index_url: ./software/terminal-theme
-    img_title: ''
+    img_title: 'Terminal.css Demo Site'
     img_alt: 'Terminal.css Demo'
 
 ---
