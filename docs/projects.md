@@ -26,18 +26,7 @@ index_cards:
       <ul>
         <li>HopperBot for Body Syntonic Learning</li><br>
         <li>Wearables for Night Visibility</li><br>
-      <ul>
-  - card_title: Undergraduate Research, Bryn Mawr College
-    img_src: /img/hopperbot/SpritesForEgoSyntonicLearning_Natan.jpg
-    img_caption: 'Sprites Research Poster'
-    img_title: Ego Syntonic Learning Research Poster
-    img_alt: Ego Syntonic Learning Research Poster
-    index_url: ./research/
-    card_content: |
-      <ul>
-        <li>Sprites for Ego Syntonic Learning</li><br>
-        <li>SMS Integrated Web Apps</li><br>
-      <ul>      
+      <ul>     
   - card_title: Woodworking
     img_src: /img/cabinet/cabinet_painted.jpeg
     img_caption: 'Tilt-out Laundry Cabinet'
@@ -67,4 +56,15 @@ index_cards:
         <li>Embroidered Works</li>
         <li>Selected Knits</li>
       <ul>
+  - card_title: Undergraduate Research, Bryn Mawr College
+    img_src: /img/hopperbot/SpritesForEgoSyntonicLearning_Natan.jpg
+    img_caption: 'Sprites Research Poster'
+    img_title: Ego Syntonic Learning Research Poster
+    img_alt: Ego Syntonic Learning Research Poster
+    index_url: ./research/
+    card_content: |
+      <ul>
+        <li>Sprites for Ego Syntonic Learning</li><br>
+        <li>SMS Integrated Web Apps</li><br>
+      <ul>       
 ---
