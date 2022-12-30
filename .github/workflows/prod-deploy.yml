@@ -109,7 +109,7 @@ jobs:
           aws-region: us-east-2
           make-vars-for-deploy-target: ${{ steps.set-vars.outputs.deploy-flags }}
           role-to-assume: ${{ secrets.ROLE_ARN }}
-      - name: Report Result
+      - name: Report Deploy Result
         run: |
           if [[ "${{ inputs.enable-dry-run }}" == "false" ]]; then
               export MESSAGE="Deploy is disabled for current workflow run, deployment skipped..."
@@ -118,3 +118,14 @@ jobs:
               export MESSAGE="${{ inputs.tag }} deployed to ${{ env.deployment-url }} with ${{ needs.call-metadata-workflow.outputs.build-tag }}"        
               echo "::notice title=Deployment Complete::$MESSAGE"
           fi 
+      - name: Invalidate CloudFront Cache
+        run: |
+          if [[ "${{ inputs.enable-dry-run }}" == "false" ]]; then
+              export MESSAGE="Deploy is disabled for current workflow run, cache invalidate skipped..."
+              echo "::notice title=Cache Invalidate Skipped::$MESSAGE"
+          else
+              make --no-print-directory invalidate-distribution env=prod region=us-east-2
+              export MESSAGE="${{ env.deployment-url }} CloudFront cache invalidated"        
+              echo "::notice title=Cache Invalidate Complete::$MESSAGE"
+          fi 
+      
