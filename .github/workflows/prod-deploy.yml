@@ -37,7 +37,7 @@ jobs:
   build-mkdocs:
     needs: [check-out-tag, call-metadata-workflow]
     runs-on: ubuntu-latest
-    environment: gh-prod
+    environment: gh-ci
     steps: 
       - name: Checkout
         uses: actions/checkout@v3
