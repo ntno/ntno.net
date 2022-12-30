@@ -12,7 +12,9 @@ nav:
     - Projects: 'projects.md'
     - 'Projects by Media':
       - Software: 
-        - 'Open Source': 'software.md'
+        - 'Open Source': 'software/open-source.md'
+        - '2021 Cryptography Puzzle': 'software/puzzle.md'
+        - '2021 MkDocs Terminal Theme': 'software/terminal-theme.md'
       - Electronics:
         - '2017-2019 HopperBot': 'electronics/hopper-bot.md'
         - '2018 Brake Light Backpack': 'electronics/led-backpack.md'

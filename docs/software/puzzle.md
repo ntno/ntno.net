@@ -11,7 +11,7 @@ I used this script to encode fictional correspondence between the antagonists in
     <a target="_blank" href="/img/software/original-puzzle-in-progress.png">
     <img style="border: 1px solid #888888;"
       src="/img/software/original-puzzle-in-progress.png"
-      alt=""
+      alt="screenshot of players' progress decoding symbols in Roll20"
       title="original puzzle activity"
     />
     </a>
@@ -26,7 +26,7 @@ The above repository contains a `p5.js` sketch which loads the 'vertical-script'
     <a target="_blank" href="/img/software/vertical_script_puzzle.gif">
     <img style="border: 1px solid #888888;"
       src="/img/software/vertical_script_puzzle.gif"
-      alt=""
+      alt="animated gif of word tiles being grouped together by common symbol feature"
       title="script tiles in p5.js sketch"
     />
     </a>
