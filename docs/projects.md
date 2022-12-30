@@ -3,18 +3,20 @@ hide:
   - toc
   - git_revision_date
 index_cards:
-  - card_title: Undergraduate Research, Bryn Mawr College
-    img_src: /img/hopperbot/SpritesForEgoSyntonicLearning_Natan.jpg
-    img_caption: 'Sprites Research Poster'
-    img_title: Ego Syntonic Learning Research Poster
-    img_alt: Ego Syntonic Learning Research Poster
-    index_url: ./research/
+  - card_title: Software
+    img_src: /img/gifcam/philly-07.gif
+    img_caption: 'capture from gifcam'
+    img_title: capture from gifcam
+    img_alt: animated gif of view through car window as car crosses street.  rain drops partially obscure view.  pedestrians cross the street in rain gear.
+    index_url: ./software
     card_content: |
       <ul>
-        <li>Sprites for Ego Syntonic Learning</li><br>
-        <li>SMS Integrated Web Apps</li><br>
+        <li>Open Source Projects</li><br>
+        <li>MkDocs Terminal Theme</li><br>
+        <li>Cryptography Puzzle</li><br>
+        <li><i>gifcam</i>: a Cloud Enabled, RaspberryPi-Powered Camera</li><br>
       <ul>
-  - card_title: Electronics & Software
+  - card_title: Electronics
     img_src: /img/led-biking-backpack/lights.jpeg
     img_caption: 'LED Brake Light Backpack'
     img_title: detail of LED brake light backpack project
@@ -24,9 +26,7 @@ index_cards:
       <ul>
         <li>HopperBot for Body Syntonic Learning</li><br>
         <li>Wearables for Night Visibility</li><br>
-        <li><i>gifcam</i>: a Cloud Enabled, Pi-Powered Camera</li><br>
-        <li>misc. open source software</li><br>
-      <ul>
+      <ul>     
   - card_title: Woodworking
     img_src: /img/cabinet/cabinet_painted.jpeg
     img_caption: 'Tilt-out Laundry Cabinet'
@@ -39,8 +39,8 @@ index_cards:
           <ul>- Tilt-out Laundry Cabinet</ul>
         </li><br>
         <li><strong>Class Projects</strong>
-          <ul>- Cutting Boards</ul>
           <ul>- Storage Chest</ul>
+          <ul>- Cutting Boards</ul>
         </li><br>
       <ul>
   - card_title: Textiles
@@ -51,21 +51,20 @@ index_cards:
     index_url: ./textiles/
     card_content: |
       <ul>
-        <li>Covid-19 Masks</li>
-        <li>Upcycled Umbrella Skirt</li>
-        <li>Embroidered Works</li>
-        <li>Selected Knits</li>
+        <li>Embroidered Works</li><br>
+        <li>Upcycled Umbrella Skirt</li><br>
+        <li>Covid-19 Masks</li><br>
+        <li>Selected Knits</li><br>
       <ul>
-  # - card_title: Open Source Software
-  #   img_src: /img/software/vertical_script_puzzle.gif
-  #   img_caption: 'Constructed Script Puzzle Detail'
-  #   img_title: constructed fantasy script puzzle
-  #   img_alt: animated GIF of tiles moving around on a screen.  the tiles are covered in a constructed fantasy script.
-  #   index_url: ./electronics/software
-  #   card_content: |
-  #     <ul>
-  #       <li>Docker Containers</li>
-  #       <li>MkDocs Terminal Theme</li>
-  #       <li>p5.js Seed</li>
-  #     <ul>
+  - card_title: Undergraduate Research, Bryn Mawr College
+    img_src: /img/hopperbot/SpritesForEgoSyntonicLearning_Natan.jpg
+    img_caption: 'Sprites Research Poster'
+    img_title: Ego Syntonic Learning Research Poster
+    img_alt: Ego Syntonic Learning Research Poster
+    index_url: ./research/
+    card_content: |
+      <ul>
+        <li>SMS Integrated Web Apps</li><br>
+        <li>Sprites for Ego Syntonic Learning</li><br>
+      <ul>
 ---

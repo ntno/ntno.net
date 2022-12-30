@@ -60,7 +60,7 @@ Summer 2019
     <img style="border: 1px solid #888888;"
       src="/img/gifcam/tweet.gif"
       alt="screen capture of tweet.  tweet contains animated gif of spinning ceiling fan.  tweet author is ntno-dev"
-      title="gif screen capture of tweet with gifcam capture attached"
+      title="screen capture of tweet published by cloud enabled gifcam"
     />
     <figcaption>successful tweet from gifcam (July 1, 2019)</figcaption>
   </figure>

@@ -11,24 +11,27 @@ nav:
     - Resume: 'resume.md'
     - Projects: 'projects.md'
     - 'Projects by Media':
-      - Research:
-        - '2013 Ego Syntonic Learning': 'research/2013-ego-syntonic-learning.md'
-        - '2014 SMS Integrated Apps': 'research/2014-sms-and-web-based-apps.md'
+      - Software: 
+        - 'Open Source': 'software/open-source.md'
+        - '2021 MkDocs Terminal Theme': 'software/terminal-theme.md'
+        - '2021 Cryptography Puzzle': 'software/puzzle.md'
+        - '2019 Gifcam': 'software/gifcam.md'
       - Electronics:
         - '2017-2019 HopperBot': 'electronics/hopper-bot.md'
-        - '2018 Brake Light Backpack': 'electronics/led-backpack.md'
         - '2019 Skating Vest': 'electronics/led-vest.md'
-        - '2019 Gifcam': 'electronics/gifcam.md'
-        - 'Open Source': 'software.md'
+        - '2018 Brake Light Backpack': 'electronics/led-backpack.md'
       - Wood:
-        - '2018 Cutting Boards': 'wood/cutting-boards.md'
-        - '2018 Storage Chest': 'wood/chest.md'
         - '2020 Laundry Cabinet': 'wood/cabinet.md'
+        - '2018 Storage Chest': 'wood/chest.md'
+        - '2018 Cutting Boards': 'wood/cutting-boards.md'
       - Textiles:
-        - 'Selected Knits' : 'textiles/knits.md'
-        - '2020 Covid-19 Masks': 'textiles/masks.md'
-        - '2020 Upcycled Umbrella': 'textiles/pride.md'
         - '2020 Embroidered Works': 'textiles/embroidered-works.md'
+        - '2020 Upcycled Umbrella': 'textiles/pride.md'
+        - '2020 Covid-19 Masks': 'textiles/masks.md'
+        - 'Selected Knits' : 'textiles/knits.md'
+      - Research:
+        - '2014 SMS Integrated Apps': 'research/2014-sms-and-web-based-apps.md'
+        - '2013 Ego Syntonic Learning': 'research/2013-ego-syntonic-learning.md'
 
 markdown_extensions:
   - admonition
