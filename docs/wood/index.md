@@ -3,7 +3,7 @@ hide:
   - git_revision_date
 ---
 
-# Skill Progression
+# Woodworking Skill Progression
 
 <section>
   <div class="terminal-timeline">
