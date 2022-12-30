@@ -51,10 +51,10 @@ index_cards:
     index_url: ./textiles/
     card_content: |
       <ul>
-        <li>Embroidered Works</li>
-        <li>Upcycled Umbrella Skirt</li>
-        <li>Covid-19 Masks</li>
-        <li>Selected Knits</li>
+        <li>Embroidered Works</li><br>
+        <li>Upcycled Umbrella Skirt</li><br>
+        <li>Covid-19 Masks</li><br>
+        <li>Selected Knits</li><br>
       <ul>
   - card_title: Undergraduate Research, Bryn Mawr College
     img_src: /img/hopperbot/SpritesForEgoSyntonicLearning_Natan.jpg
