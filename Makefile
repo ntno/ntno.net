@@ -13,6 +13,9 @@ ifeq ($(QUIET),1)
    QUIET_FLAG = --quiet
 endif
 
+ifeq ($(SIZE_ONLY_SYNC),1)
+   SIZE_ONLY_FLAG = --size-only
+endif
 
 ##########################################################################################
 # run docker/serve/build/deploy/stop commands from local machine
@@ -57,7 +60,7 @@ get-mkdocs-archive:  check-env check-region check-version check-download-directo
 		-xf $(download-directory)docs-site.tar 
 
 deploy-mkdocs: check-env check-region check-bucket-name
-	aws s3 sync $(DRY_RUN_FLAG) $(QUIET_FLAG) --no-progress --sse AES256 --acl public-read ./site/ s3://$(bucket-name)/
+	aws s3 sync $(DRY_RUN_FLAG) $(QUIET_FLAG) $(SIZE_ONLY_FLAG) --no-progress --sse AES256 --acl public-read ./site/ s3://$(bucket-name)/
 
 ##########################################################################################
 # run from inside docker container 
