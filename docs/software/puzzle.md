@@ -33,4 +33,3 @@ The above repository contains a `p5.js` sketch which loads the 'vertical-script'
     <figcaption>sorting word tiles by common feature in p5.js sketch</figcaption>
   </figure>
 </section>
-<hr>

@@ -34,11 +34,6 @@ Reusable GitHub Action to deploy a MkDocs website.
 The above repository includes a few use case specific containers.  It also provides an example of how to verify that a container is defined correctly using the [goss](https://github.com/aelsabbahy/goss){target=_blank} testing framework.  
 <hr>
 
-**mkdocs `terminal.css` theme** - [ntno/ntno.net/custom_theme](https://github.com/ntno/ntno.net/tree/main/custom_theme){target=_blank, title="separate packaging to be made available shortly"}  
-
-[mkdocs](https://www.mkdocs.org/){target=_blank} is a framework for creating documentation websites from markdown files.  Custom themes can be applied to give sites a unique style.  I created the theme for this portfolio site using [terminal.css](https://github.com/Gioni06/terminal.css){target=_blank}.  See [squidfunk's material theme](https://squidfunk.github.io/mkdocs-material/getting-started/){target=_blank, title="view example site"} for theme comparison.
-<hr>
-
 **gifcam** - [ntno/gifcam](https://github.com/ntno/gifcam){target=_blank}  
 
 please see [project page](/electronics/gifcam) for details  
