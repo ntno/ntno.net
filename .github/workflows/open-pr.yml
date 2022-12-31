@@ -5,6 +5,10 @@ on:
   pull_request:
     types: [ opened, reopened ]
 
+# only one PR lifecycle workflow at a time (open/close)
+concurrency:
+  group: ${{ github.ref }}
+
 # These permissions are needed to interact with GitHub's OIDC Token endpoint.
 permissions:
   id-token: write
@@ -29,31 +33,36 @@ jobs:
         with:
           aws-region: us-east-2
           role-to-assume: ${{ secrets.ROLE_ARN }}
-      - name: Set Vars
-        id: set-vars
+      - name: Set Env Vars
+        id: set-env-vars
         run: |
-          echo "stack-name=${{ needs.call-metadata-workflow.outputs.pr-env }}" >> $GITHUB_OUTPUT 
-          echo "bucket-name=${{ needs.call-metadata-workflow.outputs.pr-env }}" >> $GITHUB_OUTPUT 
+          echo "stack-name=${{ needs.call-metadata-workflow.outputs.pr-env }}" >> $GITHUB_ENV
+          echo "bucket-name=${{ needs.call-metadata-workflow.outputs.pr-env }}" >> $GITHUB_ENV
       - name: Create PR Environment
         id: create-pr-env
         working-directory: ./scripts/pr-env
+        shell: bash {0}
         run: |
           echo "creating new environment for PR #${{ github.event.number }}"
-          aws s3api wait bucket-not-exists --bucket "${{ steps.set-vars.outputs.bucket-name }}"
+          aws s3api wait bucket-not-exists --bucket "${{ env.bucket-name }}"
           aws cloudformation create-stack \
                     --template-body file://s3-website.yml \
-                    --stack-name "${{ steps.set-vars.outputs.stack-name }}"  \
-                    --parameters  ParameterKey=BucketName,ParameterValue="${{ steps.set-vars.outputs.bucket-name }}" \
+                    --stack-name "${{ env.stack-name }}"  \
+                    --parameters  ParameterKey=BucketName,ParameterValue="${{ env.bucket-name }}" \
                     --on-failure DELETE \
                     --capabilities CAPABILITY_NAMED_IAM
-          aws cloudformation wait stack-create-complete --stack-name "${{ steps.set-vars.outputs.stack-name }}"
-          aws s3 cp --sse AES256 --acl public-read index.html "s3://${{ steps.set-vars.outputs.bucket-name }}/"
-          aws s3 cp --sse AES256 --acl public-read error.html "s3://${{ steps.set-vars.outputs.bucket-name }}/"
+          aws cloudformation wait stack-create-complete --stack-name "${{ env.stack-name }}"
+          aws s3 cp --sse AES256 --acl public-read index.html "s3://${{ env.bucket-name }}/"
+          aws s3 cp --sse AES256 --acl public-read error.html "s3://${{ env.bucket-name }}/"
       - name: Comment on PR with Environment URL
         env:
             GH_TOKEN: ${{ github.token }}
         run: |
-          export URL="http://${{ steps.set-vars.outputs.bucket-name }}.s3-website.us-east-2.amazonaws.com"
+          export URL="http://${{ env.bucket-name }}.s3-website.us-east-2.amazonaws.com"
           export MESSAGE="please review changes at ${URL}"
           gh pr comment ${{ github.event.number }} --body "${MESSAGE}"
           echo "::notice title=Created PR Environment::environment url: $URL"
+  call-pr-deploy-workflow:
+    needs: [call-metadata-workflow, create-pr-environment]
+    uses: ./.github/workflows/pr-deploy.yml
+    secrets: inherit
