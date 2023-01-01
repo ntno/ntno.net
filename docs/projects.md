@@ -57,7 +57,7 @@ index_cards:
         <li>Selected Knits</li><br>
       <ul>
   - card_title: Undergraduate Research, Bryn Mawr College
-    img_src: /img/hopperbot/SpritesForEgoSyntonicLearning_Natan.jpg
+    img_src: /img/research/SpritesForEgoSyntonicLearning_Natan.jpg
     img_caption: 'Sprites Research Poster'
     img_title: Ego Syntonic Learning Research Poster
     img_alt: Ego Syntonic Learning Research Poster

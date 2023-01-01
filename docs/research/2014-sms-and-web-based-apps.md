@@ -24,7 +24,7 @@ In order to share the knowledge I have compiled during my research I have create
   <figure>
     <a target="_blank" href="https://www.brynmawr.edu/inside/offices-services/transportation/blue-bus-bi-co" title="Bryn Mawr College Blue Bus">
     <img
-      src="/img/software/bluebus.jpg"
+      src="/img/research/bluebus.jpg"
       alt="a person in an orange dress boarding the Bryn Mawr College Blue Bus"
       title="Bryn Mawr College Blue Bus"
     />
