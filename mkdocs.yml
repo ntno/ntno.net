@@ -13,7 +13,7 @@ nav:
     - 'Projects by Media':
       - Software: 
         - 'Open Source': 'software/open-source.md'
-        - '2021 MkDocs Terminal Theme': 'software/terminal-theme.md'
+        - '2023 MkDocs Terminal Theme': 'software/terminal-theme.md'
         - '2021 Cryptography Puzzle': 'software/puzzle.md'
         - '2019 Gifcam': 'software/gifcam.md'
       - Electronics:
