@@ -44,6 +44,9 @@ open:
 setup-mkdocs: check-env check-region check-download-directory
 	$(MAKE) get-image-bundle
 
+install-requirements:
+	pip install -r ./requirements.txt
+
 build-mkdocs: check-env check-region
 	source ./scripts/build.sh $(env) $(region)
 
