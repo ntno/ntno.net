@@ -45,6 +45,9 @@ plugins:
   - git-revision-date
 
 theme:
-    name: null
-    custom_dir: 'custom_theme/'
-    favicon: img/favicon.ico
+  name: terminal
+  custom_dir: custom_theme/
+  palette: gruvbox_dark
+
+watch:
+  - custom_theme/
