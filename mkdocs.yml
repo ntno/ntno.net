@@ -48,12 +48,15 @@ plugins:
   - search
   - git-revision-date
 
+extra_css: 
+  - overrides/css/ntno.css
+
 theme:
   name: terminal
-  custom_dir: custom_theme/
+  custom_dir: docs/overrides/
   palette: gruvbox_dark
   features:
     - navigation.side.indexes
 
 watch:
-  - custom_theme/
+  - docs/overrides/

@@ -1,6 +1,9 @@
 /*! ntno.css */
 
-body    { padding-top:50px; padding-bottom:50px; }
+body    { 
+    padding-top:100px !important; 
+    padding-bottom:100px !important; 
+}
 
 .main-grid {
     display: grid;
@@ -14,10 +17,6 @@ body    { padding-top:50px; padding-bottom:50px; }
         grid-template-columns: 4fr 9fr;
     }
 }
-
-/* .side-panel-section-lowlight {
-    font-weight: bold;
-} */
 
 .side-panel-highlight {
     position: relative;
