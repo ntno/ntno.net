@@ -6,6 +6,11 @@ hide:
 **Open Source Projects**
 
 <hr>
+**mkdocs-terminal** - [ntno/mkdocs-terminal](https://github.com/ntno/mkdocs-terminal){target=_blank}  
+
+A new theme for MkDocs projects.  See [project page](/software/terminal-theme) for details  
+
+<hr>
 
 **setup-buildenv** - [ntno/setup-buildenv](https://github.com/ntno/setup-buildenv){target=_blank}  
 
