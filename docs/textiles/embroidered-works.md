@@ -1,15 +1,15 @@
 ---
-img_cards: 
+tiles: 
   - img_src: /img/embroidery/liberty_letters.jpeg
-    img_caption: 'Natan Organick, <i>Lady Liberty</i> (detail), 2020.'
+    caption: 'Natan Organick, <i>Lady Liberty</i> (detail), 2020.'
     img_title: ''
     img_alt: 'detail of embroidered work "Lady Liberty"'
   - img_src: /img/embroidery/liberty_green.jpeg
-    img_caption: 'Natan Organick, <i>Lady Liberty</i> (detail), 2020.'
+    caption: 'Natan Organick, <i>Lady Liberty</i> (detail), 2020.'
     img_title: ''
     img_alt: 'detail of embroidered work "Lady Liberty"'
   - img_src: /img/embroidery/justice_detail.jpeg
-    img_caption: 'Natan Organick, <i>Tzedek, Tzedek</i> (detail), 2020.'
+    caption: 'Natan Organick, <i>Tzedek, Tzedek</i> (detail), 2020.'
     img_title: ''
     img_alt: 'detail of embroidered work "Tzedek, Tzedek"'
 ---
