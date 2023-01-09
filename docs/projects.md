@@ -5,7 +5,7 @@ hide:
 index_cards:
   - card_title: Software
     img_src: /img/gifcam/philly-07.gif
-    img_caption: 'capture from gifcam'
+    caption: 'capture from gifcam'
     img_title: capture from gifcam
     img_alt: animated gif of view through car window as car crosses street.  rain drops partially obscure view.  pedestrians cross the street in rain gear.
     index_url: ./software
@@ -18,7 +18,7 @@ index_cards:
       <ul>
   - card_title: Electronics
     img_src: /img/led-biking-backpack/lights.jpeg
-    img_caption: 'LED Brake Light Backpack'
+    caption: 'LED Brake Light Backpack'
     img_title: detail of LED brake light backpack project
     img_alt: a black backpack with the lining stripped out to reveal rainbow LEDs sewn in
     index_url: ./electronics/
@@ -29,7 +29,7 @@ index_cards:
       <ul>     
   - card_title: Woodworking
     img_src: /img/cabinet/cabinet_painted.jpeg
-    img_caption: 'Tilt-out Laundry Cabinet'
+    caption: 'Tilt-out Laundry Cabinet'
     img_title: laundry cabinet with tilt-out drawers
     img_alt: laundry cabinet with tilt-out drawers
     index_url: ./wood/
@@ -45,7 +45,7 @@ index_cards:
       <ul>
   - card_title: Textiles
     img_src: /img/embroidery/justice_from_below.jpeg
-    img_caption: "<i>Tzedek, Tzedek</i> (detail)"
+    caption: "<i>Tzedek, Tzedek</i> (detail)"
     img_title: "<i>Tzedek, Tzedek</i> (detail)"
     img_alt: an embroidered patch of a sword and banner containing text in Hebrew
     index_url: ./textiles/
@@ -58,7 +58,7 @@ index_cards:
       <ul>
   - card_title: Undergraduate Research, Bryn Mawr College
     img_src: /img/research/SpritesForEgoSyntonicLearning_Natan.jpg
-    img_caption: 'Sprites Research Poster'
+    caption: 'Sprites Research Poster'
     img_title: Ego Syntonic Learning Research Poster
     img_alt: Ego Syntonic Learning Research Poster
     index_url: ./research/

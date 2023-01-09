@@ -1,7 +1,7 @@
 ---
-img_cards: 
+tiles: 
   - img_src: /img/cutting-boards/wood_parts_7_15_18.jpeg
-    img_caption: 'class notes on wood grain, wood structure, and common distortions'
+    caption: 'class notes on wood grain, wood structure, and common distortions'
     img_title: ''
     img_alt: pages from notebook with illustrations on wood distortions and wood grain 
 ---

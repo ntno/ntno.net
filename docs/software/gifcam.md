@@ -1,27 +1,27 @@
 ---
-img_cards: 
+tiles: 
   - img_src: /img/gifcam/circuitry-1-of-3.png
-    img_caption: 'Figure 1, <i>Misc. Project Notes</i>, pages 84, 85.'
+    caption: 'Figure 1, <i>Misc. Project Notes</i>, pages 84, 85.'
     img_title: ''
     img_alt: 'scan of notebook pages containing illustrations of components and circuitry'
   - img_src: /img/gifcam/circuitry-2-of-3.png
-    img_caption: 'Figure 2, <i>Misc. Project Notes</i>, pages 86, 87.'
+    caption: 'Figure 2, <i>Misc. Project Notes</i>, pages 86, 87.'
     img_title: ''
     img_alt: 'scan of notebook pages containing illustrations of circuitry with labels indicating wire colors'
   - img_src: /img/gifcam/notes-3-of-3.png
-    img_caption: 'Figure 3, <i>Misc. Project Notes</i>, page 88.'
+    caption: 'Figure 3, <i>Misc. Project Notes</i>, page 88.'
     img_title: ''
     img_alt: 'scan of notebook page containing brainstorming notes on software components needed to securely upload images to Amazon S3 storage'
   - img_src: /img/gifcam/dont_use_incompatible_ribbon.jpg
-    img_caption: 'discovered partway through build that the ribbon connector sold with camera was incompatible with Pi Zero W'
+    caption: 'discovered partway through build that the ribbon connector sold with camera was incompatible with Pi Zero W'
     img_title: ''
     img_alt: '3D printed camera case with camera and default ribbon installed.  annotation notes that this ribbon is incompatible with Pi Zero W'
   - img_src: /img/gifcam/modify_case_to_support_compatible_ribbon.jpg
-    img_caption: 'constructed floating platform to secure the Pi Zero within reach of a shorter, compatible connector'
+    caption: 'constructed floating platform to secure the Pi Zero within reach of a shorter, compatible connector'
     img_title: ''
     img_alt: 'detail of Pi Zero secured to floating platform.  the new, compatible ribbon connector is able to reach the Pi Zero'
   - img_src: /img/gifcam/wires_annotated.jpg
-    img_caption: 'PowerBoost connections (battery to PowerBoost, power switch to PowerBoost, PowerBoost to Pi Zero)'
+    caption: 'PowerBoost connections (battery to PowerBoost, power switch to PowerBoost, PowerBoost to Pi Zero)'
     img_title: ''
     img_alt: 'detail of PowerBoost with annotations indicating which wires connect to the power switch, Pi Zero, and battery'
 ---
