@@ -7,7 +7,7 @@ Winter 2021 - Present
 
 
 ## Open Source
-In January of 2023 I created an open source MkDocs theme for [terminal.css]{target=_blank} called [Terminal for MkDocs]{target="_blank"}.  This allows MkDocs users to easily install and apply this theme to their own site via pip package.  
+In January of 2023 I created an open source MkDocs theme for [terminal.css]{target=_blank} called [Terminal for MkDocs]{target="_blank"}.  It allows MkDocs users to easily install and apply this theme to their own site via pip package.  
 
 In addition to the general styling of `terminal.css`, the `mkdocs-terminal` MkDocs theme includes the following new features:  
 
