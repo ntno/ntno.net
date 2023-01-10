@@ -36,9 +36,10 @@ nav:
 markdown_extensions:
   - admonition
   - meta
+  - attr_list
+  - md_in_html
   - toc:
       permalink: "#"
-  - attr_list
 
 plugins:
   - search
