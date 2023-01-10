@@ -1,11 +1,29 @@
 ---
 ---
-# MkDocs `terminal.css` Theme
-Winter 2021
+# `mkdocs-terminal`
+Winter 2021 - Present
 
-[MkDocs](https://www.mkdocs.org/){target=_blank} is a framework for creating documentation websites from markdown files.  Custom themes can be applied to give sites a unique style.  I created the theme for this portfolio site using [terminal.css](https://github.com/Gioni06/terminal.css){target=_blank}.  See [squidfunk's material theme](https://squidfunk.github.io/mkdocs-material/getting-started/){target=_blank, title="view example site"} for theme comparison.
+[MkDocs]{target=_blank} is a framework for creating documentation websites from markdown files.  Custom themes can be applied to give sites a unique style.  I created the theme for this portfolio site using [terminal.css]{target=_blank}.  See [squidfunk's material theme]{target=_blank, title="view site with mkdocs-material theme"} for comparison.
 
-## Open Source
-I intend to eventually package this theme as an external [MkDocs theme](https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes){target=_blank}.  This would make the theme installable as a pip package.  
+In January of 2023 I packaged my work as an open source MkDocs theme called [Terminal for MkDocs]{target="_blank"}.  Publishing the theme as a third party open source package allows other MkDocs users to easily install and apply `terminal.css` styling to their own websites.  
 
-For now, the theme can be viewed within my portfolio site repo here: [ntno/ntno.net/custom_theme](https://github.com/ntno/ntno.net/tree/main/custom_theme){target=_blank}
+In addition to the general styling of `terminal.css`,  
+[Terminal for MkDocs]{target="_blank"} includes the following new features:  
+
+- [Tile Grid](https://ntno.github.io/mkdocs-terminal/tile-grid/){target=_blank}
+- [Section Indexes](https://ntno.github.io/mkdocs-terminal/navigation/section-indexes/){target=_blank}
+
+<br>
+
+## Project Details and Documentation
+- [Terminal for MkDocs on GitHub][Terminal for MkDocs]{target=_blank; title="view source code on GitHub"}  
+- [Terminal for MkDocs on PyPI]{target=_blank; title="view latest PyPI release"}  
+- [Terminal for MkDocs Documentation]{target=_blank; title="view theme documentation site"}  
+
+
+[MkDocs]: https://www.mkdocs.org/
+[terminal.css]: https://github.com/Gioni06/terminal.css
+[squidfunk's material theme]: https://squidfunk.github.io/mkdocs-material/getting-started/
+[Terminal for MkDocs]: https://github.com/ntno/mkdocs-terminal
+[Terminal for MkDocs on PyPI]: https://pypi.org/project/mkdocs-terminal
+[Terminal for MkDocs Documentation]: https://ntno.github.io/mkdocs-terminal
