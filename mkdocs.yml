@@ -13,7 +13,7 @@ nav:
     - Software: 
       - Index: 'software/index.md' 
       - 'Open Source': 'software/open-source.md'
-      - '2021 MkDocs Terminal Theme': 'software/terminal-theme.md'
+      - '2023 MkDocs Terminal Theme': 'software/terminal-theme.md'
       - '2021 Cryptography Puzzle': 'software/puzzle.md'
       - '2019 Gifcam': 'software/gifcam.md'
     - Electronics:
@@ -41,10 +41,11 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - meta
+  - attr_list
+  - md_in_html
   - toc:
       permalink: "#"
   
-
 plugins:
   - search
   - git-revision-date
