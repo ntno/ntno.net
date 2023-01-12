@@ -1,3 +1,3 @@
 mkdocs
-mkdocs-terminal
+mkdocs-terminal==2.0.0-alpha
 mkdocs-git-revision-date-plugin
