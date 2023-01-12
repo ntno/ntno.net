@@ -1,4 +1,5 @@
 ---
+grid_css: ntno_img_card_grid
 tiles: 
   - img_src: /img/masks/mask_patterns.jpeg
     caption: '100% cotton quilting fabric chosen for its tight weave'
@@ -34,6 +35,7 @@ tiles:
     caption: 'clear jewelry beading elastic threaded through fabric channels to create neck and head band'
     img_title: ''
     img_alt: close up of completed masks
+    tile_css: ntno_img_card
 ---
 
 # Covid-19 Masks  
