@@ -1,17 +1,16 @@
 ---
+grid_css: ntno_img_card_grid
 tiles: 
   - img_src: /img/embroidery/liberty_letters.jpeg
     caption: 'Natan Organick, <i>Lady Liberty</i> (detail), 2020.'
-    img_title: ''
     img_alt: 'detail of embroidered work "Lady Liberty"'
   - img_src: /img/embroidery/liberty_green.jpeg
     caption: 'Natan Organick, <i>Lady Liberty</i> (detail), 2020.'
-    img_title: ''
     img_alt: 'detail of embroidered work "Lady Liberty"'
   - img_src: /img/embroidery/justice_detail.jpeg
     caption: 'Natan Organick, <i>Tzedek, Tzedek</i> (detail), 2020.'
-    img_title: ''
     img_alt: 'detail of embroidered work "Tzedek, Tzedek"'
+    tile_css: ntno_img_card
 ---
 
 ## lady liberty
