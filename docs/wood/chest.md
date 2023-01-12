@@ -1,4 +1,5 @@
 ---
+grid_css: ntno_img_card_grid
 tiles: 
 #   - img_src: /img/chest/class_photo.jpeg
 #     caption: 'Philadelphia Woodworks Class Photo, July 2018'
@@ -29,7 +30,7 @@ tiles:
     caption: 'class notes on proper application of sealant'
     img_title: ''
     img_alt: detail of notebook illustration of paintbrush pulling sealant from the edge to the center of a piece of wood.  this motion is marked with an X.
-
+    tile_css: ntno_img_card
 ---
 **Storage Chest**  
 August 2018 - October 2018  
