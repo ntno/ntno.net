@@ -1,4 +1,5 @@
 ---
+grid_css: ntno_img_card_grid
 tiles: 
   - img_src: /img/led-biking-backpack/led-layout-brainstorm.png
     caption: 'Figure 8, *Misc. Project Notes*, pages 82, 83.'
@@ -20,6 +21,7 @@ tiles:
     caption: 'NeoPixels installed in backpack lining (see Figure 10 for details)'
     img_title: ''
     img_alt: ''
+    tile_css: ntno_img_card
 
 ---
 

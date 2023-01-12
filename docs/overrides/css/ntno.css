@@ -1,16 +1,11 @@
 /*! ntno.css */
 
-
-/* .terminal-mkdocs-main-grid {
-    display: grid;
-    grid-column-gap: !important;
-    grid-template-columns: !important;
-    grid-template-rows: !important;
+.ntno_img_card_grid {
+    grid-template-columns: auto !important;
+    grid-row-gap: 3em;
 }
 
+.ntno_img_card:last-of-type {
+    margin-bottom: 3em;
+}
 
-@media only screen and (min-width: 70em) {
-    .terminal-mkdocs-main-grid {
-        grid-template-columns: 4fr 9fr !important;
-    }
-} */
