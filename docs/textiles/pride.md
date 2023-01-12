@@ -1,4 +1,5 @@
 ---
+grid_css: ntno_img_card_grid
 tiles: 
   - img_src: /img/umbrella/disassemble.jpeg
     caption: 'rip out center seam'
@@ -52,7 +53,7 @@ tiles:
     caption: 'fold waistband over interface substitute and topstitch again'
     img_title: ''
     img_alt: ''
-
+    tile_css: ntno_img_card
 
 ---
 
