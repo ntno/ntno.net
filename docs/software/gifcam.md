@@ -1,4 +1,5 @@
 ---
+grid_css: ntno_img_card_grid
 tiles: 
   - img_src: /img/gifcam/circuitry-1-of-3.png
     caption: 'Figure 1, <i>Misc. Project Notes</i>, pages 84, 85.'
@@ -24,6 +25,7 @@ tiles:
     caption: 'PowerBoost connections (battery to PowerBoost, power switch to PowerBoost, PowerBoost to Pi Zero)'
     img_title: ''
     img_alt: 'detail of PowerBoost with annotations indicating which wires connect to the power switch, Pi Zero, and battery'
+    tile_css: ntno_img_card
 ---
 # gifcam
 Summer 2019
