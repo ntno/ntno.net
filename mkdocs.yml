@@ -56,7 +56,7 @@ extra_css:
 theme:
   name: terminal
   custom_dir: docs/overrides/
-  palette: gruvbox_dark
+  palette: pink
   features:
     - navigation.side.indexes
 
