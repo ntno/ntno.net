@@ -2,23 +2,31 @@
 hide:
   - toc
   - git_revision_date
-index_cards:
-  - card_title: Software
-    img_src: /img/gifcam/philly-07.gif
-    caption: 'capture from gifcam'
-    img_title: capture from gifcam
-    img_alt: animated gif of view through car window as car crosses street.  rain drops partially obscure view.  pedestrians cross the street in rain gear.
-    index_url: ./software
-    card_content: |
-      <ul>
-        <li>Open Source Projects</li><br>
-        <li>MkDocs Terminal Theme</li><br>
-        <li>Cryptography Puzzle</li><br>
-        <li><i>gifcam</i>: a Cloud Enabled, RaspberryPi-Powered Camera</li><br>
-      <ul>
-
-
 ---
+
+<div class="terminal-card">
+    <a class="btn btn-default btn-block" title="Software" href="../software/"><span>Software</span></a>
+    <div class="index_card_container">
+        <div class="index_card_img_panel">
+            <figure>
+                <a title="Software" href="../software/">
+                    <img src="/img/gifcam/philly-07.gif" alt="animated gif of view through car window as car crosses street.  rain drops partially obscure view.  pedestrians cross the street in rain gear." title="capture from gifcam">
+                </a>
+                <figcaption>capture from gifcam</figcaption>
+            </figure>
+        </div>
+        <div class="index_card_content_panel">
+          <ul>
+            <li>Open Source Projects</li><br>
+            <li>MkDocs Terminal Theme</li><br>
+            <li>Cryptography Puzzle</li><br>
+            <li><i>gifcam</i>: a Cloud Enabled, RaspberryPi-Powered Camera</li><br>
+          <ul>
+        </div>
+        <div class="index_card_buffer_panel"></div>
+    </div>
+</div>
+<br>
 <div class="terminal-card">
     <a class="btn btn-default btn-block" title="Electronics" href="../electronics/"><span>Electronics</span></a>
     <div class="index_card_container">
@@ -41,7 +49,7 @@ index_cards:
 </div>
 <br>
 <div class="terminal-card">
-    <a class="btn btn-default btn-block" title="Woodworking" href="{../wood/"><span>Woodworking</span></a>
+    <a class="btn btn-default btn-block" title="Woodworking" href="../wood/"><span>Woodworking</span></a>
     <div class="index_card_container">
         <div class="index_card_img_panel">
             <figure>
