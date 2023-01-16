@@ -40,8 +40,6 @@ Bryn Mawr, PA
 2012 - 2013  
 Bryn Mawr, PA  
 
-<br>
-<hr>
 
 # Certifications
 
