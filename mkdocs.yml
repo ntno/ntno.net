@@ -59,6 +59,8 @@ theme:
   palette: pink
   features:
     - navigation.side.indexes
-
+    - revision.date
+    - revision.history
+    
 watch:
   - docs/overrides/

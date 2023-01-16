@@ -1,6 +1,8 @@
 ---
 hide:
-  - git_revision_date
+  - revision_date
+  - revision_history
+  - side_toc
 ---
 
 # Woodworking Skill Progression

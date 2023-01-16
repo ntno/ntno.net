@@ -1,6 +1,6 @@
 ---
 hide:
-  - toc
+  - side_toc
 ---
 
 **Open Source Projects**

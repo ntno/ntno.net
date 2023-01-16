@@ -1,7 +1,8 @@
 ---
 hide:
-  - git_revision_date
-  - toc
+  - revision_date
+  - revision_history
+  - side_toc
 tiles:
   - caption: HopperBot
     img_src: /img/hopperbot/gett/2019_bot_at_gett.jpeg

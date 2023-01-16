@@ -1,7 +1,8 @@
 ---
 hide:
-  - git_revision_date
-  - toc
+  - revision_date
+  - revision_history
+  - side_toc
 tiles:
   - caption: SMS and Web Based Apps
     img_src: /img/research/bluebus.jpg

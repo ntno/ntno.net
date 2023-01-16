@@ -1,7 +1,8 @@
 ---
 hide:
-  - toc
-  - git_revision_date
+  - revision_date
+  - revision_history
+  - side_toc
 ---
 
 <div class="terminal-card">

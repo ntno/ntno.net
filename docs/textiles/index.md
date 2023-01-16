@@ -1,7 +1,8 @@
 ---
 hide:
-  - git_revision_date
-  - toc
+  - revision_date
+  - revision_history
+  - side_toc
 tiles:
   - caption: Embroidered Works
     img_src: /img/embroidery/liberty_letters.jpeg
