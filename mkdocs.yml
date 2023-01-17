@@ -39,9 +39,7 @@ nav:
 
 markdown_extensions:
   - attr_list
-  - md_in_html
   - meta
-  - attr_list
   - md_in_html
   - toc:
       permalink: "#"
@@ -61,6 +59,7 @@ theme:
     - navigation.side.indexes
     - revision.date
     - revision.history
+    - debug
     
 watch:
   - docs/overrides/

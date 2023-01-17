@@ -1,0 +1,18 @@
+{% extends "partials/page-base.html" %}
+{%- if page and page.meta -%}
+    {% set show_timeline_first = "true" if page.meta.show_timeline_first %}
+{%- endif -%}
+
+{%- block before_markdown_content %}
+    {%- if show_timeline_first -%}
+        {% include "partials/page-content/timeline.html" %}
+    {%- endif -%}
+    {{ super() }}
+{%- endblock %}
+
+{%- block after_markdown_content %}
+    {{ super() }}
+    {%- if not show_timeline_first -%}
+        {% include "partials/page-content/timeline.html" %}
+    {%- endif-%}
+{%- endblock %}

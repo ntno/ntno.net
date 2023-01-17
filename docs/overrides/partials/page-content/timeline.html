@@ -1,0 +1,18 @@
+{%- if page and page.meta and page.meta.timeline -%}
+{% set show_cards = "true" if page.meta.timeline is iterable and page.meta.timeline|length > 0 %}
+{%- endif -%}
+{%- if show_cards -%}
+<section markdown="1">
+    <div class="terminal-timeline" markdown="1">
+        {% for card in page.meta.timeline %}
+        <div class="terminal-card" markdown="1">
+            <header markdown="1">{{ card.title }}</header>
+            <div markdown="1">
+                {{ card.content }}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <br />
+</section>
+{%- endif -%}

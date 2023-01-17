@@ -3,10 +3,19 @@ hide:
   - revision_date
   - revision_history
   - side_toc
+timeline:
+  - title: September 2020
+    content: "**Class:**"
+  - title: January 2020 - July 2020
+    content: todo
+  - title: August 2018 - October 2018
+    content: todo 
+  - title: June 2018 - July 2018
+    content: todo
 ---
 
 # Woodworking Skill Progression
-
+<!-- 
 <section>
   <div class="terminal-timeline">
     <div class="terminal-card">
@@ -63,4 +72,4 @@ hide:
       </div>
     </div>
     <br />
-</section>
+</section> -->
