@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<head markdown="1">
+<head markdown="block">
     {% set features = config.theme.features or [] %}
     {%- block site_meta %}
     <meta charset="UTF-8">
@@ -38,13 +38,13 @@
     {% block debug %}{% include "partials/debug.html" %}{% endblock debug %}
 </head>
 
-<body class="terminal" markdown="1">
+<body class="terminal" markdown="block">
     {%- block top_nav %}{% include "partials/top-nav/top.html" %}{%- endblock top_nav %}
         
-    <div class="container" markdown="1">
-        <div class="terminal-mkdocs-main-grid" markdown="1">
+    <div class="container" markdown="block">
+        <div class="terminal-mkdocs-main-grid" markdown="block">
           {%- block side_panel %}{% include "partials/side-panel/side-panel.html" %}{%- endblock side_panel %}
-            <main markdown="1">
+            <main markdown="block">
                 {%- block content_container %}{% include "partials/page.html" %}{%- endblock content_container %}
             </main>
         </div>
