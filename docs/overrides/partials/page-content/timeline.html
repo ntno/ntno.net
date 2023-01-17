@@ -2,12 +2,12 @@
 {% set show_cards = "true" if page.meta.timeline is iterable and page.meta.timeline|length > 0 %}
 {%- endif -%}
 {%- if show_cards -%}
-<section markdown="block">
-    <div class="terminal-timeline" markdown="block">
+<section>
+    <div class="terminal-timeline">
         {% for card in page.meta.timeline %}
-        <div class="terminal-card" markdown="block">
-            <header markdown="block">{{ card.title }}</header>
-            <div markdown="block">
+        <div class="terminal-card">
+            <header>{{ card.title }}</header>
+            <div>
                 {{ card.content }}
             </div>
         </div>
