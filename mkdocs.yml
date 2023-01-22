@@ -45,6 +45,7 @@ markdown_extensions:
       permalink: "#"
   
 plugins:
+  - md-to-html
   - search
   - git-revision-date
 
@@ -54,7 +55,7 @@ extra_css:
 theme:
   name: terminal
   custom_dir: docs/overrides/
-  palette: pink
+  palette: gruvbox_dark
   features:
     - navigation.side.indexes
     - revision.date
