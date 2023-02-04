@@ -59,7 +59,6 @@ theme:
     - navigation.side.indexes
     - revision.date
     - revision.history
-    - debug
     
 watch:
   - docs/overrides/
