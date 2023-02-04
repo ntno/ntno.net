@@ -46,7 +46,6 @@ markdown_extensions:
   
 plugins:
   - md-to-html
-  - search
   - git-revision-date
 
 extra_css: 
