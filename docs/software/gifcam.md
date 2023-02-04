@@ -66,7 +66,6 @@ source code available on github: [ntno/gifcam](https://github.com/ntno/gifcam){t
 
 <figure>
   <img src="/img/gifcam/architecture.jpeg" alt="gifcam software architecture, illustration."/>
-  </a>
   <figcaption>Figure 11, Gifcam Architecture</figcaption>
 </figure>
 <br>
