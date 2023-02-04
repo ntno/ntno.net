@@ -16,6 +16,7 @@ image_cards:
         - Cryptography Puzzle
 
         - *gifcam*: a Cloud Enabled, RaspberryPi-Powered Camera
+
   - title: Electronics
     img_src: /img/led-biking-backpack/lights.jpeg
     caption: LED Brake Light Backpack
@@ -23,18 +24,16 @@ image_cards:
     content: |
         - HopperBot for Body Syntonic Learning
 
-        - Wearables for Night Visibility  
+        - wearables for night visibility  
   - title: Woodworking
     img_src: /img/cabinet/cabinet_painted.jpeg
     caption: Tilt-out Laundry Cabinet
     link_href: ./wood/
     content: |
         **Solo Project**  
-
         - Tilt-out Laundry Cabinet
         
         **Class Projects**  
-
         - Storage Chest
         - Cutting Boards
   - title: Textiles
