@@ -3,13 +3,13 @@ grid_css: ntno_img_card_grid
 tiles: 
   - img_src: /img/embroidery/liberty_letters.jpeg
     caption: Natan Organick, *Lady Liberty* (detail), 2020.
-    img_alt: close up of embroidered block letters
+    alt_text: close up of embroidered block letters
   - img_src: /img/embroidery/liberty_green.jpeg
     caption: Natan Organick, *Lady Liberty* (detail), 2020.
-    img_alt: close up of embroidered background
+    alt_text: close up of embroidered background
   - img_src: /img/embroidery/justice_detail.jpeg
     caption: Natan Organick, *Tzedek, Tzedek* (detail), 2020.
-    img_alt: close up of embroidered work
+    alt_text: close up of embroidered work
     tile_css: ntno_img_card
 ---
 
