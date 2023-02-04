@@ -6,9 +6,9 @@
     <div class="terminal-timeline">
         {% for card in page.meta.timeline %}
         <div class="terminal-card">
-            <header>{{ card.title }}</header>
+            <header>{{ card.title | markup }}</header>
             <div>
-                {{ card.content }}
+                {{ card.content | markup }}
             </div>
         </div>
         {% endfor %}

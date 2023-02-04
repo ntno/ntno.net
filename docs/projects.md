@@ -70,6 +70,9 @@ index_cards:
         <li>Sprites for Ego Syntonic Learning</li><br>
       <ul>
 ---
+
+# Projects 
+
 <!-- 
 <div class="terminal-card">
     <a class="btn btn-default btn-block" title="Software" href="../software/"><span>Software</span></a>
