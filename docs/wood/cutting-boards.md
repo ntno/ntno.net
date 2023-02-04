@@ -2,7 +2,6 @@
 tiles: 
   - img_src: /img/cutting-boards/wood_parts_7_15_18.jpeg
     caption: 'class notes on wood grain, wood structure, and common distortions'
-    img_title: ''
     img_alt: pages from notebook with illustrations on wood distortions and wood grain
     tile_css: ntno_img_card 
 ---
@@ -15,9 +14,7 @@ June 2018 - July 2018
   <figure>
     <img
       src="/img/cutting-boards/cutting_boards.jpeg"
-      alt="two wooden cutting boards standing upright in wooden block"
-      title=""
-    />
+      alt="two wooden cutting boards standing upright in wooden block"/>
     <figcaption>completed cutting boards with stand</figcaption>
   </figure>
 </section>
