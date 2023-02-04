@@ -1,15 +1,15 @@
 ---
 grid_css: ntno_img_card_grid
 tiles: 
-  - caption: 'Figure 8, *Misc. Project Notes*, pages 82, 83.'
+  - caption: Figure 8, *Misc. Project Notes*, pages 82, 83.
     img_src: /img/led-biking-backpack/led-layout-brainstorm.png
-  - caption: 'final NeoPixel layout (detail)'
+  - caption: final NeoPixel layout (detail)
     img_src: /img/led-biking-backpack/led-layout.png
-  - caption: 'weather-proof enclosure for FLORA and power.  power switch and data lines exit the enclosure through hole drilled in side'
+  - caption: weather-proof enclosure for FLORA and power.  power switch and data lines exit the enclosure through hole drilled in side
     img_src: /img/led-biking-backpack/switch_flora_power.jpg
-  - caption: 'RF receiver module for swapping LED animations via clicker'
+  - caption: RF receiver module for swapping LED animations via clicker
     img_src: /img/led-biking-backpack/rf_module.jpg
-  - caption: 'NeoPixels installed in backpack lining (see Figure 10 for details)'
+  - caption: NeoPixels installed in backpack lining (see Figure 10 for details)
     img_src: /img/led-biking-backpack/lights.jpeg
     tile_css: ntno_img_card
 ---
