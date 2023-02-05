@@ -1,4 +1,4 @@
-**Investigation into Integrated SMS and Web-based Apps**  
+# Investigation into Integrated SMS and Web-based Apps
 Spring 2014
 
 I was awarded a Clare Boothe Luce Undergraduate Scholarship for my junior and senior years at Bryn Mawr College.  As part of this scholarship, I was asked to conduct independent research and share my findings with my peers in the Computer Science department.  

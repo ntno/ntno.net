@@ -1,4 +1,4 @@
-**Sprites for Ego Syntonic Learning in Computer Science Education**  
+# Sprites for Ego Syntonic Learning in Computer Science Education
 Summer 2013  
 
 # Project Proposal
