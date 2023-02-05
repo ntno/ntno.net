@@ -6,7 +6,7 @@
         height: 100px !important;
     }
 </style>
-[View Full Resume](/img/resume/NatanOrganick_Jan2023_Resume_0.pdf){target="_blank", alt="Download Resume PDF"}
+[Download Full Resume (PDF)](/img/resume/NatanOrganick_Jan2023_Resume_0.pdf){target="_blank", alt="Download Resume PDF"}
 
 **Senior DevOps Engineer, Friends of Children in Africa 501(c)3**  
 September 2022 - November 2022  
