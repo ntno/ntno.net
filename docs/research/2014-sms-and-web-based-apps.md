@@ -25,7 +25,7 @@ In order to share the knowledge I have compiled during my research I have create
     <a href="https://www.brynmawr.edu/inside/offices-services/transportation/blue-bus-bi-co" title="Bryn Mawr College Blue Bus">
     <img
       src="/img/research/bluebus.jpg"
-      alt="a person in an orange dress boarding the Bryn Mawr College Blue Bus"
+      alt="Bi-College Consortium Blue Bus"
       title="Bryn Mawr College Blue Bus"
     />
     </a>
@@ -60,7 +60,7 @@ This research project was inspired by work done during the 2014 Tri-Co Hackathon
 - Yijun Zhou, BMC '15  
 - Natan Organick, BMC '15  
 
-The NextBlueBus app created as part of this research project is not directly connected to Angie Chen's (BMC '16) Android application, which you can find [here](https://play.google.com/store/apps/details?id=com.aychen0110).  
+The NextBlueBus app created as part of this research project is not directly connected to Angie Chen's (BMC '16) Android application.  
 <br>  
 
 ### Acknowledgements
