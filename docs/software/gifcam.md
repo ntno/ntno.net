@@ -3,7 +3,7 @@ grid_css: ntno_img_card_grid
 tiles: 
   - caption: Figure 1, *Misc. Project Notes*, pages 84, 85.
     img_src: /img/gifcam/circuitry-1-of-3.png
-    alt_text: scan of notebook pages containing illustrations of components and circuitry'
+    alt_text: scan of notebook pages containing illustrations of components and circuitry
   - caption: Figure 2, *Misc. Project Notes*, pages 86, 87.
     img_src: /img/gifcam/circuitry-2-of-3.png
     alt_text: scan of notebook pages containing illustrations of circuitry with labels indicating wire colors
