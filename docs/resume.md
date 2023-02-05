@@ -1,12 +1,12 @@
----
----
 <style>
     #badge {
         width: 100px !important;
         height: 100px !important;
     }
 </style>
-[View Full Resume](/img/resume/NatanOrganick_Jan2023_Resume_0.pdf){target=_blank}
+<div class="terminal-mkdocs-pad-to-match-side-nav" markdown>
+[Get Full Resume (PDF)](/img/resume/NatanOrganick_Jan2023_Resume_0.pdf){target="_blank" alt="Download Resume PDF"}
+</div>
 
 **Senior DevOps Engineer, Friends of Children in Africa 501(c)3**  
 September 2022 - November 2022  
@@ -40,8 +40,6 @@ Bryn Mawr, PA
 2012 - 2013  
 Bryn Mawr, PA  
 
-<br>
-<hr>
 
 # Certifications
 

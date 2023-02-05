@@ -1,3 +1,7 @@
+{%- if page and page.meta and page.meta.image_cards -%}
+{% set show_cards = "true" if page.meta.image_cards is iterable and page.meta.image_cards|length > 0 %}
+{%- endif -%}
+{%- if show_cards -%}
 <style>
     .index_card_img_panel {
         grid-area: photo;
@@ -17,24 +21,26 @@
         padding: 0px;
     }
 </style>
-{%- for card in page.meta.index_cards %}
+<section class="terminal-mkdocs-pad-to-match-side-nav">
+{%- for card in page.meta.image_cards %}
 <div class="terminal-card">
-    <a class="btn btn-default btn-block" title="{{  card.card_title }}" href="{{ card.index_url | url}}"><span>{{
-            card.card_title }}</span></a>
+    <a class="btn btn-default btn-block" href="{{ card.link_href | url}}"><span>{{card.title }}</span></a>
     <div class="index_card_container">
         <div class="index_card_img_panel">
             <figure>
-                <a title="{{  card.card_title }}" href="{{ card.index_url | url}}">
-                    <img src="{{ card.img_src }}" alt="{{ card.img_alt }}" title="{{ card.img_title }}">
+                <a href="{{ card.link_href | url}}">
+                    <img src="{{ card.img_src }}" alt="{{ card.title }}">
                 </a>
-                <figcaption>{{ card.img_caption }}</figcaption>
+                <figcaption>{{ card.caption | markup }}</figcaption>
             </figure>
         </div>
         <div class="index_card_content_panel">
-            <p>{{ card.card_content }}</p>
+            <p>{{ card.content | markup }}</p>
         </div>
         <div class="index_card_buffer_panel"></div>
     </div>
 </div>
 <br>
 {%- endfor %}
+</section>
+{%- endif -%}

@@ -1,43 +1,35 @@
 ---
-img_cards: 
-  - img_src: /img/gifcam/circuitry-1-of-3.png
-    img_caption: 'Figure 1, <i>Misc. Project Notes</i>, pages 84, 85.'
-    img_title: ''
-    img_alt: 'scan of notebook pages containing illustrations of components and circuitry'
-  - img_src: /img/gifcam/circuitry-2-of-3.png
-    img_caption: 'Figure 2, <i>Misc. Project Notes</i>, pages 86, 87.'
-    img_title: ''
-    img_alt: 'scan of notebook pages containing illustrations of circuitry with labels indicating wire colors'
-  - img_src: /img/gifcam/notes-3-of-3.png
-    img_caption: 'Figure 3, <i>Misc. Project Notes</i>, page 88.'
-    img_title: ''
-    img_alt: 'scan of notebook page containing brainstorming notes on software components needed to securely upload images to Amazon S3 storage'
-  - img_src: /img/gifcam/dont_use_incompatible_ribbon.jpg
-    img_caption: 'discovered partway through build that the ribbon connector sold with camera was incompatible with Pi Zero W'
-    img_title: ''
-    img_alt: '3D printed camera case with camera and default ribbon installed.  annotation notes that this ribbon is incompatible with Pi Zero W'
-  - img_src: /img/gifcam/modify_case_to_support_compatible_ribbon.jpg
-    img_caption: 'constructed floating platform to secure the Pi Zero within reach of a shorter, compatible connector'
-    img_title: ''
-    img_alt: 'detail of Pi Zero secured to floating platform.  the new, compatible ribbon connector is able to reach the Pi Zero'
-  - img_src: /img/gifcam/wires_annotated.jpg
-    img_caption: 'PowerBoost connections (battery to PowerBoost, power switch to PowerBoost, PowerBoost to Pi Zero)'
-    img_title: ''
-    img_alt: 'detail of PowerBoost with annotations indicating which wires connect to the power switch, Pi Zero, and battery'
+grid_css: ntno_img_card_grid
+tiles: 
+  - caption: Figure 1, *Misc. Project Notes*, pages 84, 85.
+    img_src: /img/gifcam/circuitry-1-of-3.png
+    alt_text: scan of notebook pages containing illustrations of components and circuitry
+  - caption: Figure 2, *Misc. Project Notes*, pages 86, 87.
+    img_src: /img/gifcam/circuitry-2-of-3.png
+    alt_text: scan of notebook pages containing illustrations of circuitry with labels indicating wire colors
+  - caption: Figure 3, *Misc. Project Notes*, page 88.
+    img_src: /img/gifcam/notes-3-of-3.png
+    alt_text: scan of notebook page containing brainstorming notes on software components needed to securely upload images to Amazon S3 storage
+  - caption: discovered partway through build that the ribbon connector sold with camera was incompatible with Pi Zero W
+    img_src: /img/gifcam/dont_use_incompatible_ribbon.jpg
+    alt_text: 3D printed camera case with camera and default ribbon installed.  annotation notes that this ribbon is incompatible with Pi Zero W
+  - caption: constructed floating platform to secure the Pi Zero within reach of a shorter, compatible connector
+    img_src: /img/gifcam/modify_case_to_support_compatible_ribbon.jpg
+    alt_text: detail of Pi Zero secured to floating platform.  the new, compatible ribbon connector is able to reach the Pi Zero
+  - caption: PowerBoost connections (battery to PowerBoost, power switch to PowerBoost, PowerBoost to Pi Zero)
+    img_src: /img/gifcam/wires_annotated.jpg
+    alt_text: detail of PowerBoost with annotations indicating which wires connect to the power switch, Pi Zero, and battery
 ---
 # gifcam
 Summer 2019
 
-<section>
-  <figure>
-    <img
-      src="/img/gifcam/philly-07.gif"
-      alt="animated gif of view through car window as car crosses street.  rain drops partially obscure view.  pedestrians cross the street in rain gear."
-      title="capture from gifcam"
-    />
-    <figcaption>Natan Organick, <i>untitled</i>, capture from gifcam, 2019.</figcaption>
-  </figure>
-</section>
+<figure markdown>
+  <img
+    src="/img/gifcam/philly-07.gif"
+    alt="animated gif of view through car window as car crosses street.  rain drops partially obscure view.  pedestrians cross the street in rain gear."
+  />
+  <figcaption markdown>Natan Organick, *untitled*, capture from gifcam, 2019.</figcaption>
+</figure>
 
 # Project Goals
 
@@ -71,20 +63,10 @@ Summer 2019
 
 source code available on github: [ntno/gifcam](https://github.com/ntno/gifcam){target=_blank}
 
-<section>
-  <figure>
-    <a target="_blank" href="/img/gifcam/architecture.jpeg">
-    <img
-      src="/img/gifcam/architecture.jpeg"
-      alt="illustration demonstrating how gifcam creates and publishes gifs"
-      title="view diagram in new tab"
-    />
-    </a>
-    <figcaption>Figure 11, Gifcam Architecture
-      </ol>
-    </figcaption>
-  </figure>
-</section>
+<figure>
+  <img src="/img/gifcam/architecture.jpeg" alt="gifcam software architecture, illustration."/>
+  <figcaption>Figure 11, Gifcam Architecture</figcaption>
+</figure>
 <br>
 
 **Figure 11 Annotations**

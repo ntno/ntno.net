@@ -1,18 +1,17 @@
 ---
 hide:
-  - git_revision_date
-  - toc
-tile_cards:
-  - card_title: SMS and Web Based Apps
+  - revision_date
+  - revision_history
+  - side_toc
+tiles:
+  - caption: SMS and Web Based Apps
+    alt_text: SMS and Web Based Apps
     img_src: /img/research/bluebus.jpg
-    index_url: ./research/2014-sms-and-web-based-apps
-    img_title: ''
-    img_alt: ''
-  - card_title: Ego Syntonic Learning
+    link_href: ../research/2014-sms-and-web-based-apps
+  - caption: Ego Syntonic Learning
+    alt_text: Ego Syntonic Learning
     img_src: /img/research/SpritesForEgoSyntonicLearning_Natan.jpg
-    index_url: ./research/2013-ego-syntonic-learning
-    img_title: ''
-    img_alt: ''
+    link_href: ../research/2013-ego-syntonic-learning
 ---
 
 # Undergraduate Research

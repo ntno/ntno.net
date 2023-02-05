@@ -1,0 +1,13 @@
+{% extends "partials/page-base.html" %}
+
+{%- block after_markdown_content %}
+    {{ super() }}
+    
+    {% include "partials/page-content/timeline.html" %}
+    {% include "partials/page-content/image-cards.html" %}
+{%- endblock after_markdown_content %}
+
+{%- block revision %}
+    <br>
+    {{ super() }}
+{%- endblock revision %}

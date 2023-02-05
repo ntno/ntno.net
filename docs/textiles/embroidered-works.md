@@ -1,50 +1,40 @@
 ---
-img_cards: 
+grid_css: ntno_img_card_grid
+tiles: 
   - img_src: /img/embroidery/liberty_letters.jpeg
-    img_caption: 'Natan Organick, <i>Lady Liberty</i> (detail), 2020.'
-    img_title: ''
-    img_alt: 'detail of embroidered work "Lady Liberty"'
+    caption: Natan Organick, *Lady Liberty* (detail), 2020.
+    alt_text: close up of embroidered block letters
   - img_src: /img/embroidery/liberty_green.jpeg
-    img_caption: 'Natan Organick, <i>Lady Liberty</i> (detail), 2020.'
-    img_title: ''
-    img_alt: 'detail of embroidered work "Lady Liberty"'
+    caption: Natan Organick, *Lady Liberty* (detail), 2020.
+    alt_text: close up of embroidered background
   - img_src: /img/embroidery/justice_detail.jpeg
-    img_caption: 'Natan Organick, <i>Tzedek, Tzedek</i> (detail), 2020.'
-    img_title: ''
-    img_alt: 'detail of embroidered work "Tzedek, Tzedek"'
+    caption: Natan Organick, *Tzedek, Tzedek* (detail), 2020.
+    alt_text: close up of embroidered work
 ---
 
-## lady liberty
+# lady liberty
 November 2020
 
-<section>
-  <figure>
-    <img
-      src="/img/embroidery/lady_liberty.jpeg"
-      alt="a circular embroidered patch.  'KEEP ABORTION SAFE AND LEGAL' is stitched in a white outline in front of a silhouette of the Statue of Liberty.  the background is a circular gradient from yellow to green centered on the statue's torch"
-      title=""
-    />
-    <figcaption>Natan Organick, <i>Lady Liberty</i>, 2020.</figcaption>
-  </figure>
-</section>
+<figure markdown>
+  <img
+    src="/img/embroidery/lady_liberty.jpeg"
+    alt="A circular embroidered patch.  'Keep Abortion Safe And Legal' is stitched in all caps in front of a silhouette of the Statue of Liberty.  The background is a gradient from yellow to green centered on the statue's torch."/>
+  <figcaption markdown>Natan Organick, *Lady Liberty*, 2020.</figcaption>
+</figure>
 
 <br>
 <br>
 <br>
 
-## tzedek tzedek
+# tzedek tzedek
 June 2020
 
-<section>
-  <figure>
-    <img
-      src="/img/embroidery/justice.jpeg"
-      alt="an embroidered patch of a sword and banner containing text in Hebrew"
-      title=""
-    />
-    <figcaption>Natan Organick, <i>Tzedek, Tzedek</i>, 2020.</figcaption>
-  </figure>
-</section>
+<figure markdown>
+  <img
+    src="/img/embroidery/justice.jpeg"
+    alt="An embroidered patch of a sword and banner containing text in Hebrew."/>
+  <figcaption markdown>Natan Organick, *Tzedek, Tzedek*, 2020.</figcaption>
+</figure>
 
 
 <br>

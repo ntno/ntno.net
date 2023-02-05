@@ -1,0 +1,26 @@
+/*! ntno.css */
+
+.ntno_img_card_grid {
+    grid-template-columns: auto !important;
+    grid-row-gap: 3em;
+}
+
+.ntno_index_card_img_panel {
+    grid-area: photo;
+}
+
+.ntno_index_card_content_panel {
+    grid-area: main;
+}
+
+.ntno_index_card_buffer_panel {
+    grid-area: buffer;
+}
+
+.ntno_index_card_container {
+    display: grid;
+    grid-template-areas: 'photo photo main main main buffer';
+    grid-gap: 10px;
+    grid-column-gap: 30px;
+    padding: 0px;
+}

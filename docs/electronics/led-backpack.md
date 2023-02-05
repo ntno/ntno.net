@@ -1,26 +1,16 @@
 ---
-img_cards: 
-  - img_src: /img/led-biking-backpack/led-layout-brainstorm.png
-    img_caption: 'Figure 8, <i>Misc. Project Notes</i>, pages 82, 83.'
-    img_title: ''
-    img_alt: ''
-  - img_src: /img/led-biking-backpack/led-layout.png
-    img_caption: 'final NeoPixel layout (detail)'
-    img_title: ''
-    img_alt: ''
-  - img_src: /img/led-biking-backpack/switch_flora_power.jpg
-    img_caption: 'weather-proof enclosure for FLORA and power.  power switch and data lines exit the enclosure through hole drilled in side'
-    img_title: ''
-    img_alt: ''
-  - img_src: /img/led-biking-backpack/rf_module.jpg
-    img_caption: 'RF receiver module for swapping LED animations via clicker'
-    img_title: ''
-    img_alt: ''
-  - img_src: /img/led-biking-backpack/lights.jpeg
-    img_caption: 'NeoPixels installed in backpack lining (see Figure 10 for details)'
-    img_title: ''
-    img_alt: ''
-
+grid_css: ntno_img_card_grid
+tiles: 
+  - caption: Figure 8, *Misc. Project Notes*, pages 82, 83.
+    img_src: /img/led-biking-backpack/led-layout-brainstorm.png
+  - caption: final NeoPixel layout (detail)
+    img_src: /img/led-biking-backpack/led-layout.png
+  - caption: weather-proof enclosure for FLORA and power.  power switch and data lines exit the enclosure through hole drilled in side
+    img_src: /img/led-biking-backpack/switch_flora_power.jpg
+  - caption: RF receiver module for swapping LED animations via clicker
+    img_src: /img/led-biking-backpack/rf_module.jpg
+  - caption: NeoPixels installed in backpack lining (see Figure 10 for details)
+    img_src: /img/led-biking-backpack/lights.jpeg
 ---
 
 # LED Brake Light Biking Backpack

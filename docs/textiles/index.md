@@ -1,28 +1,25 @@
 ---
 hide:
-  - git_revision_date
-  - toc
-tile_cards:
-  - card_title: Embroidered Works
+  - revision_date
+  - revision_history
+  - side_toc
+tiles:
+  - caption: Embroidered Works
+    alt_text: Embroidered Works
     img_src: /img/embroidery/liberty_letters.jpeg
-    img_title: ''
-    img_alt: ''
-    index_url: ./textiles/embroidered-works
-  - card_title: Upcycled Umbrella
+    link_href: ./embroidered-works
+  - caption: Upcycled Umbrella
+    alt_text: Upcycled Umbrella
     img_src: /img/umbrella/front.jpeg
-    img_title: ''
-    img_alt: ''
-    index_url: ./textiles/pride
-  - card_title: Covid-19 Masks
+    link_href: ./pride
+  - caption: Covid-19 Masks
+    alt_text: Covid-19 Masks
     img_src: /img/masks/topstitching.jpeg
-    img_title: ''
-    img_alt: ''
-    index_url: ./textiles/masks
-  - card_title: Selected Knits
+    link_href: ./masks
+  - caption: Selected Knits
+    alt_text: Selected Knits
     img_src: /img/knitting/extermiknit_detail_2010_2011.jpeg
-    img_title: ''
-    img_alt: ''
-    index_url: ./textiles/knits
+    link_href: ./knits
 ---
 
 # Projects

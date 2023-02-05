@@ -1,5 +1,3 @@
----
----
 # DnD Cryptography Puzzle
 Fall 2021 
 

@@ -1,24 +1,21 @@
 ---
 hide:
-  - git_revision_date
-  - toc
-tile_cards:
-  - card_title: HopperBot
+  - revision_date
+  - revision_history
+  - side_toc
+tiles:
+  - caption: HopperBot
+    alt_text: HopperBot
     img_src: /img/hopperbot/gett/2019_bot_at_gett.jpeg
-    index_url: ./electronics/hopper-bot
-    img_title: ''
-    img_alt: ''
-  - card_title: Skating Vest
+    link_href: ../electronics/hopper-bot
+  - caption: Skating Vest
+    alt_text: Skating Vest
     img_src: /img/led-vest/vest_detail.png
-    index_url: ./electronics/led-vest
-    img_title: ''
-    img_alt: ''
-  - card_title: Biking Backpack
+    link_href: ../electronics/led-vest
+  - caption: Biking Backpack
+    alt_text: Biking Backpack
     img_src: /img/led-biking-backpack/lights.jpeg
-    index_url: ./electronics/led-backpack
-    img_title: ''
-    img_alt: ''
-
+    link_href: ../electronics/led-backpack
 ---
 
 # Projects

@@ -1,6 +1,4 @@
----
----
-# `mkdocs-terminal`
+# mkdocs-terminal
 Winter 2021 - Present
 
 [MkDocs]{target=_blank} is a framework for creating documentation websites from markdown files.  Custom themes can be applied to give sites a unique style.  I created the theme for this portfolio site using [terminal.css]{target=_blank}.  See [squidfunk's material theme]{target=_blank, title="view site with mkdocs-material theme"} for comparison.
