@@ -13,7 +13,7 @@ tiles:
     tile_css: ntno_img_card
 ---
 
-## lady liberty
+# lady liberty
 November 2020
 
 <figure markdown>
@@ -27,7 +27,7 @@ November 2020
 <br>
 <br>
 
-## tzedek tzedek
+# tzedek tzedek
 June 2020
 
 <figure markdown>

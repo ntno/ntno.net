@@ -3,7 +3,7 @@ hide:
   - side_toc
 ---
 
-**Open Source Projects**
+# Open Source Projects
 
 <hr>
 **mkdocs-terminal** - [ntno/mkdocs-terminal](https://github.com/ntno/mkdocs-terminal){target=_blank}  

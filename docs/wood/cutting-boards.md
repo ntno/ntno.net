@@ -6,7 +6,7 @@ tiles:
     tile_css: ntno_img_card 
 ---
 
-**Cutting Boards**  
+# Cutting Boards
 June 2018 - July 2018  
   
 *Woodshop Introduction* class build at [Philadelphia Woodworks](http://www.philadelphiawoodworks.com/){target=_blank}.  

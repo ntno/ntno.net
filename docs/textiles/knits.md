@@ -1,7 +1,7 @@
 ---
 ---
-**Selected Knits**
-# Rainbow Gloves  
+# Selected Knits
+## Rainbow Gloves  
 2009  
 pattern by [ntno](/)  
 
@@ -20,7 +20,7 @@ pattern by [ntno](/)
 
 <hr>
 
-# Sudden But Inevitable
+## Sudden But Inevitable
 2009 - 2010  
 pattern by [Jennifer Thurston](https://www.ravelry.com/patterns/library/stegs){target=_blank}  
 
@@ -39,7 +39,7 @@ pattern by [Jennifer Thurston](https://www.ravelry.com/patterns/library/stegs){t
 
 <hr>
 
-# EXTERMIKNIT!!! (for Sara) 
+## EXTERMIKNIT!!! (for Sara) 
 2010 - 2011  
 pattern by [Penwiper](https://www.ravelry.com/patterns/library/extermiknit){target=_blank}  
 
@@ -70,7 +70,7 @@ pattern by [Penwiper](https://www.ravelry.com/patterns/library/extermiknit){targ
 
 <hr>
 
-# Pride Scarf! :D
+## Pride Scarf! :D
 2011  
 pattern by [Allison LoCicero](https://www.ravelry.com/patterns/library/entrelac-scarf){target=_blank}  
 
@@ -89,7 +89,7 @@ pattern by [Allison LoCicero](https://www.ravelry.com/patterns/library/entrelac-
 
 <hr>
 
-# Entrelac Cowl
+## Entrelac Cowl
 2013 - 2014  
 pattern by [Eva Martinsson](https://www.ravelry.com/patterns/library/entrelac-shawl-with-tassels){target=_blank}  
 
@@ -108,7 +108,7 @@ pattern by [Eva Martinsson](https://www.ravelry.com/patterns/library/entrelac-sh
 
 <hr>
 
-# dagger, dagger, dagger
+## dagger, dagger, dagger
 2019  
 pattern by [Grace Rose](https://www.ravelry.com/patterns/library/robin-hood-bandana-cowl){target=_blank}  
 
