@@ -49,3 +49,4 @@ Bryn Mawr, PA
 <img src="/img/resume/hashicorp_terraform_badge.png" alt="Terraform Certified Associate Badge" id="badge">
 </a>
 </div>
+<br>
