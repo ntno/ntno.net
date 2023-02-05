@@ -61,7 +61,7 @@ Summer 2019
 
 # Architecture
 
-source code available on github: [ntno/gifcam](https://github.com/ntno/gifcam){target=_blank}
+source code available on github: [ntno/gifcam](https://github.com/ntno/gifcam)
 
 <figure>
   <img src="/img/gifcam/architecture.jpeg" alt="gifcam software architecture, illustration."/>
@@ -101,9 +101,9 @@ Camera case and circuitry design based on Nick Brewer's PIX-E Gif Camera<sup>[1]
 
 # References
 
-[1] Brewer, Nick.  "PIX-E Gif Camera."  *hackaday.io*, 14 Oct. 2016, [https://hackaday.io/project/16358-pix-e-gif-camera](https://hackaday.io/project/16358-pix-e-gif-camera){target=_blank}.
+[1] Brewer, Nick.  "PIX-E Gif Camera."  *hackaday.io*, 14 Oct. 2016, [https://hackaday.io/project/16358-pix-e-gif-camera](https://hackaday.io/project/16358-pix-e-gif-camera).
 
-[2] Brewer, Nick.  "nickbrewer/gifcam."  *github.com*, 20 Apr. 2017, [https://github.com/nickbrewer/gifcam](https://github.com/nickbrewer/gifcam){target=_blank}.
+[2] Brewer, Nick.  "nickbrewer/gifcam."  *github.com*, 20 Apr. 2017, [https://github.com/nickbrewer/gifcam](https://github.com/nickbrewer/gifcam).
 
 # Progress Photos  
 

@@ -18,7 +18,7 @@ A continuation of my [previous](/electronics/led-backpack) nighttime visibility 
 
 # LED Animations
 
-source code available on github: [ntno/pixel-vest](https://github.com/ntno/pixel-vest){target=_blank}
+source code available on github: [ntno/pixel-vest](https://github.com/ntno/pixel-vest)
 
 <section>
   <figure>

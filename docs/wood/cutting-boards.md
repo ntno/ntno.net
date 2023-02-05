@@ -8,7 +8,7 @@ tiles:
 # Cutting Boards
 June 2018 - July 2018  
   
-*Woodshop Introduction* class build at [Philadelphia Woodworks](http://www.philadelphiawoodworks.com/){target=_blank}.  
+*Woodshop Introduction* class build at [Philadelphia Woodworks](http://www.philadelphiawoodworks.com/).  
 <section>
   <figure>
     <img

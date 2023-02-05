@@ -58,9 +58,9 @@ May 2020
 
 # References
 
-[1] Professor Pincushion.  "How To Sew A Classic Waistband."  *YouTube*, 10 Apr. 2012, [https://youtu.be/Oe9ks9u4e8U](https://youtu.be/Oe9ks9u4e8U){target=_blank}.  
+[1] Professor Pincushion.  "How To Sew A Classic Waistband."  *YouTube*, 10 Apr. 2012, [https://youtu.be/Oe9ks9u4e8U](https://youtu.be/Oe9ks9u4e8U).  
 
-[2] Savi's Fashion Studio.  "Class 14 - How to attach zipper to a dress without a seam / Easy, neat and professional finish."  *YouTube*, 27 Sep. 2015, [https://youtu.be/M8sU3i1omJI](https://youtu.be/M8sU3i1omJI){target=_blank}.  
+[2] Savi's Fashion Studio.  "Class 14 - How to attach zipper to a dress without a seam / Easy, neat and professional finish."  *YouTube*, 27 Sep. 2015, [https://youtu.be/M8sU3i1omJI](https://youtu.be/M8sU3i1omJI).  
 
 
 
