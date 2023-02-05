@@ -22,7 +22,6 @@ tiles:
   - img_src: /img/masks/complete_masks.jpeg
     caption: 'clear jewelry beading elastic threaded through fabric channels to create neck and head band'
     alt_text: close up of completed masks
-    tile_css: ntno_img_card
 ---
 
 # Covid-19 Masks  

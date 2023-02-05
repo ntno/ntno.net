@@ -31,7 +31,6 @@ tiles:
   - img_src: /img/cabinet/cabinet_painted.jpeg
     caption: completed tilt-out laundry cabinet
     alt_text: three-drawer cabinet painted white with glossy wood handles and tabletop
-    tile_css: ntno_img_card
 ---
 
 # Laundry Cabinet

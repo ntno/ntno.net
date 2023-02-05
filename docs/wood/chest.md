@@ -27,7 +27,6 @@ tiles:
   - img_src: /img/chest/seal_tips_detail_9_13_18.jpeg
     caption: 'class notes on proper application of sealant'
     alt_text: detail of notebook illustration of paintbrush pulling sealant from the edge to the center of a piece of wood.  this motion is marked with an X.
-    tile_css: ntno_img_card
 ---
 # Storage Chest
 August 2018 - October 2018  

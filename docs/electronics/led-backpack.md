@@ -11,7 +11,6 @@ tiles:
     img_src: /img/led-biking-backpack/rf_module.jpg
   - caption: NeoPixels installed in backpack lining (see Figure 10 for details)
     img_src: /img/led-biking-backpack/lights.jpeg
-    tile_css: ntno_img_card
 ---
 
 # LED Brake Light Biking Backpack

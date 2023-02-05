@@ -49,5 +49,3 @@ source code available on github: [ntno/pixel-vest](https://github.com/ntno/pixel
     <figcaption>LED power, ground, and data lines connect to Circuit Playground Express board via conductive thread.  thread is attached to metal socket snaps on vest</figcaption>
   </figure>
 </section>
-<br>
-

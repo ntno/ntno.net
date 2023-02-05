@@ -19,7 +19,6 @@ tiles:
   - caption: PowerBoost connections (battery to PowerBoost, power switch to PowerBoost, PowerBoost to Pi Zero)
     img_src: /img/gifcam/wires_annotated.jpg
     alt_text: detail of PowerBoost with annotations indicating which wires connect to the power switch, Pi Zero, and battery
-    tile_css: ntno_img_card
 ---
 # gifcam
 Summer 2019

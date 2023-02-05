@@ -65,4 +65,3 @@ The NextBlueBus app created as part of this research project is not directly con
 
 ### Acknowledgements
 Thanks to Professor Doug Blank and Professor Deepak Kumar of Bryn Mawr College for their guidance on this research project.  Thanks to Tim Doug for his [previous work](https://github.com/timdoug/nextbluebus){target=_blank} on Bi-Co bus schedule parsing.  This research was supported in part by a Clare Boothe Luce Undergraduate Scholarship.  
-<br>  

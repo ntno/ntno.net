@@ -5,10 +5,6 @@
     grid-row-gap: 3em;
 }
 
-.ntno_img_card:last-of-type {
-    margin-bottom: 3.5em;
-}
-
 .ntno_index_card_img_panel {
     grid-area: photo;
 }

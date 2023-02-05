@@ -36,4 +36,3 @@ I expect that this project will work to satisfy many of the goals of the Calico 
 
 # Acknowledgements 
 Thanks to Professor Doug Blank of Bryn Mawr College for his guidance on this research project.  This research was supported in part by the National Science Foundation (NSF) and by the Bryn Mawr College Summer Undergraduate Research Program.  
-<br>

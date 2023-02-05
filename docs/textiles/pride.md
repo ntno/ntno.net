@@ -27,7 +27,6 @@ tiles:
     img_src: /img/umbrella/waistband_topstitched.jpeg
   - caption: 'fold waistband over interface substitute and topstitch again'
     img_src: /img/umbrella/waistband_detail.jpeg
-    tile_css: ntno_img_card
 ---
 
 

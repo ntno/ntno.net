@@ -6,3 +6,8 @@
     {% include "partials/page-content/timeline.html" %}
     {% include "partials/page-content/image-cards.html" %}
 {%- endblock after_markdown_content %}
+
+{%- block revision %}
+    <br>
+    {{ super() }}
+{%- endblock revision %}

@@ -21,4 +21,3 @@ I had so much fun working on this assignment.  I remember spending hours and hou
     <figcaption>Natan Organick, <i>Bedroom in Arles</i>, 2012.</figcaption>
   </figure>
 </section>
-<br>

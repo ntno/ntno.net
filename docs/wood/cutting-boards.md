@@ -3,7 +3,6 @@ tiles:
   - img_src: /img/cutting-boards/wood_parts_7_15_18.jpeg
     caption: 'class notes on wood grain, wood structure, and common distortions'
     alt_text: pages from notebook with illustrations on wood distortions and wood grain
-    tile_css: ntno_img_card 
 ---
 
 # Cutting Boards

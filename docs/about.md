@@ -17,4 +17,3 @@ Natan Organick is a maker and computer scientist living in Philadelphia, PA.  Th
     <figcaption></figcaption>
   </figure>
 </section>
-<br>

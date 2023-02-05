@@ -10,7 +10,6 @@ tiles:
   - img_src: /img/embroidery/justice_detail.jpeg
     caption: Natan Organick, *Tzedek, Tzedek* (detail), 2020.
     alt_text: close up of embroidered work
-    tile_css: ntno_img_card
 ---
 
 # lady liberty
