@@ -21,6 +21,7 @@
         padding: 0px;
     }
 </style>
+<section class="terminal-mkdocs-pad-to-match-side-nav">
 {%- for card in page.meta.image_cards %}
 <div class="terminal-card">
     <a class="btn btn-default btn-block" href="{{ card.link_href | url}}"><span>{{card.title }}</span></a>
@@ -41,4 +42,5 @@
 </div>
 <br>
 {%- endfor %}
+</section>
 {%- endif -%}
