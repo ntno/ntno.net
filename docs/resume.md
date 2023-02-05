@@ -1,5 +1,3 @@
----
----
 <style>
     #badge {
         width: 100px !important;

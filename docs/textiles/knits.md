@@ -1,5 +1,3 @@
----
----
 # Selected Knits
 ## Rainbow Gloves  
 2009  

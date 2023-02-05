@@ -1,5 +1,3 @@
----
----
 # mkdocs-terminal
 Winter 2021 - Present
 
