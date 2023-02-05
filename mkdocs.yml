@@ -38,9 +38,12 @@ nav:
       - '2013 Ego Syntonic Learning': 'research/2013-ego-syntonic-learning.md'
 
 markdown_extensions:
+  # Python Markdown  
   - attr_list
-  - meta
+  - def_list
+  - footnotes
   - md_in_html
+  - meta
   - toc:
       permalink: "#"
       permalink_title: Anchor link to this section for reference
