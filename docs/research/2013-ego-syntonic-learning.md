@@ -14,7 +14,7 @@ I expect that this project will work to satisfy many of the goals of the Calico 
 
 <section>
   <figure>
-    <a target="_blank" href="/img/research/SpritesForEgoSyntonicLearning_Natan.pdf" title="Computer Science Education through Games and Animations Poster">
+    <a href="/img/research/SpritesForEgoSyntonicLearning_Natan.pdf" title="Computer Science Education through Games and Animations Poster">
     <img
       src="/img/research/SpritesForEgoSyntonicLearning_Natan.jpg"
       alt="Computer Science Education through Games and Animations Poster PDF"
@@ -29,7 +29,7 @@ I expect that this project will work to satisfy many of the goals of the Calico 
 
 # References
 
-[1] Douglas Blank, Jennifer S. Kay, James B. Marshall, Keith O'Hara, and Mark Russo. Calico: A Multi-Programming-Language, Multi-Context Framework Designed for Computer Science Education. (2012). SIGCSE 2012 (Raleigh, NC). [PDF](http://science.slc.edu/~jmarshall/papers/sigcse2012.pdf){target=_blank}  
+[1] Douglas Blank, Jennifer S. Kay, James B. Marshall, Keith O'Hara, and Mark Russo. Calico: A Multi-Programming-Language, Multi-Context Framework Designed for Computer Science Education. (2012). SIGCSE 2012 (Raleigh, NC). [PDF](http://science.slc.edu/~jmarshall/papers/sigcse2012.pdf)  
 
 [2] Papert, Seymour. "Turtle Geometry: A Mathematics Made for Learning." *Mindstorms: Children, Computers, and Powerful Ideas*. 2nd ed. New York: Basic, 1993. 63-64. Print  
 <br>

@@ -7,7 +7,7 @@ I used this script to encode fictional correspondence between the antagonists in
   
 <section>
   <figure>
-    <a target="_blank" href="/img/software/original-puzzle-in-progress.png">
+    <a href="/img/software/original-puzzle-in-progress.png">
     <img style="border: 1px solid #888888;"
       src="/img/software/original-puzzle-in-progress.png"
       alt="screenshot of players' progress decoding symbols in Roll20"
@@ -22,10 +22,10 @@ I used this script to encode fictional correspondence between the antagonists in
 
 ## p5.js Sketch
 
-[ntno/vertical-script-puzzle](https://github.com/ntno/vertical-script-puzzle){target=_blank} contains a [p5.js](https://p5js.org/){target=_blank} sketch which loads the 'vertical-script' encoded messages to drag-and-drop tiles.  The sketch showcases the constructed script and allows users to analyze the script's symbols.
+[ntno/vertical-script-puzzle](https://github.com/ntno/vertical-script-puzzle) contains a [p5.js](https://p5js.org/) sketch which loads the 'vertical-script' encoded messages to drag-and-drop tiles.  The sketch showcases the constructed script and allows users to analyze the script's symbols.
 <section>
   <figure>
-    <a target="_blank" href="/img/software/vertical_script_puzzle.gif">
+    <a href="/img/software/vertical_script_puzzle.gif">
     <img style="border: 1px solid #888888;"
       src="/img/software/vertical_script_puzzle.gif"
       alt="animated gif of word tiles being grouped together by common symbol feature"

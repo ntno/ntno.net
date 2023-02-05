@@ -20,7 +20,7 @@ pattern by [ntno](/)
 
 ## Sudden But Inevitable
 2009 - 2010  
-pattern by [Jennifer Thurston](https://www.ravelry.com/patterns/library/stegs){target=_blank}  
+pattern by [Jennifer Thurston](https://www.ravelry.com/patterns/library/stegs)  
 
 <section>
   <figure>
@@ -39,7 +39,7 @@ pattern by [Jennifer Thurston](https://www.ravelry.com/patterns/library/stegs){t
 
 ## EXTERMIKNIT!!! (for Sara) 
 2010 - 2011  
-pattern by [Penwiper](https://www.ravelry.com/patterns/library/extermiknit){target=_blank}  
+pattern by [Penwiper](https://www.ravelry.com/patterns/library/extermiknit)  
 
 <section>
   <figure>
@@ -70,7 +70,7 @@ pattern by [Penwiper](https://www.ravelry.com/patterns/library/extermiknit){targ
 
 ## Pride Scarf! :D
 2011  
-pattern by [Allison LoCicero](https://www.ravelry.com/patterns/library/entrelac-scarf){target=_blank}  
+pattern by [Allison LoCicero](https://www.ravelry.com/patterns/library/entrelac-scarf)  
 
 <section>
   <figure>
@@ -89,7 +89,7 @@ pattern by [Allison LoCicero](https://www.ravelry.com/patterns/library/entrelac-
 
 ## Entrelac Cowl
 2013 - 2014  
-pattern by [Eva Martinsson](https://www.ravelry.com/patterns/library/entrelac-shawl-with-tassels){target=_blank}  
+pattern by [Eva Martinsson](https://www.ravelry.com/patterns/library/entrelac-shawl-with-tassels)  
 
 <section>
   <figure>
@@ -108,7 +108,7 @@ pattern by [Eva Martinsson](https://www.ravelry.com/patterns/library/entrelac-sh
 
 ## dagger, dagger, dagger
 2019  
-pattern by [Grace Rose](https://www.ravelry.com/patterns/library/robin-hood-bandana-cowl){target=_blank}  
+pattern by [Grace Rose](https://www.ravelry.com/patterns/library/robin-hood-bandana-cowl)  
 
 <section>
   <figure>

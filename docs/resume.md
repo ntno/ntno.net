@@ -5,7 +5,7 @@
     }
 </style>
 <div class="terminal-mkdocs-pad-to-match-side-nav" markdown>
-[Get Full Resume (PDF)](/img/resume/NatanOrganick_Jan2023_Resume_0.pdf){target="_blank" alt="Download Resume PDF"}
+[Get Full Resume (PDF)](/img/resume/NatanOrganick_Jan2023_Resume_0.pdf){alt="Download Resume PDF"}
 </div>
 
 **Senior DevOps Engineer, Friends of Children in Africa 501(c)3**  
@@ -45,7 +45,7 @@ Bryn Mawr, PA
 
 ## Hashicorp Terraform Associate
 <div markdown>
-<a href="https://www.credly.com/badges/9a48a66e-a992-46aa-a8b4-a4ff553b6e13/public_url" target="_blank" title="view Terraform Associate certificate on credly">
+<a href="https://www.credly.com/badges/9a48a66e-a992-46aa-a8b4-a4ff553b6e13/public_url" title="view Terraform Associate certificate on credly">
 <img src="/img/resume/hashicorp_terraform_badge.png" alt="Terraform Certified Associate Badge" id="badge">
 </a>
 </div>

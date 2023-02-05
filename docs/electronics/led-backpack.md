@@ -72,6 +72,6 @@ Project inspired by Becky Stern's Brake Light Backpack<sup>[1](./#references)</s
 
 # References
 
-[1] Becky Stern.  "Flora Brake Light Backpack"  *learn.adafruit.com*, 13 Feb. 2013, [https://learn.adafruit.com/flora-brakelight-backpack](https://learn.adafruit.com/flora-brakelight-backpack){target=_blank}.
+[1] Becky Stern.  "Flora Brake Light Backpack"  *learn.adafruit.com*, 13 Feb. 2013, [https://learn.adafruit.com/flora-brakelight-backpack](https://learn.adafruit.com/flora-brakelight-backpack).
 
 # Process Photos

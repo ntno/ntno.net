@@ -31,7 +31,7 @@ tiles:
 # Storage Chest
 August 2018 - October 2018  
   
-*Rustic Storage Trunk* class build at [Philadelphia Woodworks](http://www.philadelphiawoodworks.com/){target=_blank}.  
+*Rustic Storage Trunk* class build at [Philadelphia Woodworks](http://www.philadelphiawoodworks.com/).  
 <section>
   <figure>
     <img

@@ -15,26 +15,26 @@ The procedure is as follows:
 3. Web application generates a response message based on the contents of the client's text message (found inside the POST request)  
 4. Web application replies to client via the Twilio virtual phone number  
 
-In order to share the knowledge I have compiled during my research I have created a comprehensive tutorial on creating such an application, which can be found here: [https://bitbucket.org/norganick/clare-boothe-luce-research/wiki/Home](https://bitbucket.org/norganick/clare-boothe-luce-research/wiki/Home){target=_blank}  
+In order to share the knowledge I have compiled during my research I have created a comprehensive tutorial on creating such an application, which can be found here: [https://bitbucket.org/norganick/clare-boothe-luce-research/wiki/Home](https://bitbucket.org/norganick/clare-boothe-luce-research/wiki/Home)  
 <br>  
 
 ### NextBlueBus App
 
 <section>
   <figure>
-    <a target="_blank" href="https://www.brynmawr.edu/inside/offices-services/transportation/blue-bus-bi-co" title="Bryn Mawr College Blue Bus">
+    <a href="https://www.brynmawr.edu/inside/offices-services/transportation/blue-bus-bi-co" title="Bryn Mawr College Blue Bus">
     <img
       src="/img/research/bluebus.jpg"
-      alt="a person in an orange dress boarding the Bryn Mawr College Blue Bus"
+      alt="Bi-College Consortium Blue Bus"
       title="Bryn Mawr College Blue Bus"
     />
     </a>
-    <figcaption>The 'BlueBus' is a shuttle service which links the Tri-College Community of Bryn Mawr, Haverford and Swarthmore Colleges.  Photo: <a target="_blank" href="https://www.brynmawr.edu/transportation" title="Bryn Mawr College Transportation">Bryn Mawr College</a></figcaption>
+    <figcaption>The 'BlueBus' is a shuttle service which links the Tri-College Community of Bryn Mawr, Haverford and Swarthmore Colleges.  Photo: <a href="https://www.brynmawr.edu/transportation" title="Bryn Mawr College Transportation">Bryn Mawr College</a></figcaption>
   </figure>
 </section>
 <br>
 
-In addition to the tutorial, I created the NextBlueBus app.  This application provides users a quick and easy way to determine the next few times the [Blue Bus](https://www.brynmawr.edu/transportation/blue-bus-bi-co){target=_blank} will run from Bryn Mawr College to Haverford College or vice versa.  
+In addition to the tutorial, I created the NextBlueBus app.  This application provides users a quick and easy way to determine the next few times the [Blue Bus](https://www.brynmawr.edu/transportation/blue-bus-bi-co) will run from Bryn Mawr College to Haverford College or vice versa.  
 <br>  
 
 To use:
@@ -60,8 +60,8 @@ This research project was inspired by work done during the 2014 Tri-Co Hackathon
 - Yijun Zhou, BMC '15  
 - Natan Organick, BMC '15  
 
-The NextBlueBus app created as part of this research project is not directly connected to Angie Chen's (BMC '16) Android application, which you can find [here](https://play.google.com/store/apps/details?id=com.aychen0110){target=_blank}.  
+The NextBlueBus app created as part of this research project is not directly connected to Angie Chen's (BMC '16) Android application.  
 <br>  
 
 ### Acknowledgements
-Thanks to Professor Doug Blank and Professor Deepak Kumar of Bryn Mawr College for their guidance on this research project.  Thanks to Tim Doug for his [previous work](https://github.com/timdoug/nextbluebus){target=_blank} on Bi-Co bus schedule parsing.  This research was supported in part by a Clare Boothe Luce Undergraduate Scholarship.  
+Thanks to Professor Doug Blank and Professor Deepak Kumar of Bryn Mawr College for their guidance on this research project.  Thanks to Tim Doug for his [previous work](https://github.com/timdoug/nextbluebus) on Bi-Co bus schedule parsing.  This research was supported in part by a Clare Boothe Luce Undergraduate Scholarship.  

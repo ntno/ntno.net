@@ -36,7 +36,7 @@ tiles:
 # Laundry Cabinet
 January 2020 - July 2020  
   
-Solo build at [NextFab](https://nextfab.com/location/south-philadelphia/){target=_blank} using plans by Shara<sup>[1](./#references)</sup>.  Plans modified to allow for center tilt-out drawer.  
+Solo build at [NextFab](https://nextfab.com/location/south-philadelphia/) using plans by Shara<sup>[1](./#references)</sup>.  Plans modified to allow for center tilt-out drawer.  
 <section>
   <figure>
     <img
@@ -50,7 +50,7 @@ Solo build at [NextFab](https://nextfab.com/location/south-philadelphia/){target
 
 # References
 
-[1] Shara.  "DIY Tilt Out Laundry Hamper Cabinet."  *www.woodshopdiaries.com*, 20 May 2019, [https://www.woodshopdiaries.com/diy-tilt-out-laundry-hamper/](https://www.woodshopdiaries.com/diy-tilt-out-laundry-hamper/){target=_blank}.
+[1] Shara.  "DIY Tilt Out Laundry Hamper Cabinet."  *www.woodshopdiaries.com*, 20 May 2019, [https://www.woodshopdiaries.com/diy-tilt-out-laundry-hamper/](https://www.woodshopdiaries.com/diy-tilt-out-laundry-hamper/).
 
 
 # Progress Photos
