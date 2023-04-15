@@ -9,8 +9,8 @@
 </div>
 
 **Software Engineer III, Comcast**  
-March 2023 - Present
-Philadelphia, PA 
+March 2023 - Present  
+Philadelphia, PA  
 
 **Senior DevOps Engineer, Friends of Children in Africa 501(c)3**  
 September 2022 - November 2022  
