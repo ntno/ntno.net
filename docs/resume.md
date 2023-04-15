@@ -8,6 +8,10 @@
 [Get Full Resume (PDF)](/img/resume/NatanOrganick_Jan2023_Resume_0.pdf){alt="Download Resume PDF"}
 </div>
 
+**Software Engineer III, Comcast**  
+March 2023 - Present
+Philadelphia, PA 
+
 **Senior DevOps Engineer, Friends of Children in Africa 501(c)3**  
 September 2022 - November 2022  
 Philadelphia, PA  
