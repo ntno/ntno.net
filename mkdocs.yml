@@ -59,6 +59,7 @@ theme:
   custom_dir: theme_overrides
   # palette: gruvbox_dark
   features:
+    - footer.prev_next
     - navigation.side.indexes
     - revision.date
     - revision.history
