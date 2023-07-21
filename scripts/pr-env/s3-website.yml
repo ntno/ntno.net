@@ -8,8 +8,15 @@ Resources:
   S3Bucket:
     Type: AWS::S3::Bucket
     Properties:
+      OwnershipControls:
+        Rules:
+          - ObjectOwnership: BucketOwnerEnforced
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: false
+        BlockPublicPolicy: false
+        IgnorePublicAcls: false
+        RestrictPublicBuckets: false
       BucketName: !Ref BucketName
-      AccessControl: PublicRead
       WebsiteConfiguration:
         IndexDocument: index.html
         ErrorDocument: error.html
@@ -18,7 +25,7 @@ Resources:
           - ServerSideEncryptionByDefault:
               SSEAlgorithm: 'AES256'
     DeletionPolicy: Delete
-  BucketReadPolicy:
+  BucketPolicy:
     Type: AWS::S3::BucketPolicy
     Properties:
       Bucket: !Ref S3Bucket
@@ -31,13 +38,6 @@ Resources:
             Action: 's3:GetObject'
             Resource: 
               - !Sub 'arn:aws:s3:::${BucketName}/*'
-  BucketEncryptionPolicy:
-    Type: AWS::S3::BucketPolicy
-    Properties:
-      Bucket: !Ref S3Bucket
-      PolicyDocument:
-        Version: 2012-10-17
-        Statement:
           - Sid: DenyIncorrectEncryptionHeader
             Effect: Deny
             Principal: '*'
