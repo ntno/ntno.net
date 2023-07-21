@@ -51,8 +51,8 @@ jobs:
                     --parameters  ParameterKey=BucketName,ParameterValue="${{ env.bucket-name }}" \
                     --capabilities CAPABILITY_NAMED_IAM
           aws cloudformation wait stack-create-complete --stack-name "${{ env.stack-name }}"
-          aws s3 cp --sse AES256 --acl public-read index.html "s3://${{ env.bucket-name }}/"
-          aws s3 cp --sse AES256 --acl public-read error.html "s3://${{ env.bucket-name }}/"
+          aws s3 cp --sse AES256 index.html "s3://${{ env.bucket-name }}/"
+          aws s3 cp --sse AES256 error.html "s3://${{ env.bucket-name }}/"
       - name: Comment on PR with Environment URL
         env:
             GH_TOKEN: ${{ github.token }}
