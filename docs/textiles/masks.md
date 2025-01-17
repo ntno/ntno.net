@@ -31,7 +31,7 @@ April 2020
   <figure>
     <img
       src="/img/masks/maker_in_mask_04_2022.jpeg"
-      alt="the artist wearing a cloth Covid-19 face mask"
+      alt="the maker wearing a cloth Covid-19 face mask"
       title=""
     />
     <figcaption>Cotton Covid-19 Face Mask (sample)</figcaption>
