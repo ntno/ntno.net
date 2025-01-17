@@ -18,7 +18,7 @@ tiles:
     link_href: ./masks
   - caption: Selected Knits
     alt_text: Selected Knits
-    img_src: /img/knitting/extermiknit_detail_2010_2011.jpeg
+    img_src: /img/knitting/electricardi/electricardi_sleeve_detail_03_2024.jpeg
     link_href: ./knits
 ---
 
