@@ -2,10 +2,10 @@
 grid_css: ntno_img_card_grid
 tiles: 
   - img_src: /img/quilt-99/quilt_99.png
-    caption: 'TODO'
+    caption: 'Natan Organick, <i>Quilt-99</i>, 42 x 52", 2022.'
     alt_text: todo
   - img_src: /img/quilt-99/quilt_99_in_motion.jpeg
-    caption: 'TODO'
+    caption: 'Natan Organick with <i>Quilt-99</i>, Shreveport, Louisiana, 2022'
     alt_text: todo
   - img_src: /img/quilt-99/quilt_99_dedication_detail.jpeg
     caption: 'To<br> Lorraine Soffer<br> in celebration of her<br> ninety-ninth birthday<br> October 13, 2022<br> with much love,<br> Natan'
@@ -31,14 +31,8 @@ tiles:
 
 ---
 
+# Quilt-99
+2022  
 
-/img/quilt-99/quilt_99.png
-/img/quilt-99/quilt_99_in_motion.jpeg
-/img/quilt-99/quilt_99_dedication_detail.jpeg
-/img/quilt-99/quilt_99_square.png
-/img/quilt-99/quilt_99_bat_detail.png
-/img/quilt-99/quilt_99_hex_detail.png
-/img/quilt-99/quilt_99_seam_detail.png
-/img/quilt-99/quilt_99_reverse_detail.png
-/img/quilt-99/quilt_99_back.jpeg
-/img/quilt-99/quilt_99_with_maker.png
+A gift for my grandmother on her ninety-ninth birthday.  
+Machine pieced from scrap cotton and hand quilted.  
