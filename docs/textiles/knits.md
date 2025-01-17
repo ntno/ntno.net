@@ -1,40 +1,104 @@
 # Selected Knits
-## Rainbow Gloves  
-2009  
-pattern by [ntno](/)  
+
+## Electricardi
+2024
+pattern by [Disco Stitch](https://www.ravelry.com/patterns/library/electricardi)
 
 <section>
   <figure>
     <img
-      src="/img/knitting/rainbow_gloves_2009.jpeg"
+      src="/img/knitting/electricardi/electricardi_03_2024.jpeg"
       alt=""
       title=""
       style="border: 1px solid #888888;"
     />
-    <figcaption>Natan Organick, <i>Rainbow Gloves</i>, 2009.</figcaption>
+    <figcaption>Natan Organick, <i>Electricardi </i>, 2024.</figcaption>
   </figure>
 </section>
 <br>
-
+<section>
+  <figure>
+    <img
+      src="/img/knitting/electricardi/electricardi_sleeve_detail_03_2024.jpeg"
+      alt=""
+      title=""
+      style="border: 1px solid #888888;"
+    />
+    <figcaption>Natan Organick, <i>Electricardi (detail)</i>, 2024.</figcaption>
+  </figure>
+</section>
 <hr>
 
-## Sudden But Inevitable
-2009 - 2010  
-pattern by [Jennifer Thurston](https://www.ravelry.com/patterns/library/stegs)  
+## Desert Nights Cowl
+2022
+pattern by [Jennifer Berg](https://www.ravelry.com/patterns/library/desert-nights-cowl)
 
 <section>
   <figure>
     <img
-      src="/img/knitting/Sudden_But_Inevitable_2009_2010.jpeg"
+      src="/img/knitting/desert-nights-cowl/desert_nights_cowl_front_03_2022.jpeg"
       alt=""
       title=""
       style="border: 1px solid #888888;"
     />
-    <figcaption>Natan Organick, <i>Sudden But Inevitable</i>, 2009-2010.</figcaption>
+    <figcaption>Natan Organick, <i>Desert Nights Cowl</i>, 2022.</figcaption>
   </figure>
 </section>
 <br>
+<hr>
 
+## dagger, dagger, dagger
+2019  
+pattern by [Grace Rose](https://www.ravelry.com/patterns/library/robin-hood-bandana-cowl)  
+
+<section>
+  <figure>
+    <img
+      src="/img/knitting/dagger_dagger_dagger_05_2020.jpeg"
+      alt=""
+      title=""
+      style="border: 1px solid #888888;"
+    />
+    <figcaption>Natan Organick, <i>dagger, dagger, dagger</i>, 2019.</figcaption>
+  </figure>
+</section>
+<br>
+<hr>
+
+## Entrelac Cowl
+2013 - 2014  
+pattern by [Eva Martinsson](https://www.ravelry.com/patterns/library/entrelac-shawl-with-tassels)  
+
+<section>
+  <figure>
+    <img
+      src="/img/knitting/entrelac_cowl_2013_2014.jpeg"
+      alt=""
+      title=""
+      style="border: 1px solid #888888;"
+    />
+    <figcaption>Natan Organick, <i>Entrelac Cowl</i>, 2013-2014.</figcaption>
+  </figure>
+</section>
+<br>
+<hr>
+
+## Pride Scarf! :D
+2011  
+pattern by [Allison LoCicero](https://www.ravelry.com/patterns/library/entrelac-scarf)  
+
+<section>
+  <figure>
+    <img
+      src="/img/knitting/pride_scarf_2011.jpeg"
+      alt=""
+      title=""
+      style="border: 1px solid #888888;"
+    />
+    <figcaption>Natan Organick, <i>Pride Scarf! :D</i>, 2011.</figcaption>
+  </figure>
+</section>
+<br>
 <hr>
 
 ## EXTERMIKNIT!!! (for Sara) 
@@ -65,107 +129,40 @@ pattern by [Penwiper](https://www.ravelry.com/patterns/library/extermiknit)
   </figure>
 </section>
 <br>
-
 <hr>
 
-## Pride Scarf! :D
-2011  
-pattern by [Allison LoCicero](https://www.ravelry.com/patterns/library/entrelac-scarf)  
+## Sudden But Inevitable
+2009 - 2010  
+pattern by [Jennifer Thurston](https://www.ravelry.com/patterns/library/stegs)  
 
 <section>
   <figure>
     <img
-      src="/img/knitting/pride_scarf_2011.jpeg"
+      src="/img/knitting/Sudden_But_Inevitable_2009_2010.jpeg"
       alt=""
       title=""
       style="border: 1px solid #888888;"
     />
-    <figcaption>Natan Organick, <i>Pride Scarf! :D</i>, 2011.</figcaption>
+    <figcaption>Natan Organick, <i>Sudden But Inevitable</i>, 2009-2010.</figcaption>
   </figure>
 </section>
 <br>
-
 <hr>
 
-## Entrelac Cowl
-2013 - 2014  
-pattern by [Eva Martinsson](https://www.ravelry.com/patterns/library/entrelac-shawl-with-tassels)  
+## Rainbow Gloves  
+2009  
+pattern by [ntno](/)  
 
 <section>
   <figure>
     <img
-      src="/img/knitting/entrelac_cowl_2013_2014.jpeg"
+      src="/img/knitting/rainbow_gloves_2009.jpeg"
       alt=""
       title=""
       style="border: 1px solid #888888;"
     />
-    <figcaption>Natan Organick, <i>Entrelac Cowl</i>, 2013-2014.</figcaption>
+    <figcaption>Natan Organick, <i>Rainbow Gloves</i>, 2009.</figcaption>
   </figure>
 </section>
 <br>
-
 <hr>
-
-## dagger, dagger, dagger
-2019  
-pattern by [Grace Rose](https://www.ravelry.com/patterns/library/robin-hood-bandana-cowl)  
-
-<section>
-  <figure>
-    <img
-      src="/img/knitting/dagger_dagger_dagger_05_2020.jpeg"
-      alt=""
-      title=""
-      style="border: 1px solid #888888;"
-    />
-    <figcaption>Natan Organick, <i>dagger, dagger, dagger</i>, 2019.</figcaption>
-  </figure>
-</section>
-<br>
-
-<hr>
-
-## desert nights
-2022
-pattern by [Jennifer Berg](https://www.ravelry.com/patterns/library/desert-nights-cowl)
-
-<section>
-  <figure>
-    <img
-      src="/img/knitting/desert-nights-cowl/desert_nights_cowl_front_03_2022.jpeg"
-      alt=""
-      title=""
-      style="border: 1px solid #888888;"
-    />
-    <figcaption>Natan Organick, <i>Desert Nights Cowl</i>, 2022.</figcaption>
-  </figure>
-</section>
-<br>
-
-## electricardi
-2024
-pattern by [Disco Stitch](https://www.ravelry.com/patterns/library/electricardi)
-
-<section>
-  <figure>
-    <img
-      src="/img/knitting/electricardi/electricardi_03_2024.jpeg"
-      alt=""
-      title=""
-      style="border: 1px solid #888888;"
-    />
-    <figcaption>Natan Organick, <i>Electricardi </i>, 2024.</figcaption>
-  </figure>
-</section>
-<br>
-<section>
-  <figure>
-    <img
-      src="/img/knitting/electricardi/electricardi_sleeve_detail_03_2024.jpeg"
-      alt=""
-      title=""
-      style="border: 1px solid #888888;"
-    />
-    <figcaption>Natan Organick, <i>Electricardi (detail)</i>, 2024.</figcaption>
-  </figure>
-</section>
