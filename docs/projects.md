@@ -34,8 +34,9 @@ image_cards:
         - Tilt-out Laundry Cabinet
         
         **Class Projects**  
-        - Storage Chest
-        - Cutting Boards
+        - Storage Chest  
+        - Cutting Boards  
+        - Jewelry Bowl  
   - title: Textiles
     img_src: /img/embroidery/justice_from_below.jpeg
     caption: '*Tzedek, Tzedek* (detail)'
