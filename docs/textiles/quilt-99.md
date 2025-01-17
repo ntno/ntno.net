@@ -8,8 +8,8 @@ tiles:
     caption: 'TODO'
     alt_text: todo
   - img_src: /img/quilt-99/quilt_99_dedication_detail.jpeg
-    caption: 'TODO'
-    alt_text: todo
+    caption: 'To<br> Lorraine Soffer<br> in celebration of her<br> ninety-ninth birthday<br> October 13, 2022<br> with much love,<br> Natan'
+    alt_text: 'embroidered dedication patch with the text: "To Lorraine Soffer in celebration of her ninety-ninth birthday October 13, 2022 with much love, Natan"'
   - img_src: /img/quilt-99/quilt_99_square.png
     caption: 'TODO'
     alt_text: todo
