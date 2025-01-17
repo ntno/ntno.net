@@ -1,7 +1,7 @@
 # Selected Knits
 
 ## Electricardi
-2024
+2024  
 pattern by [Disco Stitch](https://www.ravelry.com/patterns/library/electricardi)
 
 <section>
@@ -30,7 +30,7 @@ pattern by [Disco Stitch](https://www.ravelry.com/patterns/library/electricardi)
 <hr>
 
 ## Desert Nights Cowl
-2022
+2022  
 pattern by [Jennifer Berg](https://www.ravelry.com/patterns/library/desert-nights-cowl)
 
 <section>
