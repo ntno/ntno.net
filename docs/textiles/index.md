@@ -20,6 +20,10 @@ tiles:
     alt_text: Selected Knits
     img_src: /img/knitting/electricardi/electricardi_sleeve_detail_03_2024.jpeg
     link_href: ./knits
+  - caption: Quilt-99
+    alt_text: Quilt-99
+    img_src: /img/quilt-99/quilt_99_unfolding.jpeg
+    link_href: ./quilt-99
 ---
 
 # Projects

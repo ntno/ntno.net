@@ -49,6 +49,8 @@ image_cards:
         - Covid-19 Masks
 
         - Selected Knits
+
+        - Quilt-99
   - title: Undergraduate Research, Bryn Mawr College
     img_src: /img/research/SpritesForEgoSyntonicLearning_Natan.jpg
     caption: Sprites Research Poster
