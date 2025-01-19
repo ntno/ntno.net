@@ -30,17 +30,17 @@ tiles:
 ---
 
 
-# pride celebration skirt
+# 2020 Pride Celebration Skirt
 May 2020  
 
 <section>
   <figure>
     <img
       src="/img/umbrella/front.jpeg"
-      alt="multi-paneled skirt from umbrella canopy"
+      alt="rainbow, multi-paneled skirt from umbrella canopy"
       title=""
     />
-    <figcaption>2020 pride celebration skirt, upcycled from umbrella canopy</figcaption>
+    <figcaption>2020 Pride Celebration Skirt, upcycled from umbrella canopy</figcaption>
   </figure>
 </section>
 <br>
@@ -49,10 +49,10 @@ May 2020
   <figure>
     <img
       src="/img/umbrella/back.jpeg"
-      alt="multi-paneled skirt from umbrella canopy"
+      alt="rainbow, multi-paneled skirt from umbrella canopy"
       title=""
     />
-    <figcaption>2020 pride skirt (reverse)</figcaption>
+    <figcaption>2020 Pride Celebration Skirt (reverse)</figcaption>
   </figure>
 </section>
 
