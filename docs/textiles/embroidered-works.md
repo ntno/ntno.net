@@ -12,7 +12,7 @@ tiles:
     alt_text: close up of embroidered work
 ---
 
-# lady liberty
+# Lady Liberty
 November 2020
 
 <figure markdown>
@@ -26,7 +26,7 @@ November 2020
 <br>
 <br>
 
-# tzedek tzedek
+# Tzedek Tzedek
 June 2020
 
 <figure markdown>
@@ -41,4 +41,4 @@ June 2020
 <br>
 <br>
 
-## details
+## Details
