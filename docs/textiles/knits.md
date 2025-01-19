@@ -1,7 +1,7 @@
 # Selected Knits
 
 ## Electricardi
-2024  
+March 2024  
 pattern by [Disco Stitch](https://www.ravelry.com/patterns/library/electricardi)
 
 <section>
@@ -30,7 +30,7 @@ pattern by [Disco Stitch](https://www.ravelry.com/patterns/library/electricardi)
 <hr>
 
 ## Desert Nights Cowl
-2022  
+January 2022 - March 2022  
 pattern by [Jennifer Berg](https://www.ravelry.com/patterns/library/desert-nights-cowl)
 
 <section>
@@ -66,7 +66,7 @@ pattern by [Grace Rose](https://www.ravelry.com/patterns/library/robin-hood-band
 <hr>
 
 ## Entrelac Cowl
-2013 - 2014  
+November 2013 - January 2014  
 pattern by [Eva Martinsson](https://www.ravelry.com/patterns/library/entrelac-shawl-with-tassels)  
 
 <section>
@@ -84,7 +84,7 @@ pattern by [Eva Martinsson](https://www.ravelry.com/patterns/library/entrelac-sh
 <hr>
 
 ## Pride Scarf! :D
-2011  
+July 2011 - October 2011  
 pattern by [Allison LoCicero](https://www.ravelry.com/patterns/library/entrelac-scarf)  
 
 <section>
@@ -102,7 +102,7 @@ pattern by [Allison LoCicero](https://www.ravelry.com/patterns/library/entrelac-
 <hr>
 
 ## EXTERMIKNIT!!! (for Sara) 
-2010 - 2011  
+May 2010 - May 2011  
 pattern by [Penwiper](https://www.ravelry.com/patterns/library/extermiknit)  
 
 <section>
@@ -132,7 +132,7 @@ pattern by [Penwiper](https://www.ravelry.com/patterns/library/extermiknit)
 <hr>
 
 ## Sudden But Inevitable
-2009 - 2010  
+December 2009 - January 2010  
 pattern by [Jennifer Thurston](https://www.ravelry.com/patterns/library/stegs)  
 
 <section>
@@ -150,7 +150,7 @@ pattern by [Jennifer Thurston](https://www.ravelry.com/patterns/library/stegs)
 <hr>
 
 ## Rainbow Gloves  
-2009  
+August 2009  
 pattern by [ntno](/)  
 
 <section>
