@@ -8,8 +8,8 @@ tiles:
     alt_text: Embroidered Works
     img_src: /img/embroidery/liberty_letters.jpeg
     link_href: ./embroidered-works
-  - caption: Upcycled Umbrella
-    alt_text: Upcycled Umbrella
+  - caption: Pride Celebration Skirt
+    alt_text: Pride Celebration Skirt
     img_src: /img/umbrella/front.jpeg
     link_href: ./pride
   - caption: Covid-19 Masks
