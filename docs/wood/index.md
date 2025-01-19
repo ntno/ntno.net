@@ -4,11 +4,12 @@ hide:
   - revision_history
   - side_toc
 timeline:
-  - title: September 2020
+  - title: September 2024
     content: |
-      **Class:** 
+      **Class Project**: [Jewelry Bowl](./bowl)
 
         - wood lathe
+
   - title: January 2020 - July 2020
     content: |
       **Solo Project**: [Laundry Cabinet](./cabinet)

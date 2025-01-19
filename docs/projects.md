@@ -34,8 +34,9 @@ image_cards:
         - Tilt-out Laundry Cabinet
         
         **Class Projects**  
-        - Storage Chest
-        - Cutting Boards
+        - Storage Chest  
+        - Cutting Boards  
+        - Jewelry Bowl  
   - title: Textiles
     img_src: /img/embroidery/justice_from_below.jpeg
     caption: '*Tzedek, Tzedek* (detail)'
@@ -48,6 +49,8 @@ image_cards:
         - Covid-19 Masks
 
         - Selected Knits
+
+        - *Quilt-99*
   - title: Undergraduate Research, Bryn Mawr College
     img_src: /img/research/SpritesForEgoSyntonicLearning_Natan.jpg
     caption: Sprites Research Poster

@@ -11,6 +11,7 @@ In addition to the general styling of `terminal.css`,
 - [Tile Grid](https://ntno.github.io/mkdocs-terminal/tile-grid/)
 - [Section Indexes](https://ntno.github.io/mkdocs-terminal/navigation/section-indexes/)
 
+As of January 2025 the project has over 200 stars on GitHub and one accepted open source contribution.
 <br>
 
 ## Project Details and Documentation

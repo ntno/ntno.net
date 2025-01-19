@@ -2,7 +2,7 @@ site_name: ntno
 repo_url: https://github.com/ntno/ntno.net
 edit_uri: edit/main/docs/
 site_url: http://ntno.net/
-copyright: Copyright 2021-2023 Natan Organick, All rights reserved
+copyright: Copyright 2021-2025 Natan Organick, All rights reserved
 site_author: ntno
 
 nav:
@@ -13,7 +13,7 @@ nav:
     - Software: 
       - Index: 'software/index.md' 
       - 'Open Source': 'software/open-source.md'
-      - '2023 MkDocs Terminal Theme': 'software/terminal-theme.md'
+      - '2021 - 2024 MkDocs Theme': 'software/terminal-theme.md'
       - '2021 Cryptography Puzzle': 'software/puzzle.md'
       - '2019 Gifcam': 'software/gifcam.md'
     - Electronics:
@@ -23,13 +23,15 @@ nav:
       - '2018 Brake Light Backpack': 'electronics/led-backpack.md'
     - Wood:
       - Index: 'wood/index.md'
+      - '2024 Jewelry Bowl': 'wood/bowl.md'
       - '2020 Laundry Cabinet': 'wood/cabinet.md'
       - '2018 Storage Chest': 'wood/chest.md'
       - '2018 Cutting Boards': 'wood/cutting-boards.md'
     - Textiles:
       - Index: 'textiles/index.md'
+      - '2022 Quilt-99': 'textiles/quilt-99.md'
       - '2020 Embroidered Works': 'textiles/embroidered-works.md'
-      - '2020 Upcycled Umbrella': 'textiles/pride.md'
+      - '2020 Pride': 'textiles/pride.md'
       - '2020 Covid-19 Masks': 'textiles/masks.md'
       - 'Selected Knits' : 'textiles/knits.md'
     - Research:
