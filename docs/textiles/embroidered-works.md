@@ -26,7 +26,7 @@ November 2020
 <br>
 <br>
 
-# Tzedek Tzedek
+# Tzedek, Tzedek
 June 2020
 
 <figure markdown>
