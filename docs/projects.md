@@ -50,7 +50,7 @@ image_cards:
 
         - Selected Knits
 
-        - Quilt-99
+        - *Quilt-99*
   - title: Undergraduate Research, Bryn Mawr College
     img_src: /img/research/SpritesForEgoSyntonicLearning_Natan.jpg
     caption: Sprites Research Poster
