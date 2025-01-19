@@ -10,7 +10,7 @@ tiles:
     link_href: ./embroidered-works
   - caption: Pride Celebration Skirt
     alt_text: Pride Celebration Skirt
-    img_src: /img/umbrella/front.jpeg
+    img_src: /img/umbrella-skirt/front.jpeg
     link_href: ./pride
   - caption: Covid-19 Masks
     alt_text: Covid-19 Masks
