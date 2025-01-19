@@ -47,24 +47,6 @@ pattern by [Jennifer Berg](https://www.ravelry.com/patterns/library/desert-night
 <br>
 <hr>
 
-## dagger, dagger, dagger
-2019  
-pattern by [Grace Rose](https://www.ravelry.com/patterns/library/robin-hood-bandana-cowl)  
-
-<section>
-  <figure>
-    <img
-      src="/img/knitting/dagger_dagger_dagger_05_2020.jpeg"
-      alt="dark purple knitted hood with green i-cord neck fasteners"
-      title=""
-      style="border: 1px solid #888888;"
-    />
-    <figcaption>Natan Organick, <i>dagger, dagger, dagger</i>, 2019.</figcaption>
-  </figure>
-</section>
-<br>
-<hr>
-
 ## Entrelac Cowl
 November 2013 - January 2014  
 pattern by [Eva Martinsson](https://www.ravelry.com/patterns/library/entrelac-shawl-with-tassels)  
