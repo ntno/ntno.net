@@ -12,11 +12,11 @@
 March 2023 - Present  
 Philadelphia, PA  
 
-**Senior DevOps Engineer, Friends of Children in Africa 501(c)3**  
+**DevOps Engineer, Friends of Children in Africa 501(c)3**  
 September 2022 - November 2022  
 Philadelphia, PA  
 
-**Senior DevOps Engineer, Inferno Mfg. Corp.**  
+**DevOps Engineer, Inferno Mfg. Corp.**  
 May 2021 - May 2022  
 Shreveport, LA (remote)  
 
