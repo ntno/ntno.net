@@ -40,7 +40,7 @@ May 2020
       alt="rainbow, multi-paneled skirt from umbrella canopy"
       title=""
     />
-    <figcaption>2020 Pride Celebration Skirt, upcycled from umbrella canopy</figcaption>
+    <figcaption>Natan Organick, <i>2020 Pride Celebration Skirt</i>, umbrella canopy, 2020.</figcaption>
   </figure>
 </section>
 <br>
@@ -52,7 +52,7 @@ May 2020
       alt="rainbow, multi-paneled skirt from umbrella canopy"
       title=""
     />
-    <figcaption>2020 Pride Celebration Skirt (reverse)</figcaption>
+    <figcaption>Natan Organick, <i>2020 Pride Celebration Skirt</i> (reverse), 2020.</figcaption>
   </figure>
 </section>
 
