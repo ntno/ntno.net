@@ -21,7 +21,7 @@ tiles:
   - caption: eeriemyxi dotfiles
     alt_text: eeriemyxi dotfiles
     img_src: /img/software/mkdocs-terminal/01_19_2025/eeriemyxi_dotfiles.png
-    link_href: https://myxi-dotfiles.pages.dev/ 
+    link_href: https://myxi-dotfiles.pages.dev/
 ---
 <style>
   .image_border a img {
@@ -30,6 +30,7 @@ tiles:
     border-color: var(--secondary-color);
   }
 </style>
+
 # mkdocs-terminal
 Winter 2021 - Present
 
@@ -43,7 +44,6 @@ In addition to `terminal.css` styling, [Terminal for MkDocs] includes the follow
 - [Section Indexes](https://ntno.github.io/mkdocs-terminal/navigation/section-indexes/)
 
 As of January 2025 the project has over 200 stars on GitHub and one accepted open source contribution.
-<br>
 
 ## Project Details and Documentation
 - [Terminal for MkDocs on GitHub][Terminal for MkDocs]{title="view source code on GitHub"}  
