@@ -43,7 +43,7 @@ In addition to `terminal.css` styling, [Terminal for MkDocs] includes the follow
 - [Tile Grid](https://ntno.github.io/mkdocs-terminal/tile-grid/)
 - [Section Indexes](https://ntno.github.io/mkdocs-terminal/navigation/section-indexes/)
 
-As of January 2025 the project has over 200 stars on GitHub and one accepted open source contribution.
+As of February 2026 the project has over 300 stars on GitHub and three accepted open source contributions.
 
 ## Project Details and Documentation
 - [Terminal for MkDocs on GitHub][Terminal for MkDocs]{title="view source code on GitHub"}  
