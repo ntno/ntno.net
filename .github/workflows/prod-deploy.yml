@@ -45,7 +45,7 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
         with:
           ref: ${{ inputs.tag }}
   call-metadata-workflow:
@@ -58,7 +58,7 @@ jobs:
     environment: gh-ci
     steps: 
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
         with:
           ref: ${{ inputs.tag }}
       - name: Install Buildenv
@@ -81,7 +81,7 @@ jobs:
     environment: gh-prod
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
         with:
           ref: ${{ inputs.tag }}
       - name: Install Buildenv
