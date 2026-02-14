@@ -4,7 +4,7 @@ services:
     build: .
     restart: "no"
     ports:
-      - "7000:7000"
+      - "8080:8080"
     environment:
       LOG_LEVEL: info
       AWS_PROFILE: ntno
@@ -15,7 +15,7 @@ services:
     volumes:
       - ~/.aws/:/root/.aws:ro    #ro for read only    
       - './:/usr/src/'
-    entrypoint: [ "mkdocs", "serve", "-v", "--dev-addr=0.0.0.0:7000" ]
+    entrypoint: [ "mkdocs", "serve", "-v", "--dev-addr=0.0.0.0:8080" ]
   ubuntu:
     image: ntno/ubuntu-build-base:1.0.0
     restart: "no"    
