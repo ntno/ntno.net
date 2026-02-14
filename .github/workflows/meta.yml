@@ -104,7 +104,7 @@ jobs:
       - name: upload-event-payload-artifact
         uses: actions/upload-artifact@v6
         with:
-          name: event-payload.json
+          name: event-payload-${{ github.run_id }}-${{ github.run_number }}-${{ github.run_attempt }}
           path: ./details/
       - name: inspect-outputs
         id: inspect-outputs

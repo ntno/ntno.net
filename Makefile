@@ -36,7 +36,7 @@ deploy: check-env check-region
 	docker compose run --entrypoint "/bin/bash" ubuntu -c "source ./scripts/deploy.sh $(env) $(region)"
 
 open-local:
-	open http://0.0.0.0:7000/
+	open http://0.0.0.0:8080/
 
 open:
 	open https://ntno.net

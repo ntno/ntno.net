@@ -6,4 +6,4 @@
 make install-requirements
 
 eval "$(buildenv -e $1 -d $2)" && \
-mkdocs serve -v --dev-addr=0.0.0.0:7000
+mkdocs serve -v --dev-addr=0.0.0.0:8080
