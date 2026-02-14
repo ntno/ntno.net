@@ -64,7 +64,7 @@ jobs:
       - name: Install Buildenv
         uses: ntno/setup-buildenv@v1     
       - name: Build MkDocs
-        uses: ntno/build-mkdocs-composite-action@v6
+        uses: ntno/build-mkdocs-composite-action@v7
         with:
           archive-enabled: true
           version: ${{ inputs.tag }}
@@ -108,7 +108,7 @@ jobs:
           echo "deploy-flags=${DRY_RUN} ${SIZE_ONLY_RUN} ${QUIET_RUN}" >> $GITHUB_OUTPUT 
       - name: Deploy MkDocs
         id: deploy-mkdocs
-        uses: ntno/deploy-mkdocs-composite-action@v4
+        uses: ntno/deploy-mkdocs-composite-action@v5
         with:         
           version: ${{ inputs.tag }}
           env-name: prod
