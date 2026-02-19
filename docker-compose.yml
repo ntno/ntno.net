@@ -17,7 +17,8 @@ services:
       - './:/usr/src/'
     entrypoint: [ "mkdocs", "serve", "-v", "--dev-addr=0.0.0.0:8080" ]
   ubuntu:
-    image: ntno/ubuntu-build-base:1.0.0
+    platform: linux/amd64
+    image: ntno/ubuntu-build-base:1.1.0
     restart: "no"    
     volumes:
       - ~/.aws/:/root/.aws:ro    #ro for read only
