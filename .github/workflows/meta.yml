@@ -101,10 +101,14 @@ jobs:
           mkdir -p ./details
           cat ${{ github.event_path }} > ./details/event-payload.json
           echo "artifact-name=details/event-payload.json" >> $GITHUB_OUTPUT
+      - name: Set current date as env variable
+        run: echo "TIMESTAMP=$(date +'%Y-%m-%dT%H:%M:%S')" >> $GITHUB_ENV
       - name: upload-event-payload-artifact
         uses: actions/upload-artifact@v6
+        env:
+          TIMESTAMP: ${{ env.TIMESTAMP }}
         with:
-          name: event-payload-${{ github.run_id }}-${{ github.run_number }}-${{ github.run_attempt }}
+          name: event-payload-${{ github.run_id }}-${{ github.run_number }}-${{ github.run_attempt }}-${{ env.TIMESTAMP }}
           path: ./details/
       - name: inspect-outputs
         id: inspect-outputs
