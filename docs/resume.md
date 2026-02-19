@@ -43,13 +43,3 @@ Bryn Mawr, PA
 **Teaching Assistant, Bryn Mawr College**  
 2012 - 2013  
 Bryn Mawr, PA  
-
-
-# Certifications
-
-## Hashicorp Terraform Associate
-<div markdown>
-<a href="https://www.credly.com/badges/9a48a66e-a992-46aa-a8b4-a4ff553b6e13/public_url" title="view Terraform Associate certificate on credly">
-<img src="/img/resume/hashicorp_terraform_badge.png" alt="Terraform Certified Associate Badge" id="badge">
-</a>
-</div>
