@@ -5,7 +5,7 @@
     }
 </style>
 <div class="terminal-mkdocs-pad-to-match-side-nav" markdown>
-[Get Full Resume (PDF)](/img/resume/NatanOrganick_Jan2023_Resume_0.pdf){alt="Download Resume PDF"}
+[Get Full Resume (PDF)](/img/resume/natan_organick_02_2026_v1.pdf){alt="Download Resume PDF"}
 </div>
 
 **Software Engineer III, Comcast**  
